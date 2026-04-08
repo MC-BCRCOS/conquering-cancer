@@ -5,8 +5,7 @@ category: "strategic"
 date: "April 2026"
 ---
 
-*Ratner Early Detection Initiative (REDI)  ·  March 2026*
-
+*Ratner Early Detection Initiative (REDI) · March 2026*
 
 
 ## Maccabi Healthcare Services: The World’s First Operational Deployment
@@ -21,20 +20,7 @@ Medial EarlySign installed its algorithm server as a component of Maccabi’s ex
 
 The minimum CBC components required for a ColonFlag score are hemoglobin, red blood cell count, hematocrit, mean corpuscular volume (MCV), mean corpuscular hemoglobin (MCH), and mean corpuscular hemoglobin concentration (MCHC). Additional CBC components, particularly inflammatory cell parameters and platelets, improve performance and are included where available. Where parameters are missing, the algorithm imputes values based on age- and sex-specific population means.
 
-### The Workflow, Step by Step
-
- Passive EMR scan.** The algorithm runs against the CBC database on a scheduled basis, typically weekly or monthly. No clinical trigger is required.
-
- Risk scoring.** Every eligible patient receives a score from 0 to 100. Patients scoring above the institution-set threshold are flagged.
-
- GP alert.** The patient’s general practitioner receives an alert directly in the EMR interface. No separate login or system is involved.
-
- Clinical review.** The GP reviews the flag, applies clinical judgment, and decides whether to refer for colonoscopy or specialist evaluation.
-
- Referral and procedure.** If the GP agrees, a colonoscopy referral is placed within Maccabi’s system. The patient is contacted, counseled, and scheduled.
-
- Outcome and recycle.** Results flow back into the EMR. The algorithm continues to monitor the patient on future CBC cycles.
-
+### The Workflow, Step by Step Passive EMR scan. The algorithm runs against the CBC database on a scheduled basis, typically weekly or monthly. No clinical trigger is required. Risk scoring. Every eligible patient receives a score from 0 to 100. Patients scoring above the institution-set threshold are flagged. GP alert. The patient’s general practitioner receives an alert directly in the EMR interface. No separate login or system is involved. Clinical review. The GP reviews the flag, applies clinical judgment, and decides whether to refer for colonoscopy or specialist evaluation. Referral and procedure. If the GP agrees, a colonoscopy referral is placed within Maccabi’s system. The patient is contacted, counseled, and scheduled. Outcome and recycle. Results flow back into the EMR. The algorithm continues to monitor the patient on future CBC cycles.
 
 
 The critical design principle is that the patient does nothing differently and the physician orders nothing new. The only addition is the software layer that reads the pattern the blood has already described.
@@ -44,7 +30,6 @@ The critical design principle is that the patient does nothing differently and t
 In the prospective Maccabi deployment study published in *JCO Clinical Cancer Informatics* in 2018, 79,671 individuals determined to be noncompliant with colorectal cancer screening were identified in the Maccabi program. ColonFlag scored each patient using age, sex, and CBC results, and the algorithm identified 688 individuals in the highest 0.87 percentile of risk. Of those 688 flagged patients, 254 had colonoscopies performed by Maccabi physicians. Among those 254, 19 colorectal cancers were found, a detection rate of 7.5 percent. An additional 15 cancers, primarily identified outside Maccabi, were found through diagnostic code matching. Among the patients who saw their GP after being flagged, 85 percent were referred to colonoscopy or a GI specialist.
 
 Over three years of deployment applied to approximately 220,000 patients aged 50 to 75, the program identified 1,913 patients at high risk. In two years of that period, 67 patients with confirmed malignancy and 254 patients with adenomatous polyps had been detected through the program.
-
 
 
 ## Geisinger Health System: The American Deployment
@@ -58,19 +43,15 @@ The workflow at Geisinger followed the same passive integration model as Maccabi
 Geisinger’s Epic infrastructure provided the necessary plumbing. Its EHR includes clinical decision support across all group-practice sites and is available to more than 2,000 users in non-Geisinger practices. That existing infrastructure, with its alert system and patient portal, carried ColonFlag’s outputs into the physician workflow without requiring a separate interface.
 
 
-
 ## Other Health Systems Currently Using These Algorithms
 
 ColonFlag and LungFlag are now deployed at multiple institutions beyond Maccabi and Geisinger.
 
- Kaiser Permanente** validated LungFlag across 6,505 lung cancer cases and 189,597 controls, achieving an AUC of 0.856 in the 9- to 12-month window before clinical diagnosis. Kaiser also validated ColonFlag separately at Kaiser Permanente Northwest, confirming an AUC of 0.80 and identifying individuals with a tenfold higher risk of undiagnosed cancer compared to standard screening.
+ Kaiser Permanente validated LungFlag across 6,505 lung cancer cases and 189,597 controls, achieving an AUC of 0.856 in the 9- to 12-month window before clinical diagnosis. Kaiser also validated ColonFlag separately at Kaiser Permanente Northwest, confirming an AUC of 0.80 and identifying individuals with a tenfold higher risk of undiagnosed cancer compared to standard screening.
 
- SLUCare Physician Group** at Saint Louis University announced in early 2019 that it would deploy LGI-Flag, the US-marketed version of ColonFlag, across its patient population for lower gastrointestinal disorder risk identification.
-
- Roche navify® Algorithm Suite.** In April 2023, Roche Diagnostics launched its navify Algorithm Suite at the HIMSS Global Conference, a cloud-based platform that integrates ColonFlag and other algorithms directly into EHR and Laboratory Information System (LIS) workflows at hospitals and labs worldwide. The suite offers fully cloud-based deployment, a hybrid cloud/on-premises option, and an on-premises integration component for institutions whose EHR cannot connect via API to the cloud. Integration uses HL7 v2-based interfaces for hybrid deployments and HTTPS/JSON-based APIs for direct cloud connections.
+ SLUCare Physician Group at Saint Louis University announced in early 2019 that it would deploy LGI-Flag, the US-marketed version of ColonFlag, across its patient population for lower gastrointestinal disorder risk identification. Roche navify® Algorithm Suite. In April 2023, Roche Diagnostics launched its navify Algorithm Suite at the HIMSS Global Conference, a cloud-based platform that integrates ColonFlag and other algorithms directly into EHR and Laboratory Information System (LIS) workflows at hospitals and labs worldwide. The suite offers fully cloud-based deployment, a hybrid cloud/on-premises option, and an on-premises integration component for institutions whose EHR cannot connect via API to the cloud. Integration uses HL7 v2-based interfaces for hybrid deployments and HTTPS/JSON-based APIs for direct cloud connections.
 
 The navify model is currently the most fully operational commercial distribution channel for ColonFlag at scale. A health system that wants to deploy it today contacts Roche, selects the integration option that fits its infrastructure, and the algorithm becomes available as a module within the existing EHR or LIS workflow.
-
 
 
 ## How to Distribute New Algorithms Nationally and Globally
@@ -94,7 +75,6 @@ Algorithms trained on INSIGHT data could be deployed first within the INSIGHT ne
 Engaging CMS and large commercial payers to include algorithmic screening analysis as a covered preventive service would drive health systems to deploy it as a matter of reimbursement optimization rather than institutional choice. Once a CPT code exists for algorithmic blood panel analysis and Medicare covers it, the market incentive for deployment is established. This is the most durable and scalable pathway, but it requires regulatory approval, clinical evidence publication, and a sustained policy engagement effort. The precedent for this pathway is the addition of low-dose CT lung cancer screening as a covered Medicare benefit following the National Lung Screening Trial.
 
 
-
 ## The Blood Tests: What Is Drawn, How Often, and at What Cost
 
 ### What Is Actually Drawn
@@ -109,11 +89,11 @@ Annual draws are the appropriate frequency. Annual testing provides the longitud
 
 ### What the Tests Cost
 
- At LabCorp or Quest Diagnostics (self-pay, direct to consumer):** LabCorp lists a CBC with differential at $29 on its OnDemand platform. A CMP plus lipid panel in a mid-range self-pay scenario runs approximately $110 to $180. HbA1c adds roughly $35 to $50 and TSH adds another $30 to $50 at self-pay rates. A bundled five-panel draw at LabCorp or Quest, ordered directly without a physician intermediary, would run approximately $100 to $175 out of pocket for most patients.
+ At LabCorp or Quest Diagnostics (self-pay, direct to consumer): LabCorp lists a CBC with differential at $29 on its OnDemand platform. A CMP plus lipid panel in a mid-range self-pay scenario runs approximately $110 to $180. HbA1c adds roughly $35 to $50 and TSH adds another $30 to $50 at self-pay rates. A bundled five-panel draw at LabCorp or Quest, ordered directly without a physician intermediary, would run approximately $100 to $175 out of pocket for most patients.
 
- At a hospital outpatient laboratory:** Prices vary widely. Published research on Florida hospital pricing found that the cash price for a metabolic profile alone ranged from $13 to $2,943 across hospitals. Patients are always better served by using LabCorp, Quest, or a CLIA-certified independent lab rather than a hospital outpatient lab for routine annual panels.
+ At a hospital outpatient laboratory: Prices vary widely. Published research on Florida hospital pricing found that the cash price for a metabolic profile alone ranged from $13 to $2,943 across hospitals. Patients are always better served by using LabCorp, Quest, or a CLIA-certified independent lab rather than a hospital outpatient lab for routine annual panels.
 
- At CVS MinuteClinic or similar retail health settings:** Blood draws and limited panel testing are available at retail clinics at pricing generally comparable to LabCorp and Quest for common panels. However, the full five-panel REDI draw may not be available at all retail locations. LabCorp and Quest operate over 2,000 patient service centers each across the United States and remain the most practical option for a standardized five-panel draw.
+ At CVS MinuteClinic or similar retail health settings: Blood draws and limited panel testing are available at retail clinics at pricing generally comparable to LabCorp and Quest for common panels. However, the full five-panel REDI draw may not be available at all retail locations. LabCorp and Quest operate over 2,000 patient service centers each across the United States and remain the most practical option for a standardized five-panel draw.
 
 ### Medicare Reimbursement
 
@@ -122,10 +102,9 @@ Under Original Medicare, most beneficiaries pay a monthly Part B premium of $185
 The Medicare Clinical Laboratory Fee Schedule (CLFS), updated annually by CMS, sets the reimbursement rates that Medicare pays to laboratories for these tests. The 2025 CLFS rates for the relevant CPT codes are approximately as follows:
 
 
-
 When the CMP and lipid panel are ordered together, Medicare applies its Automated Multi-channel Chemistry (AMCC) bundling methodology, which strips overlapping analytes and pays a combined rate lower than the sum of individual panel rates. The all-in Medicare reimbursement to the lab for all five panels drawn at a single annual visit is in the range of $50 to $80.
 
- Medicaid reimbursement** varies by state and generally runs approximately 80 to 90 percent of the Medicare CLFS rate, or roughly $40 to $65 for the five-panel draw depending on the state.
+ Medicaid reimbursement varies by state and generally runs approximately 80 to 90 percent of the Medicare CLFS rate, or roughly $40 to $65 for the five-panel draw depending on the state.
 
 ### The Reimbursement Gap That Needs to Be Closed
 
@@ -134,29 +113,26 @@ The blood draw and panel analysis are already paid for, once per year, for virtu
 That is the policy gap that needs to be closed: either through a new billing code for algorithmic screening analysis, inclusion of the algorithm output as a covered preventive service under the ACA, or through a quality measure that incentivizes health systems to deploy the algorithms under value-based care contracts. The precedent is the addition of low-dose CT lung cancer screening as a covered Medicare benefit, which followed directly from USPSTF recommendation and NCI trial evidence.
 
 
-
 ## The Complete End-to-End Workflow
 
 The following describes the complete patient journey from blood draw to clinical action under a fully deployed REDI model.
 
- Annual physical. **A 58-year-old patient comes in for a routine annual visit. The physician orders a CBC with differential, CMP, lipid panel, HbA1c, and TSH as part of the standard annual workup. One blood draw, two tubes. The patient goes to LabCorp, Quest, or has the draw done at the physician’s office.
+ Annual physical. A 58-year-old patient comes in for a routine annual visit. The physician orders a CBC with differential, CMP, lipid panel, HbA1c, and TSH as part of the standard annual workup. One blood draw, two tubes. The patient goes to LabCorp, Quest, or has the draw done at the physician’s office.
 
- Results to EHR. **Results return within 24 hours. They populate the physician’s EHR exactly as they do today.
+ Results to EHR. Results return within 24 hours. They populate the physician’s EHR exactly as they do today.
 
- Algorithmic analysis. **The CBC and chemistry values are automatically passed to the algorithm layer, either through an on-premises server, a cloud API connection, or an EHR-embedded decision support module. The algorithm compares current values to the patient’s prior values from previous annual draws, computes trends in hemoglobin, MCV, RDW, neutrophil-to-lymphocyte ratio, and platelet count, and produces a risk score.
+ Algorithmic analysis. The CBC and chemistry values are automatically passed to the algorithm layer, either through an on-premises server, a cloud API connection, or an EHR-embedded decision support module. The algorithm compares current values to the patient’s prior values from previous annual draws, computes trends in hemoglobin, MCV, RDW, neutrophil-to-lymphocyte ratio, and platelet count, and produces a risk score.
 
- Alert to physician. **If the risk score crosses the threshold, an alert appears in the physician’s workflow within the EHR interface. It does not require a separate login and is formatted identically to any other clinical decision support notification.
+ Alert to physician. If the risk score crosses the threshold, an alert appears in the physician’s workflow within the EHR interface. It does not require a separate login and is formatted identically to any other clinical decision support notification.
 
- Physician review and referral. **The physician reviews the alert, applies clinical judgment, and decides whether to refer the patient for colonoscopy, specialist evaluation, or other follow-up. The referral is placed through the existing EHR order entry system.
+ Physician review and referral. The physician reviews the alert, applies clinical judgment, and decides whether to refer the patient for colonoscopy, specialist evaluation, or other follow-up. The referral is placed through the existing EHR order entry system.
 
- Follow-up procedure. **The patient is contacted, counseled, and scheduled. If the colonoscopy finds cancer, it is caught at an early stage when it is curable. If it finds precancerous polyps, they are removed. If it finds nothing, the algorithm continues monitoring through future annual draws.
+ Follow-up procedure. The patient is contacted, counseled, and scheduled. If the colonoscopy finds cancer, it is caught at an early stage when it is curable. If it finds precancerous polyps, they are removed. If it finds nothing, the algorithm continues monitoring through future annual draws.
 
- No change for the patient. **The patient did nothing differently. The physician ordered nothing new. The lab ran nothing extra. The only addition to the entire chain was the software layer that read the pattern the blood had already described.
-
+ No change for the patient. The patient did nothing differently. The physician ordered nothing new. The lab ran nothing extra. The only addition to the entire chain was the software layer that read the pattern the blood had already described.
 
 
 At 200 million annual blood draws per year in the United States, this workflow, once embedded across major health systems and lab networks, would constitute the largest passive early detection program in the history of medicine.
-
 
 
 ## Endnotes

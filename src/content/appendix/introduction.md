@@ -5,10 +5,9 @@ category: "regulatory"
 date: "April 2026"
 ---
 
-**Building Cancer and Disease Detection Algorithms from Routine Blood Tests A Technical and Economic Roadmap
+Building Cancer and Disease Detection Algorithms from Routine Blood Tests A Technical and Economic Roadmap
 
-Ratner Early Detection Initiative (REDI)  ·  March 2026
-
+Ratner Early Detection Initiative (REDI) · March 2026
 
 
 The central claim of the REDI research program is that machine learning algorithms can detect cancer and chronic disease from routine blood work, months to years before conventional diagnosis. Two such algorithms are already deployed in clinical practice. Nine additional cancer algorithms and more than a dozen non-cancer disease algorithms remain to be built. This paper describes exactly what that process requires: the data, the methodology, the technical steps, and the costs.
@@ -102,9 +101,6 @@ Before deployment, each algorithm must demonstrate performance in a prospective 
 Estimated Costs (Assuming Dataset Access at No Cost)
 
 
-
-
-
 For the full program of nine remaining cancer algorithms, the total cost ranges from approximately $15M to $41M. Including non-cancer disease algorithms and shared infrastructure, the $30M to $50M total program estimate in the REDI papers is accurate and conservative. For comparison, the average cost to develop a single new cancer drug is $2.6 billion, including the capital cost of the many candidates that fail.5 The entire algorithmic detection program for all 13 cancers could be completed for less than 2 percent of that figure, using data that already exists, on diseases whose blood signatures are already documented in peer-reviewed literature.
 
 What This Is Not
@@ -112,17 +108,14 @@ What This Is Not
 This program does not require new blood tests, new clinical workflows, or a change in patient behavior. The six panels it analyzes are already drawn at more than 200 million annual physicals in the United States. The data are stored in EMRs at institutions that have already agreed in principle to collaborate on research. The bottleneck is not science; it is the institutional will and the $30 to $50 million required to build the software that reads what the blood is already saying.
 
 
-
 Endnotes
 
-1. Kinar Y, Kalkstein N, Akiva P, et al. "Development and Validation of a Predictive Model for Detection of Colorectal Cancer in Primary Care by Analysis of Complete Blood Counts: A Binational Retrospective Study." *J**AMIA*. 2016;23(5):879–890.
+1. Kinar Y, Kalkstein N, Akiva P, et al. "Development and Validation of a Predictive Model for Detection of Colorectal Cancer in Primary Care by Analysis of Complete Blood Counts: A Binational Retrospective Study." *JAMIA*. 2016;23(5):879–890.
 
 
-
-*ColonFlag development and validation across 606,403 Israeli and 30,674 UK patients; AUC 0.82 for colorectal cancer prediction from CBC parameters with odds ratios of 26 (Israel) and 40 (UK) at 0.5% false**- positive rate and 6- to 24-month detection lead time.*
+*ColonFlag development and validation across 606,403 Israeli and 30,674 UK patients; AUC 0.82 for colorectal cancer prediction from CBC parameters with odds ratios of 26 (Israel) and 40 (UK) at 0.5% false- positive rate and 6- to 24-month detection lead time.*
 
 2. Gould MK, Huang BZ, Tammemagi MC, Kinar Y, Shiff R. "Machine Learning for Early Lung Cancer Identification Using Routine Clinical and Laboratory Data." *Am J Respir Crit Care Med*. 2021;204(4):445–453.
-
 
 
 *LungFlag validation across 6,505 non-small cell lung cancer cases at Kaiser Permanente; AUC 0.856 with 9- to 12-month detection lead time, outperforming USPSTF criteria and the PLCOm2012 quantitative risk model.*
@@ -130,15 +123,13 @@ Endnotes
 3. Sharma C, Eltawil KM, Renfrew PD, Walsh MJ, Molinari M. "Advances in Diagnosis, Treatment and Palliation of Pancreatic Carcinoma: 1990–2010." *World JGastroenterol*. 2011;17(7):867–897.
 
 
+*Documents the pre-diagnostic blood signature of pancreatic cancer: alkaline phosphatase, GGT, and bilirubin rising from bile duct compression, with glucose rising from pancreatic cell damage, 6 –18 months before clinical diagnosis.*
 
-*Documents the pre-diagnostic blood signature of pancreatic cancer: alkaline phosphatase, GGT, and bilirubin rising from bile duct compression, with glucose rising from pancreatic cell damage, 6 –**18 months before clinical diagnosis.*
+4. Hornbrook MC, Goshen R, Choman E, et al. "Early Colorectal Cancer Detected by Machine Learning Model Using Gender, Age, and Complete Blood Count Data." *Dig Dis Sci*. 2017;62(10):2719–2727. [https://pubmed.ncbi.nlm.nih.gov/28836087/](https://pubmed.ncbi.nlm.nih.gov/28836087/)
 
-4. Hornbrook MC, Goshen R, Choman E, et al. "Early Colorectal Cancer Detected by Machine Learning Model Using Gender, Age, and Complete Blood Count Data." *Dig Dis Sci*. 2017;62(10):2719–2727.  [https://pubmed.ncbi.nlm.nih.gov/28836087/](https://pubmed.ncbi.nlm.nih.gov/28836087/)
-
-*Geisinger Health System deployment of  ColonFlag**; among flagged patients completing colonoscopy, 8% had confirmed cancer versus 1% in standard screening, an eightfold improvement with no new tests or equipment required.*
+*Geisinger Health System deployment of ColonFlag; among flagged patients completing colonoscopy, 8% had confirmed cancer versus 1% in standard screening, an eightfold improvement with no new tests or equipment required.*
 
 5. DiMasi JA, Grabowski HG, Hansen RW. "Innovation in the Pharmaceutical Industry: New Estimates of R&D Costs." *J Health Econ*. 2016;47:20–33.
 
 
-
-*Published analysis of pharmaceutical R&D costs establishing the $2.6 billion average cost per approved cancer drug, including $1.4 billion in direct costs and $1.2 billion in opportunity cost of capital over 12–15 -**year development timelines.*
+*Published analysis of pharmaceutical R&D costs establishing the $2.6 billion average cost per approved cancer drug, including $1.4 billion in direct costs and $1.2 billion in opportunity cost of capital over 12–15 -year development timelines.*

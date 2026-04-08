@@ -8,13 +8,11 @@ date: "April 2026"
 ## Why Qualifying Clinical Decision Support Software Does Not Require FDA Premarket Review
 
 
-
 ## Overview
 
 Machine learning algorithms that analyze routine complete blood count (CBC) data to identify patients who need further clinical evaluation operate in a regulatory space that Congress intentionally carved out of the U.S. Food and Drug Administration’s (FDA's) medical device jurisdiction. Under the Federal Food, Drug, and Cosmetic Act (FDCA), software satisfying four statutory criteria is classified as Non-Device Clinical Decision Support (CDS) software and requires no FDA submission, 510(k) clearance, or premarket approval.[3]
 
 This document summarizes the legal framework and applies it to CBC-based AI screening tools, referencing a formal legal opinion rendered by regulatory counsel and the primary statutory and regulatory authorities on which that opinion rests.[10]
-
 
 
 ## Legal Framework
@@ -26,7 +24,6 @@ The FDCA defines a medical device as any instrument, apparatus, implement, machi
 ### The Four-Criterion Test
 
 Under FDCA § 520(o)(1)(E), software is excluded from the definition of a medical device and is therefore exempt from FDA regulation when it satisfies all four of the following criteria.[3] The FDA's 2026 Clinical Decision Support Software Guidance elaborates on how each criterion applies in practice.[1]
-
 
 
 ## Application of the Four Criteria
@@ -52,7 +49,6 @@ The statute requires that the software enable the healthcare professional to ind
 Compliant labeling must describe: (1) the intended use of the product; (2) the specific input data the algorithm uses; (3) the development and validation methodology of the underlying algorithm; and (4) any data quality flags, including missing, corrupted, or unexpected input values. When these disclosures are provided, the physician receives the basis for the flag alongside the flag itself, preserving independent clinical judgment.[1]
 
 
-
 ## Conclusion
 
 CBC-based AI screening algorithms that are designed to flag patients for follow-up evaluation (rather than to diagnose, score risk, or direct treatment) satisfy all four statutory criteria under FDCA § 520(o)(1)(E). They qualify as Non-CDS software and are not subject to FDA premarket review or 510(k) clearance.[3,10]
@@ -60,12 +56,11 @@ CBC-based AI screening algorithms that are designed to flag patients for follow-
 The regulatory path depends on maintaining fidelity to this design logic: inputs limited to routine EHR and lab data; outputs limited to patient identification lists for clinician review; and labeling that discloses the algorithm's basis, allowing the physician to exercise independent judgment. So long as those design constraints are preserved, the software operates outside the scope of FDA medical device regulation.
 
 
-
 ## Endnotes
 
 1.U.S. Food and Drug Administration. “Clinical Decision Support Software: Guidance for Industry and Food and Drug Administration Staff.” January 29, 2026 [https://www.fda.gov/media/109618/download](https://www.fda.gov/media/109618/download).
 
-*The FDA's 202 6** CDS Guidance clarifies the four statutory criteria under FDCA § 520(o)(1)(E) that distinguish Non-Device CDS  software **from regulated medical device software, providing the framework applied throughout this analysis.*
+*The FDA's 202 6** CDS Guidance clarifies the four statutory criteria under FDCA § 520(o)(1)(E) that distinguish Non-Device CDS software **from regulated medical device software, providing the framework applied throughout this analysis.*
 
 2.Federal Food, Drug, and Cosmetic Act § 201(h), 21 U.S.C. § 321(h). [https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title21-section321&num=0&edition=prelim](https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title21-section321&num=0&edition=prelim).
 
@@ -106,7 +101,6 @@ The regulatory path depends on maintaining fidelity to this design logic: inputs
 *NEJM perspective identifying transparency, accountability, and physician control as central ethical requirements for clinical AI deployment—aligning with the labeling and independent-review requirements of Criteria Three and Four.*
 
 10.Karl M. Nobert, Regulatory Counsel, Michael Best & Friedrich LLP. Legal Opinion Letter to Lucem Health. August 1, 2023.
-
 
 
 *Eight-page legal opinion concluding that Lucem Health's CBC-based machine learning solutions qualify as Non-Device CDS under FDCA § 520(o)(1)(E) and are not subject to FDA premarket review, based on application of all four statutory criteria.*
