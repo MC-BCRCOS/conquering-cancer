@@ -189,6 +189,7 @@ import TotalImpact from '../components/charts/TotalImpact.tsx';
         </header>
         <div class="paper-content">
 
+
 <p>This document provides the methodology, citations, and reasoning behind every major claim in the preceding chapters. It is designed to answer the questions that policymakers, physicians, and informed readers will ask.</p>
 
   <h2>Part I: The Cancer Selection</h2>
@@ -209,37 +210,37 @@ import TotalImpact from '../components/charts/TotalImpact.tsx';
 
   <p>Colorectal and gastric cancers bleed into the gastrointestinal tract, causing a gradual iron deficiency that shows up as declining hemoglobin, shrinking red blood cells (lower mean corpuscular volume), and widening variation in red blood cell size (rising red cell distribution width). Lung cancer triggers systemic inflammation: neutrophil counts rise, lymphocyte counts fall, and platelets increase as part of the inflammatory cascade. Liver cancer disrupts the organ that produces clotting factors and metabolizes toxins, leading to changes in liver enzymes, albumin, and bilirubin that appear on liver function tests. Pancreatic cancer compresses the bile duct as it grows, raising alkaline phosphatase and bilirubin months before the tumor is large enough to detect on imaging, while simultaneously damaging insulin-producing cells and raising blood glucose. Multiple myeloma produces excess immunoglobulins that raise total protein, while bone destruction raises calcium, and kidney damage from abnormal proteins raises creatinine. Leukemia and lymphoma directly alter white blood cell counts, red blood cell production, and platelet levels because they originate in the blood-forming system itself.</p>
 
-  <p>The critical insight is that individual values may remain within normal reference ranges, while patterns across multiple values and trends over time reveal elevated risk. This is precisely what machine learning captures and what threshold-based evaluation by human physicians cannot see.</p>
+  <p>The critical insight is that individual values may remain within normal reference ranges, while patterns across multiple values and trends over time reveal elevated risk. This is precisely what machine learning captures and what threshold-based evaluation by human physicians cannot see. <span class="cite-group"><a href="#ref-1" class="cite-link"><sup>1</sup></a>,<a href="#ref-2" class="cite-link"><sup>2</sup></a>,<a href="#ref-3" class="cite-link"><sup>3</sup></a>,<a href="#ref-4" class="cite-link"><sup>4</sup></a>,<a href="#ref-5" class="cite-link"><sup>5</sup></a></span></p>
 
   <h3>What peer-reviewed evidence supports the claim that algorithms can detect these cancers?</h3>
 
   <h4>Validated and Deployed (2 cancers)</h4>
 
-  <p><strong>Colorectal cancer:</strong> The ColonFlag algorithm was developed using data from 606,403 patients from Maccabi Healthcare Services in Israel and externally validated in 30,674 patients in the United Kingdom. It achieved an area under the curve (AUC) of <strong>0.82</strong>, with odds ratios of 26 in Israel and 40 in the United Kingdom at a 0.5 percent false positive rate. These findings were published in the <em>Journal of the American Medical Informatics Association</em> in 2016 and separately validated at Kaiser Permanente with an odds ratio of 34.7 at 99 percent specificity. ColonFlag was deployed clinically at Geisinger Health System, where it achieved an <strong>eightfold improvement</strong> in cancer detection among patients who completed colonoscopy.</p>
+  <p><strong>Colorectal cancer:</strong> The ColonFlag algorithm was developed using data from 606,403 patients from Maccabi Healthcare Services in Israel and externally validated in 30,674 patients in the United Kingdom. It achieved an area under the curve (AUC) of <strong>0.82</strong>, with odds ratios of 26 in Israel and 40 in the United Kingdom at a 0.5 percent false positive rate. These findings were published in the <em>Journal of the American Medical Informatics Association</em> in 2016 and separately validated at Kaiser Permanente with an odds ratio of 34.7 at 99 percent specificity. ColonFlag was deployed clinically at Geisinger Health System, where it achieved an <strong>eightfold improvement</strong> in cancer detection among patients who completed colonoscopy. <span class="cite-group"><a href="#ref-1" class="cite-link"><sup>1</sup></a>,<a href="#ref-6" class="cite-link"><sup>6</sup></a>,<a href="#ref-8" class="cite-link"><sup>8</sup></a></span></p>
 
-  <p><strong>Lung cancer:</strong> The LungFlag algorithm was validated across 6,505 non-small cell lung cancer cases and 189,597 controls at Kaiser Permanente Southern California. It achieved an AUC of <strong>0.856</strong> in the 9- to 12-month window before clinical diagnosis, with 40.1 percent sensitivity at 95 percent specificity and a diagnostic odds ratio of 12.7. These findings were published in the <em>American Journal of Respiratory and Critical Care Medicine</em> in 2021. The algorithm outperformed both the U.S. Preventive Services Task Force (USPSTF) categorical screening criteria and the PLCOm2012 quantitative risk model.</p>
+  <p><strong>Lung cancer:</strong> The LungFlag algorithm was validated across 6,505 non-small cell lung cancer cases and 189,597 controls at Kaiser Permanente Southern California. It achieved an AUC of <strong>0.856</strong> in the 9- to 12-month window before clinical diagnosis, with 40.1 percent sensitivity at 95 percent specificity and a diagnostic odds ratio of 12.7. These findings were published in the <em>American Journal of Respiratory and Critical Care Medicine</em> in 2021. The algorithm outperformed both the U.S. Preventive Services Task Force (USPSTF) categorical screening criteria and the PLCOm2012 quantitative risk model. <span class="cite-group"><a href="#ref-2" class="cite-link"><sup>2</sup></a></span></p>
 
   <h4>Validated in Large Studies, Awaiting Deployment (2 cancers)</h4>
 
-  <p><strong>Liver cancer (hepatocellular carcinoma):</strong> Validated in a Hong Kong territory-wide study of more than 75,000 patients using a model trained on CBC, liver function, and renal function test values. Achieved <strong>80 percent sensitivity</strong> and <strong>81 percent specificity</strong>, outperforming AFP (the current tumor marker standard) for early-stage detection. These findings were presented at the ESMO Gastrointestinal Oncology Congress in 2025.</p>
+  <p><strong>Liver cancer (hepatocellular carcinoma):</strong> Validated in a Hong Kong territory-wide study of more than 75,000 patients using a model trained on CBC, liver function, and renal function test values. Achieved <strong>80 percent sensitivity</strong> and <strong>81 percent specificity</strong>, outperforming AFP (the current tumor marker standard) for early-stage detection. These findings were presented at the ESMO Gastrointestinal Oncology Congress in 2025. <span class="cite-group"><a href="#ref-3" class="cite-link"><sup>3</sup></a></span></p>
 
-  <p><strong>Gastric cancer:</strong> Validated in a 193,000-patient Hong Kong cohort using machine learning trained on CBC, liver function, and renal function values. Achieved <strong>79 to 96 percent sensitivity</strong>. These findings were presented as an abstract at the American Society of Clinical Oncology annual meeting in 2023.</p>
+  <p><strong>Gastric cancer:</strong> Validated in a 193,000-patient Hong Kong cohort using machine learning trained on CBC, liver function, and renal function values. Achieved <strong>79 to 96 percent sensitivity</strong>. These findings were presented as an abstract at the American Society of Clinical Oncology annual meeting in 2023. <span class="cite-group"><a href="#ref-4" class="cite-link"><sup>4</sup></a></span></p>
 
   <h4>Algorithm Needed, Biology Documented (9 cancers)</h4>
 
-  <p>For the remaining nine cancers, no deployed algorithm yet exists. However, the biological mechanisms by which each cancer alters routine blood chemistry are documented in the peer-reviewed literature, and the methodology for building detection algorithms from this data has been proven through the four cancers above. The Siemens Healthineers "Deep Profiler" model has already demonstrated that a single model analyzing 33 CBC and CMP parameters can simultaneously detect colorectal (AUC 0.76), liver (AUC 0.85), and lung cancer (AUC 0.78), confirming that the multi-cancer, multi-panel approach works.</p>
+  <p>For the remaining nine cancers, no deployed algorithm yet exists. However, the biological mechanisms by which each cancer alters routine blood chemistry are documented in the peer-reviewed literature, and the methodology for building detection algorithms from this data has been proven through the four cancers above. The Siemens Healthineers "Deep Profiler" model has already demonstrated that a single model analyzing 33 CBC and CMP parameters can simultaneously detect colorectal (AUC 0.76), liver (AUC 0.85), and lung cancer (AUC 0.78), confirming that the multi-cancer, multi-panel approach works. <span class="cite-group"><a href="#ref-5" class="cite-link"><sup>5</sup></a></span></p>
 
-  <p><strong>Pancreatic cancer:</strong> Liver enzyme (alkaline phosphatase, GGT) and bilirubin elevation from bile duct compression were documented 6 to 18 months before clinical diagnosis. Glucose rises as the tumor damages insulin-producing cells.</p>
+  <p><strong>Pancreatic cancer:</strong> Liver enzyme (alkaline phosphatase, GGT) and bilirubin elevation from bile duct compression were documented 6 to 18 months before clinical diagnosis. Glucose rises as the tumor damages insulin-producing cells. <span class="cite-group"><a href="#ref-10" class="cite-link"><sup>10</sup></a></span></p>
 
-  <p><strong>Multiple myeloma:</strong> Cross-panel signature documented two to five years before diagnosis: rising total protein, rising calcium, rising creatinine, declining hemoglobin, and declining albumin.</p>
+  <p><strong>Multiple myeloma:</strong> Cross-panel signature documented two to five years before diagnosis: rising total protein, rising calcium, rising creatinine, declining hemoglobin, and declining albumin. <span class="cite-group"><a href="#ref-11" class="cite-link"><sup>11</sup></a></span></p>
 
-  <p><strong>Leukemia:</strong> CBC is already the primary diagnostic tool. Abnormal white blood cell counts, anemia, and thrombocytopenia appear months before clinical diagnosis. Currently detected incidentally; no systematic population screening is in place.</p>
+  <p><strong>Leukemia:</strong> CBC is already the primary diagnostic tool. Abnormal white blood cell counts, anemia, and thrombocytopenia appear months before clinical diagnosis. Currently detected incidentally; no systematic population screening is in place. <span class="cite-group"><a href="#ref-12" class="cite-link"><sup>12</sup></a></span></p>
 
-  <p><strong>Lymphoma:</strong> CBC changes, including elevated white blood cells, anemia, and inflammatory markers, appear months to a year before diagnosis. Often detected through unexpected CBC abnormalities.</p>
+  <p><strong>Lymphoma:</strong> CBC changes, including elevated white blood cells, anemia, and inflammatory markers, appear months to a year before diagnosis. Often detected through unexpected CBC abnormalities. <span class="cite-group"><a href="#ref-12" class="cite-link"><sup>12</sup></a></span></p>
 
-  <p><strong>Ovarian cancer:</strong> Inflammatory signature in CBC and CMP values is detectable before clinical presentation. Multi-cancer early detection research (OncoSeek) confirmed that systemic blood chemistry changes from ovarian tumors are detectable.</p>
+  <p><strong>Ovarian cancer:</strong> Inflammatory signature in CBC and CMP values is detectable before clinical presentation. Multi-cancer early detection research (OncoSeek) confirmed that systemic blood chemistry changes from ovarian tumors are detectable. <span class="cite-group"><a href="#ref-13" class="cite-link"><sup>13</sup></a></span></p>
 
-  <p><strong>Esophageal, bladder, kidney, and thyroid cancers:</strong> Each can produce documented changes in one or more routine blood panels through mechanisms such as chronic blood loss, inflammation, metabolic disruption, or renal and liver involvement. The Pan-Cancer Tumor Inflammation Signature study confirmed that CBC-related inflammatory markers change 6 to 18 months before clinical cancer diagnosis across multiple tumor types.</p>
+  <p><strong>Esophageal, bladder, kidney, and thyroid cancers:</strong> Each can produce documented changes in one or more routine blood panels through mechanisms such as chronic blood loss, inflammation, metabolic disruption, or renal and liver involvement. The Pan-Cancer Tumor Inflammation Signature study confirmed that CBC-related inflammatory markers change 6 to 18 months before clinical cancer diagnosis across multiple tumor types. <span class="cite-group"><a href="#ref-12" class="cite-link"><sup>12</sup></a>,<a href="#ref-13" class="cite-link"><sup>13</sup></a></span></p>
 
   <h2>Part II: How We Calculated the Numbers</h2>
 
@@ -247,7 +248,7 @@ import TotalImpact from '../components/charts/TotalImpact.tsx';
 
   <p>Each estimate is calculated by multiplying three published data points together.</p>
 
-  <p><strong>Step 1: Annual deaths.</strong> We use cancer mortality figures from the American Cancer Society's <em>Cancer Statistics 2024</em>, the most widely cited source for United States cancer mortality data. These numbers are derived from the National Cancer Institute's SEER (Surveillance, Epidemiology, and End Results) database and CDC (Centers for Disease Control and Prevention) death certificate data.</p>
+  <p><strong>Step 1: Annual deaths.</strong> We use cancer mortality figures from the American Cancer Society's <em>Cancer Statistics 2024</em>, the most widely cited source for United States cancer mortality data. These numbers are derived from the National Cancer Institute's SEER (Surveillance, Epidemiology, and End Results) database and CDC (Centers for Disease Control and Prevention) death certificate data. <span class="cite-group"><a href="#ref-6" class="cite-link"><sup>6</sup></a>,<a href="#ref-9" class="cite-link"><sup>9</sup></a></span></p>
 
   <p><strong>Step 2: Stage-shift survival benefit.</strong> We use five-year relative survival rates by stage at diagnosis from the same SEER database. The "stage-shift effect" is the survival improvement gained by detecting cancer at an earlier stage. For example, lung cancer detected at the localized stage has a 60 percent five-year survival rate versus 8 percent for distant-stage disease. The survival benefit from shifting the diagnosis from late to early stage for each cancer is published in <em>Cancer Statistics 2024</em>.</p>
 
@@ -289,7 +290,7 @@ import TotalImpact from '../components/charts/TotalImpact.tsx';
 
   <h3>Why does a single cancer drug cost $2.6 billion while all thirteen algorithms cost $30&ndash;50 million?</h3>
 
-  <p>Cancer drug development requires synthesizing and testing novel chemical compounds, conducting Phase I, II, and III clinical trials involving thousands of patients over 12 to 15 years, managing manufacturing scale-up, and covering the costs of the many drug candidates that fail. The $2.6 billion figure (from published analyses of pharmaceutical R&D costs) includes both direct costs ($1.4 billion) and the opportunity cost of capital over the development timeline ($1.2 billion). Diagnostic algorithms bypass almost all of this; they analyze existing data, utilize computational methods rather than physical experiments, can be validated retrospectively before prospective testing, and follow a simpler regulatory pathway. The cost difference is fundamental, not simply about cutting corners.</p>
+  <p>Cancer drug development requires synthesizing and testing novel chemical compounds, conducting Phase I, II, and III clinical trials involving thousands of patients over 12 to 15 years, managing manufacturing scale-up, and covering the costs of the many drug candidates that fail. The $2.6 billion figure (from published analyses of pharmaceutical R&D costs) includes both direct costs ($1.4 billion) and the opportunity cost of capital over the development timeline ($1.2 billion). Diagnostic algorithms bypass almost all of this; they analyze existing data, utilize computational methods rather than physical experiments, can be validated retrospectively before prospective testing, and follow a simpler regulatory pathway. The cost difference is fundamental, not simply about cutting corners. <span class="cite-group"><a href="#ref-7" class="cite-link"><sup>7</sup></a></span></p>
 
   <h2>Part IV: Non-Cancer Disease Detection</h2>
 
@@ -297,11 +298,11 @@ import TotalImpact from '../components/charts/TotalImpact.tsx';
 
   <p>For the same reason they can detect cancer: chronic diseases change blood chemistry gradually over years, and those changes appear in routine blood panels long before conventional diagnosis. The key difference is that most chronic diseases progress even more slowly than cancer, giving algorithms an even longer detection window.</p>
 
-  <p>Chronic kidney disease alters creatinine, blood urea nitrogen, and albumin over a two- to five-year window before conventional diagnostic thresholds are crossed. Type 2 diabetes affects glucose, A1C, triglycerides, and HDL over a three- to five-year prediabetic phase. Cardiovascular risk is reflected in lipid trends, inflammatory markers on the CBC, and metabolic panel values 5 to 10 years before a heart attack or stroke. Each of these patterns has been demonstrated in peer-reviewed research with published accuracy metrics.</p>
+  <p>Chronic kidney disease alters creatinine, blood urea nitrogen, and albumin over a two- to five-year window before conventional diagnostic thresholds are crossed. Type 2 diabetes affects glucose, A1C, triglycerides, and HDL over a three- to five-year prediabetic phase. Cardiovascular risk is reflected in lipid trends, inflammatory markers on the CBC, and metabolic panel values 5 to 10 years before a heart attack or stroke. Each of these patterns has been demonstrated in peer-reviewed research with published accuracy metrics. <span class="cite-group"><a href="#ref-14" class="cite-link"><sup>14</sup></a>,<a href="#ref-16" class="cite-link"><sup>16</sup></a>,<a href="#ref-17" class="cite-link"><sup>17</sup></a>,<a href="#ref-18" class="cite-link"><sup>18</sup></a></span></p>
 
   <h3>Where do the 300,000&ndash;500,000 "deaths preventable" numbers come from for non-cancer diseases?</h3>
 
-  <p>The calculation follows the same logic as the cancer estimates: annual deaths from each condition, multiplied by the published efficacy of early intervention, multiplied by 50 percent population penetration. The two largest contributors are cardiovascular disease (700,000 annual deaths, with 30 to 40 percent estimated preventable through earlier detection and intervention) and sepsis (270,000 deaths, with mortality reducible from 30 to 10 percent through earlier recognition and treatment). The Diabetes Prevention Program provides the strongest single data point: lifestyle intervention reduces diabetes incidence by <strong>58 percent</strong> in patients identified during the prediabetic phase. For chronic kidney disease, early detection delays dialysis by 5 to 10 years, directly preventing deaths that occur during dialysis-related complications.</p>
+  <p>The calculation follows the same logic as the cancer estimates: annual deaths from each condition, multiplied by the published efficacy of early intervention, multiplied by 50 percent population penetration. The two largest contributors are cardiovascular disease (700,000 annual deaths, with 30 to 40 percent estimated preventable through earlier detection and intervention) and sepsis (270,000 deaths, with mortality reducible from 30 to 10 percent through earlier recognition and treatment). The Diabetes Prevention Program provides the strongest single data point: lifestyle intervention reduces diabetes incidence by <strong>58 percent</strong> in patients identified during the prediabetic phase. For chronic kidney disease, early detection delays dialysis by 5 to 10 years, directly preventing deaths that occur during dialysis-related complications. <span class="cite-group"><a href="#ref-14" class="cite-link"><sup>14</sup></a>,<a href="#ref-16" class="cite-link"><sup>16</sup></a>,<a href="#ref-17" class="cite-link"><sup>17</sup></a>,<a href="#ref-18" class="cite-link"><sup>18</sup></a>,<a href="#ref-20" class="cite-link"><sup>20</sup></a>,<a href="#ref-21" class="cite-link"><sup>21</sup></a></span></p>
 
   <h3>How reliable are the accuracy numbers for non-cancer algorithms?</h3>
 
@@ -309,7 +310,7 @@ import TotalImpact from '../components/charts/TotalImpact.tsx';
 
   <h3>What about the rare diseases: hemochromatosis, Wilson disease, Addison's disease?</h3>
 
-  <p>Yes, and these are among the most compelling cases precisely because they are so rarely caught early. Each of these diseases produces a distinctive blood chemistry signature that is well documented in medical literature. Hemochromatosis shows rising glucose (as iron damages the pancreas), slightly elevated liver enzymes, and declining calcium, 5 to 10 years before cirrhosis develops. Wilson disease shows disproportionate liver enzyme elevation, with declining albumin and rising bilirubin, three to seven years before neurological damage. Addison's disease shows gradually declining sodium, rising potassium, and downward-trending glucose, 6 to 18 months before adrenal crisis. In each case, simple, inexpensive treatment (phlebotomy for hemochromatosis, chelation for Wilson disease, hormone replacement for Addison's) prevents all serious complications when the disease is caught early. An algorithm reading these patterns would be one of the highest-value, lowest-cost interventions in medicine.</p>
+  <p>Yes, and these are among the most compelling cases precisely because they are so rarely caught early. Each of these diseases produces a distinctive blood chemistry signature that is well documented in medical literature. Hemochromatosis shows rising glucose (as iron damages the pancreas), slightly elevated liver enzymes, and declining calcium, 5 to 10 years before cirrhosis develops. Wilson disease shows disproportionate liver enzyme elevation, with declining albumin and rising bilirubin, three to seven years before neurological damage. Addison's disease shows gradually declining sodium, rising potassium, and downward-trending glucose, 6 to 18 months before adrenal crisis. In each case, simple, inexpensive treatment (phlebotomy for hemochromatosis, chelation for Wilson disease, hormone replacement for Addison's) prevents all serious complications when the disease is caught early. An algorithm reading these patterns would be one of the highest-value, lowest-cost interventions in medicine. <span class="cite-group"><a href="#ref-19" class="cite-link"><sup>19</sup></a>,<a href="#ref-20" class="cite-link"><sup>20</sup></a>,<a href="#ref-21" class="cite-link"><sup>21</sup></a>,<a href="#ref-22" class="cite-link"><sup>22</sup></a></span></p>
 
   <h2>Part V: Full-Body MRI as Confirmation</h2>
 
@@ -346,123 +347,99 @@ import TotalImpact from '../components/charts/TotalImpact.tsx';
   <div class="endnotes">
     <h2>References</h2>
 
-    <div class="endnote">
-      <p class="endnote-citation">1. Kinar Y, Kalkstein N, Akiva P, et al. "Development and Validation of a Predictive Model for Detection of Colorectal Cancer in Primary Care by Analysis of Complete Blood Counts: A Binational Retrospective Study." <em>Journal of the American Medical Informatics Association</em> 23:879-890 (2016). <a href="https://doi.org/10.1093/jamia/ocv195" target="_blank" rel="noopener">https://doi.org/10.1093/jamia/ocv195</a></p>
+    <div class="endnote" id="ref-1"><p class="endnote-citation">1. Kinar Y, Kalkstein N, Akiva P, et al. "Development and Validation of a Predictive Model for Detection of Colorectal Cancer in Primary Care by Analysis of Complete Blood Counts: A Binational Retrospective Study." <em>Journal of the American Medical Informatics Association</em> 23:879-890 (2016). <a href="https://doi.org/10.1093/jamia/ocv195" target="_blank" rel="noopener">https://doi.org/10.1093/jamia/ocv195</a></p>
       <p class="endnote-annotation">ColonFlag development and validation study across 606,403 Israeli and 30,674 UK patients achieving AUC 0.82 for colorectal cancer prediction from CBC parameters alone, with odds ratios of 26 (Israel) and 40 (UK) at 0.5% false positive rate and 6- to 24-month detection lead time.</p>
     </div>
 
-    <div class="endnote">
-      <p class="endnote-citation">2. Gould MK, Huang BZ, Tammemagi MC, et al. "Machine Learning for Early Lung Cancer Identification Using Routine Clinical and Laboratory Data." <em>American Journal of Respiratory and Critical Care Medicine</em> 204:445-453 (2021). <a href="https://doi.org/10.1164/rccm.202007-2791oc" target="_blank" rel="noopener">https://doi.org/10.1164/rccm.202007-2791oc</a></p>
+    <div class="endnote" id="ref-2"><p class="endnote-citation">2. Gould MK, Huang BZ, Tammemagi MC, et al. "Machine Learning for Early Lung Cancer Identification Using Routine Clinical and Laboratory Data." <em>American Journal of Respiratory and Critical Care Medicine</em> 204:445-453 (2021). <a href="https://doi.org/10.1164/rccm.202007-2791oc" target="_blank" rel="noopener">https://doi.org/10.1164/rccm.202007-2791oc</a></p>
       <p class="endnote-annotation">LungFlag validation across 6,505 non-small cell lung cancer cases at Kaiser Permanente achieving AUC 0.856 with 9- to 12-month detection lead time, demonstrating that CBC patterns identify lung cancer before imaging would detect a mass.</p>
     </div>
 
-    <div class="endnote">
-      <p class="endnote-citation">3. Kwok KN, Chueng KM, Lam SJL, et al. "Development of a Novel Routine Blood-Based AI Model for Hepatocellular Carcinoma Screening: A Territory-Wide Study." <em>ESMO Gastrointestinal Oncology</em> 10: 100241 (2025). <a href="https://www.esmogastro.org/article/S2949-8198(25)00110-4/fulltext" target="_blank" rel="noopener">https://www.esmogastro.org/article/S2949-8198(25)00110-4/fulltext</a></p>
+    <div class="endnote" id="ref-3"><p class="endnote-citation">3. Kwok KN, Chueng KM, Lam SJL, et al. "Development of a Novel Routine Blood-Based AI Model for Hepatocellular Carcinoma Screening: A Territory-Wide Study." <em>ESMO Gastrointestinal Oncology</em> 10: 100241 (2025). <a href="https://www.esmogastro.org/article/S2949-8198(25)00110-4/fulltext" target="_blank" rel="noopener">https://www.esmogastro.org/article/S2949-8198(25)00110-4/fulltext</a></p>
       <p class="endnote-annotation">Hong Kong territory-wide validation of CBC/LFT/RFT-based AI model for liver cancer detection across 75,000+ patients; achieved 80% sensitivity and 81% specificity, outperforming AFP in early-stage detection.</p>
     </div>
 
-    <div class="endnote">
-      <p class="endnote-citation">4. Wong TCB, Lam SJL, Cheung KM, et al. "AI Blood Signature in Common Blood Tests for Detection of Gastric Cancer in a Cohort of 190,000 Individuals." <em>Journal of Clinical Oncology</em> 41(16_suppl), Abstract 1500 (2023).</p>
+    <div class="endnote" id="ref-4"><p class="endnote-citation">4. Wong TCB, Lam SJL, Cheung KM, et al. "AI Blood Signature in Common Blood Tests for Detection of Gastric Cancer in a Cohort of 190,000 Individuals." <em>Journal of Clinical Oncology</em> 41(16_suppl), Abstract 1500 (2023).</p>
       <p class="endnote-annotation">193,000-patient Hong Kong validation of machine learning model for gastric cancer detection using CBC, LFT, and RFT values, achieving 79 to 96% sensitivity.</p>
     </div>
 
-    <div class="endnote">
-      <p class="endnote-citation">5. Singh V, Chaganti S, Siebert M, et al. "Deep Learning-Based Identification of Patients at Increased Risk of Cancer Using Routine Laboratory Markers." <em>Scientific Reports</em> 15:12661 (2025). <a href="https://doi.org/10.1038/s41598-025-97331-6" target="_blank" rel="noopener">https://doi.org/10.1038/s41598-025-97331-6</a></p>
+    <div class="endnote" id="ref-5"><p class="endnote-citation">5. Singh V, Chaganti S, Siebert M, et al. "Deep Learning-Based Identification of Patients at Increased Risk of Cancer Using Routine Laboratory Markers." <em>Scientific Reports</em> 15:12661 (2025). <a href="https://doi.org/10.1038/s41598-025-97331-6" target="_blank" rel="noopener">https://doi.org/10.1038/s41598-025-97331-6</a></p>
       <p class="endnote-annotation">Siemens Healthineers "Deep Profiler" model validated for simultaneous colorectal (AUC 0.76), liver (AUC 0.85), and lung cancer (AUC 0.78) detection from 33 standard CBC and CMP parameters.</p>
     </div>
 
-    <div class="endnote">
-      <p class="endnote-citation">6. Siegel RL, Giaquinto AN, Jemal A. "Cancer Statistics, 2024." <em>CA: A Cancer Journal for Clinicians</em> 74:12-49 (2024). <a href="https://doi.org/10.3322/caac.21820" target="_blank" rel="noopener">https://doi.org/10.3322/caac.21820</a></p>
+    <div class="endnote" id="ref-6"><p class="endnote-citation">6. Siegel RL, Giaquinto AN, Jemal A. "Cancer Statistics, 2024." <em>CA: A Cancer Journal for Clinicians</em> 74:12-49 (2024). <a href="https://doi.org/10.3322/caac.21820" target="_blank" rel="noopener">https://doi.org/10.3322/caac.21820</a></p>
       <p class="endnote-annotation">Comprehensive annual cancer statistics documenting U.S. cancer mortality by type, stage distribution, and 5-year survival rates. Foundational source for all mortality and stage-shift survival calculations in this document.</p>
     </div>
 
-    <div class="endnote">
-      <p class="endnote-citation">7. DiMasi JA, Grabowski HG, Hansen RW. "Innovation in the Pharmaceutical Industry: New Estimates of R&amp;D Costs." <em>Journal of Health Economics</em> 47:20-33 (2016). <a href="https://doi.org/10.1016/j.jhealeco.2016.01.012" target="_blank" rel="noopener">https://doi.org/10.1016/j.jhealeco.2016.01.012</a></p>
+    <div class="endnote" id="ref-7"><p class="endnote-citation">7. DiMasi JA, Grabowski HG, Hansen RW. "Innovation in the Pharmaceutical Industry: New Estimates of R&amp;D Costs." <em>Journal of Health Economics</em> 47:20-33 (2016). <a href="https://doi.org/10.1016/j.jhealeco.2016.01.012" target="_blank" rel="noopener">https://doi.org/10.1016/j.jhealeco.2016.01.012</a></p>
       <p class="endnote-annotation">Cancer drugs average $2.6 billion total development cost.</p>
     </div>
 
-    <div class="endnote">
-      <p class="endnote-citation">8. Hornbrook MC, Goshen R, Choman E, et al. "Early Colorectal Cancer Detected by Machine Learning Model Using Gender, Age, and Complete Blood Count Data." <em>Digestive Diseases and Sciences</em> 62:2719-2727 (2017). <a href="https://pubmed.ncbi.nlm.nih.gov/28836087" target="_blank" rel="noopener">https://pubmed.ncbi.nlm.nih.gov/28836087</a></p>
+    <div class="endnote" id="ref-8"><p class="endnote-citation">8. Hornbrook MC, Goshen R, Choman E, et al. "Early Colorectal Cancer Detected by Machine Learning Model Using Gender, Age, and Complete Blood Count Data." <em>Digestive Diseases and Sciences</em> 62:2719-2727 (2017). <a href="https://pubmed.ncbi.nlm.nih.gov/28836087" target="_blank" rel="noopener">https://pubmed.ncbi.nlm.nih.gov/28836087</a></p>
       <p class="endnote-annotation">Kaiser Permanente validation of ColonFlag demonstrates an odds ratio of 34.7 at 99% specificity. Among flagged patients completing colonoscopy, 8% had cancer, 22% had advanced adenomas.</p>
     </div>
 
-    <div class="endnote">
-      <p class="endnote-citation">9. American Cancer Society. "Cancer Facts &amp; Figures 2024." American Cancer Society (2024). <a href="https://www.cancer.org/research/cancer-facts-statistics/all-cancer-facts-figures/2024-cancer-facts-figures.html" target="_blank" rel="noopener">https://www.cancer.org/research/cancer-facts-statistics/all-cancer-facts-figures/2024-cancer-facts-figures.html</a></p>
+    <div class="endnote" id="ref-9"><p class="endnote-citation">9. American Cancer Society. "Cancer Facts &amp; Figures 2024." American Cancer Society (2024). <a href="https://www.cancer.org/research/cancer-facts-statistics/all-cancer-facts-figures/2024-cancer-facts-figures.html" target="_blank" rel="noopener">https://www.cancer.org/research/cancer-facts-statistics/all-cancer-facts-figures/2024-cancer-facts-figures.html</a></p>
       <p class="endnote-annotation">Comprehensive epidemiological data on cancer incidence, mortality, and survival in the United States. Source for individual cancer death counts used throughout this document.</p>
     </div>
 
-    <div class="endnote">
-      <p class="endnote-citation">10. Sharma C, Eltawil KM, Renfrew PD, et al. "Advances in Diagnosis, Treatment and Palliation of Pancreatic Carcinoma: 1990-2010." <em>World Journal of Gastroenterology</em> 17:867-897 (2011). <a href="https://doi.org/10.3748/wjg.v17.i7.867" target="_blank" rel="noopener">https://doi.org/10.3748/wjg.v17.i7.867</a></p>
+    <div class="endnote" id="ref-10"><p class="endnote-citation">10. Sharma C, Eltawil KM, Renfrew PD, et al. "Advances in Diagnosis, Treatment and Palliation of Pancreatic Carcinoma: 1990-2010." <em>World Journal of Gastroenterology</em> 17:867-897 (2011). <a href="https://doi.org/10.3748/wjg.v17.i7.867" target="_blank" rel="noopener">https://doi.org/10.3748/wjg.v17.i7.867</a></p>
       <p class="endnote-annotation">Documents the pre-diagnostic blood signature of pancreatic cancer: alkaline phosphatase and GGT rising from bile duct compression, bilirubin increasing, albumin declining, and glucose rising from pancreatic cell damage, 6 to 18 months before clinical diagnosis.</p>
     </div>
 
-    <div class="endnote">
-      <p class="endnote-citation">11. Kyle RA, Gertz MA, Witzig TE, et al. "Review of 1027 Patients with Newly Diagnosed Multiple Myeloma." <em>Mayo Clinic Proceedings</em> 78:21-33 (2003). <a href="https://doi.org/10.4065/78.1.21" target="_blank" rel="noopener">https://doi.org/10.4065/78.1.21</a></p>
+    <div class="endnote" id="ref-11"><p class="endnote-citation">11. Kyle RA, Gertz MA, Witzig TE, et al. "Review of 1027 Patients with Newly Diagnosed Multiple Myeloma." <em>Mayo Clinic Proceedings</em> 78:21-33 (2003). <a href="https://doi.org/10.4065/78.1.21" target="_blank" rel="noopener">https://doi.org/10.4065/78.1.21</a></p>
       <p class="endnote-annotation">Documents the distinctive cross-panel blood signature preceding myeloma: rising total protein, rising calcium, rising creatinine, declining hemoglobin, and declining albumin, appearing 2 to 5 years before clinical diagnosis.</p>
     </div>
 
-    <div class="endnote">
-      <p class="endnote-citation">12. American Cancer Society. "Key Statistics for Leukemia" and "Key Statistics for Non-Hodgkin Lymphoma." American Cancer Society (2024). <a href="https://www.cancer.org/cancer/types/non-hodgkin-lymphoma.html" target="_blank" rel="noopener">https://www.cancer.org/cancer/types/non-hodgkin-lymphoma.html</a></p>
+    <div class="endnote" id="ref-12"><p class="endnote-citation">12. American Cancer Society. "Key Statistics for Leukemia" and "Key Statistics for Non-Hodgkin Lymphoma." American Cancer Society (2024). <a href="https://www.cancer.org/cancer/types/non-hodgkin-lymphoma.html" target="_blank" rel="noopener">https://www.cancer.org/cancer/types/non-hodgkin-lymphoma.html</a></p>
       <p class="endnote-annotation">Projects 62,770 new leukemia cases (23,670 deaths) and 89,190 new lymphoma cases (21,050 deaths) in 2024. Notes CBC as primary diagnostic tool for hematologic malignancies.</p>
     </div>
 
-    <div class="endnote">
-      <p class="endnote-citation">13. Hinestrosa JP, Kurzrock R, Lewis JM, et al. "Early-Stage Multi-Cancer Detection Using an Extracellular Vesicle Protein-Based Blood Test." <em>Communications Medicine</em> 2:29 (2022). <a href="https://doi.org/10.1038/s43856-022-00088-6" target="_blank" rel="noopener">https://doi.org/10.1038/s43856-022-00088-6</a></p>
+    <div class="endnote" id="ref-13"><p class="endnote-citation">13. Hinestrosa JP, Kurzrock R, Lewis JM, et al. "Early-Stage Multi-Cancer Detection Using an Extracellular Vesicle Protein-Based Blood Test." <em>Communications Medicine</em> 2:29 (2022). <a href="https://doi.org/10.1038/s43856-022-00088-6" target="_blank" rel="noopener">https://doi.org/10.1038/s43856-022-00088-6</a></p>
       <p class="endnote-annotation">Pilot study demonstrating that EV protein biomarkers isolated from plasma can detect Stage I and II pancreatic, ovarian, and bladder cancers simultaneously, achieving AUC 0.95 with 71.2% sensitivity at 99.5% specificity.</p>
     </div>
 
-    <div class="endnote">
-      <p class="endnote-citation">14. Ambale-Venkatesh B, Yang X, Wu CO, et al. "Cardiovascular Event Prediction by Machine Learning: The Multi-Ethnic Study of Atherosclerosis." <em>Circulation Research</em> 121:1092-1101 (2017). <a href="https://doi.org/10.1161/CIRCRESAHA.117.311312" target="_blank" rel="noopener">https://doi.org/10.1161/CIRCRESAHA.117.311312</a></p>
+    <div class="endnote" id="ref-14"><p class="endnote-citation">14. Ambale-Venkatesh B, Yang X, Wu CO, et al. "Cardiovascular Event Prediction by Machine Learning: The Multi-Ethnic Study of Atherosclerosis." <em>Circulation Research</em> 121:1092-1101 (2017). <a href="https://doi.org/10.1161/CIRCRESAHA.117.311312" target="_blank" rel="noopener">https://doi.org/10.1161/CIRCRESAHA.117.311312</a></p>
       <p class="endnote-annotation">Machine learning analyzing lipid panels, CMP values, and inflammatory markers predicted cardiovascular events 5 to 10 years before occurrence with AUC 0.78 to 0.82, outperforming the Framingham Risk Score.</p>
     </div>
 
-    <div class="endnote">
-      <p class="endnote-citation">15. Khera AV, Won HH, Peloso GM, et al. "Diagnostic Yield and Clinical Utility of Sequencing Familial Hypercholesterolemia Genes in Patients With Severe Hypercholesterolemia." <em>Journal of the American College of Cardiology</em> 67:2578-2589 (2016). <a href="https://doi.org/10.1016/j.jacc.2016.03.520" target="_blank" rel="noopener">https://doi.org/10.1016/j.jacc.2016.03.520</a></p>
+    <div class="endnote" id="ref-15"><p class="endnote-citation">15. Khera AV, Won HH, Peloso GM, et al. "Diagnostic Yield and Clinical Utility of Sequencing Familial Hypercholesterolemia Genes in Patients With Severe Hypercholesterolemia." <em>Journal of the American College of Cardiology</em> 67:2578-2589 (2016). <a href="https://doi.org/10.1016/j.jacc.2016.03.520" target="_blank" rel="noopener">https://doi.org/10.1016/j.jacc.2016.03.520</a></p>
       <p class="endnote-annotation">Documents the distinctive lipid signature of familial hypercholesterolemia and demonstrates that early statin therapy prevents premature heart attacks in the 30s and 40s.</p>
     </div>
 
-    <div class="endnote">
-      <p class="endnote-citation">16. Knowler WC, Barrett-Connor E, Fowler SE, et al. "Reduction in the Incidence of Type 2 Diabetes with Lifestyle Intervention or Metformin." <em>New England Journal of Medicine</em> 346:393-403 (2002). <a href="https://doi.org/10.1056/NEJMoa012512" target="_blank" rel="noopener">https://doi.org/10.1056/NEJMoa012512</a></p>
+    <div class="endnote" id="ref-16"><p class="endnote-citation">16. Knowler WC, Barrett-Connor E, Fowler SE, et al. "Reduction in the Incidence of Type 2 Diabetes with Lifestyle Intervention or Metformin." <em>New England Journal of Medicine</em> 346:393-403 (2002). <a href="https://doi.org/10.1056/NEJMoa012512" target="_blank" rel="noopener">https://doi.org/10.1056/NEJMoa012512</a></p>
       <p class="endnote-annotation">Landmark Diabetes Prevention Program: 7% weight loss plus 150 minutes weekly exercise reduced diabetes incidence by 58% in prediabetic patients, establishing that early identification enables prevention.</p>
     </div>
 
-    <div class="endnote">
-      <p class="endnote-citation">17. Razavian N, Blecker S, Schmidt AM, et al. "Population-Level Prediction of Type 2 Diabetes from Claims Data and Analysis of Risk Factors." <em>Big Data</em> 3:277-287 (2015). <a href="https://doi.org/10.1089/big.2015.0020" target="_blank" rel="noopener">https://doi.org/10.1089/big.2015.0020</a></p>
+    <div class="endnote" id="ref-17"><p class="endnote-citation">17. Razavian N, Blecker S, Schmidt AM, et al. "Population-Level Prediction of Type 2 Diabetes from Claims Data and Analysis of Risk Factors." <em>Big Data</em> 3:277-287 (2015). <a href="https://doi.org/10.1089/big.2015.0020" target="_blank" rel="noopener">https://doi.org/10.1089/big.2015.0020</a></p>
       <p class="endnote-annotation">Deep learning using routine lab values predicted diabetes onset 3 to 5 years before diagnosis with AUC 0.80, identifying high-risk patients when glucose remained below diagnostic thresholds.</p>
     </div>
 
-    <div class="endnote">
-      <p class="endnote-citation">18. Tangri N, Grams ME, Levey AS, et al. "Multinational Assessment of Accuracy of Equations for Predicting Risk of Kidney Failure: Meta-Analysis." <em>Journal of the American Medical Association</em> 315:164 (2016). <a href="https://doi.org/10.1001/jama.2015.18202" target="_blank" rel="noopener">https://doi.org/10.1001/jama.2015.18202</a></p>
+    <div class="endnote" id="ref-18"><p class="endnote-citation">18. Tangri N, Grams ME, Levey AS, et al. "Multinational Assessment of Accuracy of Equations for Predicting Risk of Kidney Failure: Meta-Analysis." <em>Journal of the American Medical Association</em> 315:164 (2016). <a href="https://doi.org/10.1001/jama.2015.18202" target="_blank" rel="noopener">https://doi.org/10.1001/jama.2015.18202</a></p>
       <p class="endnote-annotation">Machine learning predicting CKD progression from routine CMP values achieved C-statistics of 0.83 to 0.88, enabling Stage 1 to 2 detection years before conventional diagnosis.</p>
     </div>
 
-    <div class="endnote">
-      <p class="endnote-citation">19. Roberts EA, Schilsky ML. "Diagnosis and Treatment of Wilson Disease: An Update." <em>Hepatology</em> 47:2089-2111 (2008). <a href="https://doi.org/10.1002/hep.22261" target="_blank" rel="noopener">https://doi.org/10.1002/hep.22261</a></p>
+    <div class="endnote" id="ref-19"><p class="endnote-citation">19. Roberts EA, Schilsky ML. "Diagnosis and Treatment of Wilson Disease: An Update." <em>Hepatology</em> 47:2089-2111 (2008). <a href="https://doi.org/10.1002/hep.22261" target="_blank" rel="noopener">https://doi.org/10.1002/hep.22261</a></p>
       <p class="endnote-annotation">Documents Wilson disease liver function pattern appearing 3 to 7 years before neurological damage. Early chelation therapy is fully preventive of neurological complications.</p>
     </div>
 
-    <div class="endnote">
-      <p class="endnote-citation">20. Erichsen MM, Lovas K, Skinningsrud B, et al. "Clinical, Immunological, and Genetic Features of Autoimmune Primary Adrenal Insufficiency." <em>Journal of Clinical Endocrinology &amp; Metabolism</em> 94:4882-4890 (2009). <a href="https://doi.org/10.1210/jc.2009-1368" target="_blank" rel="noopener">https://doi.org/10.1210/jc.2009-1368</a></p>
+    <div class="endnote" id="ref-20"><p class="endnote-citation">20. Erichsen MM, Lovas K, Skinningsrud B, et al. "Clinical, Immunological, and Genetic Features of Autoimmune Primary Adrenal Insufficiency." <em>Journal of Clinical Endocrinology &amp; Metabolism</em> 94:4882-4890 (2009). <a href="https://doi.org/10.1210/jc.2009-1368" target="_blank" rel="noopener">https://doi.org/10.1210/jc.2009-1368</a></p>
       <p class="endnote-annotation">Documents Addison's disease CMP pattern: declining sodium, rising potassium, and hypoglycemia appearing 6 to 18 months before adrenal crisis.</p>
     </div>
 
-    <div class="endnote">
-      <p class="endnote-citation">21. Powell LW, Seckington RC, Deugnier Y. "Haemochromatosis." <em>Lancet</em> 388:706-716 (2016). <a href="https://doi.org/10.1016/S0140-6736(15)01315-X" target="_blank" rel="noopener">https://doi.org/10.1016/S0140-6736(15)01315-X</a></p>
+    <div class="endnote" id="ref-21"><p class="endnote-citation">21. Powell LW, Seckington RC, Deugnier Y. "Haemochromatosis." <em>Lancet</em> 388:706-716 (2016). <a href="https://doi.org/10.1016/S0140-6736(15)01315-X" target="_blank" rel="noopener">https://doi.org/10.1016/S0140-6736(15)01315-X</a></p>
       <p class="endnote-annotation">Hemochromatosis creates subtle metabolic CMP patterns 5 to 10 years before cirrhosis. Simple phlebotomy initiated early prevents all organ complications.</p>
     </div>
 
-    <div class="endnote">
-      <p class="endnote-citation">22. Nieman LK, Biller BMK, Findling JW, et al. "The Diagnosis of Cushing's Syndrome: An Endocrine Society Clinical Practice Guideline." <em>Journal of Clinical Endocrinology &amp; Metabolism</em> 93:1526-1540 (2008). <a href="https://doi.org/10.1210/jc.2008-0125" target="_blank" rel="noopener">https://doi.org/10.1210/jc.2008-0125</a></p>
+    <div class="endnote" id="ref-22"><p class="endnote-citation">22. Nieman LK, Biller BMK, Findling JW, et al. "The Diagnosis of Cushing's Syndrome: An Endocrine Society Clinical Practice Guideline." <em>Journal of Clinical Endocrinology &amp; Metabolism</em> 93:1526-1540 (2008). <a href="https://doi.org/10.1210/jc.2008-0125" target="_blank" rel="noopener">https://doi.org/10.1210/jc.2008-0125</a></p>
       <p class="endnote-annotation">Documents Cushing's syndrome CMP and lipid signature appearing years before diagnosis: rising glucose, declining potassium, rising triglycerides, and falling HDL.</p>
     </div>
 
-    <div class="endnote">
-      <p class="endnote-citation">23. Siddiqui MS, Yamada G, Vuppalanchi R, et al. "Diagnostic Accuracy of Noninvasive Fibrosis Models to Detect Change in Fibrosis Stage." <em>Clinical Gastroenterology and Hepatology</em> 17:1877-1885 (2019). <a href="https://doi.org/10.1016/j.cgh.2018.12.031" target="_blank" rel="noopener">https://doi.org/10.1016/j.cgh.2018.12.031</a></p>
+    <div class="endnote" id="ref-23"><p class="endnote-citation">23. Siddiqui MS, Yamada G, Vuppalanchi R, et al. "Diagnostic Accuracy of Noninvasive Fibrosis Models to Detect Change in Fibrosis Stage." <em>Clinical Gastroenterology and Hepatology</em> 17:1877-1885 (2019). <a href="https://doi.org/10.1016/j.cgh.2018.12.031" target="_blank" rel="noopener">https://doi.org/10.1016/j.cgh.2018.12.031</a></p>
       <p class="endnote-annotation">Machine learning analyzing AST/ALT ratios, albumin, bilirubin, and platelet counts detected NAFLD progression to fibrosis 2 to 4 years earlier than conventional criteria, with AUC 0.82.</p>
     </div>
 
-    <div class="endnote">
-      <p class="endnote-citation">24. Lindor KD, Bowlus CL, Boyer J, et al. "Primary Biliary Cholangitis: 2018 Practice Guidance from the American Association for the Study of Liver Diseases." <em>Hepatology</em> 69:394-419 (2019). <a href="https://doi.org/10.1002/hep.30145" target="_blank" rel="noopener">https://doi.org/10.1002/hep.30145</a></p>
+    <div class="endnote" id="ref-24"><p class="endnote-citation">24. Lindor KD, Bowlus CL, Boyer J, et al. "Primary Biliary Cholangitis: 2018 Practice Guidance from the American Association for the Study of Liver Diseases." <em>Hepatology</em> 69:394-419 (2019). <a href="https://doi.org/10.1002/hep.30145" target="_blank" rel="noopener">https://doi.org/10.1002/hep.30145</a></p>
       <p class="endnote-annotation">Documents PBC's distinctive liver function signature years before cirrhosis: gradually rising alkaline phosphatase, increasing GGT, elevated cholesterol, and slowly rising bilirubin.</p>
     </div>
   </div>

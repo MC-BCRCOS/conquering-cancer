@@ -130,66 +130,98 @@ At 200 million annual blood draws per year in the United States, this workflow, 
 
 ## Endnotes
 
-1. Maccabi Healthcare Services. “Our Healthcare System.” [https://www.maccabi4u.co.il/en/46562/main_english/our-healthcare-system/](https://www.maccabi4u.co.il/en/46562/main_english/our-healthcare-system/)
+<span id="ref-1"></span>
+
+1.Maccabi Healthcare Services. “Our Healthcare System.” [https://www.maccabi4u.co.il/en/46562/main_english/our-healthcare-system/](https://www.maccabi4u.co.il/en/46562/main_english/our-healthcare-system/)
 
 *Maccabi Healthcare Services is Israel’s second-largest HMO, providing medical services to approximately 2.7 million members through a system of independent salaried physicians, nationwide facilities, and agreements with all major Israeli hospitals. Included to establish the organizational context for ColonFlag’s deployment.*
 
-2. Goshen R, Choman E, Ran A, et al. “Computer-Assisted Flagging of Individuals at High Risk of Colorectal Cancer in a Large Health Maintenance Organization Using the ColonFlag Test.” *JCO Clin Cancer Inform. *2018;2:1–8. [https://doi.org/10.1200/CCI.17.00130](https://doi.org/10.1200/CCI.17.00130)
+<span id="ref-2"></span>
+
+2.Goshen R, Choman E, Ran A, et al. “Computer-Assisted Flagging of Individuals at High Risk of Colorectal Cancer in a Large Health Maintenance Organization Using the ColonFlag Test.” *JCO Clin Cancer Inform. *2018;2:1–8. [https://doi.org/10.1200/CCI.17.00130](https://doi.org/10.1200/CCI.17.00130)
 
 *Prospective deployment of ColonFlag at Maccabi applied to 79,671 screening-noncompliant patients. Among 254 high-risk individuals who received colonoscopy, 19 colorectal cancers (7.5%) were found. Documents the real-world passive EHR integration model and the 85% physician referral rate following a ColonFlag alert.*
 
-3. Bio-IT World. “Patients Without Traditional Cancer Screening Find Allies in Maccabi and Medial EarlySign.” September 8, 2017. [https://www.bio-itworld.com/news/2017/09/08/patients-without-traditional-cancer-screening-find-allies-in-maccabi-and-medial-earlysign](https://www.bio-itworld.com/news/2017/09/08/patients-without-traditional-cancer-screening-find-allies-in-maccabi-and-medial-earlysign)
+<span id="ref-3"></span>
+
+3.Bio-IT World. “Patients Without Traditional Cancer Screening Find Allies in Maccabi and Medial EarlySign.” September 8, 2017. [https://www.bio-itworld.com/news/2017/09/08/patients-without-traditional-cancer-screening-find-allies-in-maccabi-and-medial-earlysign](https://www.bio-itworld.com/news/2017/09/08/patients-without-traditional-cancer-screening-find-allies-in-maccabi-and-medial-earlysign)
 
 *Trade press account of the Maccabi deployment describing the on-premises server installation, the configurable alert threshold, and Medial EarlySign’s subscription/annual license fee structure. Provides technical and commercial detail on the implementation model.*
 
-4. Kinar Y, Kalkstein N, Akiva P, et al. “Development and Validation of a Predictive Model for Detection of Colorectal Cancer in Primary Care by Analysis of Complete Blood Counts: A Binational Retrospective Study.” *J Am Med Inform Assoc. *2016;23(5):879–890. [https://doi.org/10.1093/jamia/ocv195](https://doi.org/10.1093/jamia/ocv195)
+<span id="ref-4"></span>
+
+4.Kinar Y, Kalkstein N, Akiva P, et al. “Development and Validation of a Predictive Model for Detection of Colorectal Cancer in Primary Care by Analysis of Complete Blood Counts: A Binational Retrospective Study.” *J Am Med Inform Assoc. *2016;23(5):879–890. [https://doi.org/10.1093/jamia/ocv195](https://doi.org/10.1093/jamia/ocv195)
 
 *Original derivation and binational validation of ColonFlag using a gradient boosting and random forest ensemble trained on 20 CBC parameters plus age, sex, and 18- and 36-month trends. Dataset of 606,403 patients from Maccabi and the UK THIN database. AUC 0.82, with detection performance maintained for CBCs taken two years before diagnosis.*
 
-5. MedCity News. “This Israeli Startup Aims to Catch Disease Early with Data Not Diagnostic Tests.” May 2019. [https://medcitynews.com/2019/05/this-israeli-startup-aims-to-catch-disease-early-with-data-not-diagnostic-tests/](https://medcitynews.com/2019/05/this-israeli-startup-aims-to-catch-disease-early-with-data-not-diagnostic-tests/)
+<span id="ref-5"></span>
+
+5.MedCity News. “This Israeli Startup Aims to Catch Disease Early with Data Not Diagnostic Tests.” May 2019. [https://medcitynews.com/2019/05/this-israeli-startup-aims-to-catch-disease-early-with-data-not-diagnostic-tests/](https://medcitynews.com/2019/05/this-israeli-startup-aims-to-catch-disease-early-with-data-not-diagnostic-tests/)
 
 *Interview with Professor Varda Shalev of Maccabi reporting three-year deployment data: ColonFlag applied to approximately 220,000 patients aged 50–75, identifying 1,913 high-risk patients, and detecting 67 confirmed malignancies and 254 adenomatous polyps in the first two years.*
 
-6. Geisinger Health System. “About Geisinger.” [https://www.geisinger.org](https://www.geisinger.org)
+<span id="ref-6"></span>
+
+6.Geisinger Health System. “About Geisinger.” [https://www.geisinger.org](https://www.geisinger.org)
 
 *Official institutional profile of Geisinger Health System confirming service area of over three million patients across 45 Pennsylvania counties, operating ten hospitals and a medical school. Relevant to establishing the scale and integrated nature of the ColonFlag deployment setting.*
 
-7. Davis FD, et al. “Geisinger’s Effort to Realize Its Potential as a Learning Health System.” *Learn Health Syst. *2021;5(2):e10238. [https://doi.org/10.1002/lrh2.10238](https://doi.org/10.1002/lrh2.10238)
+<span id="ref-7"></span>
+
+7.Davis FD, et al. “Geisinger’s Effort to Realize Its Potential as a Learning Health System.” *Learn Health Syst. *2021;5(2):e10238. [https://doi.org/10.1002/lrh2.10238](https://doi.org/10.1002/lrh2.10238)
 
 *Describes Geisinger’s enterprise data infrastructure: EHR records on more than 5.5 million patients dating to 1996, and a Hadoop-based data warehouse aggregating over 100 data sources including Epic. Documents the data environment that made ColonFlag deployment feasible.*
 
-8. Hornbrook MC, Goshen R, Choman E, et al. “Early Colorectal Cancer Detected by Machine Learning Model Using Gender, Age, and Complete Blood Count Data.” *Dig Dis Sci. *2017;62(10):2719–2727. [https://doi.org/10.1007/s10620-017-4722-8](https://doi.org/10.1007/s10620-017-4722-8)
+<span id="ref-8"></span>
+
+8.Hornbrook MC, Goshen R, Choman E, et al. “Early Colorectal Cancer Detected by Machine Learning Model Using Gender, Age, and Complete Blood Count Data.” *Dig Dis Sci. *2017;62(10):2719–2727. [https://doi.org/10.1007/s10620-017-4722-8](https://doi.org/10.1007/s10620-017-4722-8)
 
 *US validation and prospective deployment of ColonFlag at Geisinger Health System and Kaiser Permanente Northwest. Among flagged patients completing colonoscopy at Geisinger, 8% had confirmed colorectal cancer versus 1% in standard screening (eightfold improvement). Confirmed 66% of flagged patients had no clinical suspicion of cancer at the time of the triggering CBC.*
 
-9. Commonwealth Fund. “Geisinger Health System Case Study.” [https://www.commonwealthfund.org/sites/default/files/documents/___media_files_publications_case_study_2009_jun_mccarthy_geisinger_case_study_624_update.pdf](https://www.commonwealthfund.org/publications/case-study/2009/jun/geisinger-health-system)
+<span id="ref-9"></span>
+
+9.Commonwealth Fund. “Geisinger Health System Case Study.” [https://www.commonwealthfund.org/sites/default/files/documents/___media_files_publications_case_study_2009_jun_mccarthy_geisinger_case_study_624_update.pdf](https://www.commonwealthfund.org/publications/case-study/2009/jun/geisinger-health-system)
 
 *Describes Geisinger’s EHR infrastructure and clinical decision support capabilities, including availability across all group-practice sites and more than 2,000 affiliated providers. Documents the alert and patient portal infrastructure through which ColonFlag outputs reach physicians and patients.*
 
-10. Gould MK, Huang BZ, Tammemagi MC, Kinar Y, Shiff R. “Machine Learning for Early Lung Cancer Identification Using Routine Clinical and Laboratory Data.” *Am J Respir Crit Care Med. *2021;204(4):445–453. [https://doi.org/10.1164/rccm.202007-2791OC](https://doi.org/10.1164/rccm.202007-2791OC)
+<span id="ref-10"></span>
+
+10.Gould MK, Huang BZ, Tammemagi MC, Kinar Y, Shiff R. “Machine Learning for Early Lung Cancer Identification Using Routine Clinical and Laboratory Data.” *Am J Respir Crit Care Med. *2021;204(4):445–453. [https://doi.org/10.1164/rccm.202007-2791OC](https://doi.org/10.1164/rccm.202007-2791OC)
 
 *LungFlag validation across 6,505 non-small cell lung cancer cases and 189,597 controls at Kaiser Permanente Southern California. AUC 0.856 in the 9–12-month pre-diagnosis window; 40.1% sensitivity at 95% specificity. Outperformed both USPSTF criteria and the PLCOm2012 risk model.*
 
-11. Roche Diagnostics. “Roche Introduces navify® Algorithm Suite.” Press release, April 11, 2023. [https://www.prnewswire.com/news-releases/roche-introduces-navify-algorithm-suite-a-digital-library-of-medical-algorithms-301793922.html](https://www.prnewswire.com/news-releases/roche-introduces-navify-algorithm-suite-a-digital-library-of-medical-algorithms-301793922.html). See also: navify Algorithm Suite product page: [https://navify.roche.com/marketplace/products/navify-algorithm-suite](https://navify.roche.com/marketplace/products/navify-algorithm-suite)
+<span id="ref-11"></span>
+
+11.Roche Diagnostics. “Roche Introduces navify® Algorithm Suite.” Press release, April 11, 2023. [https://www.prnewswire.com/news-releases/roche-introduces-navify-algorithm-suite-a-digital-library-of-medical-algorithms-301793922.html](https://www.prnewswire.com/news-releases/roche-introduces-navify-algorithm-suite-a-digital-library-of-medical-algorithms-301793922.html). See also: navify Algorithm Suite product page: [https://navify.roche.com/marketplace/products/navify-algorithm-suite](https://navify.roche.com/marketplace/products/navify-algorithm-suite)
 
 *Describes the navify Algorithm Suite as a cloud-based platform integrating ColonFlag and other partner algorithms into hospital and lab EHR/LIS workflows. Offers fully cloud-based, hybrid, and on-premises deployment modes using HL7 v2 and HTTPS/JSON-based APIs. ColonFlag is listed as a founding algorithm alongside GAAD for hepatocellular carcinoma.*
 
-12. Labcorp OnDemand. “Complete Blood Count Test.” Accessed March 2026. [https://www.ondemand.labcorp.com/lab-tests/complete-blood-count](https://www.ondemand.labcorp.com/lab-tests/complete-blood-count)
+<span id="ref-12"></span>
+
+12.Labcorp OnDemand. “Complete Blood Count Test.” Accessed March 2026. [https://www.ondemand.labcorp.com/lab-tests/complete-blood-count](https://www.ondemand.labcorp.com/lab-tests/complete-blood-count)
 
 *Labcorp’s direct-to-consumer CBC with differential listed at $29 on the OnDemand platform as of early 2026. Establishes the baseline out-of-pocket cost for the primary REDI algorithm input panel when ordered without a physician intermediary.*
 
-13. Cost Digest. “Labcorp Blood Work Cost: Pricing to Expect.” [https://costdigest.org/labcorp-blood-work-cost-pricing-expect/](https://costdigest.org/labcorp-blood-work-cost-pricing-expect/)
+<span id="ref-13"></span>
+
+13.Cost Digest. “Labcorp Blood Work Cost: Pricing to Expect.” [https://costdigest.org/labcorp-blood-work-cost-pricing-expect/](https://costdigest.org/labcorp-blood-work-cost-pricing-expect/)
 
 *Provides regional out-of-pocket pricing ranges for Labcorp blood tests. CMP plus lipid panel mid-range scenario: approximately $110–$180. CBC in major metro areas: $25–$70. Useful for patient-facing cost estimates and program cost modeling.*
 
-14. Sehgal NL, et al. “Cost Comparisons of Physician-Ordered Versus Direct-to-Consumer Laboratory Testing.” *J Appl Lab Med. *2024;9(6). [https://doi.org/10.1093/jalm/jfae100](https://pmc.ncbi.nlm.nih.gov/articles/PMC11663041/)
+<span id="ref-14"></span>
+
+14.Sehgal NL, et al. “Cost Comparisons of Physician-Ordered Versus Direct-to-Consumer Laboratory Testing.” *J Appl Lab Med. *2024;9(6). [https://doi.org/10.1093/jalm/jfae100](https://pmc.ncbi.nlm.nih.gov/articles/PMC11663041/)
 
 *Florida hospital pricing data showing a 12-fold difference in cost between physician-ordered and direct-to-consumer CBC. Hospital cash prices for a metabolic profile ranged from $13 to $2,943 across institutions. Documents the extraordinary variation in laboratory pricing and supports the recommendation to use independent labs for self-pay patients.*
 
-15. Medicare.org. “Does Medicare Cover Blood Tests?” Updated 2025. [https://www.medicare.org/articles/does-medicare-cover-blood-tests-2/](https://www.medicare.org/articles/does-medicare-cover-blood-tests-2/)
+<span id="ref-15"></span>
+
+15.Medicare.org. “Does Medicare Cover Blood Tests?” Updated 2025. [https://www.medicare.org/articles/does-medicare-cover-blood-tests-2/](https://www.medicare.org/articles/does-medicare-cover-blood-tests-2/)
 
 *Describes 2025 Medicare Part B coverage for diagnostic blood tests: $185 monthly premium, $257 annual deductible, and zero out-of-pocket cost for most diagnostic lab tests at Medicare-approved facilities once the deductible is met. Confirms LabCorp and Quest accept Medicare assignment at most locations.*
 
-16. APS Medical Billing. “Medicare to Re-implement AMCC Lab Panel Claims.” [https://apsmedbill.com/sites/default/files/whitepaper/amcc_re-implementation.pdf](https://apsmedbill.com/sites/default/files/whitepaper/amcc_re-implementation.pdf) See also: CMS Clinical Laboratory Fee Schedule: [https://www.cms.gov/medicare/payment/fee-schedules/clinical-laboratory-fee-schedule-clfs](https://www.cms.gov/medicare/payment/fee-schedules/clinical-laboratory-fee-schedule-clfs)
+<span id="ref-16"></span>
+
+16.APS Medical Billing. “Medicare to Re-implement AMCC Lab Panel Claims.” [https://apsmedbill.com/sites/default/files/whitepaper/amcc_re-implementation.pdf](https://apsmedbill.com/sites/default/files/whitepaper/amcc_re-implementation.pdf) See also: CMS Clinical Laboratory Fee Schedule: [https://www.cms.gov/medicare/payment/fee-schedules/clinical-laboratory-fee-schedule-clfs](https://www.cms.gov/medicare/payment/fee-schedules/clinical-laboratory-fee-schedule-clfs)
 
 *Explains Medicare’s Automated Multi-channel Chemistry (AMCC) bundling methodology, under which overlapping chemistry analytes across the CMP and lipid panel are not double-counted. Combined Medicare payment for CMP (80053) and lipid panel (80061) ordered together is lower than the sum of individual rates, illustrating the bundled cost structure relevant to REDI’s reimbursement modeling.*

@@ -162,6 +162,40 @@
   color: var(--color-gray-500);
 }
 
+/* Inline citations */
+.cite-group {
+  white-space: nowrap;
+}
+
+.cite-link {
+  color: var(--color-red) !important;
+  text-decoration: none !important;
+  font-weight: 600;
+  transition: color 0.15s;
+}
+
+.cite-link:hover {
+  color: var(--color-red-dark) !important;
+  text-decoration: underline !important;
+}
+
+.cite-link sup {
+  font-size: 0.7em;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  top: -0.5em;
+}
+
+/* Endnote target highlight */
+.endnote:target {
+  background: rgba(237, 31, 36, 0.05);
+  border-left: 3px solid var(--color-red);
+  padding-left: var(--space-4);
+  margin-left: calc(-1 * var(--space-4) - 3px);
+  border-radius: 4px;
+}
+
 .chart-caption {
   margin-top: var(--space-4);
   font-size: var(--text-sm);

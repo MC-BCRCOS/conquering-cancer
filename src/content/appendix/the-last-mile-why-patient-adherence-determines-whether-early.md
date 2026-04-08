@@ -19,10 +19,8 @@ This paper reviews the scope of the adherence problem, its documented causes, th
 
 ## The Scale of the Adherence Problem in Chronic Disease Management
 
-Medical non-adherence is one of the largest preventable causes of illness and death in the United States. Roughly 50 percent of Americans on long-term therapy for chronic disease do not take their medications as prescribed.1 The consequences are staggering: approximately 125,000 deaths per year are attributable to medication non-adherence, along with up to 25 percent of all hospital admissions and an estimated $289 billion to $500 billion in avoidable healthcare costs annually.2
-
-The burden is not evenly distributed. Patients managing cardiovascular disease who do not adhere to their medications experience dramatically worse outcomes. A 2024 global analysis found that a 20 percent improvement in cardiovascular medication adherence correlates with an 8 percent reduction in cardiovascular events and a 12 percent decrease in mortality.3 Medicare patients who missed adherence benchmarks for diabetes, hypertension, and hyperlipidemia faced 21 to 50 percent higher rates of inpatient stays and emergency department visits, along with 11 to 13 percent higher total healthcare costs, compared to adherent patients.4
-
+Medical non-adherence is one of the largest preventable causes of illness and death in the United States. Roughly 50 percent of Americans on long-term therapy for chronic disease do not take their medications as prescribed.[<sup>1</sup>](#ref-1)The consequences are staggering: approximately 125,000 deaths per year are attributable to medication non-adherence, along with up to 25 percent of all hospital admissions and an estimated $289 billion to $500 billion in avoidable healthcare costs annually.[<sup>2</sup>](#ref-2)
+The burden is not evenly distributed. Patients managing cardiovascular disease who do not adhere to their medications experience dramatically worse outcomes. A 2024 global analysis found that a 20 percent improvement in cardiovascular medication adherence correlates with an 8 percent reduction in cardiovascular events and a 12 percent decrease in mortality.[<sup>3</sup>](#ref-3)Medicare patients who missed adherence benchmarks for diabetes, hypertension, and hyperlipidemia faced 21 to 50 percent higher rates of inpatient stays and emergency department visits, along with 11 to 13 percent higher total healthcare costs, compared to adherent patients.[<sup>4</sup>](#ref-4)
 Non-adherence takes several forms. Patients may never fill an initial prescription — so-called primary non-adherence. They may fill a prescription but take the medication inconsistently or stop before the course is complete. They may intentionally modify doses in response to side effects or cost concerns. Or they may simply forget. Each form is driven by a distinct set of barriers and responds differently to intervention.
 
 ## Why Patients Do Not Adhere: A Taxonomy of Barriers
@@ -31,22 +29,19 @@ Research consistently organizes adherence barriers into four interacting domains
 
 ### Patient-Related Factors
 
-The largest category of non-adherence predictors is psychological. Six of the eight most common predictors identified in a 2023 systematic review were rooted in patient psychology and health literacy.5 Patients who do not understand why a medication is necessary, who believe they feel fine without it, or who fear side effects they have read about online are statistically more likely to stop taking it. Nearly 40 percent of patients in one study reported not fully understanding their prescriptions when leaving their physician's office.6
-
+The largest category of non-adherence predictors is psychological. Six of the eight most common predictors identified in a 2023 systematic review were rooted in patient psychology and health literacy.[<sup>5</sup>](#ref-5)Patients who do not understand why a medication is necessary, who believe they feel fine without it, or who fear side effects they have read about online are statistically more likely to stop taking it. Nearly 40 percent of patients in one study reported not fully understanding their prescriptions when leaving their physician's office.[<sup>6</sup>](#ref-6)
 Mental health adds another layer of complexity. Depression and anxiety are associated with significantly lower adherence across virtually every chronic condition studied, creating a cycle: the disease drives psychological distress, which undermines adherence, which worsens the disease. Cognitive decline, particularly among older adults, poses its own challenge. Approximately 40 percent of older adults with mild cognitive impairment struggle with consistent medication management. Polypharmacy — the use of five or more medications simultaneously — doubles the likelihood of adherence difficulties.
 
 ### Therapy-Related Factors
 
-The design of the treatment regimen itself matters. Complex schedules, frequent dosing, and medications with prominent side effects are all independently associated with lower adherence. A 2022 systematic review found that patients who had previously experienced an adverse drug reaction were 50 percent more likely to be non-adherent to subsequent prescriptions.7
-
+The design of the treatment regimen itself matters. Complex schedules, frequent dosing, and medications with prominent side effects are all independently associated with lower adherence. A 2022 systematic review found that patients who had previously experienced an adverse drug reaction were 50 percent more likely to be non-adherent to subsequent prescriptions.[<sup>7</sup>](#ref-7)
 ### Healthcare System Factors
 
-Inadequate patient-provider communication is a systemic adherence barrier. When physicians do not explain the rationale for a treatment, patients are less likely to follow through. Structural barriers — long waits for appointments, poor care coordination across specialists, absence of systematic follow-up — create friction at every step of the care journey.6 Most health systems still lack mechanisms to close the loop after an abnormal screening result or a new prescription is issued.
+Inadequate patient-provider communication is a systemic adherence barrier. When physicians do not explain the rationale for a treatment, patients are less likely to follow through. Structural barriers — long waits for appointments, poor care coordination across specialists, absence of systematic follow-up — create friction at every step of the care journey.[<sup>6</sup>](#ref-6)Most health systems still lack mechanisms to close the loop after an abnormal screening result or a new prescription is issued.
 
 ### Socioeconomic Factors
 
-Cost is among the most powerful adherence barriers. Prescription abandonment rates are below 5 percent when the drug carries no out-of-pocket cost; they rise to 45 percent when the copay exceeds $125 and to 60 percent when it exceeds $500.8 Among low-income patients, some face a literal trade-off between medication and food. Patients who sacrifice basic needs to pay for medication represent one of the highest-risk groups for non-adherence.9
-
+Cost is among the most powerful adherence barriers. Prescription abandonment rates are below 5 percent when the drug carries no out-of-pocket cost; they rise to 45 percent when the copay exceeds $125 and to 60 percent when it exceeds $500.8 Among low-income patients, some face a literal trade-off between medication and food. Patients who sacrifice basic needs to pay for medication represent one of the highest-risk groups for non-adherence.[<sup>9</sup>](#ref-9)
 ## The Last Mile in Cancer: From Risk Flag to Resolved Care
 
 In the context of REDI's early detection algorithms, the last mile is not a single step. It is a sequential journey that a high-risk patient must complete successfully at every stage. A failure at any point forfeits the survival benefit that early detection would otherwise confer.
@@ -71,15 +66,13 @@ Each of these steps is an opportunity for dropout. The clinical literature docum
 
 ### The Follow-Up Failure After Abnormal Screening Results
 
-The failure to follow up after an abnormal screening result is one of the most thoroughly documented problems in cancer medicine. A 2023 NCI-funded clinical trial of nearly 12,000 patients found that fewer than one quarter of patients overdue for follow-up after an abnormal result on a screening test for breast, lung, cervical, or colorectal cancer completed that follow-up testing within four months under usual care.10 Even the most intensive intervention tested — an EHR reminder combined with a letter and a phone call — raised the completion rate to only about one-third.
+The failure to follow up after an abnormal screening result is one of the most thoroughly documented problems in cancer medicine. A 2023 NCI-funded clinical trial of nearly 12,000 patients found that fewer than one quarter of patients overdue for follow-up after an abnormal result on a screening test for breast, lung, cervical, or colorectal cancer completed that follow-up testing within four months under usual care.[<sup>10</sup>](#ref-10)Even the most intensive intervention tested — an EHR reminder combined with a letter and a phone call — raised the completion rate to only about one-third.
 
-For colorectal cancer specifically, the gap between stool-based screening and colonoscopy follow-up is especially concerning. While landmark clinical trials achieved follow-up colonoscopy rates of 80 to 90 percent among stool-test-positive patients, real-world safety-net data tell a different story: only 18 to 56 percent of patients with a positive stool-based test completed follow-up colonoscopy within one year.11 Patients who never complete follow-up colonoscopy after a positive fecal immunochemical test face a two-fold increased risk of dying from colorectal cancer compared to those who do complete the test.12
-
-In many health systems, no mechanism exists to actively track patients who fall out of the follow-up pipeline. Accredited facilities billing Medicare for lung cancer screening must submit data to a registry, but — as a 2021 NEJM commentary noted — there is no requirement that the registry be used to close the loop and ensure follow-up actually occurs.13
-
+For colorectal cancer specifically, the gap between stool-based screening and colonoscopy follow-up is especially concerning. While landmark clinical trials achieved follow-up colonoscopy rates of 80 to 90 percent among stool-test-positive patients, real-world safety-net data tell a different story: only 18 to 56 percent of patients with a positive stool-based test completed follow-up colonoscopy within one year.[<sup>11</sup>](#ref-11)Patients who never complete follow-up colonoscopy after a positive fecal immunochemical test face a two-fold increased risk of dying from colorectal cancer compared to those who do complete the test.[<sup>12</sup>](#ref-12)
+In many health systems, no mechanism exists to actively track patients who fall out of the follow-up pipeline. Accredited facilities billing Medicare for lung cancer screening must submit data to a registry, but — as a 2021 NEJM commentary noted — there is no requirement that the registry be used to close the loop and ensure follow-up actually occurs.[<sup>13</sup>](#ref-13)
 ### Stage Matters: The Survival Stakes of the Last Mile
 
-For the cancers in the REDI portfolio, the survival difference between Stage I and Stage IV is measured in decades, not percentages. Colorectal cancer diagnosed at the localized stage carries a five-year relative survival rate of nearly 90 percent. Diagnosed at the metastatic stage, the five-year survival rate falls to approximately 13 percent.14 A patient whose CBC pattern is flagged as high-risk, who receives a confirmatory colonoscopy, and who has an early-stage tumor removed surgically is overwhelmingly likely to survive. A patient who receives the same risk flag and takes no action will, in a meaningful fraction of cases, present with advanced-stage disease and face a prognosis measured in months.
+For the cancers in the REDI portfolio, the survival difference between Stage I and Stage IV is measured in decades, not percentages. Colorectal cancer diagnosed at the localized stage carries a five-year relative survival rate of nearly 90 percent. Diagnosed at the metastatic stage, the five-year survival rate falls to approximately 13 percent.[<sup>14</sup>](#ref-14)A patient whose CBC pattern is flagged as high-risk, who receives a confirmatory colonoscopy, and who has an early-stage tumor removed surgically is overwhelmingly likely to survive. A patient who receives the same risk flag and takes no action will, in a meaningful fraction of cases, present with advanced-stage disease and face a prognosis measured in months.
 
 This arithmetic makes the last mile not merely a logistical problem but an ethical one. An early detection program that generates risk flags it cannot convert into diagnostic resolution is performing an incomplete service. REDI must devote equal effort to the behavioral and structural infrastructure needed to close the loop.
 
@@ -89,15 +82,12 @@ Four decades of adherence research have produced a substantial body of evidence 
 
 ### Patient Navigation: The Most Consistently Effective Intervention
 
-Patient navigation — the deployment of trained individuals to guide patients through the barriers between a risk signal and completed care — is the most thoroughly studied and consistently effective adherence intervention in oncology. A 2024 systematic review of 59 studies found that 70 percent of studies examining treatment initiation reported significant improvement among navigated patients, 71 percent of studies focused on treatment adherence showed significant gains, and 87 percent of patient satisfaction studies reported meaningful benefit.15
-
-Navigation works by addressing barriers in real time. Navigated patients receive appointment scheduling assistance, transportation support, insurance navigation, translation services, and emotional encouragement. In breast cancer, patients receiving culturally tailored navigation had shorter times from diagnosis to treatment initiation compared to controls — a difference of 17 to 26 days in predominantly low-income populations.16
-
-One randomized trial used predictive modeling to identify patients at highest risk of missing appointments and directed navigators specifically to that group. The no-show rate in the intervention group fell from 17.5 percent to 10.2 percent — a 42 percent relative reduction — and navigator calls that reached a patient directly were associated with the most dramatic improvements.17
-
+Patient navigation — the deployment of trained individuals to guide patients through the barriers between a risk signal and completed care — is the most thoroughly studied and consistently effective adherence intervention in oncology. A 2024 systematic review of 59 studies found that 70 percent of studies examining treatment initiation reported significant improvement among navigated patients, 71 percent of studies focused on treatment adherence showed significant gains, and 87 percent of patient satisfaction studies reported meaningful benefit.[<sup>15</sup>](#ref-15)
+Navigation works by addressing barriers in real time. Navigated patients receive appointment scheduling assistance, transportation support, insurance navigation, translation services, and emotional encouragement. In breast cancer, patients receiving culturally tailored navigation had shorter times from diagnosis to treatment initiation compared to controls — a difference of 17 to 26 days in predominantly low-income populations.[<sup>16</sup>](#ref-16)
+One randomized trial used predictive modeling to identify patients at highest risk of missing appointments and directed navigators specifically to that group. The no-show rate in the intervention group fell from 17.5 percent to 10.2 percent — a 42 percent relative reduction — and navigator calls that reached a patient directly were associated with the most dramatic improvements.[<sup>17</sup>](#ref-17)
 ### Multicomponent and Structural Interventions
 
-The systematic review literature is unambiguous: multicomponent interventions consistently outperform single-component ones. A meta-analysis of 73 randomized trials found that mailed outreach combined with patient navigation improved adherence to repeated stool-based colorectal cancer screening by a larger margin than any single-component intervention.18 Structural interventions — eliminating copays, offering home-based screening options, and providing single-pill combination therapies — are among the most effective at reaching patients who face cost and access barriers.
+The systematic review literature is unambiguous: multicomponent interventions consistently outperform single-component ones. A meta-analysis of 73 randomized trials found that mailed outreach combined with patient navigation improved adherence to repeated stool-based colorectal cancer screening by a larger margin than any single-component intervention.[<sup>18</sup>](#ref-18)Structural interventions — eliminating copays, offering home-based screening options, and providing single-pill combination therapies — are among the most effective at reaching patients who face cost and access barriers.
 
 ### Pharmacist-Led Interventions
 
@@ -109,18 +99,13 @@ The emergence of large language models and conversational AI represents the most
 
 ### What Is Currently Being Studied
 
-The most rigorous completed trial of AI-powered communication in cancer care is the BRIDGE randomized clinical trial (Broadening the Reach, Impact, and Delivery of Genetic Services), conducted at the University of Utah Health and NYU Langone Health between August 2020 and August 2023. The trial enrolled 3,073 patients eligible for cancer genetic evaluation and randomized them to a chatbot-based pretest genetics education program or to standard-of-care genetic counseling appointments.19
+The most rigorous completed trial of AI-powered communication in cancer care is the BRIDGE randomized clinical trial (Broadening the Reach, Impact, and Delivery of Genetic Services), conducted at the University of Utah Health and NYU Langone Health between August 2020 and August 2023. The trial enrolled 3,073 patients eligible for cancer genetic evaluation and randomized them to a chatbot-based pretest genetics education program or to standard-of-care genetic counseling appointments.[<sup>19</sup>](#ref-19)
+The result was a milestone in the field: the chatbot was statistically equivalent to standard-of-care genetic counseling in completion of pretest genetic services (a difference of just 2.0 percentage points, 95% CI −1.1 to 5.0) and in completion of genetic testing (difference of −1.3 percentage points, 95% CI −3.7 to 1.1). This was not merely a satisfactory outcome — it was a proof of concept that a scalable automated system can deliver cancer-related risk communication and service uptake at the same level as a trained human counselor.[<sup>19</sup>](#ref-19)
+Crucially, a secondary analysis of the BRIDGE trial found that social vulnerability — a composite measure of income, housing, employment, and education — did not significantly moderate the chatbot's effectiveness, suggesting that the tool performed comparably across socioeconomic strata.[<sup>20</sup>](#ref-20)The BRIDGE research team has since received additional funding from the National Cancer Institute to study the chatbot specifically in Spanish-speaking women using mobile cancer screening clinics, bringing the tool to patients rather than requiring patients to come to a clinic.
 
-The result was a milestone in the field: the chatbot was statistically equivalent to standard-of-care genetic counseling in completion of pretest genetic services (a difference of just 2.0 percentage points, 95% CI −1.1 to 5.0) and in completion of genetic testing (difference of −1.3 percentage points, 95% CI −3.7 to 1.1). This was not merely a satisfactory outcome — it was a proof of concept that a scalable automated system can deliver cancer-related risk communication and service uptake at the same level as a trained human counselor.19
-
-Crucially, a secondary analysis of the BRIDGE trial found that social vulnerability — a composite measure of income, housing, employment, and education — did not significantly moderate the chatbot's effectiveness, suggesting that the tool performed comparably across socioeconomic strata.20 The BRIDGE research team has since received additional funding from the National Cancer Institute to study the chatbot specifically in Spanish-speaking women using mobile cancer screening clinics, bringing the tool to patients rather than requiring patients to come to a clinic.
-
-A separate 2025 retrospective study from WellSpan Health in Pennsylvania and Maryland examined an AI-powered multilingual phone outreach program for colorectal cancer screening among 1,878 patients, including 517 Spanish-speaking patients who lacked active web-based health profiles. The results challenged conventional assumptions: Spanish-speaking patients demonstrated significantly higher engagement than English-speaking patients across all measures — a 2.6-fold higher FIT test opt-in rate (18.2% vs. 7.1%, p<.001), higher connect rates (69.6% vs. 53.0%, p<.001), and longer call duration. The investigators concluded that language-concordant AI interactions may help address longstanding disparities in preventive care access.21
-
-In the medication adherence domain, a clinical trial of a voice-based conversational AI application for type 2 diabetes patients found that insulin adherence rates were 32.7 percent higher in the AI group compared to standard care.22 AI-driven SMS reminder systems have also demonstrated meaningful improvements: a study using an AI-generated SMS platform showed significantly higher medication refill rates in older patients with non-communicable diseases compared to control groups that received no reminders.22
-
-In oncology patient education, studies report that patients interacting with AI chatbots value the immediacy of responses, the ability to ask the same question multiple times without embarrassment, and the non-judgmental tone. Participants in these studies demonstrated improved recall of information about side effects and were more likely to adhere to recommended screening intervals.23
-
+A separate 2025 retrospective study from WellSpan Health in Pennsylvania and Maryland examined an AI-powered multilingual phone outreach program for colorectal cancer screening among 1,878 patients, including 517 Spanish-speaking patients who lacked active web-based health profiles. The results challenged conventional assumptions: Spanish-speaking patients demonstrated significantly higher engagement than English-speaking patients across all measures — a 2.6-fold higher FIT test opt-in rate (18.2% vs. 7.1%, p<.001), higher connect rates (69.6% vs. 53.0%, p<.001), and longer call duration. The investigators concluded that language-concordant AI interactions may help address longstanding disparities in preventive care access.[<sup>21</sup>](#ref-21)
+In the medication adherence domain, a clinical trial of a voice-based conversational AI application for type 2 diabetes patients found that insulin adherence rates were 32.7 percent higher in the AI group compared to standard care.[<sup>22</sup>](#ref-22)AI-driven SMS reminder systems have also demonstrated meaningful improvements: a study using an AI-generated SMS platform showed significantly higher medication refill rates in older patients with non-communicable diseases compared to control groups that received no reminders.[<sup>22</sup>](#ref-22)
+In oncology patient education, studies report that patients interacting with AI chatbots value the immediacy of responses, the ability to ask the same question multiple times without embarrassment, and the non-judgmental tone. Participants in these studies demonstrated improved recall of information about side effects and were more likely to adhere to recommended screening intervals.[<sup>23</sup>](#ref-23)
 ### Who Is Leading the Research
 
 The field is being advanced by investigators across academia, government, and industry, often in collaboration with major health systems:
@@ -137,16 +122,14 @@ JMIR Publications : The leading peer-reviewed journal ecosystem for digital heal
 
 ### What the Research Shows About Limitations
 
-AI-based adherence tools are not without important caveats. Chatbots that lack robust transparency mechanisms risk allowing patients to believe they are conversing with a human counselor, which raises ethical concerns and can undermine trust when the deception is discovered.23 AI systems trained on non-diverse datasets may perform worse for populations not represented in their training data, potentially widening disparities rather than narrowing them.24
+AI-based adherence tools are not without important caveats. Chatbots that lack robust transparency mechanisms risk allowing patients to believe they are conversing with a human counselor, which raises ethical concerns and can undermine trust when the deception is discovered.[<sup>23</sup>](#ref-23)AI systems trained on non-diverse datasets may perform worse for populations not represented in their training data, potentially widening disparities rather than narrowing them.[<sup>24</sup>](#ref-24)
+The "digital divide" remains real. While smartphone ownership exceeds 95 percent among most U.S. demographic groups, health-app engagement is far lower — particularly among older adults, rural populations, and those with limited digital literacy.[<sup>25</sup>](#ref-25)Among low-income immigrant Latino families, studies show that nearly all parents own smartphones and that frequent text messaging is common, but fewer than 10 percent frequently use health-oriented applications.[<sup>25</sup>](#ref-25)AI tools designed without these patterns in mind will fail the patients who most need them.
 
-The "digital divide" remains real. While smartphone ownership exceeds 95 percent among most U.S. demographic groups, health-app engagement is far lower — particularly among older adults, rural populations, and those with limited digital literacy.25 Among low-income immigrant Latino families, studies show that nearly all parents own smartphones and that frequent text messaging is common, but fewer than 10 percent frequently use health-oriented applications.25 AI tools designed without these patterns in mind will fail the patients who most need them.
-
-A 2025 review in The Lancet European Region highlighted specific concerns about undocumented immigrants, who may avoid engagement with any digital health tool that requires identifying information, due to fear of data disclosure to immigration authorities.26 For REDI, which will serve diverse urban populations with large immigrant communities, these privacy and trust considerations are not peripheral — they are central design constraints.
+A 2025 review in The Lancet European Region highlighted specific concerns about undocumented immigrants, who may avoid engagement with any digital health tool that requires identifying information, due to fear of data disclosure to immigration authorities.[<sup>26</sup>](#ref-26)For REDI, which will serve diverse urban populations with large immigrant communities, these privacy and trust considerations are not peripheral — they are central design constraints.
 
 ### The Direction of the Field
 
-The trajectory of AI in adherence is toward greater personalization, linguistic coverage, and integration with EHR workflows. Natural language processing tools with real-time translation capabilities have shown communication error reductions of 43 percent during clinical encounters, along with 28 percent improvements in patient satisfaction among non-English-speaking populations.27
-
+The trajectory of AI in adherence is toward greater personalization, linguistic coverage, and integration with EHR workflows. Natural language processing tools with real-time translation capabilities have shown communication error reductions of 43 percent during clinical encounters, along with 28 percent improvements in patient satisfaction among non-English-speaking populations.[<sup>27</sup>](#ref-27)
 The next generation of AI adherence tools will likely combine several capabilities that are currently siloed: predictive risk scoring (to identify which patients are most likely to drop out of follow-up), personalized multilingual outreach (tailored to the patient's language, literacy level, and cultural context), real-time EHR integration (to trigger outreach automatically when a high-risk flag is generated), and human escalation protocols (to route the highest-risk patients to a navigator when AI outreach does not produce action).
 
 This is precisely the architecture that REDI needs. The research base to support it exists and is growing. The task now is to build the implementation infrastructure — and to contribute to the research base in ways that specifically address the REDI population: diverse, urban, multilingual, with high rates of uninsurance and socioeconomic disadvantage.
@@ -191,7 +174,7 @@ The REDI Last Mile Division's operational plan must be built around the realitie
 
 ### Component 1: AI-Powered Multilingual Outreach System
 
-REDI should develop or license an AI communication platform capable of conducting patient outreach in at least 12 languages spoken in its target service areas, including Spanish, Mandarin, Cantonese, Bengali, Haitian Creole, Russian, Arabic, Polish, Tagalog, Korean, Yiddish, and Fuzhounese. The WellSpan multilingual AI study demonstrated that Spanish-speaking patients respond to AI phone outreach at 2.6 times the rate of English-speaking patients who receive comparable outreach through standard channels.21 Language-concordant communication is not a courtesy — it is a clinical intervention.
+REDI should develop or license an AI communication platform capable of conducting patient outreach in at least 12 languages spoken in its target service areas, including Spanish, Mandarin, Cantonese, Bengali, Haitian Creole, Russian, Arabic, Polish, Tagalog, Korean, Yiddish, and Fuzhounese. The WellSpan multilingual AI study demonstrated that Spanish-speaking patients respond to AI phone outreach at 2.6 times the rate of English-speaking patients who receive comparable outreach through standard channels.[<sup>21</sup>](#ref-21)Language-concordant communication is not a courtesy — it is a clinical intervention.
 
 The outreach system should use graduated contact: a patient portal message first, followed by an AI-powered phone call in the patient's preferred language, followed by a text message with a direct scheduling link, followed by escalation to a human navigator if no response is received within 14 days. Contact timing should be calibrated to patient work schedules, with evening and weekend outreach available for patients who cannot respond during business hours.
 
@@ -307,118 +290,170 @@ The division should work with the American Cancer Society, ASCO, and the Nationa
 
 The central insight of the Ratner Early Detection Initiative is that the blood tests drawn at routine annual physicals contain diagnostic intelligence that medicine has not yet learned to read systematically. REDI is building the machine learning infrastructure to read them. But reading the signal is only the first step in a longer chain. The survival benefit of early detection is realized only when the patient who is flagged as high-risk completes the journey from notification to diagnostic resolution to definitive treatment.
 
-The evidence reviewed in this paper is sobering. In the best-studied early detection programs in medicine, real-world follow-up rates after abnormal results fall well short of clinical trial rates. In standard care, fewer than one quarter of patients overdue for follow-up after abnormal cancer screening complete that follow-up within four months.10 Half of patients on long-term chronic disease therapy do not take their medications as prescribed.1
-
-These numbers are arguments for building the last-mile infrastructure with the same rigor and ambition that goes into the algorithms themselves. They are also arguments for urgency. The research base now exists to support a serious, well-designed, AI-augmented last-mile program. A multilingual AI phone agent has demonstrated that Spanish-speaking patients engage at rates that exceed English-speaking patients under standard outreach.21 A chatbot-delivered cancer genetics service has proven equivalent to human genetic counseling across 3,073 patients in a rigorous randomized trial.19 Patient navigation reduces no-show rates by 42 percent when targeted to high-risk patients.17
-
+The evidence reviewed in this paper is sobering. In the best-studied early detection programs in medicine, real-world follow-up rates after abnormal results fall well short of clinical trial rates. In standard care, fewer than one quarter of patients overdue for follow-up after abnormal cancer screening complete that follow-up within four months.[<sup>10</sup>](#ref-10)Half of patients on long-term chronic disease therapy do not take their medications as prescribed.[<sup>1</sup>](#ref-1)
+These numbers are arguments for building the last-mile infrastructure with the same rigor and ambition that goes into the algorithms themselves. They are also arguments for urgency. The research base now exists to support a serious, well-designed, AI-augmented last-mile program. A multilingual AI phone agent has demonstrated that Spanish-speaking patients engage at rates that exceed English-speaking patients under standard outreach.[<sup>21</sup>](#ref-21)A chatbot-delivered cancer genetics service has proven equivalent to human genetic counseling across 3,073 patients in a rigorous randomized trial.[<sup>19</sup>](#ref-19)Patient navigation reduces no-show rates by 42 percent when targeted to high-risk patients.[<sup>17</sup>](#ref-17)
 The REDI Last Mile Division — combining AI-powered multilingual outreach, tiered human navigation, behavioral science research, social determinants screening, community partnerships, and policy advocacy — is the organizational structure that can convert REDI's detection capability into population-wide survival benefit. Building it is not an optional enhancement. For a program whose purpose is to save lives, it is the mission.
 
 ## Endnotes
 
-1. Brown MT, Bussell JK. Medication Adherence: WHO Cares? Mayo Clin Proc. 2011;86(4):304-314. [https://doi.org/10.4065/mcp.2010.0575](https://doi.org/10.4065/mcp.2010.0575)
+<span id="ref-1"></span>
+
+1.Brown MT, Bussell JK. Medication Adherence: WHO Cares? Mayo Clin Proc. 2011;86(4):304-314. [https://doi.org/10.4065/mcp.2010.0575](https://doi.org/10.4065/mcp.2010.0575)
 
 *Widely cited synthesis establishing that approximately 50 percent of patients with chronic conditions do not take their medications as prescribed. Establishes the foundational prevalence statistic underpinning the global scale of non-adherence.*
 
-2. McDonnell PJ, Jacobs MR. Hospital Admissions Resulting from Preventable Adverse Drug Reactions. Ann Pharmacother. 2002;36(9):1331-1336. [https://doi.org/10.1345/aph.1A333](https://doi.org/10.1345/aph.1A333)
+<span id="ref-2"></span>
+
+2.McDonnell PJ, Jacobs MR. Hospital Admissions Resulting from Preventable Adverse Drug Reactions. Ann Pharmacother. 2002;36(9):1331-1336. [https://doi.org/10.1345/aph.1A333](https://doi.org/10.1345/aph.1A333)
 
 *Documents that medication non-adherence contributes to approximately 125,000 preventable deaths annually and up to 25 percent of hospital admissions in the United States, establishing the scale of harm that adherence interventions must address.*
 
-3. Kardas P, Bennett B, Borah F, et al. Medication Non-Adherence: Reflecting on Two Decades Since the WHO Adherence Report. Front Pharmacol. 2024;15:1444012. [https://doi.org/10.3389/fphar.2024.1444012](https://doi.org/10.3389/fphar.2024.1444012)
+<span id="ref-3"></span>
+
+3.Kardas P, Bennett B, Borah F, et al. Medication Non-Adherence: Reflecting on Two Decades Since the WHO Adherence Report. Front Pharmacol. 2024;15:1444012. [https://doi.org/10.3389/fphar.2024.1444012](https://doi.org/10.3389/fphar.2024.1444012)
 
 *Twenty-year review of the global medication non-adherence landscape, including quantitative modeling showing that a 20 percent improvement in cardiovascular adherence correlates with an 8 percent reduction in cardiovascular events and 12 percent decrease in mortality.*
 
-4. Boye KS, et al. Medication Adherence Star Ratings Measures, Health Care Resource Utilization, and Cost. Am J Manag Care. 2024;30(5):210-217. [https://doi.org/10.37765/ajmc.2024.89528](https://doi.org/10.37765/ajmc.2024.89528)
+<span id="ref-4"></span>
+
+4.Boye KS, et al. Medication Adherence Star Ratings Measures, Health Care Resource Utilization, and Cost. Am J Manag Care. 2024;30(5):210-217. [https://doi.org/10.37765/ajmc.2024.89528](https://doi.org/10.37765/ajmc.2024.89528)
 
 *Analysis of Medicare Advantage data demonstrating that patients missing adherence benchmarks for diabetes, hypertension, and hyperlipidemia face 21 to 50 percent higher inpatient stay rates and 11 to 13 percent higher total healthcare costs. Directly supports the economic argument for adherence investment.*
 
-5. Aljofan M, Oshibayeva A, Moldaliyev I, et al. The Rate of Medication Nonadherence and Influencing Factors: A Systematic Review. Electron J Gen Med. 2023;20(3):em471. [https://doi.org/10.29333/ejgm/12940](https://doi.org/10.29333/ejgm/12940)
+<span id="ref-5"></span>
+
+5.Aljofan M, Oshibayeva A, Moldaliyev I, et al. The Rate of Medication Nonadherence and Influencing Factors: A Systematic Review. Electron J Gen Med. 2023;20(3):em471. [https://doi.org/10.29333/ejgm/12940](https://doi.org/10.29333/ejgm/12940)
 
 *Systematic review identifying that six of the eight most common predictors of medication non-adherence are rooted in patient psychology and health literacy, rather than cost or logistics. Supports the behavioral science framing of the adherence challenge.*
 
-6. Osterberg L, Blaschke T. Adherence to Medication. N Engl J Med. 2005;353(5):487-497. [https://doi.org/10.1056/NEJMra050100](https://doi.org/10.1056/NEJMra050100)
+<span id="ref-6"></span>
+
+6.Osterberg L, Blaschke T. Adherence to Medication. N Engl J Med. 2005;353(5):487-497. [https://doi.org/10.1056/NEJMra050100](https://doi.org/10.1056/NEJMra050100)
 
 *Authoritative NEJM review of the multidimensional determinants of medication adherence, establishing that inadequate explanation of treatment rationale at the point of prescribing is a primary and correctable driver of non-adherence.*
 
-7. Rolnick SJ, Pawloski PA, Hedblom BD, et al. Patient Characteristics Associated with Medication Adherence. Clin Med Res. 2013;11(2):54-65. [https://doi.org/10.3121/cmr.2013.1113](https://doi.org/10.3121/cmr.2013.1113)
+<span id="ref-7"></span>
+
+7.Rolnick SJ, Pawloski PA, Hedblom BD, et al. Patient Characteristics Associated with Medication Adherence. Clin Med Res. 2013;11(2):54-65. [https://doi.org/10.3121/cmr.2013.1113](https://doi.org/10.3121/cmr.2013.1113)
 
 *Large retrospective study establishing therapy-related factors — including adverse drug reactions, dosing frequency, and side effect burden — as major independent contributors to medication non-adherence across multiple chronic disease categories.*
 
-8. Fischer MA, Stedman MR, Lii J, et al. Primary Medication Non-Adherence: Analysis of 195,930 Electronic Prescriptions. J Gen Intern Med. 2010;25(4):284-290. [https://doi.org/10.1007/s11606-010-1253-9](https://doi.org/10.1007/s11606-010-1253-9)
+<span id="ref-8"></span>
+
+8.Fischer MA, Stedman MR, Lii J, et al. Primary Medication Non-Adherence: Analysis of 195,930 Electronic Prescriptions. J Gen Intern Med. 2010;25(4):284-290. [https://doi.org/10.1007/s11606-010-1253-9](https://doi.org/10.1007/s11606-010-1253-9)
 
 *Large-scale electronic prescription analysis demonstrating the dramatic dose-response relationship between out-of-pocket cost and prescription abandonment — below 5 percent at zero cost, rising to 60 percent when copays exceed $500.*
 
-9. Rohatgi KW, Humble S, Hollar L, et al. Medication Adherence and Characteristics of Patients Who Spend Less on Basic Needs to Afford Medications. J Am Board Fam Med. 2021;34(3):561-570. [https://doi.org/10.3122/jabfm.2021.03.200361](https://doi.org/10.3122/jabfm.2021.03.200361)
+<span id="ref-9"></span>
+
+9.Rohatgi KW, Humble S, Hollar L, et al. Medication Adherence and Characteristics of Patients Who Spend Less on Basic Needs to Afford Medications. J Am Board Fam Med. 2021;34(3):561-570. [https://doi.org/10.3122/jabfm.2021.03.200361](https://doi.org/10.3122/jabfm.2021.03.200361)
 
 *Survey of low-income adults documenting the trade-off between medication cost and basic subsistence needs, identifying patients who sacrifice food or housing to pay for medications as a high-risk group for non-adherence with implications for health system design.*
 
-10. Atlas SJ, Tosteson TD, Lowenstein LM, et al. Effect of Reminders and Outreach on Follow-Up of Abnormal Cancer Screening Results. JAMA. 2023;330(14):1357-1366. [https://doi.org/10.1001/jama.2023.17594](https://doi.org/10.1001/jama.2023.17594)
+<span id="ref-10"></span>
+
+10.Atlas SJ, Tosteson TD, Lowenstein LM, et al. Effect of Reminders and Outreach on Follow-Up of Abnormal Cancer Screening Results. JAMA. 2023;330(14):1357-1366. [https://doi.org/10.1001/jama.2023.17594](https://doi.org/10.1001/jama.2023.17594)
 
 *NCI-funded randomized trial of nearly 12,000 patients at 44 practices demonstrating that fewer than 25 percent of patients overdue for follow-up after abnormal cancer screening completed testing under usual care — the most direct evidence for the scale of the last-mile failure.*
 
-11. Robertson DJ, Lee JK, Boland CR, et al. Recommendations on Fecal Immunochemical Testing to Screen for Colorectal Neoplasia: A Consensus Statement. Gastroenterology. 2017;152(5):1217-1237. [https://doi.org/10.1053/j.gastro.2016.08.053](https://doi.org/10.1053/j.gastro.2016.08.053)
+<span id="ref-11"></span>
+
+11.Robertson DJ, Lee JK, Boland CR, et al. Recommendations on Fecal Immunochemical Testing to Screen for Colorectal Neoplasia: A Consensus Statement. Gastroenterology. 2017;152(5):1217-1237. [https://doi.org/10.1053/j.gastro.2016.08.053](https://doi.org/10.1053/j.gastro.2016.08.053)
 
 *Consensus statement establishing that real-world colonoscopy completion rates after a positive fecal immunochemical test fall far short of clinical trial rates, with safety-net data showing only 18 to 56 percent follow-through within one year.*
 
-12. Zorzi M, Battagello J, Selby K, et al. Non-Compliance with Colonoscopy after a Positive Faecal Immunochemical Test Doubles the Risk of Dying from Colorectal Cancer. Gut. 2022;71(3):561-567. [https://doi.org/10.1136/gutjnl-2020-323688](https://doi.org/10.1136/gutjnl-2020-323688)
+<span id="ref-12"></span>
+
+12.Zorzi M, Battagello J, Selby K, et al. Non-Compliance with Colonoscopy after a Positive Faecal Immunochemical Test Doubles the Risk of Dying from Colorectal Cancer. Gut. 2022;71(3):561-567. [https://doi.org/10.1136/gutjnl-2020-323688](https://doi.org/10.1136/gutjnl-2020-323688)
 
 *Population-based study demonstrating that failure to complete follow-up colonoscopy after a positive stool test doubles the risk of colorectal cancer death — the most direct evidence for the lethal cost of last-mile failure in cancer screening.*
 
-13. Doubeni CA, Corley DA, Quinn VP, et al. Expanded Lung and Colorectal Cancer Screening — Ensuring Equity and Safety Under New Guidelines. N Engl J Med. 2021;385(24):2237-2242. [https://doi.org/10.1056/NEJMp2113332](https://doi.org/10.1056/NEJMp2113332)
+<span id="ref-13"></span>
+
+13.Doubeni CA, Corley DA, Quinn VP, et al. Expanded Lung and Colorectal Cancer Screening — Ensuring Equity and Safety Under New Guidelines. N Engl J Med. 2021;385(24):2237-2242. [https://doi.org/10.1056/NEJMp2113332](https://doi.org/10.1056/NEJMp2113332)
 
 *NEJM perspective identifying structural gaps in cancer screening follow-up, including the absence of mandatory mechanisms to ensure patients act on abnormal results and the lack of reimbursement for patient navigators in preventive care programs.*
 
-14. Siegel RL, Miller KD, Wagle NS, Jemal A. Cancer Statistics, 2023. CA Cancer J Clin. 2023;73(1):17-48. [https://doi.org/10.3322/caac.21763](https://doi.org/10.3322/caac.21763)
+<span id="ref-14"></span>
+
+14.Siegel RL, Miller KD, Wagle NS, Jemal A. Cancer Statistics, 2023. CA Cancer J Clin. 2023;73(1):17-48. [https://doi.org/10.3322/caac.21763](https://doi.org/10.3322/caac.21763)
 
 *Annual American Cancer Society statistics documenting stage-specific survival rates for all major cancers, including the stark survival differential between localized (90%) and metastatic (13%) colorectal cancer. Provides the quantitative stakes of the last-mile problem.*
 
-15. Battaglia TA, Bak SM, Heeren T, et al. Patient Navigation in Cancer Treatment: A Systematic Review. Curr Oncol Rep. 2024;26(5):452-464. [https://doi.org/10.1007/s11912-024-01514-9](https://doi.org/10.1007/s11912-024-01514-9)
+<span id="ref-15"></span>
+
+15.Battaglia TA, Bak SM, Heeren T, et al. Patient Navigation in Cancer Treatment: A Systematic Review. Curr Oncol Rep. 2024;26(5):452-464. [https://doi.org/10.1007/s11912-024-01514-9](https://doi.org/10.1007/s11912-024-01514-9)
 
 *Systematic review of 59 studies finding that 70 percent showed improved cancer treatment initiation, 71 percent improved adherence, and 87 percent improved patient satisfaction among navigated patients. The strongest available evidence base for patient navigation as a last-mile intervention.*
 
-16. Chan RJ, Johal H, Crawford-Williams F, et al. Patient Navigation Across the Cancer Care Continuum: An Overview of Systematic Reviews. CA Cancer J Clin. 2023;73(6):561-589. [https://doi.org/10.3322/caac.21788](https://doi.org/10.3322/caac.21788)
+<span id="ref-16"></span>
+
+16.Chan RJ, Johal H, Crawford-Williams F, et al. Patient Navigation Across the Cancer Care Continuum: An Overview of Systematic Reviews. CA Cancer J Clin. 2023;73(6):561-589. [https://doi.org/10.3322/caac.21788](https://doi.org/10.3322/caac.21788)
 
 *Umbrella review of 26 systematic reviews synthesizing evidence from 172 primary studies, finding strong evidence that patient navigation improves cancer screening rates and reduces time from diagnosis to treatment initiation, including in diverse and disadvantaged populations.*
 
-17. Lasser KE, Murillo J, Medlin E, et al. Patient Navigation Based on Predictive Modeling Decreases No-Show Rates in Cancer Care. Cancer. 2015;121(10):1662-1670. [https://doi.org/10.1002/cncr.29236](https://doi.org/10.1002/cncr.29236)
+<span id="ref-17"></span>
+
+17.Lasser KE, Murillo J, Medlin E, et al. Patient Navigation Based on Predictive Modeling Decreases No-Show Rates in Cancer Care. Cancer. 2015;121(10):1662-1670. [https://doi.org/10.1002/cncr.29236](https://doi.org/10.1002/cncr.29236)
 
 *Randomized trial demonstrating that telephone navigation targeted at patients predicted to be at highest no-show risk reduced missed appointment rates from 17.5 percent to 10.2 percent — a 42 percent relative reduction — using a predictive model to allocate navigator resources efficiently.*
 
-18. Holden DJ, Jonas DE, Porterfield DS, et al. Systematic Review: Enhancing the Use and Quality of Colorectal Cancer Screening. Ann Intern Med. 2010;152(10):668-676. [https://doi.org/10.7326/0003-4819-152-10-201005180-00239](https://doi.org/10.7326/0003-4819-152-10-201005180-00239)
+<span id="ref-18"></span>
+
+18.Holden DJ, Jonas DE, Porterfield DS, et al. Systematic Review: Enhancing the Use and Quality of Colorectal Cancer Screening. Ann Intern Med. 2010;152(10):668-676. [https://doi.org/10.7326/0003-4819-152-10-201005180-00239](https://doi.org/10.7326/0003-4819-152-10-201005180-00239)
 
 *Meta-analysis of 73 randomized trials establishing that multicomponent interventions — combining mailed outreach, patient reminders, and navigation — consistently outperform single-component approaches in improving cancer screening adherence. Establishes the evidence base for bundled last-mile interventions.*
 
-19. Kaphingst KA, Kohlmann WK, Lorenz Chambers R, et al. Uptake of Cancer Genetic Services for Chatbot vs Standard-of-Care Delivery Models: The BRIDGE Randomized Clinical Trial. JAMA Netw Open. 2024;7(9):e2432143. [https://doi.org/10.1001/jamanetworkopen.2024.32143](https://doi.org/10.1001/jamanetworkopen.2024.32143)
+<span id="ref-19"></span>
+
+19.Kaphingst KA, Kohlmann WK, Lorenz Chambers R, et al. Uptake of Cancer Genetic Services for Chatbot vs Standard-of-Care Delivery Models: The BRIDGE Randomized Clinical Trial. JAMA Netw Open. 2024;7(9):e2432143. [https://doi.org/10.1001/jamanetworkopen.2024.32143](https://doi.org/10.1001/jamanetworkopen.2024.32143)
 
 *Landmark equivalence trial of 3,073 patients demonstrating that a chatbot-based cancer genetics education program was statistically equivalent to standard-of-care human genetic counseling for completion of pretest services and genetic testing — a proof of concept for scalable AI-delivered cancer risk communication.*
 
-20. Bather JR, Goodman MS, Harris A, et al. Social Vulnerability, Chatbots, and Genetic Service Utilization Among Unaffected Patients with Inherited Cancer Susceptibility in the BRIDGE Trial. BMC Cancer. 2025;25:180. [https://doi.org/10.1186/s12885-025-13495-4](https://doi.org/10.1186/s12885-025-13495-4)
+<span id="ref-20"></span>
+
+20.Bather JR, Goodman MS, Harris A, et al. Social Vulnerability, Chatbots, and Genetic Service Utilization Among Unaffected Patients with Inherited Cancer Susceptibility in the BRIDGE Trial. BMC Cancer. 2025;25:180. [https://doi.org/10.1186/s12885-025-13495-4](https://doi.org/10.1186/s12885-025-13495-4)
 
 *Secondary analysis of the BRIDGE trial finding that social vulnerability did not significantly moderate chatbot effectiveness, suggesting AI-delivered genetic counseling performs comparably across socioeconomic strata. Critical evidence for deploying AI tools in disadvantaged urban populations.*
 
-21. Bhimani M, Baker RH, Ausin MS, et al. Using a Multilingual AI Care Agent to Reduce Disparities in Colorectal Cancer Screening. J Med Internet Res. 2025;27:e71211. [https://doi.org/10.2196/71211](https://doi.org/10.2196/71211)
+<span id="ref-21"></span>
+
+21.Bhimani M, Baker RH, Ausin MS, et al. Using a Multilingual AI Care Agent to Reduce Disparities in Colorectal Cancer Screening. J Med Internet Res. 2025;27:e71211. [https://doi.org/10.2196/71211](https://doi.org/10.2196/71211)
 
 *Retrospective study of 1,878 patients at WellSpan Health demonstrating that Spanish-speaking patients showed 2.6-fold higher FIT test opt-in rates than English-speaking patients when reached by a multilingual AI conversational agent, challenging assumptions about digital tool effectiveness in non-English-speaking populations.*
 
-22. Digital Interventions in Medication Adherence: A Narrative Review of Current Evidence and Challenges. PMC. 2024. [https://pmc.ncbi.nlm.nih.gov/articles/PMC12549263/](https://pmc.ncbi.nlm.nih.gov/articles/PMC12549263/)
+<span id="ref-22"></span>
+
+22.Digital Interventions in Medication Adherence: A Narrative Review of Current Evidence and Challenges. PMC. 2024. [https://pmc.ncbi.nlm.nih.gov/articles/PMC12549263/](https://pmc.ncbi.nlm.nih.gov/articles/PMC12549263/)
 
 *Narrative review synthesizing evidence that AI voice applications improved insulin adherence by 32.7 percent over standard care, and that AI-generated SMS reminders significantly improved medication refill rates in older patients with chronic conditions — establishing the effectiveness hierarchy of digital adherence tools.*
 
-23. Thind BS, Tsao CK. Artificial Intelligence in Oncology: Promise, Peril, and the Future of Patient-Physician Interaction. Front Digit Health. 2025;7:1633577. [https://doi.org/10.3389/fdgth.2025.1633577](https://doi.org/10.3389/fdgth.2025.1633577)
+<span id="ref-23"></span>
+
+23.Thind BS, Tsao CK. Artificial Intelligence in Oncology: Promise, Peril, and the Future of Patient-Physician Interaction. Front Digit Health. 2025;7:1633577. [https://doi.org/10.3389/fdgth.2025.1633577](https://doi.org/10.3389/fdgth.2025.1633577)
 
 *Comprehensive review of AI tools in oncology care, documenting that patients value AI chatbots for immediacy, non-judgmental tone, and ability to ask questions repeatedly. Also documents transparency and misinformation risks that require design safeguards in any patient-facing AI adherence tool.*
 
-24. Frontiers. A Critical Look into Artificial Intelligence and Healthcare Disparities. Front Artif Intell. 2025. [https://doi.org/10.3389/frai.2025.1545869](https://doi.org/10.3389/frai.2025.1545869)
+<span id="ref-24"></span>
+
+24.Frontiers. A Critical Look into Artificial Intelligence and Healthcare Disparities. Front Artif Intell. 2025. [https://doi.org/10.3389/frai.2025.1545869](https://doi.org/10.3389/frai.2025.1545869)
 
 *Critical analysis of AI in healthcare disparities, documenting that AI systems trained on non-diverse datasets may perform worse for underrepresented populations — a specific risk for tools deployed in diverse urban environments without careful attention to training data representation.*
 
-25. López-Cevallos D, et al. Information and Communication Technology Access and Use Among Low-Income Latino Immigrant Parents. Matern Child Health J. 2021. [https://doi.org/10.1007/s10995-021-03265-6](https://doi.org/10.1007/s10995-021-03265-6)
+<span id="ref-25"></span>
+
+25.López-Cevallos D, et al. Information and Communication Technology Access and Use Among Low-Income Latino Immigrant Parents. Matern Child Health J. 2021. [https://doi.org/10.1007/s10995-021-03265-6](https://doi.org/10.1007/s10995-021-03265-6)
 
 *Survey study finding that nearly all low-income Latino immigrant parents own smartphones and use text messaging frequently, but fewer than 10 percent use health-oriented applications — establishing the gap between device ownership and health-app engagement that AI adherence tools must bridge.*
 
-26. Takian A, Zaman MH, et al. Artificial Intelligence in Migrant Health: A Critical Perspective on Opportunities and Risks. Lancet Reg Health Eur. 2025;57:101421. [https://doi.org/10.1016/j.lanepe.2025.101421](https://doi.org/10.1016/j.lanepe.2025.101421)
+<span id="ref-26"></span>
+
+26.Takian A, Zaman MH, et al. Artificial Intelligence in Migrant Health: A Critical Perspective on Opportunities and Risks. Lancet Reg Health Eur. 2025;57:101421. [https://doi.org/10.1016/j.lanepe.2025.101421](https://doi.org/10.1016/j.lanepe.2025.101421)
 
 *Critical review documenting that undocumented immigrants avoid digital health tools that require identifying information due to fear of data disclosure to immigration authorities — a central design constraint for AI adherence programs serving diverse urban populations including immigrant communities.*
 
-27. Bridging the Digital Divide: Artificial Intelligence as a Catalyst for Health Equity in Primary Care Settings. ScienceDirect. 2025. [https://doi.org/10.1016/j.ijmedinf.2025.001](https://doi.org/10.1016/j.ijmedinf.2025.001)
+<span id="ref-27"></span>
+
+27.Bridging the Digital Divide: Artificial Intelligence as a Catalyst for Health Equity in Primary Care Settings. ScienceDirect. 2025. [https://doi.org/10.1016/j.ijmedinf.2025.001](https://doi.org/10.1016/j.ijmedinf.2025.001)
 
 *Narrative review finding that AI-based translation tools reduced communication errors by 43 percent during clinical encounters and improved patient satisfaction by 28 percent among non-English-speaking populations — demonstrating the clinical value of linguistically appropriate AI communication tools.*

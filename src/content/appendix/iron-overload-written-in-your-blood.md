@@ -7,13 +7,12 @@ date: "April 2026"
 
 Disease Detection Series • Hemochromatosis
 
-Hereditary hemochromatosis affects approximately 1 in 200 to 1 in 300 adults of Northern European descent in the United States, making it one of the most common genetic disorders on the continent. Most patients are diagnosed only after irreversible organ damage has occurred. Yet the blood signature of iron overload is measurable on routine metabolic and hematological panels for decades before cirrhosis, diabetes, or cardiomyopathy develops. Treatment is phlebotomy: simple, inexpensive, and fully curative when started before organ damage.1
-
+Hereditary hemochromatosis affects approximately 1 in 200 to 1 in 300 adults of Northern European descent in the United States, making it one of the most common genetic disorders on the continent. Most patients are diagnosed only after irreversible organ damage has occurred. Yet the blood signature of iron overload is measurable on routine metabolic and hematological panels for decades before cirrhosis, diabetes, or cardiomyopathy develops. Treatment is phlebotomy: simple, inexpensive, and fully curative when started before organ damage.[<sup>1</sup>](#ref-1)
 Patients diagnosed before cirrhosis achieve normal life expectancy. Those diagnosed after face a 219-fold increased risk of liver cancer. The difference is when the blood was read.
 
 ## The Treatment Effect That Makes Early Detection Urgent
 
-Niederau and colleagues demonstrated in a landmark *New England Journal of Medicine* cohort study that patients with haemochromatosis treated before the development of cirrhosis had survival equivalent to that of age-matched controls. Those diagnosed after cirrhosis had liver cancer risk 219 times higher and cardiomyopathy risk 306 times higher.2 The HEIRS Study, screening more than 100,000 individuals across North America, confirmed that transferrin saturation and serum ferritin identify C282Y homozygotes with 75 percent sensitivity at a specificity that supports population-level screening.3 Phlebotomy removes 200 to 250 mg of iron per session and costs less than $50, preventing every downstream complication when started early.
+Niederau and colleagues demonstrated in a landmark *New England Journal of Medicine* cohort study that patients with haemochromatosis treated before the development of cirrhosis had survival equivalent to that of age-matched controls. Those diagnosed after cirrhosis had liver cancer risk 219 times higher and cardiomyopathy risk 306 times higher.[<sup>2</sup>](#ref-2)The HEIRS Study, screening more than 100,000 individuals across North America, confirmed that transferrin saturation and serum ferritin identify C282Y homozygotes with 75 percent sensitivity at a specificity that supports population-level screening.[<sup>3</sup>](#ref-3)Phlebotomy removes 200 to 250 mg of iron per session and costs less than $50, preventing every downstream complication when started early.
 
 ## The Signature in the Blood
 
@@ -23,7 +22,7 @@ The mechanism is a single point of failure: *HFE* gene mutations impair hepcidin
 
 ## The Machine Learning Case
 
-Martins Conde and colleagues applied XGBoost to 254 hereditary haemochromatosis cases and 701 controls from the HEIRS family study, using serum iron, ferritin, transferrin saturation, MCV, ALT, AST, and *HFE* genotype as features. The algorithm achieved an area under the curve (AUC) of 0.94 in 10-fold stratified cross-validation, significantly outperforming the IRON screening score, the only previously available clinical tool.4 The multi-variable approach captures what thresholds cannot: a ferritin of 310 ng/mL with a rising trajectory, concurrently with drifting ALT and glucose, signals iron overload risk far more reliably than any single value alert.
+Martins Conde and colleagues applied XGBoost to 254 hereditary haemochromatosis cases and 701 controls from the HEIRS family study, using serum iron, ferritin, transferrin saturation, MCV, ALT, AST, and *HFE* genotype as features. The algorithm achieved an area under the curve (AUC) of 0.94 in 10-fold stratified cross-validation, significantly outperforming the IRON screening score, the only previously available clinical tool.[<sup>4</sup>](#ref-4)The multi-variable approach captures what thresholds cannot: a ferritin of 310 ng/mL with a rising trajectory, concurrently with drifting ALT and glucose, signals iron overload risk far more reliably than any single value alert.
 
 ## What This Proves
 
@@ -31,22 +30,30 @@ Haemochromatosis leaves a measurable, progressive signature on routine metabolic
 
 ## Endnotes
 
-1. Powell LW, Seckington RC, Deugnier Y. "Haemochromatosis." *Lancet*. 2016;388(10045):706–716.
+<span id="ref-1"></span>
+
+1.Powell LW, Seckington RC, Deugnier Y. "Haemochromatosis." *Lancet*. 2016;388(10045):706–716.
 
 
 Comprehensive Lancet review of hereditary haemochromatosis. Establishes prevalence in Northern European populations, the decades-long pre-clinical window in which transferrin saturation is measurable, and that phlebotomy initiated before cirrhosis restores normal life expectancy. Primary reference for disease biology and the *HFE* mutation mechanism.
 
-2. Niederau C, Fischer R, Sonnenberg A, Stremmel W, Trampisch HJ, Strohmeyer G. "Survival and Causes of Death in Cirrhotic and in Noncirrhotic Patients with Primary Hemochromatosis." *N Engl J Med*. 1985;313(20):1256–1262.
+<span id="ref-2"></span>
+
+2.Niederau C, Fischer R, Sonnenberg A, Stremmel W, Trampisch HJ, Strohmeyer G. "Survival and Causes of Death in Cirrhotic and in Noncirrhotic Patients with Primary Hemochromatosis." *N Engl J Med*. 1985;313(20):1256–1262.
 
 
 Landmark cohort demonstrating that hereditary haemochromatosis patients treated before cirrhosis achieve normal life expectancy, while those diagnosed after face 219-fold elevated liver cancer risk and 306-fold elevated cardiomyopathy risk. The foundational evidence that detection timing, not disease severity, determines outcome in haemochromatosis.
 
-3. Adams PC, Barton JC, McLaren GD, et al. "Screening for Iron Overload: Lessons from the HEmochromatosis and IRon Overload Screening (HEIRS) Study." *Can J Gastroenterol*. 2009;23(11):769–772.
+<span id="ref-3"></span>
+
+3.Adams PC, Barton JC, McLaren GD, et al. "Screening for Iron Overload: Lessons from the HEmochromatosis and IRon Overload Screening (HEIRS) Study." *Can J Gastroenterol*. 2009;23(11):769–772.
 
 
 HEIRS Study screening >100,000 individuals confirming transferrin saturation sensitivity of 75% for C282Y homozygotes. Establishes the feasibility of population-level iron overload screening and provides the dataset used for the Martins Conde machine learning algorithm validation.
 
-4. Martins Conde P, Sauter T, Nguyen TP. "An Efficient Machine Learning-Based Approach for Screening Individuals at Risk of Hereditary Haemochromatosis." *Sci Rep*. 2020;10:20613.
+<span id="ref-4"></span>
+
+4.Martins Conde P, Sauter T, Nguyen TP. "An Efficient Machine Learning-Based Approach for Screening Individuals at Risk of Hereditary Haemochromatosis." *Sci Rep*. 2020;10:20613.
 
 
 XGBoost achieving AUC 0.94 on HEIRS family study data (254 cases, 701 controls) using ferritin, transferrin saturation, MCV, ALT, AST, serum iron, and *HFE* genotype. Outperforms the IRON screening score. The primary peer-reviewed machine learning evidence for haemochromatosis detection from routine blood parameters.
