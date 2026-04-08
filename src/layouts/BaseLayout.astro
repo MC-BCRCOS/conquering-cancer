@@ -10,6 +10,7 @@ const { title, description = 'Conquering Cancer — REDI White Paper Series' } =
 const currentPath = Astro.url.pathname;
 const isHome = currentPath === '/' || currentPath === '';
 const isAppendix = currentPath.startsWith('/appendix');
+const isTeam = currentPath.startsWith('/team');
 ---
 
 <!doctype html>
@@ -31,6 +32,7 @@ const isAppendix = currentPath.startsWith('/appendix');
           <ul class="nav-links">
             <li><a href="/" class:list={[{ 'nav-active': isHome }]}>Conquering Cancer</a></li>
             <li><a href="/appendix" class:list={[{ 'nav-active': isAppendix }]}>Research Repository</a></li>
+            <li><a href="/team" class:list={[{ 'nav-active': isTeam }]}>REDI Team</a></li>
           </ul>
           <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
             <span></span>

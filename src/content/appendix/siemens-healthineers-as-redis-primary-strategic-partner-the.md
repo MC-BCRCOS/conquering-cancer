@@ -1,6 +1,6 @@
 ---
 title: "Siemens Healthineers as REDI's Primary Strategic Partner: The Case and the Playbook"
-subtitle: "Ratner Early Detection Initiative (REDI) | March 2026"
+subtitle: ""
 category: "strategic"
 date: "April 2026"
 ---
@@ -47,7 +47,7 @@ Roche structured the EarlySign ColonFlag relationship by integrating a validated
 
 
 
-# The Approach Playbook
+The Approach Playbook
 
 ## Step 1: Do Not Approach Through Standard Partnership or Sales Channels
 
@@ -57,11 +57,11 @@ Siemens's Value Partnerships program is structured around enterprise services, o
 
 ## Step 2: Target Three Specific Entry Points Simultaneously
 
-**Entry Point A — The SHIFT Innovation Ecosystem.** This is the correct door for a research and algorithm co-development proposal. REDI fits the program's published criteria precisely: early cancer detection, preventive medicine, and AI on clinical data. Identify the current head of SHIFT through LinkedIn and reach out directly with a two-page concept note before requesting a meeting. The concept note should mention PANCAIM by name and position REDI's pancreatic cancer algorithm as the translational complement to PANCAIM's imaging and genomics work.
+**Entry Point A — The SHIFT Innovation Ecosystem. This is the correct door for a research and algorithm co-development proposal. REDI fits the program's published criteria precisely: early cancer detection, preventive medicine, and AI on clinical data. Identify the current head of SHIFT through LinkedIn and reach out directly with a two-page concept note before requesting a meeting. The concept note should mention PANCAIM by name and position REDI's pancreatic cancer algorithm as the translational complement to PANCAIM's imaging and genomics work.
 
-**Entry Point B — Diagnostics Segment Digital Strategy Leadership.** Following the "Elevating Health Globally" announcement, Diagnostics received its own strategic mandate with explicit digital growth targets. The relevant executive is the Head of Diagnostics Digital Strategy, or an equivalent role. This person needs algorithm content for their roadmap and owns the revenue target that a REDI partnership would support. Reaching them requires either a direct LinkedIn approach with a brief, commercially framed proposal or an introduction through a mutual contact in the diagnostics industry leadership.
+**Entry Point B — Diagnostics Segment Digital Strategy Leadership. Following the "Elevating Health Globally" announcement, Diagnostics received its own strategic mandate with explicit digital growth targets. The relevant executive is the Head of Diagnostics Digital Strategy, or an equivalent role. This person needs algorithm content for their roadmap and owns the revenue target that a REDI partnership would support. Reaching them requires either a direct LinkedIn approach with a brief, commercially framed proposal or an introduction through a mutual contact in the diagnostics industry leadership.
 
-**Entry Point C — PANCAIM Project Leadership.** The Siemens project lead on the PANCAIM consortium is a direct scientific peer to REDI's pancreatic cancer team. A co-investigator relationship for that specific cancer type, framed as a blood-panel complement to PANCAIM's imaging work, could act as the entry point for a broader platform partnership discussion.
+**Entry Point C — PANCAIM Project Leadership. The Siemens project lead on the PANCAIM consortium is a direct scientific peer to REDI's pancreatic cancer team. A co-investigator relationship for that specific cancer type, framed as a blood-panel complement to PANCAIM's imaging work, could act as the entry point for a broader platform partnership discussion.
 
 
 
@@ -101,11 +101,11 @@ If the pilot works, the commercial conversation writes itself. If it underperfor
 
 ## Who to Contact and How
 
-**Siemens ****Healthineers**** Diagnostics headquarters:** Siemens Healthineers AG, Henkestraße 127, 91052 Erlangen, Germany. The Diagnostics segment operates partly from this base and partly from sites in Tarrytown, New York (United States Diagnostics) and Marburg, Germany.
+**Siemens Healthineers Diagnostics headquarters: Siemens Healthineers AG, Henkestraße 127, 91052 Erlangen, Germany. The Diagnostics segment operates partly from this base and partly from sites in Tarrytown, New York (United States Diagnostics) and Marburg, Germany.
 
-**SHIFT Innovation Ecosystem:** shiftinnovation@siemens-healthineers.com—listed on their public SHIFT page as the submission and inquiry channel for collaboration proposals.
+**SHIFT Innovation Ecosystem: shiftinnovation@siemens-healthineers.com—listed on their public SHIFT page as the submission and inquiry channel for collaboration proposals.
 
-**Initial approach document:** A two-page executive concept note, not a full deck, is the correct format for an unsolicited approach to either SHIFT or Diagnostics Digital Strategy. It should cover the problem (no CBC-AI cancer detection platform at Siemens), the proof (ColonFlag/LungFlag performance benchmarks and REDI's validated architectures), the commercial structure (co-development, distribution, per-patient licensing), and the ask (feasibility study on Atellica output data). The deck follows the meeting, not the first email.
+**Initial approach document: A two-page executive concept note, not a full deck, is the correct format for an unsolicited approach to either SHIFT or Diagnostics Digital Strategy. It should cover the problem (no CBC-AI cancer detection platform at Siemens), the proof (ColonFlag/LungFlag performance benchmarks and REDI's validated architectures), the commercial structure (co-development, distribution, per-patient licensing), and the ask (feasibility study on Atellica output data). The deck follows the meeting, not the first email.
 
 
 
@@ -179,7 +179,7 @@ Siemens Healthineers. "SHIFT Innovation Ecosystem." February 2026.
 
 Contact and project submission information for the SHIFT program, which orchestrates scientific partnerships and collaboration consortia across the Siemens Healthineers portfolio.
 
-Goshen R, Choman E, Ran A, et al. "Computer-Assisted Flagging of Individuals at High Risk of Colorectal Cancer in a Large Health Maintenance Organization Using the ColonFlag Test." JCO Clin Cancer Inform. 2018;2:1–8.
+Goshen R, Choman E, Ran A, et al. "Computer-Assisted Flagging of Individuals at High Risk of Colorectal Cancer in a Large Health Maintenance Organization Using the ColonFlag Test." *JCO Clin Cancer Inform*. 2018;2:1–8.
 
 
 

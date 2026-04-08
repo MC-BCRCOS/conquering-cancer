@@ -1,0 +1,88 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="REDI Team" description="The team behind the Ratner Early Detection Initiative.">
+  <div class="team-page">
+    <header class="team-header">
+      <h1>REDI Team</h1>
+      <p class="team-lead">The Ratner Early Detection Initiative</p>
+    </header>
+
+    <ul class="team-list">
+      <li class="team-member">
+        <span class="member-name">Bruce Ratner</span>
+      </li>
+      <li class="team-member">
+        <span class="member-name">Cynthia McCollum</span>
+      </li>
+      <li class="team-member">
+        <span class="member-name">Linda Johnson</span>
+      </li>
+      <li class="team-member">
+        <span class="member-name">Mark Clubine</span>
+      </li>
+      <li class="team-member">
+        <span class="member-name">Aryeh Baraban</span>
+      </li>
+      <li class="team-member">
+        <span class="member-name">Anusha Bala</span>
+      </li>
+      <li class="team-member">
+        <span class="member-name">Kelli Alires</span>
+      </li>
+    </ul>
+  </div>
+</BaseLayout>
+
+<style>
+  .team-page {
+    max-width: 72rem;
+    margin-inline: auto;
+    padding: var(--space-24) var(--space-6) var(--space-24);
+    padding-left: calc(200px + var(--space-8) + var(--space-6));
+  }
+
+  .team-header {
+    margin-bottom: var(--space-12);
+  }
+
+  .team-header h1 {
+    margin-bottom: var(--space-3);
+  }
+
+  .team-lead {
+    font-size: var(--text-lg);
+    color: var(--color-gray-500);
+  }
+
+  .team-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+
+  .team-member {
+    padding: var(--space-4) 0;
+    border-bottom: 1px solid var(--color-gray-200);
+  }
+
+  .team-member:last-child {
+    border-bottom: none;
+  }
+
+  .member-name {
+    font-family: var(--font-display);
+    font-size: var(--text-lg);
+    font-weight: 700;
+    color: var(--color-black);
+  }
+
+  @media (max-width: 640px) {
+    .team-page {
+      padding-left: var(--space-6);
+    }
+  }
+</style>

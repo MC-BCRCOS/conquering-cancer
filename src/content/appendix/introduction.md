@@ -5,9 +5,7 @@ category: "regulatory"
 date: "April 2026"
 ---
 
-**Building Cancer and Disease Detection Algorithms from Routine Blood Tests**
-
-A Technical and Economic Roadmap
+**Building Cancer and Disease Detection Algorithms from Routine Blood Tests A Technical and Economic Roadmap
 
 Ratner Early Detection Initiative (REDI)  ·  March 2026
 
@@ -15,7 +13,7 @@ Ratner Early Detection Initiative (REDI)  ·  March 2026
 
 The central claim of the REDI research program is that machine learning algorithms can detect cancer and chronic disease from routine blood work, months to years before conventional diagnosis. Two such algorithms are already deployed in clinical practice. Nine additional cancer algorithms and more than a dozen non-cancer disease algorithms remain to be built. This paper describes exactly what that process requires: the data, the methodology, the technical steps, and the costs.
 
-# Step 1: Define the Target and the Training Signal
+Step 1: Define the Target and the Training Signal
 
 Before any data is collected or any model is trained, the team must specify two things precisely: the disease being targeted and the blood panels most likely to carry a signal.
 
@@ -23,7 +21,7 @@ For each target cancer or disease, a clinical informatics team reviews published
 
 This biological mapping step is not modeling; it is a literature review. It determines which of the six standard panels (CBC, CMP, liver function tests, kidney function tests, thyroid-stimulating hormone (TSH), hemoglobin A1C) to prioritize for a given target, and it defines the feature space the algorithm will learn from.
 
-# Step 2: Assemble and Qualify the Dataset
+Step 2: Assemble and Qualify the Dataset
 
 The training dataset must meet five criteria before any modeling begins.
 
@@ -47,7 +45,7 @@ For early detection, the algorithm must be trained on blood work drawn before di
 
 A model trained only on patients from one demographic group will underperform in others. The dataset must include representation across age, sex, and, where possible, race and ethnicity to ensure the algorithm generalizes across populations. External validation in an independent, demographically distinct population (as ColonFlag was validated in the United Kingdom after initial development in Israel) is a prerequisite before deployment.1
 
-# Step 3: Data Cleaning
+Step 3: Data Cleaning
 
 Raw EMR data is not modeling-ready. Cleaning is the most labor-intensive step and consumes a substantial portion of the data science team's time.
 
@@ -71,7 +69,7 @@ Not every patient has every panel drawn at every visit. The algorithm must handl
 
 Before any data leaves a partner institution, all direct identifiers (name, date of birth, address, Social Security number, and medical record number) must be removed in accordance with HIPAA Safe Harbor or Expert Determination standards. A unique research identifier replaces the medical record number, allowing longitudinal linkage within the dataset without identifying the patient.
 
-# Step 4: Feature Engineering
+Step 4: Feature Engineering
 
 Raw blood values are the starting point. The modeling team constructs additional features that capture the signals the literature review identified.
 
@@ -87,7 +85,7 @@ The neutrophil-to-lymphocyte ratio (NLR) outperforms either value alone for dete
 
 Blood chemistry reference ranges differ by age and sex. Features are constructed as deviations from age- and sex-specific expected values, so the model learns to interpret a given blood value in its demographic context rather than against a universal reference.
 
-# Step 5: Model Training and Validation
+Step 5: Model Training and Validation
 
 The REDI methodology uses gradient-boosted decision trees, the same class of algorithm used in both ColonFlag and LungFlag.12 Gradient boosting combines hundreds of weak predictive signals into a single strong prediction, which matches the structure of the problem: no single blood value predicts cancer, but the ensemble of subtle shifts does.
 
@@ -97,11 +95,11 @@ Performance is evaluated using the area under the curve (AUC). An AUC of 0.50 is
 
 External validation replicates the entire evaluation on an independent patient population at a different institution. A model that performs well only on its training data is not a medical product; it is an overfit artifact. This step cannot be skipped.
 
-# Step 6: Clinical Validation and Regulatory Clearance
+Step 6: Clinical Validation and Regulatory Clearance
 
 Before deployment, each algorithm must demonstrate performance in a prospective or retrospective real-world clinical setting. ColonFlag was deployed at Geisinger Health System, where it achieved an eightfold improvement in cancer detection among patients who completed colonoscopy.4 Regulatory clearance in the United States follows the US Food and Drug Administration (FDA) 510(k) pathway for software as a medical device (SaMD), analyzing existing laboratory results without producing a standalone diagnosis. This pathway requires a technical file documenting training data, validation performance, intended use, risk analysis, and clinical evidence. Preparation, submission, and FDA review typically require 12 to 18 months.
 
-# Estimated Costs (Assuming Dataset Access at No Cost)
+Estimated Costs (Assuming Dataset Access at No Cost)
 
 
 
@@ -109,38 +107,38 @@ Before deployment, each algorithm must demonstrate performance in a prospective 
 
 For the full program of nine remaining cancer algorithms, the total cost ranges from approximately $15M to $41M. Including non-cancer disease algorithms and shared infrastructure, the $30M to $50M total program estimate in the REDI papers is accurate and conservative. For comparison, the average cost to develop a single new cancer drug is $2.6 billion, including the capital cost of the many candidates that fail.5 The entire algorithmic detection program for all 13 cancers could be completed for less than 2 percent of that figure, using data that already exists, on diseases whose blood signatures are already documented in peer-reviewed literature.
 
-# What This Is Not
+What This Is Not
 
 This program does not require new blood tests, new clinical workflows, or a change in patient behavior. The six panels it analyzes are already drawn at more than 200 million annual physicals in the United States. The data are stored in EMRs at institutions that have already agreed in principle to collaborate on research. The bottleneck is not science; it is the institutional will and the $30 to $50 million required to build the software that reads what the blood is already saying.
 
 
 
-# Endnotes
+Endnotes
 
-**1.  **Kinar Y, Kalkstein N, Akiva P, et al. "Development and Validation of a Predictive Model for Detection of Colorectal Cancer in Primary Care by Analysis of Complete Blood Counts: A Binational Retrospective Study." *J**AMIA*. 2016;23(5):879–890.  
-
-
-
-*ColonFlag** development and validation across 606,403 Israeli and 30,674 UK patients; AUC 0.82 for colorectal cancer prediction from CBC parameters with odds ratios of 26 (Israel) and 40 (UK) at 0.5% false**-**positive rate and 6- to 24-month detection lead time.*
-
-**2.  **Gould MK, Huang BZ, Tammemagi MC, Kinar Y, Shiff R. "Machine Learning for Early Lung Cancer Identification Using Routine Clinical and Laboratory Data." *Am J Respir Crit Care Med*. 2021;204(4):445–453.  
+1. Kinar Y, Kalkstein N, Akiva P, et al. "Development and Validation of a Predictive Model for Detection of Colorectal Cancer in Primary Care by Analysis of Complete Blood Counts: A Binational Retrospective Study." *J**AMIA*. 2016;23(5):879–890.
 
 
 
-*LungFlag** validation across 6,505 non-small cell lung cancer cases at Kaiser Permanente; AUC 0.856 with 9- to 12-month detection lead time, outperforming USPSTF criteria and the PLCOm2012 quantitative risk model.*
+*ColonFlag development and validation across 606,403 Israeli and 30,674 UK patients; AUC 0.82 for colorectal cancer prediction from CBC parameters with odds ratios of 26 (Israel) and 40 (UK) at 0.5% false**- positive rate and 6- to 24-month detection lead time.*
 
-**3.  **Sharma C, Eltawil KM, Renfrew PD, Walsh MJ, Molinari M. "Advances in Diagnosis, Treatment and Palliation of Pancreatic Carcinoma: 1990–2010." *World J** **Gastroenterol*. 2011;17(7):867–897.  
-
-
-
-*Documents the pre-diagnostic blood signature of pancreatic cancer: alkaline phosphatase, GGT, and bilirubin rising from bile duct compression, with glucose rising from pancreatic cell damage, 6**–**18 months before clinical diagnosis.*
-
-**4.  **Hornbrook MC, Goshen R, Choman E, et al. "Early Colorectal Cancer Detected by Machine Learning Model Using Gender, Age, and Complete Blood Count Data." *Dig Dis Sci*. 2017;62(10):2719–2727.  
-
-*Geisinger Health System deployment of **ColonFlag**; among flagged patients completing colonoscopy, 8% had confirmed cancer versus 1% in standard screening, an eightfold improvement with no new tests or equipment required.*
-
-**5.  **DiMasi JA, Grabowski HG, Hansen RW. "Innovation in the Pharmaceutical Industry: New Estimates of R&D Costs." *J Health Econ*. 2016;47:20–33.  
+2. Gould MK, Huang BZ, Tammemagi MC, Kinar Y, Shiff R. "Machine Learning for Early Lung Cancer Identification Using Routine Clinical and Laboratory Data." *Am J Respir Crit Care Med*. 2021;204(4):445–453.
 
 
 
-*Published analysis of pharmaceutical R&D costs establishing the $2.6 billion average cost per approved cancer drug, including $1.4 billion in direct costs and $1.2 billion in opportunity cost of capital over 12–15**-**year development timelines.*
+*LungFlag validation across 6,505 non-small cell lung cancer cases at Kaiser Permanente; AUC 0.856 with 9- to 12-month detection lead time, outperforming USPSTF criteria and the PLCOm2012 quantitative risk model.*
+
+3. Sharma C, Eltawil KM, Renfrew PD, Walsh MJ, Molinari M. "Advances in Diagnosis, Treatment and Palliation of Pancreatic Carcinoma: 1990–2010." *World JGastroenterol*. 2011;17(7):867–897.
+
+
+
+*Documents the pre-diagnostic blood signature of pancreatic cancer: alkaline phosphatase, GGT, and bilirubin rising from bile duct compression, with glucose rising from pancreatic cell damage, 6 –**18 months before clinical diagnosis.*
+
+4. Hornbrook MC, Goshen R, Choman E, et al. "Early Colorectal Cancer Detected by Machine Learning Model Using Gender, Age, and Complete Blood Count Data." *Dig Dis Sci*. 2017;62(10):2719–2727.  [https://pubmed.ncbi.nlm.nih.gov/28836087/](https://pubmed.ncbi.nlm.nih.gov/28836087/)
+
+*Geisinger Health System deployment of  ColonFlag**; among flagged patients completing colonoscopy, 8% had confirmed cancer versus 1% in standard screening, an eightfold improvement with no new tests or equipment required.*
+
+5. DiMasi JA, Grabowski HG, Hansen RW. "Innovation in the Pharmaceutical Industry: New Estimates of R&D Costs." *J Health Econ*. 2016;47:20–33.
+
+
+
+*Published analysis of pharmaceutical R&D costs establishing the $2.6 billion average cost per approved cancer drug, including $1.4 billion in direct costs and $1.2 billion in opportunity cost of capital over 12–15 -**year development timelines.*

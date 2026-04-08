@@ -63,49 +63,49 @@ The regulatory path depends on maintaining fidelity to this design logic: inputs
 
 ## Endnotes
 
-1.**  **U.S. Food and Drug Administration. “Clinical Decision Support Software: Guidance for Industry and Food and Drug Administration Staff.” January 29, 2026 .
+1.U.S. Food and Drug Administration. “Clinical Decision Support Software: Guidance for Industry and Food and Drug Administration Staff.” January 29, 2026 [https://www.fda.gov/media/109618/download](https://www.fda.gov/media/109618/download).
 
-*The FDA's 202**6** CDS Guidance clarifies the four statutory criteria under FDCA § 520(o)(1)(E) that distinguish Non-Device CDS **software **from regulated medical device software, providing the framework applied throughout this analysis.*
+*The FDA's 202 6** CDS Guidance clarifies the four statutory criteria under FDCA § 520(o)(1)(E) that distinguish Non-Device CDS  software **from regulated medical device software, providing the framework applied throughout this analysis.*
 
-2.**  **Federal Food, Drug, and Cosmetic Act § 201(h), 21 U.S.C. § 321(h). .
+2.Federal Food, Drug, and Cosmetic Act § 201(h), 21 U.S.C. § 321(h). [https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title21-section321&num=0&edition=prelim](https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title21-section321&num=0&edition=prelim).
 
 *The statutory definition of a medical device under the FDCA, which the CDS software exemption carves out of for qualifying Non-Device CDS products. Central to determining whether FDA regulatory jurisdiction applies.*
 
-3.**  **Federal Food, Drug, and Cosmetic Act § 520(o)(1)(E), 21 U.S.C. § 360j(o)(1)(E). .
+3.Federal Food, Drug, and Cosmetic Act § 520(o)(1)(E), 21 U.S.C. § 360j(o)(1)(E). [https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title21-section360j&num=0&edition=prelim](https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title21-section360j&num=0&edition=prelim).
 
 *The specific statutory section, added by the 21st Century Cures Act, that carves out Non-Device CDS from the definition of medical device. Software satisfying all four enumerated criteria requires no 510(k) clearance or premarket approval.*
 
-4.**  **21st Century Cures Act, Pub. L. No. 114-255, § 3060, 130 Stat. 1033 (2016). .
+4.21st Century Cures Act, Pub. L. No. 114-255, § 3060, 130 Stat. 1033 (2016). [https://www.congress.gov/114/plaws/publ255/PLAW-114publ255.pdf](https://www.congress.gov/114/plaws/publ255/PLAW-114publ255.pdf).
 
 *Landmark legislation that amended the FDCA to exclude certain health software functions, including qualifying CDS, from the definition of medical device. Established the four-criterion test codified at § 520(o)(1)(E).*
 
-5.**  **Babic B, Gerke S, Evgeniou T, Cohen IG. “Beware Explanations from AI in Health Care.” *Science*. 2021;373(6552):284–286. 
+5.Babic B, Gerke S, Evgeniou T, Cohen IG. “Beware Explanations from AI in Health Care.” *Science*. 2021;373(6552):284–286.
 
-.
+[https://doi.org/10.1126/science.abg1834](https://doi.org/10.1126/science.abg1834).
 
 *Examines how algorithmic explanations can create automation bias in clinical decision-making, supporting the regulatory logic behind Criterion Four's requirement that physicians independently review the basis for CDS recommendations rather than rely primarily on outputs.*
 
-6.**  **Sendak M, Elish MC, Gao M, et al. “‘The Human Body is a Black Box’: Supporting Clinical Decision-Making with Deep Learning.” *Proceedings of the ACM Conference on Fairness, Accountability, and Transparency (FAT*).* 2020:99–109. .
+6.Sendak M, Elish MC, Gao M, et al. “‘The Human Body is a Black Box’: Supporting Clinical Decision-Making with Deep Learning.” *Proceedings of the ACM Conference on Fairness, Accountability, and Transparency (FAT*).* 2020:99–109. [https://doi.org/10.1145/3351095.3372827](https://doi.org/10.1145/3351095.3372827).
 
 *Documents how health systems implement CDS outputs in practice, showing that software generating patient lists for follow-up (rather than risk scores or diagnoses) reduces automation bias—consistent with Criterion Three compliance.*
 
-7.**  **Maddox TM, Rumsfeld JS, Payne PRO. “Questions for Artificial Intelligence in Health Care.” *JAMA.* 2019;321(1):31–32. 
+7.Maddox TM, Rumsfeld JS, Payne PRO. “Questions for Artificial Intelligence in Health Care.” *JAMA.* 2019;321(1):31–32.
 
-.
+[https://doi.org/10.1001/jama.2018.18932](https://doi.org/10.1001/jama.2018.18932).
 
 *Frames key regulatory and clinical validation questions for AI-based health software, including the distinction between software that supports clinical judgment versus software that substitutes for it—directly relevant to the Criterion Three analysis.*
 
-8.**  **Cohen IG, Amarasingham R, Shah A, Xie B, Lo B. “The Legal and Ethical Concerns That Arise from Using Complex Predictive Analytics in Health Care.” *Health Affairs.* 2014;33(7):1139–1147. 
+8.Cohen IG, Amarasingham R, Shah A, Xie B, Lo B. “The Legal and Ethical Concerns That Arise from Using Complex Predictive Analytics in Health Care.” *Health Affairs.* 2014;33(7):1139–1147.
 
-.
+[https://doi.org/10.1377/hlthaff.2014.0048](https://doi.org/10.1377/hlthaff.2014.0048).
 
 *Surveys legal and ethical frameworks governing algorithmic health tools, including the role of physician oversight as a safeguard against over-reliance—the very concern Criterion Four addresses through independent review requirements.*
 
-9.**  **Char DS, Shah NH, Magnus D. “Implementing Machine Learning in Health Care — Addressing Ethical Challenges.” *N Engl J Med.* 2018;378(11):981–983. 
+9.Char DS, Shah NH, Magnus D. “Implementing Machine Learning in Health Care — Addressing Ethical Challenges.” *N Engl J Med.* 2018;378(11):981–983. [https://doi.org/10.1056/NEJMp1714229](https://doi.org/10.1056/NEJMp1714229)
 
 *NEJM perspective identifying transparency, accountability, and physician control as central ethical requirements for clinical AI deployment—aligning with the labeling and independent-review requirements of Criteria Three and Four.*
 
-10.**  **Karl M. Nobert, Regulatory Counsel, Michael Best & Friedrich LLP. Legal Opinion Letter to Lucem Health. August 1, 2023.
+10.Karl M. Nobert, Regulatory Counsel, Michael Best & Friedrich LLP. Legal Opinion Letter to Lucem Health. August 1, 2023.
 
 
 

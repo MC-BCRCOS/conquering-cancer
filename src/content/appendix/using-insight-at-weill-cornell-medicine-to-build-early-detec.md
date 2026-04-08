@@ -5,7 +5,7 @@ category: "strategic"
 date: "April 2026"
 ---
 
-*Ratner Early Detection Initiative (**REDI)  ·**  March 2026*
+*Ratner Early Detection Initiative ( REDI)  ·**  March 2026*
 
 
 
@@ -57,7 +57,7 @@ For cardiovascular disease, type 2 diabetes, chronic kidney disease, and NAFLD, 
 
 
 
-**One critical qualification:** raw record counts are not the same as clean, usable training records. A patient who appears in the INSIGHT database but has only one blood draw, whose records span less than two years, or who left the health system before a diagnostic outcome was confirmed cannot be used. The effective usable dataset is typically 40 to 60 percent of the nominal record count after applying longitudinal, outcome, and quality filters. For INSIGHT’s 23 million records, that still leaves a very large and sufficient training pool for the vast majority of targets.
+ One critical qualification:** raw record counts are not the same as clean, usable training records. A patient who appears in the INSIGHT database but has only one blood draw, whose records span less than two years, or who left the health system before a diagnostic outcome was confirmed cannot be used. The effective usable dataset is typically 40 to 60 percent of the nominal record count after applying longitudinal, outcome, and quality filters. For INSIGHT’s 23 million records, that still leaves a very large and sufficient training pool for the vast majority of targets.
 
 
 
@@ -101,13 +101,13 @@ What REDI would need, beyond what ARCH provides, is a dedicated machine learning
 
 
 
-Clinical Informatics Lead. Understands the biology of the target disease, maps the relevant blood panel features, and interprets model outputs in clinical terms. This person bridges the data scientists and the clinicians.
+ Clinical Informatics Lead.** Understands the biology of the target disease, maps the relevant blood panel features, and interprets model outputs in clinical terms. This person bridges the data scientists and the clinicians.
 
-Machine Learning Engineers (two to three). Responsible for data pipeline construction, feature engineering, model training, hyperparameter tuning, and validation. Familiarity with XGBoost, scikit-learn, and survival analysis libraries in Python or R is the baseline requirement.
+ Machine Learning Engineers (two to three).** Responsible for data pipeline construction, feature engineering, model training, hyperparameter tuning, and validation. Familiarity with XGBoost, scikit-learn, and survival analysis libraries in Python or R is the baseline requirement.
 
-Biostatistician. Responsible for validation study design, AUC confidence interval analysis, and preparation of the statistical sections required for peer-reviewed publication and U.S. Food and Drug Administration (FDA) submission.
+ Biostatistician.** Responsible for validation study design, AUC confidence interval analysis, and preparation of the statistical sections required for peer-reviewed publication and U.S. Food and Drug Administration (FDA) submission.
 
-Regulatory Affairs Specialist. Required for the FDA 510(k) pathway once a model achieves target performance. This role is typically contracted rather than hired full-time.
+ Regulatory Affairs Specialist.** Required for the FDA 510(k) pathway once a model achieves target performance. This role is typically contracted rather than hired full-time.
 
 
 

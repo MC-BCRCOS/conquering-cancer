@@ -5,9 +5,8 @@ category: "summary"
 date: "April 2026"
 ---
 
-**Machine Learning on Routine Blood Tests: 12 Non-Cancer Diseases**
-
-**Summary Table—CBC, CMP, Lipid, Thyroid, and Liver Function Panel Signatures—Algorithm Performance and Deployment ****Status  •****  March 2026**
+**Machine Learning on Routine Blood Tests: 12 Non-Cancer Diseases 
+**Summary Table—CBC, CMP, Lipid, Thyroid, and Liver Function Panel Signatures—Algorithm Performance and Deployment Status  •  March 2026**
 
 
 

@@ -5,7 +5,7 @@ category: "summary"
 date: "April 2026"
 ---
 
-**Routine Blood Tests as Cancer Detection Infrastructure**   CBC and CMP Signal Evidence Across 13 Cancer Types
+**Routine Blood Tests as Cancer Detection Infrastructure CBC and CMP Signal Evidence Across 13 Cancer Types
 
 
 
