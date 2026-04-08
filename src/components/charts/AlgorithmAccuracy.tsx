@@ -3,23 +3,14 @@ import { Chart, registerables } from 'chart.js';
 
 Chart.register(...registerables);
 
-const REDI_RED = '#ed1f24';
-const GRAY_300 = '#b0b0b0';
-const GRAY_500 = '#4a4a4a';
-
-const data = {
-  labels: [
-    'Lung Cancer',
-    'Colorectal Cancer',
-    'NAFLD/Liver Fibrosis',
-    'Type 2 Diabetes',
-    'Cardiovascular Disease',
-    'Chronic Kidney Disease',
-  ],
-  deployed: [0.82, 0.82, null, null, null, null],
-  researchLo: [null, null, 0.82, 0.80, 0.78, 0.83],
-  researchHi: [null, null, 0.82, 0.80, 0.82, 0.88],
-};
+const data = [
+  { name: 'Chronic Kidney Disease', deployed: null, lo: 0.83, hi: 0.88 },
+  { name: 'NAFLD/Liver Fibrosis', deployed: 0.82, lo: null, hi: null },
+  { name: 'Cardiovascular Disease', deployed: null, lo: 0.78, hi: 0.82 },
+  { name: 'Type 2 Diabetes', deployed: 0.80, lo: null, hi: null },
+  { name: 'Colorectal Cancer (deployed)', deployed: 0.82, lo: null, hi: null },
+  { name: 'Lung Cancer (deployed)', deployed: 0.82, lo: null, hi: null },
+];
 
 export default function AlgorithmAccuracy() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -31,26 +22,19 @@ export default function AlgorithmAccuracy() {
     chartRef.current = new Chart(canvasRef.current, {
       type: 'bar',
       data: {
-        labels: data.labels,
+        labels: data.map((d) => d.name),
         datasets: [
           {
-            label: 'Deployed AUC',
-            data: data.deployed,
-            backgroundColor: REDI_RED,
+            label: 'Deployed / Validated AUC',
+            data: data.map((d) => d.deployed || d.lo),
+            backgroundColor: 'rgba(237, 31, 36, 0.3)',
             borderRadius: 4,
             barPercentage: 0.6,
           },
           {
-            label: 'Research AUC (low)',
-            data: data.researchLo,
-            backgroundColor: GRAY_300,
-            borderRadius: 4,
-            barPercentage: 0.6,
-          },
-          {
-            label: 'Research AUC (high)',
-            data: data.researchHi,
-            backgroundColor: GRAY_500,
+            label: 'Research High AUC',
+            data: data.map((d) => d.hi ? d.hi - (d.lo || 0) : 0),
+            backgroundColor: '#ed1f24',
             borderRadius: 4,
             barPercentage: 0.6,
           },
@@ -67,18 +51,24 @@ export default function AlgorithmAccuracy() {
           },
           tooltip: {
             callbacks: {
-              label: (ctx) => `${ctx.dataset.label}: ${ctx.parsed.x?.toFixed(2)}`,
+              label: (ctx) => {
+                const d = data[ctx.dataIndex];
+                if (d.deployed) return `AUC: ${d.deployed.toFixed(2)}`;
+                return `AUC: ${d.lo?.toFixed(2)} \u2013 ${d.hi?.toFixed(2)}`;
+              },
             },
           },
         },
         scales: {
           x: {
+            stacked: true,
             min: 0.5,
             max: 1.0,
             title: { display: true, text: 'AUC Score (0.5 = coin flip, 1.0 = perfect)', font: { size: 11 } },
             grid: { color: '#f0f0f0' },
           },
           y: {
+            stacked: true,
             grid: { display: false },
             ticks: { font: { size: 12 } },
           },
@@ -91,13 +81,10 @@ export default function AlgorithmAccuracy() {
 
   return (
     <div class="chart-container">
-      <h4>Figure 1</h4>
-      <p style={{ marginBottom: '1rem', fontSize: '0.875rem', color: '#4a4a4a' }}>
-        Demonstrated algorithm accuracy for diseases. AUC of 0.50 equals a coin flip; 1.0 equals perfect prediction.
-      </p>
       <div style={{ height: '320px' }}>
         <canvas ref={canvasRef}></canvas>
       </div>
+      <p class="chart-caption"><strong>Figure 6.</strong> Demonstrated algorithm accuracy for non-cancer diseases compared to deployed cancer detection algorithms. AUC of 0.50 = coin flip; 1.0 = perfect prediction.</p>
     </div>
   );
 }

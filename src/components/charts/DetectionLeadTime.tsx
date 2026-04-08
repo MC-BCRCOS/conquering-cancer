@@ -4,23 +4,21 @@ import { Chart, registerables } from 'chart.js';
 Chart.register(...registerables);
 
 const diseases = [
-  { name: 'Cardiovascular Disease', lo: 175, hi: 275 },
-  { name: 'Sepsis (Early Warning)', lo: 50, hi: 65 },
-  { name: 'Type 2 Diabetes', lo: 50, hi: 85 },
-  { name: 'Chronic Kidney Disease', lo: 20, hi: 30 },
-  { name: 'Heart Failure', lo: 15, hi: 25 },
-  { name: 'Fam. Hypercholesterolemia', lo: 5, hi: 10 },
+  { name: 'Fam. Hypercholesterolemia', lo: 10, hi: 30 },
+  { name: 'Hemochromatosis', lo: 5, hi: 10 },
+  { name: 'Cardiovascular Disease', lo: 5, hi: 10 },
+  { name: 'Wilson Disease', lo: 3, hi: 7 },
+  { name: 'Primary Biliary Cholangitis', lo: 3, hi: 7 },
+  { name: 'Type 2 Diabetes', lo: 3, hi: 5 },
+  { name: 'Chronic Kidney Disease', lo: 2, hi: 5 },
   { name: 'NAFLD/Liver Fibrosis', lo: 2, hi: 4 },
-  { name: 'Hemochromatosis', lo: 0.5, hi: 1 },
-  { name: 'Hypothyroidism', lo: 0.3, hi: 0.6 },
-  { name: 'Celiac Disease', lo: 0.3, hi: 0.6 },
-  { name: 'Primary Biliary Cholangitis', lo: 0.15, hi: 0.4 },
-  { name: "Addison's Disease", lo: 0.1, hi: 0.3 },
-  { name: 'Wilson Disease', lo: 0.1, hi: 0.3 },
-  { name: 'Multiple Sclerosis', lo: 0.1, hi: 0.3 },
+  { name: 'Heart Failure', lo: 1, hi: 3 },
+  { name: 'Hypothyroidism', lo: 1, hi: 5 },
+  { name: "Addison's Disease", lo: 0.5, hi: 1.5 },
+  { name: 'Sepsis', lo: 0, hi: 0.08 },
 ];
 
-export default function DeathsPreventable() {
+export default function DetectionLeadTime() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const chartRef = useRef<Chart | null>(null);
 
@@ -33,14 +31,14 @@ export default function DeathsPreventable() {
         labels: diseases.map((d) => d.name),
         datasets: [
           {
-            label: 'Conservative (K)',
+            label: 'Lead Time Low (years)',
             data: diseases.map((d) => d.lo),
             backgroundColor: '#ed1f24',
             borderRadius: 4,
             barPercentage: 0.7,
           },
           {
-            label: 'Upper Estimate (K)',
+            label: 'Additional Range (years)',
             data: diseases.map((d) => d.hi - d.lo),
             backgroundColor: 'rgba(237, 31, 36, 0.2)',
             borderRadius: 4,
@@ -61,7 +59,7 @@ export default function DeathsPreventable() {
             callbacks: {
               label: (ctx) => {
                 const d = diseases[ctx.dataIndex];
-                return `${d.lo}K \u2013 ${d.hi}K deaths preventable/year`;
+                return `${d.lo} \u2013 ${d.hi} years before conventional diagnosis`;
               },
             },
           },
@@ -69,7 +67,7 @@ export default function DeathsPreventable() {
         scales: {
           x: {
             stacked: true,
-            title: { display: true, text: 'Deaths Preventable Annually (thousands)', font: { size: 11 } },
+            title: { display: true, text: 'Years Before Conventional Diagnosis', font: { size: 11 } },
             grid: { color: '#f0f0f0' },
           },
           y: {
@@ -86,10 +84,10 @@ export default function DeathsPreventable() {
 
   return (
     <div class="chart-container">
-      <div style={{ height: '480px' }}>
+      <div style={{ height: '440px' }}>
         <canvas ref={canvasRef}></canvas>
       </div>
-      <p class="chart-caption"><strong>Figure 9.</strong> Estimated deaths preventable annually across 14 non-cancer conditions. Total: ~300,000 to 500,000 per year. Assumes 50% population penetration.</p>
+      <p class="chart-caption"><strong>Figure 7.</strong> Detection lead time: how far in advance algorithms can identify disease before conventional diagnosis.</p>
     </div>
   );
 }

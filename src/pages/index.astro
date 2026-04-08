@@ -5,10 +5,13 @@ import '../styles/paper.css';
 import SurvivalRates from '../components/charts/SurvivalRates.tsx';
 import DevStatus from '../components/charts/DevStatus.tsx';
 import LivesSaveable from '../components/charts/LivesSaveable.tsx';
-import Economics from '../components/charts/Economics.tsx';
+import CostPerspective from '../components/charts/CostPerspective.tsx';
 import MRIComparison from '../components/charts/MRIComparison.tsx';
 import AlgorithmAccuracy from '../components/charts/AlgorithmAccuracy.tsx';
+import DetectionLeadTime from '../components/charts/DetectionLeadTime.tsx';
 import DeathsPreventable from '../components/charts/DeathsPreventable.tsx';
+import Economics from '../components/charts/Economics.tsx';
+import TotalImpact from '../components/charts/TotalImpact.tsx';
 ---
 
 <BaseLayout title="Conquering Cancer" description="The Ratner Early Detection Initiative — using routine blood tests to detect cancer and disease before symptoms appear.">
@@ -98,7 +101,7 @@ import DeathsPreventable from '../components/charts/DeathsPreventable.tsx';
 
   <p>For perspective, developing a single new cancer drug costs an average of <strong>$2.6 billion</strong> and takes 12 to 15 years. This entire algorithmic detection program could be completed for <strong>less than 2 percent of that cost</strong> in a fraction of the time.</p>
 
-  <Economics client:visible />
+  <CostPerspective client:visible />
 
   <h2>What Happens When the Algorithm Flags You?</h2>
 
@@ -144,6 +147,8 @@ import DeathsPreventable from '../components/charts/DeathsPreventable.tsx';
 
   <AlgorithmAccuracy client:visible />
 
+  <DetectionLeadTime client:visible />
+
   <h2>The Diseases Doctors Almost Never Catch</h2>
 
   <p>Some of the most compelling opportunities involve conditions that physicians rarely consider until catastrophic damage has occurred.</p>
@@ -173,6 +178,8 @@ import DeathsPreventable from '../components/charts/DeathsPreventable.tsx';
   <p>The algorithms for cancer are further along. Two are deployed, two more validated, and nine more buildable. The non-cancer algorithms are at an earlier stage, with research demonstrating feasibility across all major conditions. The methodology is identical. The training data sits in the same electronic medical records. The development cost per algorithm remains <strong>$2 to $5 million</strong>.</p>
 
   <p>The blood tests are already being drawn. The diseases are already leaving their fingerprints. The only thing missing is the software that reads them.</p>
+
+  <TotalImpact client:visible />
         </div>
       </section>
 

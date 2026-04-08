@@ -3,7 +3,7 @@ import { Chart, registerables } from 'chart.js';
 
 Chart.register(...registerables);
 
-export default function DevStatus() {
+export default function CostPerspective() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const chartRef = useRef<Chart | null>(null);
 
@@ -13,12 +13,12 @@ export default function DevStatus() {
     chartRef.current = new Chart(canvasRef.current, {
       type: 'bar',
       data: {
-        labels: ['Validated & Deployed', 'Validated, Awaiting Deployment', 'Algorithm Needed'],
+        labels: ['All 13 Cancer Algorithms', 'Late-Stage Treatment\n(125 Patients/Year)', 'Single Cancer Drug\nDevelopment'],
         datasets: [
           {
-            label: 'Number of Cancers',
-            data: [2, 2, 9],
-            backgroundColor: ['#ed1f24', '#c41920', 'rgba(237, 31, 36, 0.3)'],
+            label: 'Cost ($ Millions)',
+            data: [40, 75, 2600],
+            backgroundColor: ['#ed1f24', '#c41920', '#8b1215'],
             borderRadius: 6,
             barPercentage: 0.5,
           },
@@ -31,24 +31,18 @@ export default function DevStatus() {
           legend: { display: false },
           tooltip: {
             callbacks: {
-              afterLabel: (ctx) => {
-                const details = [
-                  'Colorectal, Lung',
-                  'Gastric, Liver',
-                  'Pancreatic, Ovarian, Myeloma, Leukemia, Lymphoma, Esophageal, Bladder, Kidney, Thyroid',
-                ];
-                return details[ctx.dataIndex];
-              },
+              label: (ctx) => `$${ctx.parsed.y}M`,
             },
           },
         },
         scales: {
           y: {
             beginAtZero: true,
-            max: 10,
-            title: { display: true, text: 'Number of Cancer Types', font: { size: 11 } },
+            title: { display: true, text: 'Cost ($ Millions)', font: { size: 11 } },
             grid: { color: '#f0f0f0' },
-            ticks: { stepSize: 2 },
+            ticks: {
+              callback: (value) => `$${value}M`,
+            },
           },
           x: {
             grid: { display: false },
@@ -63,10 +57,10 @@ export default function DevStatus() {
 
   return (
     <div class="chart-container">
-      <div style={{ height: '300px' }}>
+      <div style={{ height: '340px' }}>
         <canvas ref={canvasRef}></canvas>
       </div>
-      <p class="chart-caption"><strong>Figure 2.</strong> Current development status of cancer detection algorithms for 13 target cancers.</p>
+      <p class="chart-caption"><strong>Figure 4.</strong> Cost comparison: building all 13 cancer algorithms ($40M) vs. single drug development ($2.6B) vs. treating 125 late-stage patients for one year ($75M).</p>
     </div>
   );
 }

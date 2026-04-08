@@ -3,9 +3,6 @@ import { Chart, registerables } from 'chart.js';
 
 Chart.register(...registerables);
 
-const REDI_RED = '#ed1f24';
-const GRAY_500 = '#4a4a4a';
-
 export default function MRIComparison() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const chartRef = useRef<Chart | null>(null);
@@ -21,14 +18,14 @@ export default function MRIComparison() {
           {
             label: 'Biopsy Cancer Yield (%)',
             data: [51.0, 44.5],
-            backgroundColor: REDI_RED,
+            backgroundColor: '#ed1f24',
             borderRadius: 4,
             barPercentage: 0.5,
           },
           {
             label: 'Negative Predictive Value (%)',
             data: [99.8, 99.0],
-            backgroundColor: GRAY_500,
+            backgroundColor: 'rgba(237, 31, 36, 0.3)',
             borderRadius: 4,
             barPercentage: 0.5,
           },
@@ -68,13 +65,10 @@ export default function MRIComparison() {
 
   return (
     <div class="chart-container">
-      <h4>Figure 5</h4>
-      <p style={{ marginBottom: '1rem', fontSize: '0.875rem', color: '#4a4a4a' }}>
-        Full-body MRI screening performance compared to mammography. Data from Prenuvo Polaris study (n=1,011).
-      </p>
       <div style={{ height: '300px' }}>
         <canvas ref={canvasRef}></canvas>
       </div>
+      <p class="chart-caption"><strong>Figure 5.</strong> Full-body MRI screening performance compared to mammography. Source: Prenuvo Polaris study (n=1,011).</p>
     </div>
   );
 }

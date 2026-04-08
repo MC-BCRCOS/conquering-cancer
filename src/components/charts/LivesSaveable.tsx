@@ -3,9 +3,6 @@ import { Chart, registerables } from 'chart.js';
 
 Chart.register(...registerables);
 
-const REDI_RED = '#ed1f24';
-const REDI_RED_LIGHT = 'rgba(237, 31, 36, 0.2)';
-
 const cancers = [
   { name: 'Lung', lo: 31, hi: 54 },
   { name: 'Colorectal', lo: 16, hi: 28 },
@@ -37,14 +34,14 @@ export default function LivesSaveable() {
           {
             label: 'Conservative Estimate (K)',
             data: cancers.map((c) => c.lo),
-            backgroundColor: REDI_RED,
+            backgroundColor: '#ed1f24',
             borderRadius: 4,
             barPercentage: 0.7,
           },
           {
             label: 'Upper Estimate (K)',
             data: cancers.map((c) => c.hi - c.lo),
-            backgroundColor: REDI_RED_LIGHT,
+            backgroundColor: 'rgba(237, 31, 36, 0.2)',
             borderRadius: 4,
             barPercentage: 0.7,
           },
@@ -63,7 +60,7 @@ export default function LivesSaveable() {
             callbacks: {
               label: (ctx) => {
                 const cancer = cancers[ctx.dataIndex];
-                return `${cancer.lo}K - ${cancer.hi}K lives per year`;
+                return `${cancer.lo}K \u2013 ${cancer.hi}K lives per year`;
               },
             },
           },
@@ -88,13 +85,10 @@ export default function LivesSaveable() {
 
   return (
     <div class="chart-container">
-      <h4>Figure 3</h4>
-      <p style={{ marginBottom: '1rem', fontSize: '0.875rem', color: '#4a4a4a' }}>
-        Conservative estimates of lives saveable annually per cancer type, assuming 50% population penetration. Total: ~100,000 to 175,000 lives per year.
-      </p>
       <div style={{ height: '440px' }}>
         <canvas ref={canvasRef}></canvas>
       </div>
+      <p class="chart-caption"><strong>Figure 3.</strong> Conservative estimates of lives saveable annually per cancer type. Total: ~100,000 to 175,000 lives per year. Assumes 50% population penetration.</p>
     </div>
   );
 }

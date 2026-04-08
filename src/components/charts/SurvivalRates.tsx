@@ -3,17 +3,14 @@ import { Chart, registerables } from 'chart.js';
 
 Chart.register(...registerables);
 
-const REDI_RED = '#ed1f24';
-const REDI_RED_LIGHT = 'rgba(237, 31, 36, 0.25)';
-
 const cancers = [
   { name: 'Lung', early: 60, late: 8 },
   { name: 'Colorectal', early: 90, late: 29 },
   { name: 'Ovarian', early: 93, late: 29 },
   { name: 'Pancreatic', early: 50, late: 10 },
-  { name: 'Liver', early: 65, late: 21 },
-  { name: 'Gastric', early: 72, late: 32 },
-  { name: 'Esophageal', early: 53, late: 6 },
+  { name: 'Liver', early: 70, late: 18 },
+  { name: 'Gastric', early: 68, late: 31 },
+  { name: 'Esophageal', early: 47, late: 5 },
 ];
 
 export default function SurvivalRates() {
@@ -31,14 +28,14 @@ export default function SurvivalRates() {
           {
             label: 'Found Early — Stage I/II (%)',
             data: cancers.map((c) => c.early),
-            backgroundColor: REDI_RED_LIGHT,
+            backgroundColor: 'rgba(237, 31, 36, 0.25)',
             borderRadius: 4,
             barPercentage: 0.7,
           },
           {
             label: 'Found Late — Stage III/IV (%)',
             data: cancers.map((c) => c.late),
-            backgroundColor: REDI_RED,
+            backgroundColor: '#8b1215',
             borderRadius: 4,
             barPercentage: 0.7,
           },
@@ -85,13 +82,10 @@ export default function SurvivalRates() {
 
   return (
     <div class="chart-container">
-      <h4>Figure 1</h4>
-      <p style={{ marginBottom: '1rem', fontSize: '0.875rem', color: '#4a4a4a' }}>
-        Five-year survival rates by stage at diagnosis. Data derived from SEER national cancer surveillance database.
-      </p>
       <div style={{ height: '360px' }}>
         <canvas ref={canvasRef}></canvas>
       </div>
+      <p class="chart-caption"><strong>Figure 1.</strong> Five-year survival rates by stage at diagnosis. Early = Stage I/II. Late = Stage III/IV. Data derived from SEER national cancer surveillance database.</p>
     </div>
   );
 }

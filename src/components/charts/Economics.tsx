@@ -3,9 +3,6 @@ import { Chart, registerables } from 'chart.js';
 
 Chart.register(...registerables);
 
-const REDI_RED = '#ed1f24';
-const GREEN = '#16a34a';
-
 const diseases = [
   { name: 'Hemochromatosis\n(Cirrhosis)', late: 300, early: 0.5 },
   { name: 'Diabetes\n(Complications)', late: 250, early: 3.5 },
@@ -28,14 +25,14 @@ export default function Economics() {
           {
             label: 'Late Detection Cost ($K)',
             data: diseases.map((d) => d.late),
-            backgroundColor: REDI_RED,
+            backgroundColor: '#8b1215',
             borderRadius: 4,
             barPercentage: 0.6,
           },
           {
             label: 'Early Detection Cost ($K)',
             data: diseases.map((d) => d.early),
-            backgroundColor: GREEN,
+            backgroundColor: 'rgba(237, 31, 36, 0.3)',
             borderRadius: 4,
             barPercentage: 0.6,
           },
@@ -77,13 +74,10 @@ export default function Economics() {
 
   return (
     <div class="chart-container">
-      <h4>Figure 4</h4>
-      <p style={{ marginBottom: '1rem', fontSize: '0.875rem', color: '#4a4a4a' }}>
-        Per-patient cost comparison: treating disease after late detection vs. intervening after early algorithmic detection.
-      </p>
       <div style={{ height: '340px' }}>
         <canvas ref={canvasRef}></canvas>
       </div>
+      <p class="chart-caption"><strong>Figure 8.</strong> Per-patient cost comparison: treating disease after late detection vs. intervening after early algorithmic detection.</p>
     </div>
   );
 }

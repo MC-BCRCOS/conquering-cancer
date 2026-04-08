@@ -162,6 +162,13 @@
   color: var(--color-gray-500);
 }
 
+.chart-caption {
+  margin-top: var(--space-4);
+  font-size: var(--text-sm);
+  color: var(--color-gray-500);
+  line-height: var(--leading-normal);
+}
+
 /* Blockquotes / callouts */
 .paper-content blockquote {
   border-left: 3px solid var(--color-red);
