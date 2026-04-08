@@ -2,6 +2,13 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ScrollNav from '../components/ScrollNav.tsx';
 import '../styles/paper.css';
+import SurvivalRates from '../components/charts/SurvivalRates.tsx';
+import DevStatus from '../components/charts/DevStatus.tsx';
+import LivesSaveable from '../components/charts/LivesSaveable.tsx';
+import Economics from '../components/charts/Economics.tsx';
+import MRIComparison from '../components/charts/MRIComparison.tsx';
+import AlgorithmAccuracy from '../components/charts/AlgorithmAccuracy.tsx';
+import DeathsPreventable from '../components/charts/DeathsPreventable.tsx';
 ---
 
 <BaseLayout title="Conquering Cancer" description="The Ratner Early Detection Initiative — using routine blood tests to detect cancer and disease before symptoms appear.">
@@ -57,10 +64,7 @@ import '../styles/paper.css';
 
   <p>The difference between those numbers has nothing to do with better drugs or more aggressive treatment; the difference is <strong>when the cancer is found</strong>.</p>
 
-  <div id="chart-lives-saveable" class="chart-container">
-    <h4>Figure 1</h4>
-    <p>Five-year survival rates by stage at diagnosis. Data derived from SEER national cancer surveillance database.</p>
-  </div>
+  <SurvivalRates client:visible />
 
   <h2>The Signal Hiding in Your Blood</h2>
 
@@ -80,19 +84,13 @@ import '../styles/paper.css';
 
   <p>Lung cancer followed. Researchers at Kaiser Permanente analyzed <strong>6,505 lung cancer cases</strong> against 189,597 controls and developed an algorithm that achieved an accuracy of <strong>0.86</strong> and identified <strong>40 percent of future lung cancer patients</strong> at a false positive rate of just 5 percent, 9 to 12 months before clinical diagnosis. A gastric cancer algorithm was validated across <strong>193,000 patients</strong>. A liver cancer algorithm was validated in <strong>75,000 patients</strong>. At least nine more cancers, from pancreatic to ovarian to kidney to myeloma, display documented blood chemistry signatures that the same methodology can target.</p>
 
-  <div id="chart-dev-status" class="chart-container">
-    <h4>Figure 2</h4>
-    <p>Current development status of cancer detection algorithms for 13 target cancers.</p>
-  </div>
+  <DevStatus client:visible />
 
   <h2>How Solid Are These Numbers?</h2>
 
   <p>The table of 13 cancers and their estimated lives saved rests on three foundations: published survival rates from the national cancer surveillance database maintained by the National Cancer Institute, the documented stage-shift effect of moving diagnosis from late to early stage, and the demonstrated performance of algorithms already deployed in clinical practice. The estimates assume <strong>50 percent population penetration</strong> of annual blood testing with algorithm integration; they are deliberately conservative. Full deployment would substantially increase the figures.</p>
 
-  <div id="chart-lives-saveable-range" class="chart-container">
-    <h4>Figure 3</h4>
-    <p>Conservative estimates of lives saveable annually, assuming 50% population penetration.</p>
-  </div>
+  <LivesSaveable client:visible />
 
   <h2>What Would It Cost?</h2>
 
@@ -100,10 +98,7 @@ import '../styles/paper.css';
 
   <p>For perspective, developing a single new cancer drug costs an average of <strong>$2.6 billion</strong> and takes 12 to 15 years. This entire algorithmic detection program could be completed for <strong>less than 2 percent of that cost</strong> in a fraction of the time.</p>
 
-  <div id="chart-economics" class="chart-container">
-    <h4>Figure 4</h4>
-    <p>Cost comparison: building all 13 cancer algorithms vs. single drug development vs. treating 125 late-stage patients for one year.</p>
-  </div>
+  <Economics client:visible />
 
   <h2>What Happens When the Algorithm Flags You?</h2>
 
@@ -113,10 +108,7 @@ import '../styles/paper.css';
 
   <p>The false positive profile is reassuring. Of the 41 people referred for biopsy, <strong>51 percent had confirmed cancer</strong> or masses requiring treatment. Compare that to mammography, where 39 to 50 percent of biopsied findings turn out to be cancer. The biopsy yield from full-body MRI is right in line with what we already consider worthwhile for screening. The negative predictive value was <strong>99.8 percent</strong>: among participants whose scans came back clear, virtually all remained cancer-free for at least one year.</p>
 
-  <div id="chart-mri" class="chart-container">
-    <h4>Figure 5</h4>
-    <p>Full-body MRI screening performance compared to mammography. Data from Prenuvo Polaris study (n=1,011).</p>
-  </div>
+  <MRIComparison client:visible />
 
   <h2>The Opportunity</h2>
 
@@ -150,10 +142,7 @@ import '../styles/paper.css';
 
   <p>Cardiovascular disease follows the same pattern. Machine learning that analyzes lipid trends, inflammatory markers from the complete blood count, and metabolic panel values achieves an accuracy of <strong>0.78 to 0.82</strong> for predicting heart attacks and strokes <strong>5 to 10 years before they occur</strong>, substantially outperforming the Framingham Risk Score, which most physicians rely on today.</p>
 
-  <div id="chart-algorithm-accuracy" class="chart-container">
-    <h4>Figure 1</h4>
-    <p>Demonstrated algorithm accuracy for non-cancer diseases compared to deployed cancer detection algorithms. AUC of 0.50 equals a coin flip; 1.0 equals perfect prediction.</p>
-  </div>
+  <AlgorithmAccuracy client:visible />
 
   <h2>The Diseases Doctors Almost Never Catch</h2>
 
@@ -167,10 +156,7 @@ import '../styles/paper.css';
 
   <h2>The Stakes</h2>
 
-  <div id="chart-deaths-preventable" class="chart-container">
-    <h4>Figure 3</h4>
-    <p>Estimated deaths preventable annually across 14 non-cancer conditions, assuming 50% population penetration.</p>
-  </div>
+  <DeathsPreventable client:visible />
 
   <p>The combined toll of these diseases exceeds <strong>1.2 million American deaths per year</strong>. Conservative estimates, assuming only 50 percent of the population receives annual blood testing with algorithm analysis, project that <strong>300,000 to 500,000 of those deaths could be prevented</strong>. Cardiovascular disease and sepsis account for the largest share, but diabetes, kidney disease, and heart failure each represent tens of thousands of preventable deaths.</p>
 
@@ -178,10 +164,7 @@ import '../styles/paper.css';
 
   <p>The financial case is overwhelming. A heart attack costs <strong>$20,000 to $50,000</strong> for initial treatment, plus ongoing costs for heart failure management that can reach <strong>$200,000 over a decade</strong>. Preventing that heart attack through early detection and intervention costs a few thousand dollars. Dialysis costs <strong>$90,000 per patient per year</strong>, but detecting kidney disease at Stage 2 instead of Stage 4 delays dialysis by 5 to 10 years, saving hundreds of thousands of dollars per patient. Diabetes complications, blindness, amputations, cardiovascular disease, and kidney failure cost an average of <strong>$250,000 per patient over a lifetime</strong>. The Diabetes Prevention Program demonstrated that a <strong>$3,500 lifestyle intervention prevents the disease entirely in 58 percent</strong> of high-risk patients.</p>
 
-  <div id="chart-economics-noncancer" class="chart-container">
-    <h4>Figure 4</h4>
-    <p>Per-patient cost comparison: treating disease after late detection vs. intervening after early algorithmic detection.</p>
-  </div>
+  <Economics client:visible />
 
   <h2>The Full Picture</h2>
 
