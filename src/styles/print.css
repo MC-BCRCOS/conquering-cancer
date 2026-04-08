@@ -7,8 +7,22 @@
   .download-btn,
   .pdf-btn,
   .appendix-filter,
+  .collection-sidebar,
+  .repo-sidebar-filters,
+  .scroll-nav,
   .chart-container canvas {
     display: none !important;
+  }
+
+  .collection-layout,
+  .repo-layout {
+    display: block !important;
+  }
+
+  .collection-content,
+  .repo-results {
+    max-width: 100% !important;
+    width: 100% !important;
   }
 
   /* Show static chart images for print */
