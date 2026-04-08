@@ -143,6 +143,11 @@ h4 {
   padding-inline: var(--space-6);
 }
 
+/* === Print Header (hidden on screen) === */
+.print-header {
+  display: none;
+}
+
 /* === PDF Button === */
 .pdf-btn {
   display: inline-flex;
