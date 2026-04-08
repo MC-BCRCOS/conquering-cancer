@@ -1,10 +1,15 @@
 ---
+import rediLogo from '../assets/images/redi-logo.svg';
+
 interface Props {
   title: string;
   description?: string;
 }
 
 const { title, description = 'Conquering Cancer — REDI White Paper Series' } = Astro.props;
+const currentPath = Astro.url.pathname;
+const isHome = currentPath === '/' || currentPath === '';
+const isAppendix = currentPath.startsWith('/appendix');
 ---
 
 <!doctype html>
@@ -21,11 +26,11 @@ const { title, description = 'Conquering Cancer — REDI White Paper Series' } =
       <header class="site-header">
         <nav class="container-wide site-nav">
           <a href="/" class="nav-logo">
-            <img src="/src/assets/images/redi-logo.svg" alt="REDI" width="80" height="38" />
+            <img src={rediLogo.src} alt="REDI" width="80" height="38" />
           </a>
           <ul class="nav-links">
-            <li><a href="/">Conquering Cancer</a></li>
-            <li><a href="/appendix" class="nav-repo">Research Repository</a></li>
+            <li><a href="/" class:list={[{ 'nav-active': isHome }]}>Conquering Cancer</a></li>
+            <li><a href="/appendix" class:list={[{ 'nav-active': isAppendix }]}>Research Repository</a></li>
           </ul>
           <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
             <span></span>
@@ -100,12 +105,12 @@ const { title, description = 'Conquering Cancer — REDI White Paper Series' } =
     color: var(--color-black);
   }
 
-  .nav-repo {
+  .nav-active {
     font-weight: 700 !important;
     color: var(--color-red) !important;
   }
 
-  .nav-repo:hover {
+  .nav-active:hover {
     color: var(--color-red-dark) !important;
   }
 
