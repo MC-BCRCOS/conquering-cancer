@@ -143,6 +143,42 @@ h4 {
   padding-inline: var(--space-6);
 }
 
+/* === PDF Button === */
+.pdf-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-top: var(--space-8);
+  padding: 0;
+  font-family: var(--font-display);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  color: var(--color-red);
+  background: none;
+  border: none;
+  border-bottom: 2px solid var(--color-red);
+  padding-bottom: var(--space-1);
+  cursor: pointer;
+  transition: gap 0.2s ease;
+  letter-spacing: 0.02em;
+}
+
+.pdf-btn:hover {
+  gap: var(--space-3);
+  color: var(--color-red-dark);
+  border-bottom-color: var(--color-red-dark);
+}
+
+.pdf-btn svg {
+  width: 14px;
+  height: 14px;
+}
+
+.pdf-btn-inline {
+  margin-top: 0;
+  margin-left: auto;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;

@@ -5,6 +5,7 @@
   .continue-reading,
   .toc-sidebar,
   .download-btn,
+  .pdf-btn,
   .appendix-filter,
   .chart-container canvas {
     display: none !important;
