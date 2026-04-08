@@ -246,7 +246,7 @@ Endnotes
 
 1.Siegel RL, Miller KD, Wagle NS, Jemal A. "Cancer Statistics, 2023." *CA Cancer J Clin*. 2023;73(1):17–48. [https://doi.org/10.3322/caac.21763](https://doi.org/10.3322/caac.21763)
 
-*Annual American Cancer Society statistics report providing incidence and mortality data for all major cancer types ,* including head and neck cancers. Source for the estimate of 54,540 new cases and 11, 58**0 deaths from oral cavity and pharynx cancers* annually in the United States.*
+*Annual American Cancer Society statistics report providing incidence and mortality data for all major cancer types ,* including head and neck cancers. Source for the estimate of 54,540 new cases and 11, 580 deaths from oral cavity and pharynx cancers* annually in the United States.*
 
 
 <span id="ref-2"></span>
