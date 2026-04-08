@@ -9,7 +9,9 @@ Disease Detection Series • Cardiovascular Disease
 
 Cardiovascular disease kills approximately 928,000 Americans annually , roughly 1 death every 34 seconds, and remains the leading cause of death in the United States.1 Current risk calculators achieve areas under the curve (AUCs) of 0.65 to 0.74 and systematically misclassify risk in women, younger adults, and several ethnic groups. The routine blood work drawn at every annual physical provides a richer signal: machine learning that reads the complete blood count (CBC) and metabolic panel together, tracking inflammatory trends alongside lipid trajectories, predicts heart attacks and strokes years in advance—and does so significantly better than the calculators cardiologists rely on today.
 
-Neural networks on 378,000 United Kingdom patients gained 3.6 AUC points over Pooled Cohort Equations, translating to 355 more cardiovascular events correctly identified per 100,000 patients. ## The Treatment Effect That Makes Early Detection Urgent
+Neural networks on 378,000 United Kingdom patients gained 3.6 AUC points over Pooled Cohort Equations, translating to 355 more cardiovascular events correctly identified per 100,000 patients.
+
+## The Treatment Effect That Makes Early Detection Urgent
 
 High-intensity statin therapy reduces major cardiovascular events by 25 to 35 percent in high-risk patients.2 Blood pressure control below 130/80 reduces stroke risk by 35 to 40 percent. Earlier identification of patients on the path toward a first event allows these interventions to be deployed in the years before coronary plaques become unstable, which is when they are most effective. Starting lipid-lowering treatment earlier reduces cumulative cholesterol-year exposure and prevents arterial disease, which cannot be reversed once it develops.
 
@@ -28,7 +30,6 @@ Weng and colleagues applied neural networks to 378,256 United Kingdom primary ca
 ## What This Proves
 
 Cardiovascular disease is the largest single cause of preventable death in America, and its blood precursors (inflammatory CBC markers, lipid trajectories, metabolic drift) are already measured 200 million times a year. Multiple independent machine learning models validated on populations ranging from 6,000 to 420,000 patients consistently outperform the risk calculators physicians currently use by margins large enough to change treatment decisions. The science is settled. The gap is deployment.
-
 
 ## Endnotes
 

@@ -7,7 +7,9 @@ date: "April 2026"
 
 Colorectal cancer kills approximately 53,000 Americans each year. Caught while still confined to the colon or rectum, the five-year survival rate is 91 percent. Once it has spread to distant organs, that figure collapses to 16 percent.1 The gap between those two numbers is not a treatment problem; it is a detection problem. And for colorectal cancer, a machine learning algorithm trained entirely on routine blood work has already demonstrated it can close that gap.
 
-91% survival when caught early. 16% once it spreads. ColonFlag identifies the difference from a routine blood draw months before symptoms appear. ## The Signature in the Blood
+91% survival when caught early. 16% once it spreads. ColonFlag identifies the difference from a routine blood draw months before symptoms appear.
+
+## The Signature in the Blood
 
 Colorectal tumors produce a detectable blood signature driven by two mechanisms: chronic occult gastrointestinal bleeding and tumor-associated systemic inflammation. The bleeding causes a gradual, progressive decline in hemoglobin that begins two to four years before diagnosis , yet remains within normal reference ranges throughout, invisible to standard clinical review.2 As iron stores deplete, the complete blood count (CBC) records the consequences: falling mean corpuscular volume (MCV), mean corpuscular hemoglobin (MCH), and rising red blood cell distribution width (RDW).
 
@@ -26,7 +28,6 @@ ColonFlag is not a hypothesis; it is operational. Maccabi Healthcare Services in
 ## What This Proves
 
 ColonFlag establishes the foundational case for this entire 13-paper series. If a routine blood draw can train a machine learning model to identify colorectal cancer up to a year before it would otherwise be caught—at a scale of hundreds of thousands of patients, validated across three countries—then the question for every other cancer on this list is not whether the methodology works (it does). The question is whether a comparable blood signature exists. For each of the 12 cancers that follow, the evidence says it does.
-
 
 ## Endnotes
 

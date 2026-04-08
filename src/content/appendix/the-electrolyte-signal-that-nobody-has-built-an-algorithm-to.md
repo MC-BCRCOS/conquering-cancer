@@ -9,7 +9,9 @@ Disease Detection Series • Addison's Disease
 
 Primary adrenal insufficiency affects approximately 10 to 14 per 100,000 individuals , but its consequences when missed are catastrophic: adrenal crisis is fatal without immediate corticosteroid treatment, and more than 50 percent of first crises occur in patients with no prior diagnosis. Two-thirds of patients receive at least one incorrect diagnosis before Addison's is identified, and less than 30 percent of women are diagnosed within six months of symptom onset.1 The electrolyte and metabolic changes that precede crisis are present in routine blood work for months to years before collapse. The algorithm that could flag this pattern has been proven in a closely related biological system, but it has not yet been built for humans.
 
-84% of Addison's patients have hyponatremia at diagnosis. The electrolyte signal precedes adrenal crisis by months. A canine algorithm on identical biochemistry achieves 99%+ accuracy. The human version has not been built. ## The Treatment Effect That Makes Early Detection Urgent
+84% of Addison's patients have hyponatremia at diagnosis. The electrolyte signal precedes adrenal crisis by months. A canine algorithm on identical biochemistry achieves 99%+ accuracy. The human version has not been built.
+
+## The Treatment Effect That Makes Early Detection Urgent
 
 Addison's disease treated with hydrocortisone and fludrocortisone replacement is a manageable condition with a near-normal quality of life and life expectancy. The barrier is diagnosis: symptoms, including fatigue, weight loss, nausea, salt craving, are so non-specific that the average time from symptom onset to diagnosis exceeds two years, with multiple physician visits and misdiagnoses intervening.1 Adrenal crisis mortality is 0.5 per 100 patient-years; the highest-risk period is the pre-diagnosis interval, when no hydrocortisone stress-dosing protocol is in place.
 
@@ -28,7 +30,6 @@ Reagan and colleagues applied AdaBoost to more than 1,000 dogs using routine CBC
 ## What This Proves
 
 Addison's disease is rare, diagnosis-resistant, and potentially fatal—the combination that makes a machine learning screening algorithm most urgent. The blood signature is documented in 247 human patients: hyponatremia in 84 percent, elevated TSH in 52 percent. A canine AdaBoost algorithm achieves over 99 percent accuracy on nearly identical biochemistry. No human machine learning algorithm has been built. This paper argues that it should be created using the same retrospective electronic health record methodology that produced ColonFlag, LungFlag, and Klinrisk, with training data already sitting in the records of patients who were eventually diagnosed after years of misdiagnosis.
-
 
 ## Endnotes
 

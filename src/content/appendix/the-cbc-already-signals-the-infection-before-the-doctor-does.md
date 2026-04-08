@@ -9,7 +9,9 @@ Disease Detection Series • Sepsis (Early Warning)
 
 Sepsis kills at least 350,000 Americans in hospitals annually and costs $62 billion each year. For every hour of delayed diagnosis and treatment, mortality increases by 4 to 9 percent.1 The complete blood count (CBC) changes that precede clinical sepsis recognition—rising or paradoxically falling white blood cell (WBC) count, shifting neutrophil-lymphocyte ratios (NLRs), declining platelet counts—are present in routine blood work hours to days before the patient meets diagnostic criteria. Three machine learning algorithms are already deployed in United States hospitals, and one, TREWS at Johns Hopkins, has produced prospective evidence of an 18.7 percent relative mortality reduction. Sepsis represents the most mature machine learning deployment story in this disease series.
 
-TREWS at Johns Hopkins cut sepsis mortality by 18.7% across five hospitals in a prospective study published in *Nature Medicine*. 89% of providers adopted the alert. The algorithm reads the same CBC that every patient receives. ## The Treatment Effect That Makes Early Detection Urgent
+TREWS at Johns Hopkins cut sepsis mortality by 18.7% across five hospitals in a prospective study published in *Nature Medicine*. 89% of providers adopted the alert. The algorithm reads the same CBC that every patient receives.
+
+## The Treatment Effect That Makes Early Detection Urgent
 
 The Surviving Sepsis Campaign's Hour-1 Bundle (blood cultures, broad-spectrum antibiotics, and fluid resuscitation) reduces mortality by approximately 25 to 30 percent when initiated within the first hour versus delayed beyond six hours.2 Earlier recognition means earlier bundle initiation and lower mortality—a direct, well-quantified causal chain. The Adams et al. prospective study of TREWS at Johns Hopkins precisely quantified this relationship: deployment of the machine-learning alert led to sepsis being recognized a median of 1.85 hours earlier, an 18.7 percent relative reduction in mortality, and a number needed to treat of approximately 17 to prevent 1 death.3
 
@@ -28,7 +30,6 @@ The Dascena InSight gradient boosting model, validated across 684,443 patient en
 ## What This Proves
 
 Sepsis is the furthest advanced of all 11 diseases in deployment maturity. TREWS is operational at Johns Hopkins with evidence of prospective mortality reduction. InSight is approved by the US Food and Drug Administration. The blood signature, shifting WBC differential, rising NLR, declining platelets, and RDW elevation, is present hours before clinical diagnosis. An 18.7 percent mortality reduction from reading the same CBC that every hospitalized patient receives represents real lives saved. The remaining challenge is separating effective deployed systems from commercial algorithms with poor external validity—a quality-of-evidence problem, not a scientific one.
-
 
 ## Endnotes
 

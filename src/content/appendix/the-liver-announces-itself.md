@@ -7,7 +7,9 @@ date: "April 2026"
 
 Liver cancer kills approximately 29,000 Americans each year. Caught while still localized, the five-year survival rate is 38 percent. Once it has spread, that figure collapses to under 4 percent.1 Most hepatocellular carcinoma (HCC) arises on a background of cirrhosis or chronic liver disease, meaning the organ is already under routine metabolic surveillance. The standard blood draw ordered for that surveillance already encodes the signal.
 
-38% survival when caught early, under 4% once spread. The liver chemistry panel ordered every six months already contains the early warning. ## The Signature in the Blood
+38% survival when caught early, under 4% once spread. The liver chemistry panel ordered every six months already contains the early warning.
+
+## The Signature in the Blood
 
 Liver function tests ordered routinely in patients with hepatitis B, hepatitis C, fatty liver, or alcohol use contain the earliest detectable markers of HCC development. The **FIB-4 index —calculated from aspartate aminotransferase (AST), alanine aminotransferase (ALT), platelet count, and age, all standard comprehensive metabolic panel (CMP) outputs—has been validated as a pre-diagnostic HCC predictor in a prospective cohort of 44,215 cancer-free participants. Patients in the highest FIB-4 quartile carried a hazard ratio of **18.58 compared to the lowest quartile.2
 
@@ -20,7 +22,6 @@ A comprehensive AI study across Hong Kong developed a LightGBM model trained sol
 ## What This Proves
 
 For liver cancer, the clinical monitoring infrastructure is already in place. Patients at risk are already having their blood drawn at regular intervals. The CMP values used to monitor liver disease show a clear HCC trajectory. The science is well established. However, a population-scale algorithm that processes these values longitudinally and flags increased risk has not yet been developed for routine use in primary care.
-
 
 ## Endnotes
 

@@ -7,7 +7,9 @@ date: "April 2026"
 
 Kidney cancer kills approximately 15,000 Americans each year. Caught while still confined to the kidney, the five-year survival rate is 93 percent. Once it has spread to distant organs, that figure falls to 19 percent.1 No universal screening program exists. Yet the raw data needed to build one is already being collected at routine physicals across the country.
 
-93% survival when caught early, 19% once spread. The blood already carries the signal months before any symptom appears. ## The Signature in the Blood
+93% survival when caught early, 19% once spread. The blood already carries the signal months before any symptom appears.
+
+## The Signature in the Blood
 
 Renal cell carcinoma produces a consistent, multi-marker pattern in the complete blood count (CBC) and comprehensive metabolic panel (CMP) months before clinical diagnosis. A retrospective cohort study of 4,533 patients published in the *British Journal of General Practice* found that eight blood test abnormalities rose above baseline six to eight months before kidney cancer diagnosis: low hemoglobin, elevated creatinine, raised C-reactive protein (CRP) and erythrocyte sedimentation rate (ESR), high platelet count, elevated white cell count, and abnormal liver enzymes.2 A United Kingdom Biobank prospective analysis of 466,994 individuals identified five CBC-derived markers—mean corpuscular hemoglobin concentration (MCHC), red blood cell distribution width (RDW), platelet distribution width (PDW), systemic immune-inflammation index (SII), and platelet-neutrophil product—as independent risk factors for future kidney cancer development.3
 
@@ -20,7 +22,6 @@ A random forest classifier trained on eight standard blood indicators from routi
 ## What This Proves
 
 The blood signature for kidney cancer is documented in peer-reviewed literature. The machine learning methodology capable of reading it is validated. The science is established. What has not yet been built is the population-scale deployed algorithm—the equivalent of ColonFlag or LungFlag—that would passively process every CBC and CMP in the electronic health record and flag high-risk patients for renal imaging. The training data exists in hospital systems today.
-
 
 ## Endnotes
 

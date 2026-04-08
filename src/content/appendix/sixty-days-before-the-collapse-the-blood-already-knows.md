@@ -9,7 +9,9 @@ Disease Detection Series • Heart Failure
 
 Heart failure kills approximately 425,000 Americans annually and affects 6.7 million more, with prevalence projected to reach 11.4 million by 2050. The five-year survival rate after diagnosis is approximately 50 percent (worse than many cancers).1 The hematological and metabolic changes that precede decompensation begin weeks to months before clinical symptoms appear, measurable on the routine complete blood count (CBC) and metabolic panel. Machine learning that tracks declining hemoglobin, rising red blood cell distribution width (RDW), falling sodium, and worsening creatinine predicts hospitalization and death from heart failure at an area under the curve (AUC) of 0.74 to 0.93.
 
-Hemoglobin, RDW, sodium, creatinine, and BUN begin shifting 60 days before heart failure re-hospitalization. Machine learning reads these trajectories. Static thresholds do not. ## The Treatment Effect That Makes Early Detection Urgent
+Hemoglobin, RDW, sodium, creatinine, and BUN begin shifting 60 days before heart failure re-hospitalization. Machine learning reads these trajectories. Static thresholds do not.
+
+## The Treatment Effect That Makes Early Detection Urgent
 
 The four-pillar combination of ACE inhibitor/angiotensin II receptor blocker (ARB), beta-blocker, magnetic resonance angiogram (MRA), and SGLT2 inhibitor reduces heart failure hospitalization by approximately 50 percent and mortality by 25 to 30 percent in patients with reduced ejection fraction.2 These therapies are most effective when initiated before extensive myocardial remodeling and before chronic volume overload damages renal and hepatic function. Earlier identification via blood-based pattern detection expands the window for maximally effective intervention.
 
@@ -28,7 +30,6 @@ A random forest model applied to routine CBC parameters alone—leukocyte count,
 ## What This Proves
 
 Heart failure kills 425,000 Americans annually, and its blood precursors, declining hemoglobin, rising RDW, falling sodium, and worsening creatinine, appear in routine labs 60 days or more before re-hospitalization. Multiple machine learning models that read these signals achieve an AUC of 0.74 to 0.93. Guideline-directed therapy, when fully implemented, reduces hospitalization by 50 percent. Earlier identification via blood-based pattern recognition translates treatment efficacy into preventable deaths—if the pattern is read systematically rather than only when a patient presents acutely.
-
 
 ## Endnotes
 

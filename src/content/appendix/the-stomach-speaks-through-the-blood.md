@@ -7,7 +7,9 @@ date: "April 2026"
 
 Gastric cancer kills approximately 11,000 Americans each year. Caught while still localized, the five-year survival rate is 77 percent. Once it has spread to distant organs, that figure falls to under 7 percent.1 Like colorectal cancer, gastric tumors bleed slowly, generating iron-deficiency anemia that predates clinical symptoms by months. Unlike colorectal cancer, a deployed population-scale algorithm does not yet exist.
 
-77% survival when caught early, under 7% once spread. The blood signature is documented. A deployed algorithm exists in research, not in practice. ## The Signature in the Blood
+77% survival when caught early, under 7% once spread. The blood signature is documented. A deployed algorithm exists in research, not in practice.
+
+## The Signature in the Blood
 
 Iron-deficiency anemia from chronic occult blood loss is the dominant gastric cancer signal. A German primary care study of **122,502 iron-deficiency anemia patients found a statistically significant excess of subsequent gastric cancer diagnoses versus matched controls.2 The complete blood count (CBC) pattern mirrors colorectal cancer: falling hemoglobin, declining mean corpuscular volume (MCV), and elevated red blood cell distribution width (RDW). However, gastric cancer adds an inflammatory overlay: a study of 2,606 gastric cancer patients and 3,219 controls found that neutrophil-to-lymphocyte (NLR) and platelet-to-lymphocyte (PLR) were **superior to carcinoembryonic antigen (CEA) and carbohydrate antigen 19-9 (CA19-9) for early gastric cancer screening, with NLR area under the curve (AUC) 0.715 and PLR AUC 0.707.3
 
@@ -20,7 +22,6 @@ The XHGC20 model, an XGBoost classifier trained on 20 routine hematological indi
 ## What This Proves
 
 Gastric cancer's blood signature—iron-deficiency anemia, NLR and PLR elevation, albumin decline, and RDW increase—is documented in peer-reviewed literature. Two independent XGBoost/GBDT models trained on standard blood inputs achieve an AUC above 0.90. The XHGC20 algorithm exists in research form. What has not been built is its deployment as a passive, electronic health record-integrated screening tool operating on every routine blood draw in primary care—the final step in closing the detection gap.
-
 
 ## Endnotes
 

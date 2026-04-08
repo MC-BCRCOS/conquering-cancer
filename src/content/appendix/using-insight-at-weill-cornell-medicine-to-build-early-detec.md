@@ -7,7 +7,6 @@ date: "April 2026"
 
 *Ratner Early Detection Initiative ( REDI) · March 2026*
 
-
 ## The Target Disease Portfolio
 
 The REDI program targets 25 conditions in total: 13 cancers and 12 non-cancer diseases. The cancers are colorectal, lung, gastric, liver, pancreatic, ovarian, kidney, bladder, esophageal, multiple myeloma, leukemia, lymphoma, and prostate. Two algorithms (for colorectal and lung) are already built and deployed. Two more, for gastric and liver, are in the final validation stages. Nine algorithms remain to be built.
@@ -18,7 +17,6 @@ The 12 non-cancer diseases are cardiovascular disease, type 2 diabetes, chronic 
 
 Every condition on this list produces a detectable signature in one or more of six standard panels: complete blood count (CBC), comprehensive metabolic panel (CMP), lipid panel, liver function tests, HbA1c, and thyroid-stimulating hormone (TSH). The signal is not a single abnormal value; rather, it is a gradual shift across multiple markers over months or years, the kind of signal that human eyes reading a single annual report cannot detect, but that machine learning can reliably identify at a population scale.
 
-
 ## Does INSIGHT Have Enough Records?
 
 INSIGHT now holds approximately 23 million de-identified electronic health records (EHRs) spanning eight major academic medical centers: Weill Cornell Medicine, NewYork-Presbyterian, Columbia University Irving Medical Center, Montefiore Health System, Mount Sinai Health System, NYU Langone Health, Houston Methodist, and Stony Brook Medicine. The data include laboratory results, ICD-10 diagnostic codes, medical history, and claims data, the exact combination required for algorithm training: blood test values linked to confirmed outcomes.
@@ -26,21 +24,17 @@ INSIGHT now holds approximately 23 million de-identified electronic health recor
 
 The question of whether there are enough records must be answered on a disease-by-disease basis, as rarer conditions require special attention.
 
-
 ### Common Cancers
 
 For common cancers such as colorectal, lung, and prostate, INSIGHT’s 23 million records likely include tens of thousands of confirmed cases with longitudinal blood draw histories. The LungFlag algorithm was trained on 6,505 cases against 189,597 controls. ColonFlag used 606,403 patients in total. INSIGHT can supply those numbers many times over.
-
 
 ### Moderately Rare Cancers
 
 For kidney, bladder, ovarian, pancreatic, and gastric cancers, published case counts of 1,000 to 5,000 confirmed cases are sufficient for initial model training, provided those patients have at least two or three blood draws in the years before diagnosis. INSIGHT’s scale makes this achievable for all these targets.
 
-
 ### Rare Diseases
 
 For the rarest conditions in the portfolio, such as Wilson disease, Addison’s disease, and primary biliary cholangitis, case counts across the 23 million records may be limited. Wilson disease affects approximately 1 in 30,000 people, implying perhaps 750 cases in the entire INSIGHT database. This is at the lower limit of what is usable for gradient-boosted modeling and may require augmentation through external datasets or a federated query across additional PCORnet partner institutions, which INSIGHT can access as part of the national network.
-
 
 ### Non-Cancer Diseases
 
@@ -48,7 +42,6 @@ For cardiovascular disease, type 2 diabetes, chronic kidney disease, and NAFLD, 
 
 
  One critical qualification: raw record counts are not the same as clean, usable training records. A patient who appears in the INSIGHT database but has only one blood draw, whose records span less than two years, or who left the health system before a diagnostic outcome was confirmed cannot be used. The effective usable dataset is typically 40 to 60 percent of the nominal record count after applying longitudinal, outcome, and quality filters. For INSIGHT’s 23 million records, that still leaves a very large and sufficient training pool for the vast majority of targets.
-
 
 ## Data Quality and Cleaning
 
@@ -63,14 +56,12 @@ Reference range normalization follows: different analyzers at various hospitals 
 
 The ARCH (Architecture for Research Computing in Health) infrastructure at Weill Cornell is specifically designed to support this work. ARCH has already built tools for cohort discovery, EHR data extraction, and statistical analysis on Epic data, supporting over 1,200 unique investigators through more than 4,000 consultations. A formal feasibility query submitted to ARCH can return patient counts, generate frequency statistics, and offer data-density estimates for any specific target disease before a single line of modeling code is written. This is the natural first step.
 
-
 ## Machine Learning Methods
 
 The methodology is standardized, validated, and thoroughly documented in published literature. The tools a REDI data science team would use are as follows.
 
 
 In practice, every algorithm development project runs several of these methods in parallel during the initial training phase and selects the one that best balances predictive performance (area under the curve [AUC]), clinical interpretability, and stability across validation folds. Gradient boosting generally performs best in most published comparisons on blood panel data, but this should be confirmed empirically on each target disease.
-
 
 ## The Scientific Workforce: Who Does This Work?
 
@@ -81,7 +72,6 @@ What REDI would need, beyond what ARCH provides, is a dedicated machine learning
 
 
 Weill Cornell’s academic medical center setting is a benefit for recruitment. The concentration of talent in computational biomedicine in New York City, along with a meaningful research mission and access to one of the largest urban EHR repositories in the country, makes this a competitive opportunity for strong candidates.
-
 
 ## Costs
 
@@ -96,14 +86,12 @@ For the full portfolio of 21 remaining algorithms (9 cancer, 12 non-cancer, net 
 
 For context: the average cost to develop a single new cancer drug is $2.6 billion. This entire program, which covers 25 conditions and has the potential to save hundreds of thousands of lives per year, can be completed for less than 3 percent of that figure.
 
-
 ## Timeline
 
 This is a multi-year program. Timelines depend heavily on how many algorithms are built in parallel versus serially, and on how quickly Institutional Review Board (IRB) approvals and data use agreements are executed.
 
 
 Individual algorithms for common diseases with abundant INSIGHT records could be completed and submitted for regulatory clearance within 24 months of program launch. The full program, from first IRB submission to last FDA clearance, realistically spans four to five years for the complete portfolio.
-
 
 ## The Strategic Advantage
 
@@ -114,7 +102,6 @@ The data are there; the infrastructure for querying the data is established; the
 
 
 What is needed is a formal institutional partnership between REDI and the INSIGHT leadership, a dedicated data science team for algorithm development, and the funding to sustain the program through to FDA clearance and clinical deployment. All other components are already in place.
-
 
 ## Practical Next Steps
 

@@ -9,7 +9,9 @@ Disease Detection Series • Type 2 Diabetes
 
 Type 2 diabetes kills approximately 95,000 Americans annually as the underlying cause and contributes to hundreds of thousands more deaths through cardiovascular, renal, and neurological complications. An estimated 11 million adults with diabetes are currently undiagnosed, and more than 85 percent of the 115 million Americans with prediabetes are unaware of their status.1 The disease develops over 5 to 15 years while leaving a measurable trail in every routine blood panel. Machine learning that reads the trail—drifting fasting glucose, creeping HbA1c, rising triglycerides, and falling high-density lipoprotein (HDL)—predicts diabetes onset three to five years before clinical diagnosis with an area under the curve (AUC) exceeding 0.90. That detection window is exactly when lifestyle intervention is most effective.
 
-The Diabetes Prevention Program: 58% reduction in diabetes incidence with lifestyle intervention. Machine Learning identifies exactly those patients, three to five years before their HbA1c crosses any diagnostic threshold. ## The Treatment Effect That Makes Early Detection Urgent
+The Diabetes Prevention Program: 58% reduction in diabetes incidence with lifestyle intervention. Machine Learning identifies exactly those patients, three to five years before their HbA1c crosses any diagnostic threshold.
+
+## The Treatment Effect That Makes Early Detection Urgent
 
 The Diabetes Prevention Program randomized 3,234 adults with prediabetes to lifestyle intervention (7 percent weight loss + 150 minutes weekly exercise), metformin, or placebo. Lifestyle intervention reduced diabetes incidence by 58 percent over 2.8 years (95% CI: 48–66 percent). Twenty-one-year follow-up confirmed durable prevention benefits.2 These interventions work, but only if the patient is identified while still in the prediabetic window, when HbA1c is drifting toward but has not yet crossed 5.7 percent.
 
@@ -28,7 +30,6 @@ Ravaut and colleagues trained LightGBM on administrative health data from 2,137,
 ## What This Proves
 
 Type 2 diabetes is one of the most preventable diseases in medicine. The blood data needed to identify patients in their preventable window are already being collected from hundreds of millions of people annually. Machine learning models that read HbA1c trajectories, fasting glucose drift, triglyceride/HDL ratios, and GGT elevation achieve an AUC of 0.88 to 0.90 in population-scale studies. The intervention that prevents the disease has 58 percent efficacy when applied to the right patients at the right time. Identifying those patients algorithmically from existing blood work is not a research question. It is an implementation decision.
-
 
 ## Endnotes
 

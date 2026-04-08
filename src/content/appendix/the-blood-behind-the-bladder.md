@@ -7,7 +7,9 @@ date: "April 2026"
 
 Bladder cancer is diagnosed in approximately 82,000 Americans each year. Caught while still localized, the five-year survival rate is 70 percent. Once it has spread to distant organs, fewer than 9 percent of patients survive five years.1 Most early bladder cancers are caught incidentally through hematuria investigations. Yet routine blood tests ordered for unrelated reasons at annual physicals already contain detectable signals.
 
-70% survival when caught early, under 9% once spread. Routine blood tests show the signal six to eight months before diagnosis. ## The Signature in the Blood
+70% survival when caught early, under 9% once spread. Routine blood tests show the signal six to eight months before diagnosis.
+
+## The Signature in the Blood
 
 The same 2022 *British Journal of General Practice* study that documented pre-diagnostic blood test abnormalities in renal cancer analyzed 4,533 patients with bladder and renal cancer combined. For bladder cancer patients, raised inflammatory markers, such as C-reactive protein (CRP) and erythrocyte sedimentation rate (ESR), were present in 43 to 45 percent, low hemoglobin in 35 percent, and high creatinine in 32 percent of patients in the year before diagnosis. Statistically significant inflection points in complete blood count (CBC) abnormalities began six to eight months before clinical diagnosis.2
 
@@ -20,7 +22,6 @@ A LightGBM model trained on routine laboratory data from 1,336 patients in Taiwa
 ## What This Proves
 
 Bladder cancer's pre-diagnostic blood signature is documented, and the machine learning methodology achieves clinically useful discrimination using only routine laboratory inputs. The science is established. A population-scale passive screening algorithm that processes every CMP and CBC in the electronic health record to flag bladder cancer risk has not yet been implemented in primary care.
-
 
 ## Endnotes
 

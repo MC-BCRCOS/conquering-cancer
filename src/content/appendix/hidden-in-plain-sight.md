@@ -7,7 +7,9 @@ date: "April 2026"
 
 Lung cancer is the leading cause of cancer death in the United States, killing approximately 125,000 Americans annually. Caught while still localized, the five-year survival rate is 65 percent. Diagnosed at the distant stage, where more than half of all cases are first detected, it falls to under 10 percent.1 Current United States Preventive Services Task Force (USPSTF) screening criteria, which require a specific age range and smoking history, miss roughly two-thirds of all lung cancer patients.2 The data needed to find them earlier already exist in the routine blood work ordered at annual physicals.
 
-65% survival when caught early, under 10% once spread. Yet two-thirds of lung cancer patients never qualify for screening—even under updated guidelines. ## The Signature in the Blood
+65% survival when caught early, under 10% once spread. Yet two-thirds of lung cancer patients never qualify for screening—even under updated guidelines.
+
+## The Signature in the Blood
 
 Lung cancer produces a measurable inflammatory blood signature months to years before clinical diagnosis, driven not by bleeding but by the tumor’s own biochemistry. Tumors secrete colony-stimulating factors, granulocyte colony-stimulating factor (G-CSF) and granulocyte-macrophage colony-stimulating factor (GM-CSF), that drive leukocytosis. They secrete interleukin-6, which stimulates thrombopoietin production and elevates platelet counts.3 They suppress erythropoiesis through hepcidin-mediated iron sequestration, producing anemia in more than half of patients at diagnosis.
 
@@ -26,7 +28,6 @@ LungFlag demonstrates that the same machine learning methodology that produced C
 USPSTF screening criteria are age- and smoking-based. They are static. They miss never-smokers, former smokers who quit more than 15 years ago, and anyone outside the eligible age range. LungFlag works continuously and passively on every blood draw. A cost-effectiveness analysis projected that LungFlag, as an adjunct to USPSTF screening, would identify 17 additional early-stage lung cancers per year within a single health system, resulting in 22 fewer deaths and $2.87 million in net cost savings over five years.7
 
 The science is established. The algorithm exists and has been externally validated. For the 11 remaining cancers in this series, the key question is not whether machine learning can read a blood signature—ColonFlag and LungFlag already answered that. The question is whether a comparable signature exists. For each, the peer-reviewed evidence shows that it does.
-
 
 ## Endnotes
 

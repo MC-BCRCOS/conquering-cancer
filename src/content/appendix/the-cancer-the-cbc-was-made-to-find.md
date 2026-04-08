@@ -7,7 +7,9 @@ date: "April 2026"
 
 Leukemia encompasses a family of blood cancers. The five-year survival rate for chronic myeloid leukemia (CML) is approximately 73 percent; for chronic lymphocytic leukemia (CLL), approximately 88 percent. Both are diseases of the blood, and both leave unmistakable pre-diagnostic signals in the complete blood count (CBC)—the one laboratory test ordered more routinely than any other in primary care.1
 
-CML and CLL both leave pre-diagnostic CBC signals measurable years before diagnosis. Machine learning reads them with 92 to 98% accuracy. ## The Signature in the Blood
+CML and CLL both leave pre-diagnostic CBC signals measurable years before diagnosis. Machine learning reads them with 92 to 98% accuracy.
+
+## The Signature in the Blood
 
 In CML, the tumor's Philadelphia chromosome drives BCR-ABL1 tyrosine kinase activity, causing leukocytosis, basophilia, and eosinophilia months to years before clinical diagnosis. A systematic review of pre-clinical CML cases found that basophil percentage is the earliest and most specific CBC marker, deviating from normal before the total white blood cell (WBC) count reaches diagnostic thresholds.2
 
@@ -22,7 +24,6 @@ For CLL, an XGBoost classifier trained on 11 CBC parameters achieved 98.6 percen
 ## What This Proves
 
 Of all 13 cancers in this series, leukemia is the one in which the CBC signal is most direct and the machine learning evidence most advanced. CML and CLL both produce CBC abnormalities measurable years before clinical diagnosis. Machine learning models achieve near-diagnostic accuracy from standard blood counts alone. For CLL, a population-scale deployed algorithm is within reach of current technology. The science is not just established, it is mature.
-
 
 ## Endnotes
 

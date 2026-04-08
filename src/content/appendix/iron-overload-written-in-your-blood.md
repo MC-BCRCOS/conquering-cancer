@@ -9,7 +9,9 @@ Disease Detection Series • Hemochromatosis
 
 Hereditary hemochromatosis affects approximately 1 in 200 to 1 in 300 adults of Northern European descent in the United States, making it one of the most common genetic disorders on the continent. Most patients are diagnosed only after irreversible organ damage has occurred. Yet the blood signature of iron overload is measurable on routine metabolic and hematological panels for decades before cirrhosis, diabetes, or cardiomyopathy develops. Treatment is phlebotomy: simple, inexpensive, and fully curative when started before organ damage.1
 
-Patients diagnosed before cirrhosis achieve normal life expectancy. Those diagnosed after face a 219-fold increased risk of liver cancer. The difference is when the blood was read. ## The Treatment Effect That Makes Early Detection Urgent
+Patients diagnosed before cirrhosis achieve normal life expectancy. Those diagnosed after face a 219-fold increased risk of liver cancer. The difference is when the blood was read.
+
+## The Treatment Effect That Makes Early Detection Urgent
 
 Niederau and colleagues demonstrated in a landmark *New England Journal of Medicine* cohort study that patients with haemochromatosis treated before the development of cirrhosis had survival equivalent to that of age-matched controls. Those diagnosed after cirrhosis had liver cancer risk 219 times higher and cardiomyopathy risk 306 times higher.2 The HEIRS Study, screening more than 100,000 individuals across North America, confirmed that transferrin saturation and serum ferritin identify C282Y homozygotes with 75 percent sensitivity at a specificity that supports population-level screening.3 Phlebotomy removes 200 to 250 mg of iron per session and costs less than $50, preventing every downstream complication when started early.
 
@@ -26,7 +28,6 @@ Martins Conde and colleagues applied XGBoost to 254 hereditary haemochromatosis 
 ## What This Proves
 
 Haemochromatosis leaves a measurable, progressive signature on routine metabolic and hematological panels for decades before organ damage occurs. A published XGBoost algorithm achieves AUC 0.94. Treatment is curative when applied early. Algorithmically reading ferritin trajectories alongside concurrent metabolic shifts from annual blood work would identify iron overload carriers before cirrhosis, converting a genetic sentence into a preventable condition.
-
 
 ## Endnotes
 

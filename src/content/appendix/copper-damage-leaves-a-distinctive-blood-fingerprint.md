@@ -9,7 +9,9 @@ Disease Detection Series • Wilson Disease
 
 Wilson disease, a genetic disorder of copper metabolism affecting approximately 1 in 30,000 individuals, is nearly always diagnosed after irreversible damage—cirrhosis, neurological devastation, or both. Yet it leaves a highly distinctive fingerprint on routine liver function tests for years before that damage becomes irreversible.1 Treatment with copper chelation initiated before neurological involvement halts disease progression and provides near-normal life expectancy. The gap between available treatment and current diagnosis is not a gap in medical knowledge; it is a gap in pattern recognition.
 
-Three in four Wilson disease patients receive at least one incorrect diagnosis before the disease is identified. The blood pattern that distinguishes it has been in their liver function tests throughout. ## The Treatment Effect That Makes Early Detection Urgent
+Three in four Wilson disease patients receive at least one incorrect diagnosis before the disease is identified. The blood pattern that distinguishes it has been in their liver function tests throughout.
+
+## The Treatment Effect That Makes Early Detection Urgent
 
 Wilson disease is uniformly fatal without treatment. Copper accumulation, present from birth because the *ATP7B* gene mutation impairs biliary copper excretion, eventually overwhelms hepatic compensation, triggering liver failure, chronic cirrhosis, or neuropsychiatric deterioration. Approximately 3 percent of all acute liver failure cases at transplant centers are attributable to Wilson disease.2 Chelation with D-penicillamine or trientine initiated before neurological symptoms appear achieves stabilization or improvement in 70 to 80 percent of patients. Those treated after established neurological involvement have substantially worse outcomes.
 
@@ -26,7 +28,6 @@ Liang and colleagues applied XGBoost to 3,559 Wilson disease patients from the O
 ## What This Proves
 
 Wilson disease is rare but treatable, and its blood signature is distinctive enough that a trained algorithm reading elevated transaminases, low-normal ALP, declining albumin, and rising bilirubin in a young patient could flag the diagnosis years before neurological symptoms arrive. No deployed population-level machine learning algorithm yet exists, but the biological and computational evidence for feasibility is established. The algorithmic gap is closable.
-
 
 ## Endnotes
 

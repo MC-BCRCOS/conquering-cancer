@@ -7,7 +7,9 @@ date: "April 2026"
 
 Ovarian cancer kills approximately 13,000 Americans each year. Caught while still localized, the five-year survival rate is 92 percent. Once it has spread to distant organs, fewer than 32 percent of patients survive five years.1 Yet only 20 percent of ovarian cancers are diagnosed at the localized stage. The disease is called a silent killer, but its blood signature is not silent at all.
 
-92% survival when caught early, 32% once spread. Only 20% are found early. The blood signal exists. The question is whether anyone is reading it. ## The Signature in the Blood
+92% survival when caught early, 32% once spread. Only 20% are found early. The blood signal exists. The question is whether anyone is reading it.
+
+## The Signature in the Blood
 
 The most specific pre-diagnostic blood signal for ovarian cancer is thrombocytosis. A *New England Journal of Medicine* study of 619 patients established the mechanism: ovarian tumors secrete interleukin-6 (IL-6), which stimulates hepatic thrombopoietin synthesis, causing paraneoplastic platelet elevation.2 A prospective cohort of 160,000 United Kingdom patients found that thrombocytosis (>400 × 10⁹/L) on a routine complete blood count (CBC) was associated with ovarian cancer risk increasing 23-fold, with platelet counts rising slowly over 18 months, then sharply in the 6 months prior to diagnosis.3
 
@@ -20,7 +22,6 @@ A random forest classifier trained on 32 routine pretreatment blood parameters i
 ## What This Proves
 
 Ovarian cancer's blood signature is among the most extensively studied and algorithmically validated in this series. The paraneoplastic thrombocytosis mechanism is established, the longitudinal CA-125 trajectory is validated in a 200,000-person trial, and machine learning models achieve near-diagnostic accuracy from routine blood inputs. The science is established, but the primary care screening algorithm has not yet been deployed.
-
 
 ## Endnotes
 

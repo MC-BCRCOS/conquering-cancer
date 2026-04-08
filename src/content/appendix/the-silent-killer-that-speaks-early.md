@@ -7,7 +7,9 @@ date: "April 2026"
 
 Pancreatic cancer kills approximately 51,000 Americans each year. Caught while still localized, the five-year survival rate is 44 percent. Once it has spread, fewer than 4 percent of patients survive five years.1 It carries the most dramatic survival gap of any cancer on this list. It also leaves one of the most specific pre-diagnostic metabolic signals in the standard blood panel.
 
-44% survival when caught early, but under 4% once spread. No cancer has a wider gap. No cancer has a more specific pre-diagnostic blood signal. ## The Signature in the Blood
+44% survival when caught early, but under 4% once spread. No cancer has a wider gap. No cancer has a more specific pre-diagnostic blood signal.
+
+## The Signature in the Blood
 
 The primary signal is glucose metabolism disruption. Pancreatic tumors impair islet cell function years before causing symptoms, producing a pattern of new-onset diabetes or accelerating glucose instability. A landmark study of 28,137 pancreatic ductal adenocarcinoma (PDAC) cases confirmed that HbA1c diverges from controls two to three years before diagnosis , while liver enzymes (bilirubin, alkaline phosphatase [ALP], alanine transaminase [ALT], gamma-glutamyl transferase [GGT]) show a rapid increase approximately one year before diagnosis, and white blood cell (WBC) and platelet counts rise in the final year.2
 
@@ -20,7 +22,6 @@ An XGBoost model trained on routine clinical data in patients with new-onset dia
 ## What This Proves
 
 The glucose-disruption signal for pancreatic cancer is measurable on a standard CMP two to three years before diagnosis. The XGBoost methodology is validated. What has not been built is the routine primary care algorithm that flags new-onset diabetes patients for pancreatic risk stratification based on the metabolic trajectory already in the EHR. The science is established. The deployment is the missing step.
-
 
 ## Endnotes
 

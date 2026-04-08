@@ -7,7 +7,6 @@ date: "April 2026"
 
 *Ratner Early Detection Initiative (REDI) · March 2026*
 
-
 ## Maccabi Healthcare Services: The World’s First Operational Deployment
 
 Maccabi is Israel’s second-largest HMO, providing care and insurance to approximately 2.7 million members. It is an integrated organization in which Maccabi both insures its members and employs or contracts the physicians who care for them. The EHR, the blood draw, the attending physician, and the follow-up colonoscopy all live within one institution. There is no payer-provider split to navigate. This closed-loop structure is directly relevant to why ColonFlag could be deployed so cleanly: every element of the workflow, from the CBC result to the colonoscopy outcome, is visible within a single data environment.
@@ -31,7 +30,6 @@ In the prospective Maccabi deployment study published in *JCO Clinical Cancer In
 
 Over three years of deployment applied to approximately 220,000 patients aged 50 to 75, the program identified 1,913 patients at high risk. In two years of that period, 67 patients with confirmed malignancy and 254 patients with adenomatous polyps had been detected through the program.
 
-
 ## Geisinger Health System: The American Deployment
 
 Geisinger Health System serves over three million patients across 45 counties of central, south-central, and northeastern Pennsylvania, operating ten hospitals and a medical school. Geisinger converted from paper to electronic health records in 1996, and its enterprise data warehouse now aggregates clinical, financial, and social determinants data from over 100 sources including its Epic EHR, with records on more than 5.5 million patients dating to 1996.
@@ -42,7 +40,6 @@ The workflow at Geisinger followed the same passive integration model as Maccabi
 
 Geisinger’s Epic infrastructure provided the necessary plumbing. Its EHR includes clinical decision support across all group-practice sites and is available to more than 2,000 users in non-Geisinger practices. That existing infrastructure, with its alert system and patient portal, carried ColonFlag’s outputs into the physician workflow without requiring a separate interface.
 
-
 ## Other Health Systems Currently Using These Algorithms
 
 ColonFlag and LungFlag are now deployed at multiple institutions beyond Maccabi and Geisinger.
@@ -52,7 +49,6 @@ ColonFlag and LungFlag are now deployed at multiple institutions beyond Maccabi 
  SLUCare Physician Group at Saint Louis University announced in early 2019 that it would deploy LGI-Flag, the US-marketed version of ColonFlag, across its patient population for lower gastrointestinal disorder risk identification. Roche navify® Algorithm Suite. In April 2023, Roche Diagnostics launched its navify Algorithm Suite at the HIMSS Global Conference, a cloud-based platform that integrates ColonFlag and other algorithms directly into EHR and Laboratory Information System (LIS) workflows at hospitals and labs worldwide. The suite offers fully cloud-based deployment, a hybrid cloud/on-premises option, and an on-premises integration component for institutions whose EHR cannot connect via API to the cloud. Integration uses HL7 v2-based interfaces for hybrid deployments and HTTPS/JSON-based APIs for direct cloud connections.
 
 The navify model is currently the most fully operational commercial distribution channel for ColonFlag at scale. A health system that wants to deploy it today contacts Roche, selects the integration option that fits its infrastructure, and the algorithm becomes available as a module within the existing EHR or LIS workflow.
-
 
 ## How to Distribute New Algorithms Nationally and Globally
 
@@ -73,7 +69,6 @@ Algorithms trained on INSIGHT data could be deployed first within the INSIGHT ne
 ### Model 4: Public Health and Payer Channel
 
 Engaging CMS and large commercial payers to include algorithmic screening analysis as a covered preventive service would drive health systems to deploy it as a matter of reimbursement optimization rather than institutional choice. Once a CPT code exists for algorithmic blood panel analysis and Medicare covers it, the market incentive for deployment is established. This is the most durable and scalable pathway, but it requires regulatory approval, clinical evidence publication, and a sustained policy engagement effort. The precedent for this pathway is the addition of low-dose CT lung cancer screening as a covered Medicare benefit following the National Lung Screening Trial.
-
 
 ## The Blood Tests: What Is Drawn, How Often, and at What Cost
 
@@ -112,7 +107,6 @@ The blood draw and panel analysis are already paid for, once per year, for virtu
 
 That is the policy gap that needs to be closed: either through a new billing code for algorithmic screening analysis, inclusion of the algorithm output as a covered preventive service under the ACA, or through a quality measure that incentivizes health systems to deploy the algorithms under value-based care contracts. The precedent is the addition of low-dose CT lung cancer screening as a covered Medicare benefit, which followed directly from USPSTF recommendation and NCI trial evidence.
 
-
 ## The Complete End-to-End Workflow
 
 The following describes the complete patient journey from blood draw to clinical action under a fully deployed REDI model.
@@ -133,7 +127,6 @@ The following describes the complete patient journey from blood draw to clinical
 
 
 At 200 million annual blood draws per year in the United States, this workflow, once embedded across major health systems and lab networks, would constitute the largest passive early detection program in the history of medicine.
-
 
 ## Endnotes
 

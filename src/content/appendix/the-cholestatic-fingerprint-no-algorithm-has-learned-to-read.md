@@ -9,7 +9,9 @@ Disease Detection Series • Primary Biliary Cholangitis
 
 Primary biliary cholangitis (PBC) is a progressive autoimmune liver disease affecting approximately 105,000 adults in the United States, predominantly women in their fifth decade of life. Without treatment, median transplant-free survival from diagnosis is 7 to 16 years. With ursodeoxycholic acid (UDCA) initiated early enough to achieve full biochemical response, survival becomes comparable to the age- and sex-matched general population.1 The blood signature of PBC, a distinctive cholestatic pattern driven primarily by alkaline phosphatase (ALP), is present years before cirrhosis. It is a signal in every routine metabolic panel, waiting for an algorithm to read it systematically at the population scale.
 
-UDCA reduces PBC mortality hazard by 43%. The ALP signature that identifies who needs it is present years before cirrhosis, on standard blood tests already being drawn. ## The Treatment Effect That Makes Early Detection Urgent
+UDCA reduces PBC mortality hazard by 43%. The ALP signature that identifies who needs it is present years before cirrhosis, on standard blood tests already being drawn.
+
+## The Treatment Effect That Makes Early Detection Urgent
 
 Treatment benefit in PBC is tightly linked to timing and depth of biochemical response. Lammers and colleagues demonstrated in a meta-analysis of 4,845 patients across 15 international cohorts that ALP normalization on UDCA predicted transplant-free survival comparable to the general population, whereas patients who failed to achieve a biochemical response retained a substantially elevated risk.2 Second-line agents, obeticholic acid and bezafibrate, significantly improve response rates in UDCA non-responders. The earlier the diagnosis, the lower the baseline fibrosis stage from which treatment begins, and the more treatment options remain available.
 
@@ -28,7 +30,6 @@ General liver fibrosis machine learning models using the same liver function tes
 ## What This Proves
 
 PBC presents one of the most compelling unsolved opportunities in blood-based disease detection. The cholestatic signature is present years before cirrhosis, UDCA reduces mortality by 43 percent, and the blood markers are on every standard metabolic panel. No machine learning algorithm targeting this signature at the population scale has been published. Building one requires only a training dataset of confirmed PBC cases, standard live function test inputs, and the gradient-boosting methodology already proven in cancer and chronic kidney disease detection. The biology is documented, the methodology is established, but the algorithm has not been built.
-
 
 ## Endnotes
 

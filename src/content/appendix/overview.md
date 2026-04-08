@@ -11,9 +11,7 @@ Licensable & Partnerable CBC-Based Cancer Detection Algorithms The following alg
 
 This landscape excludes liquid biopsy platforms (Galleri, CancerSEEK/Cancerguard, Guardant Shield), cell-free deoxyribonucleic acid (cfDNA)-based tests, and imaging AI. Only blood chemistry and EHR-based algorithms are covered.
 
-
 ## Algorithm Landscape at a Glance
-
 
 ## 1. Medial EarlySign: ColonFlag and LungFlag
 
@@ -29,7 +27,6 @@ LungFlag, commercialized as Reveal for Lung Cancer by Lucem Health, analyzes EHR
 
 Relevance for REDI: Medial EarlySign has not developed algorithms for pancreatic, ovarian, bladder, or kidney cancer. Their horizontal expansion into non-cancer conditions (diabetes, AAA, flu) rather than additional cancer types leaves the four REDI target cancers entirely open. A licensing or co-development discussion with EarlySign or Lucem Health is plausible—EarlySign's Innovation Collaborative is specifically designed to include external partners.
 
-
 ## 2. PRISM: MIT/Harvard Pancreatic Cancer Risk Model
 
 Entity: MIT CSAIL (Principal Investigator: Martin Rinard) and Harvard Medical School/Beth Israel Deaconess Medical Center (Senior Author: Lisa Appelbaum). Supported by DARPA, NSF, Boeing, Aarno Labs, Prevent Cancer Foundation, and TriNetX.
@@ -42,7 +39,6 @@ A separate prospective validation study, registered with the National Pancreatic
 
  Relevance for REDI: PRISM is an academic model built on open infrastructure (TriNetX). The MIT and Harvard teams have explicitly stated their goal is clinical deployment. A partnership, licensing arrangement, or collaborative expansion with REDI's hospital network is very feasible. REDI's INSIGHT and Northwell connections are precisely the kind of institutional nodes that could accelerate PRISM's prospective validation and give REDI access to a validated pancreatic cancer algorithm without starting from scratch.
 
-
 ## 3. VA Transformer Model (Zheng et al.)
 
  Entity: Veterans Affairs (VA) research team.
@@ -53,7 +49,6 @@ This transformer-based deep learning model was trained on longitudinal EHR data 
 
  Relevance for REDI: The VA dataset is the largest single-institution PDAC EHR training set published. The model is not commercially available, but VA researchers routinely partner with academic medical centers and philanthropic initiatives. A data-sharing or co-development agreement that aligns REDI's hospital data with the VA cohort would substantially strengthen prospective validation.
 
-
 ## 4. Roche navify Algorithm Suite
 
  Entity: Roche Diagnostics, Rotkreuz, Switzerland. Launched in April 2023.
@@ -63,7 +58,6 @@ This transformer-based deep learning model was trained on longitudinal EHR data 
 Roche's navify Algorithm Suite is a secure digital ecosystem that connects physicians to a library of medical algorithms via a single integration point into laboratory information system/hospital information system (LIS/HIS) and EHR/electronic medical record (EMR) systems.6 Current cancer-relevant algorithms include ColonFlag (from EarlySign) for colorectal cancer risk using CBC, and GAAD for early-stage hepatocellular carcinoma detection using AFP and PIVKA-II protein assays combined with age and sex. GAAD is CE-marked but not available in the United States. Roche announced that lung and gastric cancer algorithms are in the pipeline via the EarlySign partnership.
 
  Relevance for REDI: navify provides a ready-made deployment and distribution channel. Roche explicitly invites universities and algorithm developers to list in the navify marketplace. If REDI develops and validates an algorithm, navify offers a faster route to health system deployment than building a proprietary integration. It also signals the business model that Roche sees working: third-party algorithm IP distributed through a common platform. REDI should investigate whether navify partnership terms allow for the cancer types currently missing from the library.
-
 
 ## 5. Lucem Health Innovation Collaborative
 

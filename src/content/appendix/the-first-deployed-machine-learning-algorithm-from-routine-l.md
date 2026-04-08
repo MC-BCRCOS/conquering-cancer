@@ -9,7 +9,9 @@ Disease Detection Series • Chronic Kidney Disease
 
 Chronic kidney disease (CKD) kills nearly 58,000 Americans annually and affects 35.5 million more, most of them unaware. Nine in 10 adults with CKD have not been diagnosed.1 The disease writes itself into the comprehensive metabolic panel (CMP) for years before kidney function falls to a level that triggers clinical concern. Machine learning that reads the creatinine trajectory, not just the current value, alongside concurrent shifts in blood urea nitrogen (BUN), albumin, and hemoglobin, identifies patients on the path to kidney failure two to five years before conventional thresholds are crossed. One algorithm is now CE-marked and deployed.
 
-Klinrisk, the first CE-marked machine learning algorithm for CKD from routine labs, achieves AUC 0.88 and was validated on 4.8 million US adults across commercial, Medicare, and Medicaid populations. ## The Treatment Effect That Makes Early Detection Urgent
+Klinrisk, the first CE-marked machine learning algorithm for CKD from routine labs, achieves AUC 0.88 and was validated on 4.8 million US adults across commercial, Medicare, and Medicaid populations.
+
+## The Treatment Effect That Makes Early Detection Urgent
 
 The treatment window for CKD is far more effective early than late. SGLT2 inhibitors reduce CKD progression by 30 to 40 percent in patients with preserved estimated glomerular filtration rate (eGFR). ACE inhibitors and angiotensin II receptor blockers (ARBs) most effectively slow proteinuria-driven progression in Stages 1 to 3. Finerenone reduces kidney failure risk by 20 percent in CKD patients with diabetes.2 Detecting CKD at Stage 2 rather than Stage 4 delivers 5 to 10 additional years of nephroprotective therapy before dialysis becomes necessary—a difference of approximately $450,000 to $900,000 in lifetime dialysis costs per patient, and the difference between a treatable condition and a terminal one.
 
@@ -28,7 +30,6 @@ Most definitively, Tangri and colleagues validated Klinrisk on 4.8 million Unite
 ## What This Proves
 
 CKD is the furthest advanced of all 11 diseases in this series: a deployed, CE-marked machine learning algorithm validated on 4.8 million patients. Klinrisk demonstrates that the creatinine trajectory, eGFR slope, and concurrent metabolic shifts carry enough longitudinal information to predict kidney failure years before it occurs. The question for CKD is no longer whether machine learning works; it is how quickly health systems will integrate it.
-
 
 ## Endnotes
 

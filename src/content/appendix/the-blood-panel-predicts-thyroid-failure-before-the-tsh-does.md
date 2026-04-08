@@ -9,7 +9,9 @@ Disease Detection Series • Hypothyroidism
 
 Subclinical hypothyroidism affects 4 to 8.5 percent of the United States population , approximately 13 to 28 million Americans, and progresses to overt hypothyroidism at a rate of 2 to 6 percent per year. When thyroid-stimulating hormone (TSH) exceeds 10 mIU/L, 75 percent of untreated patients will develop overt hypothyroidism within four years.1 Untreated overt hypothyroidism causes hypercholesterolemia, cardiovascular disease, cognitive impairment, and, rarely but fatally, myxedema coma. The TSH trajectory toward thyroid failure is measurable on routine annual blood work years before symptoms appear. Applying machine learning to routine laboratory panels can identify thyroid dysfunction without ordering a TSH test, achieving an area under the curve (AUC) of 0.91 using typical metabolic, hematological, and lipid values alone.
 
-An XGBoost model on multi-institutional Japanese EHR data detected hypothyroidism with AUC 0.91 using 11 routine laboratory tests, with no thyroid function tests included. ## The Treatment Effect That Makes Early Detection Urgent
+An XGBoost model on multi-institutional Japanese EHR data detected hypothyroidism with AUC 0.91 using 11 routine laboratory tests, with no thyroid function tests included.
+
+## The Treatment Effect That Makes Early Detection Urgent
 
 Levothyroxine replacement in overt hypothyroidism is among the simplest and most effective treatments in medicine: a once-daily tablet restores euthyroidism and eliminates virtually all complications when initiated before irreversible end-organ damage. Subclinical hypothyroidism with TSH 7 to 10 mIU/L is associated with an 18 to 28 percent increased risk of coronary heart disease events and a 27 percent increased risk of heart failure hospitalization. Intervention at this stage, before overt hypothyroidism, prevents the hypercholesterolemia, diastolic dysfunction, and cognitive decline that accumulate with years of untreated thyroid failure.2
 
@@ -28,7 +30,6 @@ The biological logic is sound: hypothyroidism raises cholesterol through reduced
 ## What This Proves
 
 Hypothyroidism is extraordinarily common; its blood signature spans the CBC, comprehensive metabolic panel (CMP), and lipid panel simultaneously, and levothyroxine is one of the most effective and inexpensive treatments in medicine. A published XGBoost algorithm already achieves an AUC of 0.91 from routine labs without TSH. The immediate clinical application is integrating longitudinal TSH trends with concurrent metabolic and lipid panel changes to flag patients for thyroid function testing before symptoms develop, precisely when treatment is most effective.
-
 
 ## Endnotes
 

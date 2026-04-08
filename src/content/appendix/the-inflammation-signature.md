@@ -7,7 +7,9 @@ date: "April 2026"
 
 There are approximately 300,00 breast cancer diagnoses in the United States annually. Caught while still localized, the five-year survival rate reaches 100 percent. Once it has spread to distant organs, that figure falls to 31 percent.1 Existing screening programs target imaging, not blood. Yet a large-scale machine learning study on nearly 400,000 women has shown that the complete blood count (CBC) ordered at a routine physical already contains a detectable breast cancer signal.
 
-100% survival when caught locally, but 31% once spread. A 400,000-woman study shows the CBC already carries the signal. ## The Signature in the Blood
+100% survival when caught locally, but 31% once spread. A 400,000-woman study shows the CBC already carries the signal.
+
+## The Signature in the Blood
 
 Breast cancer produces a systemic inflammatory signature through immune crosstalk with the tumor microenvironment. The neutrophil-to-lymphocyte ratio (NLR), platelet-to-lymphocyte ratio (PLR), and systemic immune-inflammation index (SII) are all derived from standard CBC differentials. A meta-analysis of NLR across breast cancer studies found elevated pre-treatment NLR associated with worse overall survival (hazard ratio [HR] 2.56) and disease-free survival (HR 1.74).2
 
@@ -22,7 +24,6 @@ While the AUC of 0.64 is modest compared to ColonFlag (0.82) or LungFlag (0.86),
 ## What This Proves
 
 Breast cancer's CBC signature is real, directionally consistent, and detectable in the largest CBC-based cancer machine learning study published to date. The science is established, but a population-scale algorithm with prospective validation and longitudinal blood-trajectory features has not yet been developed.
-
 
 ## Endnotes
 

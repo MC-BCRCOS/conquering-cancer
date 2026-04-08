@@ -7,7 +7,9 @@ date: "April 2026"
 
 Prostate cancer is the most common non-skin cancer in American men, with approximately 300,000 new diagnoses annually. Caught while still localized, the five-year survival rate is essentially 100 percent. Once it has spread to distant organs, that figure falls to 34 percent.1 Current screening relies on prostate-specific antigen (PSA), a marker with well-documented specificity limitations. The complete blood count (CBC) and comprehensive metabolic panel (CMP) ordered at the same annual physical contain complementary signals that machine learning can exploit.
 
-Near 100% survival when caught locally, but 34% once spread. PSA alone misses the picture. The CBC holds an additional signal. ## The Signature in the Blood
+Near 100% survival when caught locally, but 34% once spread. PSA alone misses the picture. The CBC holds an additional signal.
+
+## The Signature in the Blood
 
 A prospective analysis of 209,686 male United Kingdom Biobank participants found that higher red blood cell (RBC) count (hazard ratio [HR] 1.09 per standard deviation [SD]), higher platelet count (HR 1.07), and higher mean corpuscular hemoglobin (MCH) were associated with increased prostate cancer risk over a mean 6.8-year follow-up.2 Elevated alkaline phosphatase (ALP) on the CMP reflects osteoblast activity in bone metastases; a meta-analysis of 33 studies found high baseline ALP associated with significantly worse overall survival (HR 1.74).3
 
@@ -20,7 +22,6 @@ A gradient-boosting machine (GBM) trained on 11 routine laboratory features—PS
 ## What This Proves
 
 Prostate cancer's CBC and CMP signature is validated in large prospective cohorts and improves on PSA alone when processed by a gradient-boosting classifier. The science is established. A population-scale primary care algorithm that passively collects CBC and CMP values with PSA trends to risk-stratify men for biopsy referral has not yet been deployed.
-
 
 ## Endnotes
 

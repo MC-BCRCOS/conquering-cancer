@@ -9,7 +9,9 @@ Disease Detection Series • NAFLD and Liver Fibrosis
 
 Non-alcoholic fatty liver disease (NAFLD) affects approximately 38 percent of United States adults, roughly 100 million people, making it the most prevalent chronic liver disease worldwide. The 15 to 25 percent who progress to nonalcoholic steatohepatitis (NASH) face rising risks of cirrhosis, liver failure, and hepatocellular carcinoma. Identifying which patients are on this trajectory, while still in the fibrosis-free or early fibrosis stage, is the central challenge of NAFLD management.1 The routine metabolic and hematological panel contains the information needed. Machine learning trained on aspartate aminotransferase (AST)/alanine transaminase (ALT) ratios, platelet counts, albumin, and metabolic markers achieves an area under the curve (AUC) of 0.91 for detecting advanced fibrosis; this is meaningfully better than FIB-4, the tool currently deployed in clinical guidelines.
 
-Fibrosis stage is the strongest predictor of NAFLD-related mortality. F3 to F4 carries 5 to 12 times the liver-related event risk of F0 to F2. Machine learning identifies the trajectory before the threshold is crossed. ## The Treatment Effect That Makes Early Detection Urgent
+Fibrosis stage is the strongest predictor of NAFLD-related mortality. F3 to F4 carries 5 to 12 times the liver-related event risk of F0 to F2. Machine learning identifies the trajectory before the threshold is crossed.
+
+## The Treatment Effect That Makes Early Detection Urgent
 
 NAFLD fibrosis stage determines prognosis with striking precision. Golabi and colleagues demonstrated in NHANES III with 27-year follow-up that NAFLD accounts for 24 to 30 percent of liver-specific and >7 percent of all-cause mortality. F3 to F4 fibrosis carries a 5- to 12-fold increased risk of liver-related events compared to F0 to F2.2 Resmetirom (US Food and Drug Administration approved in 2024) reduces liver fat and improves fibrosis in NASH patients. Identifying patients at F1 to F2 enables lifestyle intervention, metabolic optimization, and pharmacological therapy before advanced fibrosis forecloses options.
 
@@ -28,7 +30,6 @@ Lim and colleagues applied a random survival forest to 25,599 patients (developm
 ## What This Proves
 
 NAFLD fibrosis is detectable in routine blood work, and machine learning already improves on FIB-4 by 0.10 to 0.13 AUC points using the same inputs plus GGT and HbA1c. FIB-4 is already deployed in clinical guidelines, making this the disease for which the machine-learning enhancement requires the smallest translation step. Adding GGT, HbA1c, and longitudinal trend data to a FIB-4-like algorithm and applying machine learning in place of a fixed formula is a straightforward engineering problem with a published proof-of-concept AUC of 0.91. For a disease affecting 100 million Americans, that improvement matters.
-
 
 ## Endnotes
 

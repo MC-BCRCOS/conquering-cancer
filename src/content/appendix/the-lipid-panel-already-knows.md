@@ -9,7 +9,9 @@ Disease Detection Series • Familial Hypercholesterolemia
 
 Familial hypercholesterolemia (FH) affects approximately 1 in 250 adults—an estimated 34 million people worldwide. Untreated, it produces a 100-fold excess in coronary mortality among young adults and a 50 percent cumulative risk of coronary heart disease by age 60 in men.1 More than 90 percent of FH patients globally remain undiagnosed. Every year of missed diagnosis adds a further layer of arterial plaque; every year of early statin treatment in a child with FH is a year of damage that never happens.
 
-26% of untreated FH parents had a cardiac event by age 39; among their children who received early statin therapy, 1%. The difference is detection. ## The Treatment Effect That Makes Early Detection Urgent
+26% of untreated FH parents had a cardiac event by age 39; among their children who received early statin therapy, 1%. The difference is detection.
+
+## The Treatment Effect That Makes Early Detection Urgent
 
 A 20-year follow-up study published in the *New England Journal of Medicine* compared FH parents who received statins late in adulthood with their children who began therapy at a mean age of 12.5 years. Among the parents, 26 percent had experienced a cardiovascular event by age 39, and 7 percent had died from cardiovascular causes. Among the children, the corresponding figures were 1 percent and 0 percent.2 A separate Dutch cohort study demonstrated that statin treatment in FH patients produced a 76 percent reduction in coronary heart disease risk versus untreated FH relatives.3
 
@@ -34,7 +36,6 @@ ML extracts three distinct advantages from the standard lipid panel that thresho
 ## What This Proves
 
 FH is among the most detectable and treatable genetic diseases in medicine. The blood signature is present on every routine lipid panel from childhood. Multiple ML algorithms, achieving AUCs of 0.75 to 0.94, have been trained on that signal and validated at a population scale. Three algorithms are already deployed in real health systems covering hundreds of millions of patient records. The science is established, and the tools exist. What is missing is their systematic integration into primary care workflows as a standard feature of the lipid panel drawn at every annual physical.
-
 
 ## Endnotes
 

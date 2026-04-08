@@ -7,7 +7,9 @@ date: "April 2026"
 
 Non-Hodgkin lymphoma (NHL) is diagnosed in approximately 80,000 Americans each year; Hodgkin lymphoma (HL) in approximately 8,500. Five-year survival for NHL reaches 87.7 percent at the localized stage and 63.8 percent at the distant stage. For HL, the figures are 92.9 percent and 82.0 percent.1 Both diseases disrupt normal blood cell production and trigger systemic inflammation—changes that are measurable in the complete blood count (CBC) and comprehensive metabolic panel (CMP) before diagnosis.
 
-NHL survival drops from 84% to 66% once spread; HL from 93% to 84%. The inflammatory signature in the CBC precedes both. ## The Signature in the Blood
+NHL survival drops from 84% to 66% once spread; HL from 93% to 84%. The inflammatory signature in the CBC precedes both.
+
+## The Signature in the Blood
 
 Lymphomas do not produce a single dominant CBC signal as reliably as leukemia or myeloma, but they leave a characteristic inflammatory profile. Erythrocyte sedimentation rate (ESR) is a formally incorporated prognostic marker in HL staging and is elevated in over 56 percent of Stage III patients at diagnosis. Lactate dehydrogenase (LDH) elevation on the CMP is a component of the International Prognostic Index for NHL and is elevated in approximately 45 percent of cases.2
 
@@ -20,7 +22,6 @@ The CopLab machine learning study trained a model on CBC data from 663,184 patie
 ## What This Proves
 
 Lymphoma's blood signature is less dominant than myeloma or leukemia, but is real and measurable in large population datasets. ESR, LDH, lymphocyte count changes, and multi-year CBC activity patterns each carry a signal. A machine learning model trained on serial CBC data achieves a clinically useful AUC for detecting hematological malignancies, including lymphoma. A lymphoma-specific deployed population-screening algorithm has not yet been built. This is the clearest literature gap in the 13-paper series.
-
 
 ## Endnotes
 
