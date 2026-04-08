@@ -5,25 +5,28 @@ category: "cancer"
 date: "April 2026"
 ---
 
-Lung cancer is the leading cause of cancer death in the United States, killing approximately 125,000 Americans annually. Caught while still localized, the five-year survival rate is 65 percent. Diagnosed at the distant stage, where more than half of all cases are first detected, it falls to under 10 percent.[<sup>1</sup>](#ref-1)Current United States Preventive Services Task Force (USPSTF) screening criteria, which require a specific age range and smoking history, miss roughly two-thirds of all lung cancer patients.[<sup>2</sup>](#ref-2)The data needed to find them earlier already exist in the routine blood work ordered at annual physicals.
+Lung cancer is the leading cause of cancer death in the United States, killing approximately 125,000 Americans annually. Caught while still localized, the five-year survival rate is 65 percent. Diagnosed at the distant stage, where more than half of all cases are first detected, it falls to under 10 percent.[<sup>1</sup>](#ref-1) Current United States Preventive Services Task Force (USPSTF) screening criteria, which require a specific age range and smoking history, miss roughly two-thirds of all lung cancer patients.[<sup>2</sup>](#ref-2) The data needed to find them earlier already exist in the routine blood work ordered at annual physicals.
 
-65% survival when caught early, under 10% once spread. Yet two-thirds of lung cancer patients never qualify for screening—even under updated guidelines.
+**65% survival when caught early, under 10% once spread. Yet two-thirds of lung cancer patients never qualify for screening—even under updated guidelines.**
 
 ## The Signature in the Blood
 
-Lung cancer produces a measurable inflammatory blood signature months to years before clinical diagnosis, driven not by bleeding but by the tumor’s own biochemistry. Tumors secrete colony-stimulating factors, granulocyte colony-stimulating factor (G-CSF) and granulocyte-macrophage colony-stimulating factor (GM-CSF), that drive leukocytosis. They secrete interleukin-6, which stimulates thrombopoietin production and elevates platelet counts.[<sup>3</sup>](#ref-3)They suppress erythropoiesis through hepcidin-mediated iron sequestration, producing anemia in more than half of patients at diagnosis.
+Lung cancer produces a measurable inflammatory blood signature months to years before clinical diagnosis, driven not by bleeding but by the tumor’s own biochemistry. Tumors secrete colony-stimulating factors, granulocyte colony-stimulating factor (G-CSF) and granulocyte-macrophage colony-stimulating factor (GM-CSF), that drive leukocytosis. They secrete interleukin-6, which stimulates thrombopoietin production and elevates platelet counts.[<sup>3</sup>](#ref-3) They suppress erythropoiesis through hepcidin-mediated iron sequestration, producing anemia in more than half of patients at diagnosis.
 
-The consequence is a progressive, multi-marker pattern in the complete blood count (CBC). Neutrophils rise while lymphocytes fall, driving an accelerating neutrophil-to-lymphocyte ratio (NLR). A landmark study tracking annual CBCs over 80 months in lung cancer screening participants found that patients who developed lung cancer showed NLR annual progression of 2.56 percent versus 0.27 percent in matched controls, with baseline values identical between the two groups.[<sup>4</sup>](#ref-4)Red blood cell distribution width (RDW) is independently elevated and has been shown to predict lung cancer mortality with an area under the curve (AUC) of 0.753 from a standard CBC alone.[<sup>5</sup>](#ref-5)
+The consequence is a progressive, multi-marker pattern in the complete blood count (CBC). Neutrophils rise while lymphocytes fall, driving an accelerating neutrophil-to-lymphocyte ratio (NLR). A landmark study tracking annual CBCs over 80 months in lung cancer screening participants found that patients who developed lung cancer showed **NLR annual progression of 2.56 percent versus 0.27 percent** in matched controls, with baseline values identical between the two groups.[<sup>4</sup>](#ref-4) Red blood cell distribution width (RDW) is independently elevated and has been shown to predict lung cancer mortality with an area under the curve (AUC) of 0.753 from a standard CBC alone.[<sup>5</sup>](#ref-5)
+
 ## The Algorithm That Works
 
 LungFlag, the machine learning model published by Gould et al. in the *American Journal of Respiratory and Critical Care Medicine* in 2021, was trained on routine clinical and laboratory data from Kaiser Permanente Southern California using XGBoost—the same gradient-boosting architecture that underlies ColonFlag. Input features included CBC values, standard laboratory panels, smoking history, diagnoses, and other electronic health record (EHR) data routinely recorded at primary care visits.[<sup>6</sup>](#ref-6)
-Applied to 6,505 non-small cell lung cancer cases and 189,597 controls, the model identified cancer 9 to 12 months before clinical diagnosis** with an AUC of 0.86, significantly outperforming the standard PLCOm2012 risk model (AUC 0.79) and USPSTF screening criteria. At USPSTF’s own operating specificity of 91.4 percent, LungFlag captured 53 percent of cancers,** compared with 26.6 percent under USPSTF criteria alone. Among the model’s most influential novel predictors were white blood cell count and platelet count—both standard CBC outputs.
+
+Applied to 6,505 non-small cell lung cancer cases and 189,597 controls, the model identified cancer **9 to 12 months before clinical diagnosis** with an AUC of 0.86, significantly outperforming the standard PLCOm2012 risk model (AUC 0.79) and USPSTF screening criteria. At USPSTF’s own operating specificity of 91.4 percent, LungFlag captured **53 percent of cancers,** compared with 26.6 percent under USPSTF criteria alone. Among the model’s most influential novel predictors were white blood cell count and platelet count—both standard CBC outputs.
 
 ## What This Proves
 
 LungFlag demonstrates that the same machine learning methodology that produced ColonFlag for colorectal cancer translates directly to lung cancer. The blood signature is different, inflammatory rather than anemic, but the principle is identical: the CBC and routine labs contain a cancer-specific pattern, and a trained XGBoost model can read it months before a physician would have reason to suspect disease.
 
-USPSTF screening criteria are age- and smoking-based. They are static. They miss never-smokers, former smokers who quit more than 15 years ago, and anyone outside the eligible age range. LungFlag works continuously and passively on every blood draw. A cost-effectiveness analysis projected that LungFlag, as an adjunct to USPSTF screening, would identify 17 additional early-stage lung cancers per year within a single health system, resulting in 22 fewer deaths and $2.87 million in net cost savings over five years.[<sup>7</sup>](#ref-7)
+USPSTF screening criteria are age- and smoking-based. They are static. They miss never-smokers, former smokers who quit more than 15 years ago, and anyone outside the eligible age range. LungFlag works continuously and passively on every blood draw. A cost-effectiveness analysis projected that LungFlag, as an adjunct to USPSTF screening, would identify **17 additional early-stage lung cancers per year** within a single health system, resulting in 22 fewer deaths and $2.87 million in net cost savings over five years.[<sup>7</sup>](#ref-7)
+
 The science is established. The algorithm exists and has been externally validated. For the 11 remaining cancers in this series, the key question is not whether machine learning can read a blood signature—ColonFlag and LungFlag already answered that. The question is whether a comparable signature exists. For each, the peer-reviewed evidence shows that it does.
 
 ## Endnotes
@@ -37,7 +40,7 @@ SEER population data for US lung and bronchus cancer diagnoses 2015–2021, repo
 
 <span id="ref-2"></span>
 
-2.Yang HC, Chang A, Visa M, et al. "Age-Based Screening for Lung Cancer Surveillance in the US." *JAMA Netw Open*. 2025;8(11):e2546222.
+2.Yang HC, Chang A, Visa M, et al. "Age-Based Screening for Lung Cancer Surveillance in the US." *JAMA **Netw** Open*. 2025;8(11):e2546222.
 
 
 Analysis of 997 lung cancer patients at Northwestern University (2018–2023) finding that only 35.1% met 2021 USPSTF LDCT screening criteria. Among the 65% who were excluded, 25% were never-smokers, 13% had quit more than 15 years prior, 7% had fewer than 20 pack-years, and 4% fell outside the eligible age range. The excluded group was disproportionately female and Asian. Documents the fundamental population-coverage gap that blood-based ML screening is positioned to address.
@@ -73,7 +76,7 @@ Development and validation of LungFlag using XGBoost trained on routine clinical
 
 <span id="ref-7"></span>
 
-7.Gould MK, Choman EN, Olghi N, Obradovic M, Ogale S, Sanmartin CH. "Budget Impact Model for LungFlag , a predictive risk model for lung cancer screening." *J Clin Oncol*. 2024;42(16_suppl):10534.
+7.Gould MK, Choman EN, Olghi N, Obradovic M, Ogale S, Sanmartin CH. "Budget Impact Model for LungFlag**, **a predictive risk model for lung cancer screening." *J Clin Oncol*. 2024;42(16_suppl):10534.
 
 
 Five-year budget impact analysis modeling LungFlag as an adjunct to USPSTF LDCT screening in a health system of 36,803 eligible persons. Projected 17 additional early-stage NSCLC diagnoses per year, 33 fewer Stage III/IV diagnoses, 22 fewer deaths, and net cost savings of $2.87 million over five years. Demonstrates that passive machine learning-based pre-screening using routine blood data is not only clinically effective but cost-saving at the health system level, a critical argument for policy adoption.

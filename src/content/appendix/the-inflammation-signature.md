@@ -5,17 +5,19 @@ category: "cancer"
 date: "April 2026"
 ---
 
-There are approximately 300,00 breast cancer diagnoses in the United States annually. Caught while still localized, the five-year survival rate reaches 100 percent. Once it has spread to distant organs, that figure falls to 31 percent.[<sup>1</sup>](#ref-1)Existing screening programs target imaging, not blood. Yet a large-scale machine learning study on nearly 400,000 women has shown that the complete blood count (CBC) ordered at a routine physical already contains a detectable breast cancer signal.
+There are approximately 300,00 breast cancer diagnoses in the United States annually. Caught while still localized, the five-year survival rate reaches 100 percent. Once it has spread to distant organs, that figure falls to 31 percent.[<sup>1</sup>](#ref-1) Existing screening programs target imaging, not blood. Yet a large-scale machine learning study on nearly 400,000 women has shown that the complete blood count (CBC) ordered at a routine physical already contains a detectable breast cancer signal.
 
-100% survival when caught locally, but 31% once spread. A 400,000-woman study shows the CBC already carries the signal.
+**100% survival when caught locally, but 31% once spread. A 400,000-woman study shows the CBC already carries the signal.**
 
 ## The Signature in the Blood
 
 Breast cancer produces a systemic inflammatory signature through immune crosstalk with the tumor microenvironment. The neutrophil-to-lymphocyte ratio (NLR), platelet-to-lymphocyte ratio (PLR), and systemic immune-inflammation index (SII) are all derived from standard CBC differentials. A meta-analysis of NLR across breast cancer studies found elevated pre-treatment NLR associated with worse overall survival (hazard ratio [HR] 2.56) and disease-free survival (HR 1.74).[<sup>2</sup>](#ref-2)
-A United Kingdom Biobank analysis of 4,237 new breast cancer cases among 440,000 participants found that pre-diagnostic SII, NLR, and PLR showed measurable links to breast cancer risk, with effect sizes increasing as diagnosis approached , indicating a systemic immune response to an undetected tumor growth.[<sup>3</sup>](#ref-3)
+
+A United Kingdom Biobank analysis of 4,237 new breast cancer cases among 440,000 participants found that pre-diagnostic SII, NLR, and PLR showed measurable links to breast cancer risk, with effect sizes **increasing as diagnosis approached**, indicating a systemic immune response to an undetected tumor growth.[<sup>3</sup>](#ref-3)
+
 ## The Machine Learning Case
 
-A retrospective study of **396,848 women aged 40 to 70 across 309 clinical laboratory sites in Brazil trained a ridge regression classifier on CBC parameters alone. The model achieved an area under the curve (AUC) of 0.64, with the high-risk group (10 percent of the population) capturing **19.8 percent of all cancers (relative risk [RR] 1.99), and the low-risk group (30 percent of the population) containing only 12.6 percent of cancers (RR 0.42).[<sup>4</sup>](#ref-4)Key features were NLR, red blood cell (RBC) count, and age. Hemoglobin, mean corpuscular hemoglobin (MCH), and mean corpuscular volume (MCV) were significantly higher in cancer cases; lymphocyte counts were significantly lower.
+A retrospective study of **396,848 women** aged 40 to 70 across 309 clinical laboratory sites in Brazil trained a ridge regression classifier on CBC parameters alone. The model achieved an area under the curve (AUC) of 0.64, with the high-risk group (10 percent of the population) capturing **19.8 percent of all cancers** (relative risk [RR] 1.99), and the low-risk group (30 percent of the population) containing only 12.6 percent of cancers (RR 0.42).[<sup>4</sup>](#ref-4) Key features were NLR, red blood cell (RBC) count, and age. Hemoglobin, mean corpuscular hemoglobin (MCH), and mean corpuscular volume (MCV) were significantly higher in cancer cases; lymphocyte counts were significantly lower.
 
 While the AUC of 0.64 is modest compared to ColonFlag (0.82) or LungFlag (0.86), the study population of nearly 400,000 women and the consistent directional signal across all CBC markers confirm that breast cancer leaves a measurable imprint in routine blood work. Improved feature engineering, longitudinal trajectory analysis, and comprehensive metabolic panel (CMP) integration would be expected to increase discriminative performance.
 

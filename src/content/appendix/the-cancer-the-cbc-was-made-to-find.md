@@ -6,16 +6,21 @@ date: "April 2026"
 ---
 
 Leukemia encompasses a family of blood cancers. The five-year survival rate for chronic myeloid leukemia (CML) is approximately 73 percent; for chronic lymphocytic leukemia (CLL), approximately 88 percent. Both are diseases of the blood, and both leave unmistakable pre-diagnostic signals in the complete blood count (CBC)—the one laboratory test ordered more routinely than any other in primary care.[<sup>1</sup>](#ref-1)
-CML and CLL both leave pre-diagnostic CBC signals measurable years before diagnosis. Machine learning reads them with 92 to 98% accuracy.
+
+**CML and CLL both leave pre-diagnostic CBC signals measurable years before diagnosis. Machine learning reads them with 92 to 98% accuracy.**
 
 ## The Signature in the Blood
 
-In CML, the tumor's Philadelphia chromosome drives BCR-ABL1 tyrosine kinase activity, causing leukocytosis, basophilia, and eosinophilia months to years before clinical diagnosis. A systematic review of pre-clinical CML cases found that basophil percentage is the earliest and most specific CBC marker, deviating from normal before the total white blood cell (WBC) count reaches diagnostic thresholds.[<sup>2</sup>](#ref-2)
-In CLL, essentially all cases are preceded by monoclonal B-cell lymphocytosis (MBL), detectable as persistently rising lymphocyte count on the CBC differential. A large United States outpatient study tracking 1,090,707 patients over 7 years found that the absolute lymphocyte count slope, WBC trajectory, and platelet count together defined a pre-diagnostic CLL profile recognizable well before any clinical suspicion.[<sup>3</sup>](#ref-3)
+In CML, the tumor's Philadelphia chromosome drives BCR-ABL1 tyrosine kinase activity, causing leukocytosis, basophilia, and eosinophilia months to years before clinical diagnosis. A systematic review of pre-clinical CML cases found that **basophil percentage** is the earliest and most specific CBC marker, deviating from normal before the total white blood cell (WBC) count reaches diagnostic thresholds.[<sup>2</sup>](#ref-2)
+
+In CLL, essentially all cases are preceded by monoclonal B-cell lymphocytosis (MBL), detectable as persistently rising lymphocyte count on the CBC differential. A large United States outpatient study tracking **1,090,707 patients** over 7 years found that the absolute lymphocyte count slope, WBC trajectory, and platelet count together defined a pre-diagnostic CLL profile recognizable well before any clinical suspicion.[<sup>3</sup>](#ref-3)
+
 ## The Machine Learning Case
 
-For CML, the XGBoost and LASSO models trained on Veterans Health Administration CBC data from 1,623 patients achieved an area under the curve (AUC) of 0.87 to 0.96 at diagnosis, 0.75 to 0.83 6 months before diagnosis, and 0.58 to 0.73 5 years before diagnosis. Basophil percentage, a standard CBC differential output, was the most informative feature at diagnosis and at 6 months.[<sup>4</sup>](#ref-4)
-For CLL, an XGBoost classifier trained on 11 CBC parameters achieved 98.6 percent accuracy . A separate random forest model trained on 1,090,707 patients achieved an AUC of 0.92, with absolute lymphocyte count (initial value and slope) and WBC trajectory as the dominant features.[<sup>5</sup>](#ref-5)
+For CML, the XGBoost and LASSO models trained on Veterans Health Administration CBC data from **1,623 patients** achieved an area under the curve (AUC) of 0.87 to 0.96 at diagnosis, 0.75 to 0.83 6 months before diagnosis, and 0.58 to 0.73 5 years before diagnosis. Basophil percentage, a standard CBC differential output, was the most informative feature at diagnosis and at 6 months.[<sup>4</sup>](#ref-4)
+
+For CLL, an XGBoost classifier trained on 11 CBC parameters achieved **98.6 percent accuracy**. A separate random forest model trained on 1,090,707 patients achieved an AUC of 0.92, with absolute lymphocyte count (initial value and slope) and WBC trajectory as the dominant features.[<sup>5</sup>](#ref-5)
+
 ## What This Proves
 
 Of all 13 cancers in this series, leukemia is the one in which the CBC signal is most direct and the machine learning evidence most advanced. CML and CLL both produce CBC abnormalities measurable years before clinical diagnosis. Machine learning models achieve near-diagnostic accuracy from standard blood counts alone. For CLL, a population-scale deployed algorithm is within reach of current technology. The science is not just established, it is mature.

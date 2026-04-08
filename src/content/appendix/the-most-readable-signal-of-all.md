@@ -5,18 +5,20 @@ category: "cancer"
 date: "April 2026"
 ---
 
-Multiple myeloma is diagnosed in approximately 35,000 Americans each year. The five-year survival rate has improved substantially with modern therapy, reaching 62 percent overall. However, the disease is almost universally diagnosed at an advanced systemic stage, typically after the complete blood count (CBC) and comprehensive metabolic panel (CMP) have been showing abnormalities for years.[<sup>1</sup>](#ref-1)Of all 13 cancers in this series, myeloma has the most unambiguous and earliest pre-diagnostic blood signature.
+Multiple myeloma is diagnosed in approximately 35,000 Americans each year. The five-year survival rate has improved substantially with modern therapy, reaching 62 percent overall. However, the disease is almost universally diagnosed at an advanced systemic stage, typically after the complete blood count (CBC) and comprehensive metabolic panel (CMP) have been showing abnormalities for years.[<sup>1</sup>](#ref-1) Of all 13 cancers in this series, myeloma has the most unambiguous and earliest pre-diagnostic blood signature.
 
-Multiple myeloma announces itself in the CBC two to three years before diagnosis. The signal is among the clearest in all of oncology.
+**Multiple myeloma announces itself in the CBC two to three years before diagnosis. The signal is among the clearest in all of oncology.**
 
 ## The Signature in the Blood
 
-Myeloma arises from plasma cell proliferation in the bone marrow, suppressing normal hematopoiesis. A United Kingdom primary care case-control study of **2,703 myeloma cases found that hemoglobin decreased **three years before diagnosis ; erythrocyte sedimentation rate (ESR) was elevated two years before (85 percent abnormal in the year before diagnosis, odds ratio [OR] 5.7); hypercalcemia carried an OR of 11.4; raised creatinine OR 1.8; raised mean corpuscular volume (MCV) OR 3.1.2
+Myeloma arises from plasma cell proliferation in the bone marrow, suppressing normal hematopoiesis. A United Kingdom primary care case-control study of **2,703 myeloma cases** found that hemoglobin decreased **three years before diagnosis**; erythrocyte sedimentation rate (ESR) was elevated two years before (85 percent abnormal in the year before diagnosis, odds ratio [OR] 5.7); hypercalcemia carried an OR of 11.4; raised creatinine OR 1.8; raised mean corpuscular volume (MCV) OR 3.1.[<sup>2</sup>](#ref-2)
 
-A landmark *New England Journal of Medicine* study of 1,384 monoclonal gammopathy of undetermined significance (MGUS) patients, followed for over 11,000 person-years, confirmed that essentially all multiple myeloma is preceded by MGUS, which itself produces a detectable protein gap on the CMP (an elevation in total protein disproportionate to albumin) years before progression.[<sup>3</sup>](#ref-3)A Scandinavian study of 1.1 million blood donors confirmed hemoglobin decline begins three years before myeloma diagnosis, the earliest pre-diagnostic decline among all cancers studied.[<sup>4</sup>](#ref-4)
+A landmark *New England Journal of Medicine* study of 1,384 monoclonal gammopathy of undetermined significance (MGUS) patients, followed for over 11,000 person-years, confirmed that essentially all multiple myeloma is preceded by MGUS, which itself produces a detectable protein gap on the CMP (an elevation in total protein disproportionate to albumin) years before progression.[<sup>3</sup>](#ref-3) A Scandinavian study of 1.1 million blood donors confirmed hemoglobin decline begins **three years before myeloma diagnosis**, the earliest pre-diagnostic decline among all cancers studied.[<sup>4</sup>](#ref-4)
+
 ## The Machine Learning Case
 
-An AdaBoost model trained on routine serum biomarkers achieved an area under the curve ( AUC) of 96.8 percent and an accuracy of 92.6 percent for myeloma detection from standard blood inputs.[<sup>5</sup>](#ref-5)A random forest model trained on CBC and cell population data parameters, with features selected via LASSO, achieved an AUC of 0.956 in training and 0.875 in the test cohort in 465 myeloma patients and 150 controls.[<sup>6</sup>](#ref-6)
+An AdaBoost model trained on routine serum biomarkers achieved an area under the curve (**AUC) of 96.8 percent** and an accuracy of 92.6 percent for myeloma detection from standard blood inputs.[<sup>5</sup>](#ref-5) A random forest model trained on CBC and cell population data parameters, with features selected via LASSO, achieved an AUC of 0.956 in training and 0.875 in the test cohort in 465 myeloma patients and 150 controls.[<sup>6</sup>](#ref-6)
+
 ## What This Proves
 
 Multiple myeloma has arguably the strongest pre-diagnostic blood signal of any cancer in this series. Hemoglobin decline, ESR elevation, hypercalcemia, creatinine rise, and protein gap abnormalities are all documented in the CBC and CMP years before clinical diagnosis. Machine learning models achieve near-diagnostic AUC from these standard inputs. The science is established, and the algorithmic performance is exceptional. However, the population-scale screening tool does not yet exist.

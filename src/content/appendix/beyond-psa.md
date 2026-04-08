@@ -5,17 +5,19 @@ category: "cancer"
 date: "April 2026"
 ---
 
-Prostate cancer is the most common non-skin cancer in American men, with approximately 300,000 new diagnoses annually. Caught while still localized, the five-year survival rate is essentially 100 percent. Once it has spread to distant organs, that figure falls to 34 percent.[<sup>1</sup>](#ref-1)Current screening relies on prostate-specific antigen (PSA), a marker with well-documented specificity limitations. The complete blood count (CBC) and comprehensive metabolic panel (CMP) ordered at the same annual physical contain complementary signals that machine learning can exploit.
+Prostate cancer is the most common non-skin cancer in American men, with approximately 300,000 new diagnoses annually. Caught while still localized, the five-year survival rate is essentially 100 percent. Once it has spread to distant organs, that figure falls to 34 percent.[<sup>1</sup>](#ref-1) Current screening relies on prostate-specific antigen (PSA), a marker with well-documented specificity limitations. The complete blood count (CBC) and comprehensive metabolic panel (CMP) ordered at the same annual physical contain complementary signals that machine learning can exploit.
 
-Near 100% survival when caught locally, but 34% once spread. PSA alone misses the picture. The CBC holds an additional signal.
+**Near 100% survival when caught locally, but 34% once spread. PSA alone misses the picture. The CBC holds an additional signal.**
 
 ## The Signature in the Blood
 
-A prospective analysis of 209,686 male United Kingdom Biobank participants found that higher red blood cell (RBC) count (hazard ratio [HR] 1.09 per standard deviation [SD]), higher platelet count (HR 1.07), and higher mean corpuscular hemoglobin (MCH) were associated with increased prostate cancer risk over a mean 6.8-year follow-up.[<sup>2</sup>](#ref-2)Elevated alkaline phosphatase (ALP) on the CMP reflects osteoblast activity in bone metastases; a meta-analysis of 33 studies found high baseline ALP associated with significantly worse overall survival (HR 1.74).[<sup>3</sup>](#ref-3)
+A prospective analysis of 209,686 male United Kingdom Biobank participants found that higher red blood cell (RBC) count (hazard ratio [HR] 1.09 per standard deviation [SD]), higher platelet count (HR 1.07), and higher mean corpuscular hemoglobin (MCH) were associated with increased prostate cancer risk over a mean 6.8-year follow-up.[<sup>2</sup>](#ref-2) Elevated alkaline phosphatase (ALP) on the CMP reflects osteoblast activity in bone metastases; a meta-analysis of 33 studies found high baseline ALP associated with significantly worse overall survival (HR 1.74).[<sup>3</sup>](#ref-3)
+
 The neutrophil-to-lymphocyte ratio (NLR) is independently prognostic across all stages of prostate cancer. A meta-analysis of 16,266 patients found elevated NLR predicted poor overall survival (HR 1.38) and poor progression-free survival (HR 1.24), and the association is measurable on the CBC at the time of standard blood draws ordered for unrelated indications.[<sup>4</sup>](#ref-4)
+
 ## The Machine Learning Case
 
-A gradient-boosting machine (GBM) trained on 11 routine laboratory features—PSA, free PSA ratio, hemoglobin, neutrophils, platelets, NLR, glucose, platelet-to-lymphocyte ratio (PLR), lymphocytes, and age—achieved an area under the curve (AUC) of 0.72 versus 0.64 for PSA alone and 0.68 for the free PSA/PSA ratio alone.[<sup>5</sup>](#ref-5)Adding standard CBC-derived markers to PSA produced a statistically significant improvement in discriminative performance. The pattern is consistent with the ColonFlag and LungFlag paradigm: no single marker suffices; the weighted composite read by a gradient-boosting model outperforms any individual test.
+A gradient-boosting machine (GBM) trained on 11 routine laboratory features—PSA, free PSA ratio, hemoglobin, neutrophils, platelets, NLR, glucose, platelet-to-lymphocyte ratio (PLR), lymphocytes, and age—achieved an area under the curve (**AUC) of 0.72** versus 0.64 for PSA alone and 0.68 for the free PSA/PSA ratio alone.[<sup>5</sup>](#ref-5) Adding standard CBC-derived markers to PSA produced a statistically significant improvement in discriminative performance. The pattern is consistent with the ColonFlag and LungFlag paradigm: no single marker suffices; the weighted composite read by a gradient-boosting model outperforms any individual test.
 
 ## What This Proves
 

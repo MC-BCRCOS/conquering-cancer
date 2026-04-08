@@ -5,7 +5,6 @@ category: "strategic"
 date: "April 2026"
 ---
 
-*Ratner Early Detection Initiative ( REDI) · March 2026*
 
 ## The Target Disease Portfolio
 
@@ -41,7 +40,7 @@ For the rarest conditions in the portfolio, such as Wilson disease, Addison’s 
 For cardiovascular disease, type 2 diabetes, chronic kidney disease, and NAFLD, the record counts are more than sufficient. These are among the most prevalent conditions in the United States, and training datasets with hundreds of thousands to millions of records can be built entirely within INSIGHT.
 
 
- One critical qualification: raw record counts are not the same as clean, usable training records. A patient who appears in the INSIGHT database but has only one blood draw, whose records span less than two years, or who left the health system before a diagnostic outcome was confirmed cannot be used. The effective usable dataset is typically 40 to 60 percent of the nominal record count after applying longitudinal, outcome, and quality filters. For INSIGHT’s 23 million records, that still leaves a very large and sufficient training pool for the vast majority of targets.
+**One critical qualification:** raw record counts are not the same as clean, usable training records. A patient who appears in the INSIGHT database but has only one blood draw, whose records span less than two years, or who left the health system before a diagnostic outcome was confirmed cannot be used. The effective usable dataset is typically 40 to 60 percent of the nominal record count after applying longitudinal, outcome, and quality filters. For INSIGHT’s 23 million records, that still leaves a very large and sufficient training pool for the vast majority of targets.
 
 ## Data Quality and Cleaning
 
@@ -68,7 +67,16 @@ In practice, every algorithm development project runs several of these methods i
 Weill Cornell and INSIGHT have valuable assets here. The ARCH group employs clinical informaticists, biostatisticians, and data engineers who focus specifically on this kind of EHR data work. Dr. Rainu Kaushal’s team at the Department of Population Health Sciences is experienced in machine learning on EHR data, having co-led the RECOVER long COVID initiative across 40 institutions.
 
 
-What REDI would need, beyond what ARCH provides, is a dedicated machine learning team for actual algorithm development. The published benchmark is 3 to 5 researchers working for 12 to 18 months per algorithm. The roles are: Clinical Informatics Lead. Understands the biology of the target disease, maps the relevant blood panel features, and interprets model outputs in clinical terms. This person bridges the data scientists and the clinicians. Machine Learning Engineers (two to three). Responsible for data pipeline construction, feature engineering, model training, hyperparameter tuning, and validation. Familiarity with XGBoost, scikit-learn, and survival analysis libraries in Python or R is the baseline requirement. Biostatistician. Responsible for validation study design, AUC confidence interval analysis, and preparation of the statistical sections required for peer-reviewed publication and U.S. Food and Drug Administration (FDA) submission. Regulatory Affairs Specialist. Required for the FDA 510(k) pathway once a model achieves target performance. This role is typically contracted rather than hired full-time.
+What REDI would need, beyond what ARCH provides, is a dedicated machine learning team for actual algorithm development. The published benchmark is 3 to 5 researchers working for 12 to 18 months per algorithm. The roles are:
+
+
+**Clinical Informatics Lead.** Understands the biology of the target disease, maps the relevant blood panel features, and interprets model outputs in clinical terms. This person bridges the data scientists and the clinicians.
+
+**Machine Learning Engineers (two to three).** Responsible for data pipeline construction, feature engineering, model training, hyperparameter tuning, and validation. Familiarity with XGBoost, scikit-learn, and survival analysis libraries in Python or R is the baseline requirement.
+
+**Biostatistician.** Responsible for validation study design, AUC confidence interval analysis, and preparation of the statistical sections required for peer-reviewed publication and U.S. Food and Drug Administration (FDA) submission.
+
+**Regulatory Affairs Specialist.** Required for the FDA 510(k) pathway once a model achieves target performance. This role is typically contracted rather than hired full-time.
 
 
 Weill Cornell’s academic medical center setting is a benefit for recruitment. The concentration of talent in computational biomedicine in New York City, along with a meaningful research mission and access to one of the largest urban EHR repositories in the country, makes this a competitive opportunity for strong candidates.

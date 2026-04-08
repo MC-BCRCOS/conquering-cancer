@@ -5,18 +5,19 @@ category: "cancer"
 date: "April 2026"
 ---
 
-Bladder cancer is diagnosed in approximately 82,000 Americans each year. Caught while still localized, the five-year survival rate is 70 percent. Once it has spread to distant organs, fewer than 9 percent of patients survive five years.[<sup>1</sup>](#ref-1)Most early bladder cancers are caught incidentally through hematuria investigations. Yet routine blood tests ordered for unrelated reasons at annual physicals already contain detectable signals.
+Bladder cancer is diagnosed in approximately 82,000 Americans each year. Caught while still localized, the five-year survival rate is 70 percent. Once it has spread to distant organs, fewer than 9 percent of patients survive five years.[<sup>1</sup>](#ref-1) Most early bladder cancers are caught incidentally through hematuria investigations. Yet routine blood tests ordered for unrelated reasons at annual physicals already contain detectable signals.
 
-70% survival when caught early, under 9% once spread. Routine blood tests show the signal six to eight months before diagnosis.
+**70% survival when caught early, under 9% once spread. Routine blood tests show the signal six to eight months before diagnosis.**
 
 ## The Signature in the Blood
 
-The same 2022 *British Journal of General Practice* study that documented pre-diagnostic blood test abnormalities in renal cancer analyzed 4,533 patients with bladder and renal cancer combined. For bladder cancer patients, raised inflammatory markers, such as C-reactive protein (CRP) and erythrocyte sedimentation rate (ESR), were present in 43 to 45 percent, low hemoglobin in 35 percent, and high creatinine in 32 percent of patients in the year before diagnosis. Statistically significant inflection points in complete blood count (CBC) abnormalities began six to eight months before clinical diagnosis.[<sup>2</sup>](#ref-2)
-Elevated inflammatory markers (CRP, ESR, plasma viscosity) on routine blood tests were associated with a one-year cancer incidence of 3.53 percent versus 1.50 percent with normal markers in a study of 160,000 United Kingdom primary care patients, with bladder cancer among the cancers driving the elevated incidence.[<sup>3</sup>](#ref-3)The mechanism aligns with other solid tumors: tumor-driven systemic inflammation elevates neutrophils and CRP; local invasion or obstruction impairs kidney function, elevating creatinine; chronic occult blood loss may cause mild anemia.
+The same 2022 *British Journal of General Practice* study that documented pre-diagnostic blood test abnormalities in renal cancer analyzed **4,533 patients** with bladder and renal cancer combined. For bladder cancer patients, raised inflammatory markers, such as C-reactive protein (CRP) and erythrocyte sedimentation rate (ESR), were present in 43 to 45 percent, low hemoglobin in 35 percent, and high creatinine in 32 percent of patients in the year before diagnosis. Statistically significant inflection points in complete blood count (CBC) abnormalities began **six to eight months before clinical diagnosis.**[<sup>2</sup>](#ref-2)
+
+Elevated inflammatory markers (CRP, ESR, plasma viscosity) on routine blood tests were associated with a one-year cancer incidence of **3.53 percent** versus 1.50 percent with normal markers in a study of 160,000 United Kingdom primary care patients, with bladder cancer among the cancers driving the elevated incidence.[<sup>3</sup>](#ref-3) The mechanism aligns with other solid tumors: tumor-driven systemic inflammation elevates neutrophils and CRP; local invasion or obstruction impairs kidney function, elevating creatinine; chronic occult blood loss may cause mild anemia.
 
 ## The Machine Learning Case
 
-A LightGBM model trained on routine laboratory data from 1,336 patients in Taiwan achieved an area under the curve ( AUC) of 0.88 to 0.92 for bladder cancer detection, with an accuracy of 84.8 to 86.9 percent, sensitivity of 84 to 87.8 percent, and specificity of 82.9 to 86.7 percent.[<sup>4</sup>](#ref-4)The model's top features—calcium, alkaline phosphatase, albumin, creatinine, alanine transaminase (ALT), and urine occult blood—are all standard outputs of a comprehensive metabolic panel (CMP) and routine urinalysis. No specialty testing was required.
+A LightGBM model trained on routine laboratory data from 1,336 patients in Taiwan achieved an area under the curve (**AUC) of 0.88 to 0.92** for bladder cancer detection, with an accuracy of 84.8 to 86.9 percent, sensitivity of 84 to 87.8 percent, and specificity of 82.9 to 86.7 percent.[<sup>4</sup>](#ref-4) The model's top features—calcium, alkaline phosphatase, albumin, creatinine, alanine transaminase (ALT), and urine occult blood—are all standard outputs of a comprehensive metabolic panel (CMP) and routine urinalysis. No specialty testing was required.
 
 ## What This Proves
 

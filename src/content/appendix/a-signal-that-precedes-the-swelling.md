@@ -5,17 +5,19 @@ category: "cancer"
 date: "April 2026"
 ---
 
-Non-Hodgkin lymphoma (NHL) is diagnosed in approximately 80,000 Americans each year; Hodgkin lymphoma (HL) in approximately 8,500. Five-year survival for NHL reaches 87.7 percent at the localized stage and 63.8 percent at the distant stage. For HL, the figures are 92.9 percent and 82.0 percent.[<sup>1</sup>](#ref-1)Both diseases disrupt normal blood cell production and trigger systemic inflammation—changes that are measurable in the complete blood count (CBC) and comprehensive metabolic panel (CMP) before diagnosis.
+Non-Hodgkin lymphoma (NHL) is diagnosed in approximately 80,000 Americans each year; Hodgkin lymphoma (HL) in approximately 8,500. Five-year survival for NHL reaches 87.7 percent at the localized stage and 63.8 percent at the distant stage. For HL, the figures are 92.9 percent and 82.0 percent.[<sup>1</sup>](#ref-1) Both diseases disrupt normal blood cell production and trigger systemic inflammation—changes that are measurable in the complete blood count (CBC) and comprehensive metabolic panel (CMP) before diagnosis.
 
-NHL survival drops from 84% to 66% once spread; HL from 93% to 84%. The inflammatory signature in the CBC precedes both.
+**NHL survival drops from 84% to 66% once spread; HL from 93% to 84%. The inflammatory signature in the CBC precedes both.**
 
 ## The Signature in the Blood
 
-Lymphomas do not produce a single dominant CBC signal as reliably as leukemia or myeloma, but they leave a characteristic inflammatory profile. Erythrocyte sedimentation rate (ESR) is a formally incorporated prognostic marker in HL staging and is elevated in over 56 percent of Stage III patients at diagnosis. Lactate dehydrogenase (LDH) elevation on the CMP is a component of the International Prognostic Index for NHL and is elevated in approximately 45 percent of cases.[<sup>2</sup>](#ref-2)
-A large population-based analysis using the Copenhagen Primary Care Laboratory Database tracked CBC abnormalities across 663,184 patients over multiple years. For hematological malignancies, including lymphomas, increased blood test activity was observed more than 5 years before diagnosis , with up to 10 additional tests per person-year in the final year—clinicians were responding to abnormal CBC values without recognizing their significance.[<sup>3</sup>](#ref-3)
+Lymphomas do not produce a single dominant CBC signal as reliably as leukemia or myeloma, but they leave a characteristic inflammatory profile. Erythrocyte sedimentation rate (ESR) is a formally incorporated prognostic marker in HL staging and is elevated in over **56 percent of Stage III patients** at diagnosis. Lactate dehydrogenase (LDH) elevation on the CMP is a component of the International Prognostic Index for NHL and is elevated in approximately 45 percent of cases.[<sup>2</sup>](#ref-2)
+
+A large population-based analysis using the Copenhagen Primary Care Laboratory Database tracked CBC abnormalities across 663,184 patients over multiple years. For hematological malignancies, including lymphomas, **increased blood test activity was observed more than 5 years before diagnosis**, with up to 10 additional tests per person-year in the final year—clinicians were responding to abnormal CBC values without recognizing their significance.[<sup>3</sup>](#ref-3)
+
 ## The Machine Learning Case
 
-The CopLab machine learning study trained a model on CBC data from 663,184 patients to screen for impending hematological malignancy across all types, including lymphoma. The model achieved an area under the curve (AUC) of 0.84 at 6 months and 0.81 at 12 months before diagnosis, improving to 0.85 when incorporating 5 years of CBC history.[<sup>4</sup>](#ref-4)This is the most directly applicable machine learning evidence for lymphoma. It demonstrates that serial CBC data contain a detectable pre-diagnostic signal across lymphoma subtypes, even when individual CBC markers are subtle compared with leukemia or myeloma.
+The CopLab machine learning study trained a model on CBC data from 663,184 patients to screen for impending hematological malignancy across all types, including lymphoma. The model achieved an area under the curve (**AUC) of 0.84 at 6 months** and 0.81 at 12 months before diagnosis, improving to 0.85 when incorporating 5 years of CBC history.[<sup>4</sup>](#ref-4) This is the most directly applicable machine learning evidence for lymphoma. It demonstrates that serial CBC data contain a detectable pre-diagnostic signal across lymphoma subtypes, even when individual CBC markers are subtle compared with leukemia or myeloma.
 
 ## What This Proves
 

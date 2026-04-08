@@ -5,18 +5,20 @@ category: "cancer"
 date: "April 2026"
 ---
 
-Pancreatic cancer kills approximately 51,000 Americans each year. Caught while still localized, the five-year survival rate is 44 percent. Once it has spread, fewer than 4 percent of patients survive five years.[<sup>1</sup>](#ref-1)It carries the most dramatic survival gap of any cancer on this list. It also leaves one of the most specific pre-diagnostic metabolic signals in the standard blood panel.
+Pancreatic cancer kills approximately 51,000 Americans each year. Caught while still localized, the five-year survival rate is 44 percent. Once it has spread, fewer than 4 percent of patients survive five years.[<sup>1</sup>](#ref-1) It carries the most dramatic survival gap of any cancer on this list. It also leaves one of the most specific pre-diagnostic metabolic signals in the standard blood panel.
 
-44% survival when caught early, but under 4% once spread. No cancer has a wider gap. No cancer has a more specific pre-diagnostic blood signal.
+**44% survival when caught early, but under 4% once spread. No cancer has a wider gap. No cancer has a more specific pre-diagnostic blood signal.**
 
 ## The Signature in the Blood
 
-The primary signal is glucose metabolism disruption. Pancreatic tumors impair islet cell function years before causing symptoms, producing a pattern of new-onset diabetes or accelerating glucose instability. A landmark study of 28,137 pancreatic ductal adenocarcinoma (PDAC) cases confirmed that HbA1c diverges from controls two to three years before diagnosis , while liver enzymes (bilirubin, alkaline phosphatase [ALP], alanine transaminase [ALT], gamma-glutamyl transferase [GGT]) show a rapid increase approximately one year before diagnosis, and white blood cell (WBC) and platelet counts rise in the final year.[<sup>2</sup>](#ref-2)
-The glucose signal has been quantified with precision. A study of fasting blood glucose trajectories in PDAC patients showed that hyperglycemia diverged from matched controls 30 to 36 months before diagnosis and correlated directly with tumor volume.[<sup>3</sup>](#ref-3)New-onset diabetes precedes pancreatic cancer diagnosis in 52 percent of cases, making it a specific metabolic fingerprint detectable from any glucose or HbA1c measurement on the comprehensive metabolic panel (CMP).
+The primary signal is glucose metabolism disruption. Pancreatic tumors impair islet cell function years before causing symptoms, producing a pattern of new-onset diabetes or accelerating glucose instability. A landmark study of 28,137 pancreatic ductal adenocarcinoma (PDAC) cases confirmed that **HbA1c diverges from controls two to three years before diagnosis**, while liver enzymes (bilirubin, alkaline phosphatase [ALP], alanine transaminase [ALT], gamma-glutamyl transferase [GGT]) show a rapid increase approximately one year before diagnosis, and white blood cell (WBC) and platelet counts rise in the final year.[<sup>2</sup>](#ref-2)
+
+The glucose signal has been quantified with precision. A study of fasting blood glucose trajectories in PDAC patients showed that hyperglycemia diverged from matched controls **30 to 36 months before diagnosis** and correlated directly with tumor volume.[<sup>3</sup>](#ref-3) New-onset diabetes precedes pancreatic cancer diagnosis in 52 percent of cases, making it a specific metabolic fingerprint detectable from any glucose or HbA1c measurement on the comprehensive metabolic panel (CMP).
 
 ## The Machine Learning Case
 
-An XGBoost model trained on routine clinical data in patients with new-onset diabetes achieved an area under the curve (AUC) of 0.80 for identifying which new-onset diabetics would develop pancreatic cancer within one year, outperforming the END-PAC (AUC 0.63) and Boursi (AUC 0.68) models, and capturing 75 percent of cancers at 70 percent specificity.[<sup>4</sup>](#ref-4)A second XGBoost model trained on electronic health record (EHR) data achieved an AUC of 0.84 and detected 58 percent of late-stage patients a median of 24 months before their actual diagnosis.[<sup>5</sup>](#ref-5)
+An XGBoost model trained on routine clinical data in patients with new-onset diabetes achieved an area under the curve (**AUC) of 0.80** for identifying which new-onset diabetics would develop pancreatic cancer within one year, outperforming the END-PAC (AUC 0.63) and Boursi (AUC 0.68) models, and capturing 75 percent of cancers at 70 percent specificity.[<sup>4</sup>](#ref-4) A second XGBoost model trained on electronic health record (EHR) data achieved an AUC of 0.84 and detected 58 percent of late-stage patients a median of 24 months before their actual diagnosis.[<sup>5</sup>](#ref-5)
+
 ## What This Proves
 
 The glucose-disruption signal for pancreatic cancer is measurable on a standard CMP two to three years before diagnosis. The XGBoost methodology is validated. What has not been built is the routine primary care algorithm that flags new-onset diabetes patients for pancreatic risk stratification based on the metabolic trajectory already in the EHR. The science is established. The deployment is the missing step.

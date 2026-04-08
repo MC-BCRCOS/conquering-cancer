@@ -5,18 +5,20 @@ category: "cancer"
 date: "April 2026"
 ---
 
-Liver cancer kills approximately 29,000 Americans each year. Caught while still localized, the five-year survival rate is 38 percent. Once it has spread, that figure collapses to under 4 percent.[<sup>1</sup>](#ref-1)Most hepatocellular carcinoma (HCC) arises on a background of cirrhosis or chronic liver disease, meaning the organ is already under routine metabolic surveillance. The standard blood draw ordered for that surveillance already encodes the signal.
+Liver cancer kills approximately 29,000 Americans each year. Caught while still localized, the five-year survival rate is 38 percent. Once it has spread, that figure collapses to under 4 percent.[<sup>1</sup>](#ref-1) Most hepatocellular carcinoma (HCC) arises on a background of cirrhosis or chronic liver disease, meaning the organ is already under routine metabolic surveillance. The standard blood draw ordered for that surveillance already encodes the signal.
 
-38% survival when caught early, under 4% once spread. The liver chemistry panel ordered every six months already contains the early warning.
+**38% survival when caught early, under 4% once spread. The liver chemistry panel ordered every six months already contains the early warning.**
 
 ## The Signature in the Blood
 
-Liver function tests ordered routinely in patients with hepatitis B, hepatitis C, fatty liver, or alcohol use contain the earliest detectable markers of HCC development. The **FIB-4 index —calculated from aspartate aminotransferase (AST), alanine aminotransferase (ALT), platelet count, and age, all standard comprehensive metabolic panel (CMP) outputs—has been validated as a pre-diagnostic HCC predictor in a prospective cohort of 44,215 cancer-free participants. Patients in the highest FIB-4 quartile carried a hazard ratio of **18.58 compared to the lowest quartile.[<sup>2</sup>](#ref-2)
-Serial changes in FIB-4 are more powerful than a single measurement. A nationwide cohort study using Taiwan's National Health Insurance database (810,698 patients with metabolic liver disease) found that the transition from low-risk FIB-4 (<1.45) to high-risk FIB-4 (>2.67) over three years was independently associated with future HCC, even in patients without cirrhosis.[<sup>3</sup>](#ref-3)The mechanism involves the gradual accumulation of hepatic fibrosis, which can be observed through a decline in platelets (splenic sequestration), increasing AST/ALT ratios, and decreasing albumin levels—all standard CMP components.
+Liver function tests ordered routinely in patients with hepatitis B, hepatitis C, fatty liver, or alcohol use contain the earliest detectable markers of HCC development. The **FIB-4 index**—calculated from aspartate aminotransferase (AST), alanine aminotransferase (ALT), platelet count, and age, all standard comprehensive metabolic panel (CMP) outputs—has been validated as a pre-diagnostic HCC predictor in a prospective cohort of 44,215 cancer-free participants. Patients in the highest FIB-4 quartile carried a hazard ratio of **18.58** compared to the lowest quartile.[<sup>2</sup>](#ref-2)
+
+Serial changes in FIB-4 are more powerful than a single measurement. A nationwide cohort study using Taiwan's National Health Insurance database (810,698 patients with metabolic liver disease) found that the transition from low-risk FIB-4 (<1.45) to high-risk FIB-4 (>2.67) over three years was independently associated with future HCC, even in patients without cirrhosis.[<sup>3</sup>](#ref-3) The mechanism involves the gradual accumulation of hepatic fibrosis, which can be observed through a decline in platelets (splenic sequestration), increasing AST/ALT ratios, and decreasing albumin levels—all standard CMP components.
 
 ## The Machine Learning Case
 
-A comprehensive AI study across Hong Kong developed a LightGBM model trained solely on **routine blood tests —complete blood count (CBC), liver function tests, renal function tests, and clotting profiles—to screen for HCC. It achieved an area under the curve (**AUC) of 0.894 on the test cohort and 0.871 on the validation cohort, outperforming α-fetoprotein (AFP) for early-stage detection across all BCLC (Barcelona Clinic Liver Cancer) stages.[<sup>4</sup>](#ref-4)A second model, trained on data from the United Kingdom Biobank and the National Institutes of Health All of Us, involving over 900,000 individuals, achieved an area under the curve (AUC) of 0.88 years before HCC diagnosis, using routine blood tests among its inputs.[<sup>5</sup>](#ref-5)
+A comprehensive AI study across Hong Kong developed a LightGBM model trained solely on **routine blood tests**—complete blood count (CBC), liver function tests, renal function tests, and clotting profiles—to screen for HCC. It achieved an area under the curve (**AUC) of 0.894** on the test cohort and 0.871 on the validation cohort, outperforming α-fetoprotein (AFP) for early-stage detection across all BCLC (Barcelona Clinic Liver Cancer) stages.[<sup>4</sup>](#ref-4) A second model, trained on data from the United Kingdom Biobank and the National Institutes of Health All of Us, involving over 900,000 individuals, achieved an area under the curve (AUC) of 0.88 years before HCC diagnosis, using routine blood tests among its inputs.[<sup>5</sup>](#ref-5)
+
 ## What This Proves
 
 For liver cancer, the clinical monitoring infrastructure is already in place. Patients at risk are already having their blood drawn at regular intervals. The CMP values used to monitor liver disease show a clear HCC trajectory. The science is well established. However, a population-scale algorithm that processes these values longitudinally and flags increased risk has not yet been developed for routine use in primary care.
@@ -39,7 +41,7 @@ Prospective cohort of 44,215 cancer-free participants in the Jinchang Cohort Stu
 
 <span id="ref-3"></span>
 
-3.Yeo YH, Ho HJ, Huang TW, et al. "Dynamic FIB-4 Score Changes and HCC Risk in Patients with MASLD and Elevated Liver Enzymes : A Nationwide Cohort Study." *Liver Cancer*. 2026.
+3.Yeo YH, Ho HJ, Huang TW, et al. "Dynamic FIB-4 Score Changes and HCC Risk in Patients with MASLD and Elevated Liver Enzymes**: **A Nationwide Cohort Study." *Liver Cancer*. 2026.
 
 
 Nationwide cohort study (810,698 MASLD patients, Taiwan national insurance database) demonstrating that transition from low to high FIB-4 over three years independently predicted future HCC. Establishes that serial trajectory of routine liver blood markers is more powerful than a single reading.

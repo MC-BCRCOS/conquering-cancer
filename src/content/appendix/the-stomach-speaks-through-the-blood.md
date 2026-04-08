@@ -5,18 +5,20 @@ category: "cancer"
 date: "April 2026"
 ---
 
-Gastric cancer kills approximately 11,000 Americans each year. Caught while still localized, the five-year survival rate is 77 percent. Once it has spread to distant organs, that figure falls to under 7 percent.[<sup>1</sup>](#ref-1)Like colorectal cancer, gastric tumors bleed slowly, generating iron-deficiency anemia that predates clinical symptoms by months. Unlike colorectal cancer, a deployed population-scale algorithm does not yet exist.
+Gastric cancer kills approximately 11,000 Americans each year. Caught while still localized, the five-year survival rate is 77 percent. Once it has spread to distant organs, that figure falls to under 7 percent.[<sup>1</sup>](#ref-1) Like colorectal cancer, gastric tumors bleed slowly, generating iron-deficiency anemia that predates clinical symptoms by months. Unlike colorectal cancer, a deployed population-scale algorithm does not yet exist.
 
-77% survival when caught early, under 7% once spread. The blood signature is documented. A deployed algorithm exists in research, not in practice.
+**77% survival when caught early, under 7% once spread. The blood signature is documented. A deployed algorithm exists in research, not in practice.**
 
 ## The Signature in the Blood
 
-Iron-deficiency anemia from chronic occult blood loss is the dominant gastric cancer signal. A German primary care study of **122,502 iron-deficiency anemia patients found a statistically significant excess of subsequent gastric cancer diagnoses versus matched controls.[<sup>2</sup>](#ref-2)The complete blood count (CBC) pattern mirrors colorectal cancer: falling hemoglobin, declining mean corpuscular volume (MCV), and elevated red blood cell distribution width (RDW). However, gastric cancer adds an inflammatory overlay: a study of 2,606 gastric cancer patients and 3,219 controls found that neutrophil-to-lymphocyte (NLR) and platelet-to-lymphocyte (PLR) were **superior to carcinoembryonic antigen (CEA) and carbohydrate antigen 19-9 (CA19-9) for early gastric cancer screening, with NLR area under the curve (AUC) 0.715 and PLR AUC 0.707.3
+Iron-deficiency anemia from chronic occult blood loss is the dominant gastric cancer signal. A German primary care study of **122,502 iron-deficiency anemia patients** found a statistically significant excess of subsequent gastric cancer diagnoses versus matched controls.[<sup>2</sup>](#ref-2) The complete blood count (CBC) pattern mirrors colorectal cancer: falling hemoglobin, declining mean corpuscular volume (MCV), and elevated red blood cell distribution width (RDW). However, gastric cancer adds an inflammatory overlay: a study of 2,606 gastric cancer patients and 3,219 controls found that neutrophil-to-lymphocyte (NLR) and platelet-to-lymphocyte (PLR) were **superior to carcinoembryonic antigen (CEA) and carbohydrate antigen 19-9 (CA19-9)** for early gastric cancer screening, with NLR area under the curve (AUC) 0.715 and PLR AUC 0.707.[<sup>3</sup>](#ref-3)
 
 Albumin decline on the comprehensive metabolic panel (CMP) reflects cancer-related cachexia and impaired protein synthesis. NLR, PLR, and hemoglobin together distinguish gastric cancer from intestinal metaplasia (a precancerous state), enabling detection during the Correa cascade before malignant transformation.[<sup>4</sup>](#ref-4)
+
 ## The Machine Learning Case
 
-The XHGC20 model, an XGBoost classifier trained on 20 routine hematological indicators from 4,400 patients at Xinhua Hospital, Shanghai, achieved a validation **AUC of 0.901 and a test AUC of 0.907. For tumor marker-negative patients, those who would be missed by conventional screening, AUC reached 0.970.5 A second GBDT model trained at Zhejiang Provincial People's Hospital on routine blood chemistry (including NLR, hemoglobin, albumin, CEA, and CBC parameters) achieved an **AUC of 0.91 with sensitivity 87.0 percent and specificity 84.1 percent.[<sup>6</sup>](#ref-6)
+The XHGC20 model, an XGBoost classifier trained on 20 routine hematological indicators from **4,400 patients** at Xinhua Hospital, Shanghai, achieved a validation **AUC of 0.901** and a test AUC of 0.907. For tumor marker-negative patients, those who would be missed by conventional screening, AUC reached 0.970.[<sup>5</sup>](#ref-5) A second GBDT model trained at Zhejiang Provincial People's Hospital on routine blood chemistry (including NLR, hemoglobin, albumin, CEA, and CBC parameters) achieved an **AUC of 0.91** with sensitivity 87.0 percent and specificity 84.1 percent.[<sup>6</sup>](#ref-6)
+
 ## What This Proves
 
 Gastric cancer's blood signature—iron-deficiency anemia, NLR and PLR elevation, albumin decline, and RDW increase—is documented in peer-reviewed literature. Two independent XGBoost/GBDT models trained on standard blood inputs achieve an AUC above 0.90. The XHGC20 algorithm exists in research form. What has not been built is its deployment as a passive, electronic health record-integrated screening tool operating on every routine blood draw in primary care—the final step in closing the detection gap.
@@ -60,7 +62,7 @@ XGBoost model XHGC20 trained on 20 routine hematological indicators from 4,400 p
 
 <span id="ref-6"></span>
 
-6.Zhu SL, Dong J, Zhang C, Huang YB, Pan W. "Application of machine learning in the diagnosis of gastric cancer based on noninvasive characteristics." *PL OS O ne*. 2020;15(12):e0244869.
+6.Zhu SL, Dong J, Zhang C, Huang YB, Pan W. "Application of machine learning in the diagnosis of gastric cancer based on noninvasive characteristics." *PLOS One*. 2020;15(12):e0244869.
 
 
 GBDT model trained at Zhejiang Provincial People’s Hospital on 709 patients (398 with gastric cancer, 311 controls). Features: NLR, hemoglobin, albumin, CEA, CA125, CA199, and CBC parameters. AUC 0.91, sensitivity 87.0%, specificity 84.1%. Independent validation of the XGBoost paradigm for gastric cancer detection from routine blood inputs.
