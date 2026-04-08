@@ -1,0 +1,143 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import '../styles/paper.css';
+
+interface Props {
+  title: string;
+  subtitle?: string;
+  description?: string;
+  prevLink?: { href: string; label: string };
+  nextLink?: { href: string; label: string };
+}
+
+const { title, subtitle, description, prevLink, nextLink } = Astro.props;
+---
+
+<BaseLayout title={title} description={description}>
+  <article class="paper">
+    <header class="paper-header">
+      <div class="container">
+        <h1 class="paper-title">{title}</h1>
+        {subtitle && <p class="paper-subtitle">{subtitle}</p>}
+      </div>
+    </header>
+
+    <div class="paper-body container">
+      <div class="paper-content">
+        <slot />
+      </div>
+    </div>
+
+    {(prevLink || nextLink) && (
+      <nav class="continue-reading container" aria-label="Paper navigation">
+        <div class="continue-links">
+          {prevLink && (
+            <a href={prevLink.href} class="continue-prev">
+              <span class="continue-label">Previous</span>
+              <span class="continue-title">{prevLink.label}</span>
+            </a>
+          )}
+          {nextLink && (
+            <a href={nextLink.href} class="continue-next">
+              <span class="continue-label">Continue Reading</span>
+              <span class="continue-title">{nextLink.label}</span>
+            </a>
+          )}
+        </div>
+      </nav>
+    )}
+  </article>
+</BaseLayout>
+
+<style>
+  .paper-header {
+    padding: var(--space-24) 0 var(--space-16);
+  }
+
+  .paper-title {
+    font-size: var(--text-4xl);
+    max-width: var(--content-width);
+  }
+
+  .paper-subtitle {
+    margin-top: var(--space-4);
+    font-size: var(--text-lg);
+    color: var(--color-gray-500);
+    line-height: var(--leading-normal);
+    max-width: var(--content-width);
+  }
+
+  .paper-body {
+    padding-bottom: var(--space-24);
+  }
+
+  .continue-reading {
+    margin-top: var(--space-16);
+    padding-top: var(--space-12);
+    border-top: 1px solid var(--color-gray-200);
+  }
+
+  .continue-links {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--space-8);
+    max-width: var(--content-width);
+  }
+
+  .continue-prev,
+  .continue-next {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    padding: var(--space-6);
+    border: 1px solid var(--color-gray-200);
+    border-radius: 8px;
+    transition: border-color 0.15s ease, background 0.15s ease;
+    text-decoration: none;
+    flex: 1;
+  }
+
+  .continue-next {
+    text-align: right;
+    margin-left: auto;
+  }
+
+  .continue-prev:hover,
+  .continue-next:hover {
+    border-color: var(--color-red);
+    background: var(--color-gray-100);
+  }
+
+  .continue-label {
+    font-size: var(--text-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-red);
+    font-weight: 700;
+  }
+
+  .continue-title {
+    font-family: var(--font-display);
+    font-size: var(--text-lg);
+    font-weight: 700;
+    color: var(--color-black);
+  }
+
+  @media (max-width: 768px) {
+    .paper-header {
+      padding: var(--space-12) 0 var(--space-8);
+    }
+
+    .paper-title {
+      font-size: var(--text-2xl);
+    }
+
+    .continue-links {
+      flex-direction: column;
+    }
+
+    .continue-next {
+      text-align: left;
+    }
+  }
+</style>

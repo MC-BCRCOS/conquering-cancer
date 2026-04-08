@@ -1,0 +1,156 @@
+/* === Fonts === */
+@font-face {
+  font-family: 'TT Rationalist';
+  src: url('/src/assets/fonts/tt-rationalist-normal.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Rationalist';
+  src: url('/src/assets/fonts/tt-rationalist-bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Neue Haas Grotesk Display';
+  src: url('/src/assets/fonts/neue-haas-grotesk-bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* === Design Tokens === */
+:root {
+  --color-red: #ed1f24;
+  --color-red-dark: #c41920;
+  --color-black: #000000;
+  --color-gray-900: #1a1a1a;
+  --color-gray-700: #333333;
+  --color-gray-500: #4a4a4a;
+  --color-gray-300: #b0b0b0;
+  --color-gray-200: #e0e0e0;
+  --color-gray-100: #f5f5f5;
+  --color-white: #ffffff;
+
+  --font-body: 'TT Rationalist', Georgia, 'Times New Roman', serif;
+  --font-display: 'Neue Haas Grotesk Display', 'Arial Black', 'Helvetica Neue', sans-serif;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1.0625rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 1.875rem;
+  --text-3xl: 2.25rem;
+  --text-4xl: 3rem;
+
+  --leading-tight: 1.2;
+  --leading-normal: 1.7;
+  --leading-relaxed: 1.85;
+
+  --content-width: 48rem;
+  --content-wide: 64rem;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+}
+
+/* === Reset === */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  color: var(--color-gray-900);
+  background-color: var(--color-white);
+}
+
+img, svg {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: var(--color-red);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+a:hover {
+  color: var(--color-red-dark);
+}
+
+/* === Typography === */
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: var(--leading-tight);
+  color: var(--color-black);
+}
+
+h1 {
+  font-size: var(--text-4xl);
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: var(--text-2xl);
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-size: var(--text-xl);
+}
+
+h4 {
+  font-size: var(--text-lg);
+}
+
+/* === Utility === */
+.container {
+  max-width: var(--content-width);
+  margin-inline: auto;
+  padding-inline: var(--space-6);
+}
+
+.container-wide {
+  max-width: var(--content-wide);
+  margin-inline: auto;
+  padding-inline: var(--space-6);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

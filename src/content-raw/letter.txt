@@ -1,0 +1,44 @@
+[Heading 2] Dear Friends and Colleagues,
+
+[Normal] The attached papers, published by the team at the Ratner Early Detection Initiative (REDI) describe a powerful and proven approach to early cancer detection that we believe will radically reduce cancer deaths. 
+
+[Normal] The core idea is that blood tests taken routinely in the course of an annual physical contain dozens of signals hiding in the relationships between values when cancer is developing. When analyzed individually the results may look normal but when machine learning algorithms are applied, cancer can be detected from six to twenty-four months before a doctor is able to diagnose the cancer by currently accepted screening protocols. 
+
+[Normal] The first paper: "What Your Blood Already Knows" describes early detection opportunities for as many as thirteen cancers by deploying specific algorithms to the results of routine blood draws. Two algorithms have been developed and deployed in real clinical settings at Geisinger Health System in Pennsylvania and at Maccabi Healthcare Services in Israel. A colorectal cancer algorithm has been tested by application in more than 600,000 patients. The outcomes are published in the Journal of the American Medical Informatics Association. The lung cancer algorithm was validated at Kaiser Permanente across nearly 200,000 patients and published in the American Journal of Respiratory and Critical Care Medicine. Gastric and liver cancer algorithms are being validated in pilot projects of 193,000 and 75,000 patients respectively. Nine additional cancers, including but not limited to ovarian and pancreatic, have blood signatures documented in the medical literature and are awaiting for algorithm development.
+
+[Normal] The second paper, "Beyond Cancer," extends the same logic to diseases other than cancer. Cardiovascular disease, type 2 diabetes, chronic kidney disease, fatty liver disease, and a number of rarer conditions that leave fingerprints in routine blood work years before conventional screening protocols are able to detect them. The deployment of these algorithms for cancer and other diseases, has been conservatively estimated to have the potential to save 400,000 to 675,000 lives annually in the United States; numbers representing 13 to 22 percent of all American deaths annually. 
+
+[Normal] The third document, "The Evidence Behind the Numbers," is a question-and-answer companion piece that in addition to anticipating questions we think you may be asking yourselves as you read through the material, shows the sources of every number: the journals where they appear, the studies, which databases, and the calculations. If you are a clinician or a scientist, this is the document that will answer your methodological questions and if you’re a policymaker, this document shows the math behind the claims.
+
+[Normal] REDI Conclusions: The science laid out in our work is not theoretical; it is published, validated, and in some cases already operational. What we lack are the algorithms for the remaining cancers and diseases that can be detected by machine learning. We urgently need to build institutional will and commitment to deploy existing algorithms and to develop additional ones to cover diseases known to be detectable by application of this approach. Building the remaining cancer detection algorithms is estimated to cost less than $75 million; and will require access to electronic medical record data from three or four large health systems. The investment is less than 2% of the cost to develop a single cancer drug. The blood tests are being drawn routinely as part of a patient’s annual physical. The data is sitting in accessible medical records. We plan to develop the algorithms needed to analyze the blood. Once the algorithms are developed and applied, only the highest risk patients will undergo additional screening, reducing the overall number of patients screened and significantly increasing the number of cases detected in early stages  
+
+[Normal] I recognize that you may have questions about specific numbers, about false positive rates, about what happens when an algorithm flags a patient for a cancer that has no established screening test. The evidence paper addresses each of these topics. As you read the papers, please think about what algorithmic blood test analysis could mean for patients. If you are involved in health policy, think about what a $75 million investment could return when the alternative is spending billions treating cancers that could have been caught early when treatment is relatively painless and inexpensive. 
+
+[Normal] On a personal level I implore you to get your blood work done. And if any of this moves you, please share this information with others who might help us in our efforts to have this approach become THE standard in early detection. And of course, share this information with those you care about to ensure their health and wellbeing. We are open to questions, to ideas, to criticism, and most of all, to partners who want to help make this real.
+
+[Normal] I genuinely believe we are close to using machine learning to analyze blood work to detect cancer and make material advances in the 50 year old “war on cancer;” or as my wife says: in a way that may finally “conquer cancer”
+
+[Normal] With deep respect and hope,
+
+[Normal] **Bruce Ratner**
+
+[Normal] Ratner Early Detection Initiative (REDI)
+
+[Normal] REDI Team
+
+[Normal] Bruce Ratner
+
+[Normal] Cynthia McCollum
+
+[Normal] Linda Johnson
+
+[Normal] Mark Clubine
+
+[Normal] Aryeh Baraban
+
+[Normal] Anusha Bala
+
+[Normal] Kelli Alires
+
+[Normal] 
+

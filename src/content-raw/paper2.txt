@@ -1,0 +1,62 @@
+[Heading 3] The Bigger Picture
+
+[Heading 3] Cancer is not the only killer hiding in your blood work, and it may not even be the biggest one.
+
+[Heading 3] Cardiovascular disease kills 700,000 Americans every year. More than half of all heart attack victims had no prior symptoms. Type 2 diabetes kills 89,000 directly and contributes to hundreds of thousands more deaths through complications. Chronic kidney disease kills 57,000 and sends another 130,000 patients onto dialysis annually, at $90,000 per patient per year. Heart failure kills 68,000. Fatty liver disease, now the most common liver disorder in the United States, kills 21,000 and is progressing silently in one out of every four American adults.
+
+[Heading 3] Every one of these diseases progresses slowly, over years or decades, while changing blood chemistry at every stage; every one of those blood chemistry changes appears in the same routine blood tests drawn at your annual physical.
+
+[Heading 3] The algorithms that detect cancer from routine blood work use a proven methodology: train machine learning on the blood test records of people who later developed disease, and teach the computer to recognize the patterns that preceded diagnosis. That methodology applies to every chronic disease with a blood signature, and the Israeli scientists proved it with cancer. The same approach works for heart disease, diabetes, kidney failure, liver disease, and more than a dozen rarer conditions that devastate patients because they are rarely caught early.
+
+[Heading 3] What Your Blood Is Already Saying
+
+[Normal] Consider chronic kidney disease. Your kidneys can lose half their function before the standard blood test value, creatinine, crosses the threshold that triggers concern. However, the decline is not silent. Creatinine creeps from 0.9 to 1.0 to 1.1 mg/dL over three years while remaining technically normal. Blood urea nitrogen drifts upward. Albumin edges downward. Individually, every number passes inspection. Together, they trace a trajectory toward kidney failure that machine learning detects two to five years before conventional diagnosis, with accuracy scores of 0.83 to 0.88.
+
+[Normal] Or consider type 2 diabetes: the disease develops over 5 to 10 years. During that time, fasting glucose rises gradually from 88 to 94 to 98 mg/dL, always staying below the 100 mg/dL prediabetes threshold. A1C drifts from 5.2 to 5.5 to 5.8. Triglycerides climb. HDL cholesterol drops. The metabolic panel, the lipid panel, and the A1C are all whispering the same warning, but no single value triggers an alert. Algorithms reading all three panels simultaneously predict diabetes onset three to five years before diagnosis, when lifestyle intervention, 7 percent weight loss plus 150 minutes of weekly exercise, reduces progression by 58 percent. The disease can be prevented entirely, but only if you catch it in time.
+
+[Normal] Cardiovascular disease follows the same pattern. Machine learning that analyzes lipid trends, inflammatory markers from the complete blood count, and metabolic panel values achieves an accuracy of 0.78 to 0.82 for predicting heart attacks and strokes 5 to 10 years before they occur, substantially outperforming the Framingham Risk Score, which most physicians rely on today.
+
+[Quote] Figure 1. Demonstrated algorithm accuracy for non-cancer diseases compared to deployed cancer detection algorithms. AUC of 0.50 equals a coin flip; 1.0 equals perfect prediction.
+
+[Quote] Figure 2. Detection lead time: how far in advance algorithms can identify disease before conventional diagnosis.
+
+[Heading 3] The Diseases Doctors Almost Never Catch
+
+[Normal] Some of the most compelling opportunities involve conditions that physicians rarely consider until catastrophic damage has occurred.
+
+[Normal] Familial hypercholesterolemia is a genetic disorder affecting 1 in 250 people that causes heart attacks in the 30s and 40s. It is massively underdiagnosed, even though it produces a distinctive lipid signature, LDL cholesterol consistently above 190 mg/dL from young adulthood, specific LDL-to-HDL ratios, that appears on every lipid panel these patients have ever received. Aggressive statin therapy started in the 20s or 30s prevents cardiovascular disease almost entirely. An algorithm flagging this pattern from population-level lipid data could prevent an estimated 10,000 to 15,000 premature cardiac deaths per year.
+
+[Normal] Hemochromatosis, iron overload, affects 1 in 200 people of Northern European descent, making it one of the most common genetic disorders in the United States. It causes cirrhosis, heart failure, diabetes, and arthritis. It is almost always diagnosed after organ damage has occurred. Yet the metabolic panel tells the story five to ten years earlier: glucose rises slowly as iron damages the pancreas, liver enzymes trend upward, calcium declines. Treatment is simple phlebotomy, essentially blood donation, and if started early, it prevents every complication. An algorithm detecting this pattern would be one of the highest-value, lowest-cost interventions in preventive medicine.
+
+[Normal] Wilson disease, copper accumulation causing liver failure and neurological devastation, affects 1 in 30,000 people. It is typically diagnosed after irreversible brain damage. Addison’s disease, adrenal insufficiency, kills through sudden adrenal crisis: collapse, shock, and organ failure arriving without warning. For both diseases, blood chemistry changes precede catastrophe by years. Algorithms reading those patterns could prompt simple, definitive testing long before irreversible harm.
+
+[Heading 3] The Stakes
+
+[Quote] Figure 3. Estimated deaths preventable annually across 14 non-cancer conditions, assuming 50% population penetration.
+
+[Heading 3] The combined toll of these diseases exceeds 1.2 million American deaths per year. Conservative estimates, assuming only 50 percent of the population receives annual blood testing with algorithm analysis, project that 300,000 to 500,000 of those deaths could be prevented. Cardiovascular disease and sepsis account for the largest share, but diabetes, kidney disease, and heart failure each represent tens of thousands of preventable deaths.
+
+[Heading 3] The Economics
+
+[Normal] The financial case is overwhelming. A heart attack costs $20,000 to $50,000 for initial treatment, plus ongoing costs for heart failure management that can reach $200,000 over a decade. Preventing that heart attack through early detection and intervention costs a few thousand dollars. Dialysis costs $90,000 per patient per year, but detecting kidney disease at Stage 2 instead of Stage 4 delays dialysis by 5 to 10 years, saving hundreds of thousands of dollars per patient. Diabetes complications, blindness, amputations, cardiovascular disease, and kidney failure cost an average of $250,000 per patient over a lifetime. The Diabetes Prevention Program demonstrated that a $3,500 lifestyle intervention prevents the disease entirely in 58 percent of high-risk patients.
+
+[Quote] Figure 4. Per-patient cost comparison: treating disease after late detection vs. intervening after early algorithmic detection.
+
+[Heading 3] The Full Picture
+
+[Normal] Add these numbers to the cancer detection estimates, and the total opportunity comes into focus. Algorithmic analysis of routine blood tests, the same six panels drawn at every annual physical, could prevent 400,000 to 675,000 deaths per year in the United States. That represents 13 to 22 percent of all annual deaths. No new tests, blood draws, or patient behavior. Just a smarter way to analyze the data we already collect 200 million times a year.
+
+[Quote] Figure 5. Combined annual impact of cancer and non-cancer algorithmic early detection, assuming 50% population penetration.
+
+[Normal] The algorithms for cancer are further along. Two are deployed, two more validated, and nine more buildable. The non-cancer algorithms are at an earlier stage, with research demonstrating feasibility across all major conditions. The methodology is identical. The training data sits in the same electronic medical records. The development cost per algorithm remains $2 to $5 million.
+
+[Normal] The blood tests are already being drawn. The diseases are already leaving their fingerprints. The only thing missing is the software that reads them.
+
+[Title] 03. The Evidence Behind the Numbers
+
+[Normal] Prepared by REDI Team
+
+[Normal] April 2026
+
+[Normal] This document provides the methodology, citations, and reasoning behind every major claim in the preceding chapters. It is designed to answer the questions that policymakers, physicians, and informed readers will ask.
+

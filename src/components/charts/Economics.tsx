@@ -1,0 +1,89 @@
+import { useEffect, useRef } from 'preact/hooks';
+import { Chart, registerables } from 'chart.js';
+
+Chart.register(...registerables);
+
+const REDI_RED = '#ed1f24';
+const GREEN = '#16a34a';
+
+const diseases = [
+  { name: 'Hemochromatosis\n(Cirrhosis)', late: 300, early: 0.5 },
+  { name: 'Diabetes\n(Complications)', late: 250, early: 3.5 },
+  { name: 'Heart Attack', late: 200, early: 5 },
+  { name: 'Kidney Disease\n(Dialysis)', late: 90, early: 8 },
+];
+
+export default function Economics() {
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+  const chartRef = useRef<Chart | null>(null);
+
+  useEffect(() => {
+    if (!canvasRef.current) return;
+
+    chartRef.current = new Chart(canvasRef.current, {
+      type: 'bar',
+      data: {
+        labels: diseases.map((d) => d.name),
+        datasets: [
+          {
+            label: 'Late Detection Cost ($K)',
+            data: diseases.map((d) => d.late),
+            backgroundColor: REDI_RED,
+            borderRadius: 4,
+            barPercentage: 0.6,
+          },
+          {
+            label: 'Early Detection Cost ($K)',
+            data: diseases.map((d) => d.early),
+            backgroundColor: GREEN,
+            borderRadius: 4,
+            barPercentage: 0.6,
+          },
+        ],
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: {
+            position: 'bottom',
+            labels: { font: { size: 12 }, padding: 16 },
+          },
+          tooltip: {
+            callbacks: {
+              label: (ctx) => `${ctx.dataset.label}: $${ctx.parsed.y}K`,
+            },
+          },
+        },
+        scales: {
+          y: {
+            beginAtZero: true,
+            title: { display: true, text: 'Per-Patient Cost ($K)', font: { size: 11 } },
+            grid: { color: '#f0f0f0' },
+            ticks: {
+              callback: (value) => `$${value}K`,
+            },
+          },
+          x: {
+            grid: { display: false },
+            ticks: { font: { size: 11 } },
+          },
+        },
+      },
+    });
+
+    return () => chartRef.current?.destroy();
+  }, []);
+
+  return (
+    <div class="chart-container">
+      <h4>Figure 4</h4>
+      <p style={{ marginBottom: '1rem', fontSize: '0.875rem', color: '#4a4a4a' }}>
+        Per-patient cost comparison: treating disease after late detection vs. intervening after early algorithmic detection.
+      </p>
+      <div style={{ height: '340px' }}>
+        <canvas ref={canvasRef}></canvas>
+      </div>
+    </div>
+  );
+}

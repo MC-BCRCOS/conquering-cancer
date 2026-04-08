@@ -1,0 +1,172 @@
+/* === Paper Content Styles === */
+
+.paper-content {
+  max-width: var(--content-width);
+  margin-inline: auto;
+}
+
+.paper-content > * + * {
+  margin-top: var(--space-6);
+}
+
+/* Headings */
+.paper-content h2 {
+  margin-top: var(--space-16);
+  margin-bottom: var(--space-4);
+  padding-bottom: var(--space-2);
+  border-bottom: 1px solid var(--color-gray-200);
+}
+
+.paper-content h3 {
+  margin-top: var(--space-12);
+  margin-bottom: var(--space-3);
+}
+
+.paper-content h4 {
+  margin-top: var(--space-8);
+  margin-bottom: var(--space-2);
+  font-family: var(--font-body);
+  font-weight: 700;
+}
+
+/* Body text */
+.paper-content p {
+  line-height: var(--leading-relaxed);
+}
+
+.paper-content strong {
+  font-weight: 700;
+  color: var(--color-black);
+}
+
+.paper-content em {
+  font-style: italic;
+}
+
+/* Superscript endnote refs */
+.paper-content sup {
+  font-size: 0.7em;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  top: -0.5em;
+  color: var(--color-red);
+  font-weight: 600;
+}
+
+.paper-content sup a {
+  color: var(--color-red);
+  text-decoration: none;
+}
+
+/* Lists */
+.paper-content ul,
+.paper-content ol {
+  padding-left: var(--space-8);
+}
+
+.paper-content li {
+  margin-bottom: var(--space-2);
+  line-height: var(--leading-normal);
+}
+
+.paper-content li::marker {
+  color: var(--color-red);
+}
+
+/* Tables */
+.paper-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-block: var(--space-8);
+  font-size: var(--text-sm);
+}
+
+.paper-content thead th {
+  text-align: left;
+  font-weight: 700;
+  padding: var(--space-3) var(--space-4);
+  border-bottom: 2px solid var(--color-black);
+  font-family: var(--font-display);
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-gray-500);
+}
+
+.paper-content tbody td {
+  padding: var(--space-3) var(--space-4);
+  border-bottom: 1px solid var(--color-gray-200);
+  vertical-align: top;
+}
+
+.paper-content tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Links / DOIs */
+.paper-content a {
+  color: var(--color-red);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+.paper-content a:hover {
+  color: var(--color-red-dark);
+}
+
+/* Endnotes section */
+.paper-content .endnotes {
+  margin-top: var(--space-24);
+  padding-top: var(--space-8);
+  border-top: 2px solid var(--color-black);
+}
+
+.paper-content .endnotes h2 {
+  border-bottom: none;
+  margin-top: 0;
+}
+
+.paper-content .endnote {
+  margin-bottom: var(--space-6);
+  font-size: var(--text-sm);
+  line-height: var(--leading-normal);
+}
+
+.paper-content .endnote-citation {
+  color: var(--color-gray-700);
+}
+
+.paper-content .endnote-annotation {
+  font-style: italic;
+  color: var(--color-gray-500);
+  margin-top: var(--space-1);
+}
+
+/* Charts */
+.paper-content .chart-container {
+  margin-block: var(--space-12);
+  padding: var(--space-8);
+  background: var(--color-gray-100);
+  border-radius: 8px;
+}
+
+.paper-content .chart-container h4 {
+  margin-top: 0;
+  margin-bottom: var(--space-4);
+  font-family: var(--font-display);
+  font-size: var(--text-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-gray-500);
+}
+
+/* Blockquotes / callouts */
+.paper-content blockquote {
+  border-left: 3px solid var(--color-red);
+  padding-left: var(--space-6);
+  margin-block: var(--space-8);
+  color: var(--color-gray-700);
+  font-style: italic;
+}

@@ -1,0 +1,68 @@
+[Heading 3] The Problem We Can Solve
+
+[Normal] Every year in the United States, roughly 393,000 people die from 13 cancers. Not because medicine lacks the ability to cure these diseases, but because medicine finds them too late.
+
+[Normal] Lung cancer kills 127,000 Americans annually. Eighty-five percent of those patients learned they had the disease after it had already spread beyond the lung. Pancreatic cancer kills 51,000 people a year, and the vast majority of them were walking around feeling perfectly fine until the tumor grew large enough to block a bile duct or press against a nerve. By then, the five-year survival rate is 10 percent. Colorectal cancer kills 53,000, even though it is one of the most curable cancers in existence if caught at Stage I. The pattern repeats for ovarian cancer, gastric cancer, esophageal cancer, and liver cancer. The disease grows silently; the patient feels nothing; the diagnosis arrives too late.
+
+[Normal] The survival numbers are not subtle. Late-stage lung cancer: 8 percent survive five years; early-stage lung cancer: 60 percent; colorectal cancer caught at Stage I: 90 percent survival versus Stage IV: 29 percent; ovarian cancer found early: 93 percent; found at Stage IV (when most women discover it because there is no screening test): 29 percent; pancreatic cancer caught while still confined to the pancreas: 50 percent; caught after it has spread: 10 percent.
+
+[Normal] The difference between those numbers has nothing to do with better drugs or more aggressive treatment; the difference is when the cancer is found.
+
+[Normal] Figure 1. Five-year survival rates by stage at diagnosis. Data derived from SEER national cancer surveillance database.
+
+[Heading 3] The Signal Hiding in Your Blood
+
+[Normal] Now here is the part that most people, including most physicians, do not know. Your blood is already telling us about these cancers. Not through some exotic new test, but through the routine blood draw you get at your annual physical.
+
+[Normal] A standard blood panel measures more than 60 distinct values: red blood cells, white blood cells, platelets, hemoglobin, liver enzymes, kidney function markers, metabolic indicators, cholesterol, thyroid hormone, and blood sugar. Your doctor reviews these numbers against reference ranges. If every value falls within the normal zone, the conclusion is that you are healthy.
+
+[Normal] However, that conclusion is frequently wrong.
+
+[Normal] Cancer does not push a single blood value dramatically out of range. It changes the entire landscape in ways too subtle for any human to perceive. White blood cells shift slightly upward. Platelet counts drift a fraction downward. The size distribution of red blood cells, a measurement called mean corpuscular volume, changes by a degree that would never trigger an alert. Liver enzymes creep in one direction while kidney markers shift in another. Individually, every number looks fine. Together, they form a pattern, or a biological fingerprint, that machine learning algorithms can detect 6 to 24 months before the patient notices a single symptom.
+
+[Heading 3] The Proof
+
+[Normal] This is not a theory. In 2016, a team of Israeli scientists analyzed blood tests from more than 600,000 people enrolled in Maccabi Healthcare Services, one of Israel’s largest health systems. They trained a machine learning algorithm using a technique called gradient boosting, which combines hundreds of small observations into a single powerful prediction. Think of a detective who notices that three witnesses independently mentioned the same color car: any one observation means nothing, but the pattern changes everything. The algorithm reads your blood work the same way.
+
+[Normal] Their study, published in the Journal of the American Medical Informatics Association, demonstrated an accuracy metric of 0.82 for colorectal cancer, with 0.5 indicating a coin flip and 1.0 perfect prediction. The algorithm was validated in an independent population of 30,000 people in the United Kingdom. When deployed at Geisinger Health System in Pennsylvania, it flagged 706 patients from a pool of 25,610 who were overdue for screening. Among the 104 who completed colonoscopy, 8 percent had colorectal cancer, compared to the 1 percent detection rate in standard screening. That is an eightfold improvement. No new blood tests and no new equipment. The algorithm simply read the blood work that those patients had already received.
+
+[Normal] Lung cancer followed. Researchers at Kaiser Permanente analyzed 6,505 lung cancer cases against 189,597 controls and developed an algorithm that achieved an accuracy of 0.86 and identified 40 percent of future lung cancer patients at a false positive rate of just 5 percent, 9 to 12 months before clinical diagnosis. A gastric cancer algorithm was validated across 193,000 patients. A liver cancer algorithm was validated in 75,000 patients. At least nine more cancers, from pancreatic to ovarian to kidney to myeloma, display documented blood chemistry signatures that the same methodology can target.
+
+[Quote] Figure 2. Current development status of cancer detection algorithms for 13 target cancers.
+
+[Heading 3] How Solid Are These Numbers?
+
+[Normal] The table of 13 cancers and their estimated lives saved rests on three foundations: published survival rates from the national cancer surveillance database maintained by the National Cancer Institute, the documented stage-shift effect of moving diagnosis from late to early stage, and the demonstrated performance of algorithms already deployed in clinical practice. The estimates assume 50 percent population penetration of annual blood testing with algorithm integration; they are deliberately conservative. Full deployment would substantially increase the figures.
+
+[Quote] Figure 3. Conservative estimates of lives saveable annually, assuming 50% population penetration.
+
+[Heading 3] What Would It Cost?
+
+[Normal] This is where the economics become extraordinary. The most expensive element in any machine learning project is acquiring clean, labeled training data. In healthcare, that data already exists. Large hospital systems maintain electronic medical records containing years of blood test results alongside diagnostic records documenting who developed cancer, what type, and when. If three or four major institutions (each with millions of patient records) contributed their existing data, the primary cost would be data science teams, computational resources, clinical validation, and regulatory clearance. Each new algorithm, following the methodology already proven in two cancers, would cost approximately $2 to $5 million to develop and validate; the complete program for all remaining cancers would cost roughly $30 to $50 million.
+
+[Normal] For perspective, developing a single new cancer drug costs an average of $2.6 billion and takes 12 to 15 years. This entire algorithmic detection program could be completed for less than 2 percent of that cost in a fraction of the time.
+
+[Quote] Figure 4. Cost comparison: building all 13 cancer algorithms vs. single drug development vs. treating 125 late-stage patients for one year.
+
+[Heading 3] What Happens When the Algorithm Flags You?
+
+[Normal] For patients flagged by these algorithms, the critical next question is what test confirms the finding? Some cancers already have established follow-up protocols: colonoscopy for colorectal cancer and low-dose CT for lung cancer. However, many of the cancers on this list, including kidney, ovarian, pancreatic, and bladder, have no standard screening test at all. That is precisely why they are caught late and why they kill so efficiently.
+
+[Normal] Full-body MRI addresses this gap. The Prenuvo Polaris study, presented at the American Association for Cancer Research, scanned 1,011 people with no symptoms. It found biopsy-confirmed cancer in 2.2 percent of participants. Sixty-four percent of the cancers detected were still localized, meaning they were caught while they were curable. Sixty-eight percent were cancer types for which no screening test currently exists, cancers that would have been found only after symptoms appeared, months or years later, at a stage where survival rates collapse.
+
+[Normal] The false positive profile is reassuring. Of the 41 people referred for biopsy, 51 percent had confirmed cancer or masses requiring treatment. Compare that to mammography, where 39 to 50 percent of biopsied findings turn out to be cancer. The biopsy yield from full-body MRI is right in line with what we already consider worthwhile for screening. The negative predictive value was 99.8 percent: among participants whose scans came back clear, virtually all remained cancer-free for at least one year.
+
+[Quote] Figure 5. Full-body MRI screening performance compared to mammography. Data from Prenuvo Polaris study (n=1,011).
+
+[Heading 3] The Opportunity
+
+[Normal] The total investment to build every remaining cancer detection algorithm for routine blood work is less than the cost of treating 125 late-stage cancer patients for a single year. The return is an estimated 100,000 to 175,000 lives saved annually, using blood tests already drawn and analyzed, with data already sitting in electronic medical records.
+
+[Normal] The blood is already telling us. We just need to start listening.
+
+[Title] 02. Beyond Cancer How the same routine blood tests can detect heart disease, diabetes, kidney failure, and more
+
+[Normal] Prepared by REDI Team
+
+[Normal] April 2026
+
