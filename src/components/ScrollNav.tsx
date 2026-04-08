@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'preact/hooks';
 
 const sections = [
-  { id: 'letter', label: 'Dear Friends and Colleagues' },
+  { id: 'letter', label: 'Dear Friends and Colleagues,' },
   { id: 'paper-01', label: 'What Your Blood Already Knows' },
   { id: 'paper-02', label: 'Beyond Cancer' },
   { id: 'paper-03', label: 'The Evidence Behind the Numbers' },
