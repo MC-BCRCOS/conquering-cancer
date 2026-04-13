@@ -753,12 +753,18 @@ import TotalImpact from '../components/charts/TotalImpact.tsx';
 </div>
 
 <p class="table-footnote"><strong>Status key:</strong> DEPLOYED = live in clinical settings. VALIDATED = large-scale external validation complete. PUBLISHED = peer-reviewed model requiring prospective verification. SIGNAL ONLY = blood signature documented, no ML model built.</p>
+        </div>
+      </section>
 
-<h2>Models by Disease</h2>
+      <section id="models-by-disease" class="paper-section">
+        <header class="section-header">
+          <h1 class="section-title">Models by Disease</h1>
+        </header>
+        <div class="paper-content">
 
-<p>The core methodology uses gradient-boosted decision trees trained on routine CBC and CMP data from electronic health records. ColonFlag (AUC 0.82, deployed) and LungFlag (AUC 0.856, validated) serve as the two reference implementations, both developed using retrospective EHR data and externally validated across independent health systems. Click any disease below to view the published research.</p>
+  <p>The core methodology uses gradient-boosted decision trees trained on routine CBC and CMP data from electronic health records. ColonFlag (AUC 0.82, deployed) and LungFlag (AUC 0.856, validated) serve as the two reference implementations, both developed using retrospective EHR data and externally validated across independent health systems. Click any disease below to view the published research.</p>
 
-<h3>Cancers</h3>
+  <h2>Cancers</h2>
 
 <div class="disease-accordion">
 
@@ -896,7 +902,7 @@ import TotalImpact from '../components/charts/TotalImpact.tsx';
 
 </div>
 
-<h3>Non-Cancer Diseases</h3>
+  <h2>Non-Cancer Diseases</h2>
 
 <div class="disease-accordion">
 

@@ -6,6 +6,7 @@ const sections = [
   { id: 'paper-02', label: 'Beyond Cancer' },
   { id: 'paper-03', label: 'The Evidence Behind the Numbers' },
   { id: 'summary-tables', label: 'Disease Detection Summary' },
+  { id: 'models-by-disease', label: 'Models by Disease' },
 ];
 
 export default function ScrollNav() {
