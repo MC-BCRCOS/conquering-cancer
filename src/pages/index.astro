@@ -5,7 +5,6 @@ import '../styles/paper.css';
 import SurvivalRates from '../components/charts/SurvivalRates.tsx';
 import DevStatus from '../components/charts/DevStatus.tsx';
 import LivesSaveable from '../components/charts/LivesSaveable.tsx';
-import CostPerspective from '../components/charts/CostPerspective.tsx';
 import MRIComparison from '../components/charts/MRIComparison.tsx';
 import AlgorithmAccuracy from '../components/charts/AlgorithmAccuracy.tsx';
 import DetectionLeadTime from '../components/charts/DetectionLeadTime.tsx';
@@ -31,15 +30,15 @@ import TotalImpact from '../components/charts/TotalImpact.tsx';
 
   <p>The core idea is that blood tests taken routinely in the course of an annual physical contain dozens of signals hiding in the relationships between values when cancer is developing. When analyzed individually the results may look normal but when machine learning algorithms are applied, cancer can be detected from six to twenty-four months before a doctor is able to diagnose the cancer by currently accepted screening protocols.</p>
 
-  <p>The first paper: <strong>"What Your Blood Already Knows"</strong> describes early detection opportunities for as many as thirteen cancers by deploying specific algorithms to the results of routine blood draws. Two algorithms have been developed and deployed in real clinical settings at Geisinger Health System in Pennsylvania and at Maccabi Healthcare Services in Israel. A colorectal cancer algorithm has been tested by application in more than 600,000 patients. The outcomes are published in the <em>Journal of the American Medical Informatics Association</em>. The lung cancer algorithm was validated at Kaiser Permanente across nearly 200,000 patients and published in the <em>American Journal of Respiratory and Critical Care Medicine</em>. Gastric and liver cancer algorithms are being validated in pilot projects of 193,000 and 75,000 patients respectively. Nine additional cancers, including but not limited to ovarian and pancreatic, have blood signatures documented in the medical literature and are awaiting for algorithm development.</p>
+  <p>The first paper: <strong>"What Your Blood Already Knows"</strong> describes early detection opportunities for as many as thirteen cancers by deploying specific algorithms to the results of routine blood draws. Two algorithms have been developed and deployed in real clinical settings at Geisinger Health System in Pennsylvania and at Maccabi Healthcare Services in Israel. A colorectal cancer algorithm has been tested by application in more than 600,000 patients. The outcomes are published in the <em>Journal of the American Medical Informatics Association</em>. The lung cancer algorithm was validated at Kaiser Permanente across nearly 200,000 patients and published in the <em>American Journal of Respiratory and Critical Care Medicine</em>. Gastric and liver cancer algorithms are being validated in pilot projects of 193,000 and 75,000 patients respectively. Nine additional cancers, including but not limited to ovarian and pancreatic, have published machine learning models in the peer-reviewed literature that require prospective validation and clinical deployment.</p>
 
-  <p>The second paper, <strong>"Beyond Cancer,"</strong> extends the same logic to diseases other than cancer. Cardiovascular disease, type 2 diabetes, chronic kidney disease, fatty liver disease, and a number of rarer conditions that leave fingerprints in routine blood work years before conventional screening protocols are able to detect them. The deployment of these algorithms for cancer and other diseases, has been conservatively estimated to have the potential to save 400,000 to 675,000 lives annually in the United States; numbers representing 13 to 22 percent of all American deaths annually.</p>
+  <p>The second paper, <strong>"Beyond Cancer,"</strong> extends the same logic to diseases other than cancer. Cardiovascular disease, type 2 diabetes, chronic kidney disease, fatty liver disease, sepsis, heart failure, and a number of rarer conditions that leave fingerprints in routine blood work years before conventional screening protocols are able to detect them. The deployment of these algorithms for cancer and other diseases, has the potential to save 400,000 to 675,000 lives annually in the United States; numbers representing 13 to 22 percent of all American deaths annually.</p>
 
   <p>The third document, <strong>"The Evidence Behind the Numbers,"</strong> is a question-and-answer companion piece that in addition to anticipating questions we think you may be asking yourselves as you read through the material, shows the sources of every number: the journals where they appear, the studies, which databases, and the calculations. If you are a clinician or a scientist, this is the document that will answer your methodological questions and if you're a policymaker, this document shows the math behind the claims.</p>
 
-  <p><strong>REDI Conclusions:</strong> The science laid out in our work is not theoretical; it is published, validated, and in some cases already operational. What we lack are the algorithms for the remaining cancers and diseases that can be detected by machine learning. We urgently need to build institutional will and commitment to deploy existing algorithms and to develop additional ones to cover diseases known to be detectable by application of this approach. Building the remaining cancer detection algorithms is estimated to cost less than $75 million; and will require access to electronic medical record data from three or four large health systems. The investment is less than 2% of the cost to develop a single cancer drug. The blood tests are being drawn routinely as part of a patient's annual physical. The data is sitting in accessible medical records. We plan to develop the algorithms needed to analyze the blood. Once the algorithms are developed and applied, only the highest risk patients will undergo additional screening, reducing the overall number of patients screened and significantly increasing the number of cases detected in early stages.</p>
+  <p><strong>REDI Conclusions:</strong> The science laid out in our work is not theoretical; it is published, validated, and in some cases already operational. Four algorithms are deployed in clinical settings today. Published models exist for the vast majority of the remaining cancers and diseases. What we lack is the institutional commitment to validate and deploy the algorithms that researchers have already built. We urgently need to build institutional will to advance existing algorithms through prospective validation, regulatory clearance, and clinical deployment. Validating and deploying the remaining algorithms will require partnerships with four or five large health systems to conduct prospective clinical trials. The models are built; the data exists; the investment needed is for validation and integration. The blood tests are being drawn routinely as part of a patient's annual physical. The data is sitting in accessible medical records. We plan to advance the published algorithms through the validation and deployment pipeline. Once the algorithms are validated and deployed, only the highest risk patients will undergo additional screening, reducing the overall number of patients screened and significantly increasing the number of cases detected in early stages</p>
 
-  <p>I recognize that you may have questions about specific numbers, about false positive rates, about what happens when an algorithm flags a patient for a cancer that has no established screening test. The evidence paper addresses each of these topics. As you read the papers, please think about what algorithmic blood test analysis could mean for patients. If you are involved in health policy, think about what a $75 million investment could return when the alternative is spending billions treating cancers that could have been caught early when treatment is relatively painless and inexpensive.</p>
+  <p>I recognize that you may have questions about specific numbers, about false positive rates, about what happens when an algorithm flags a patient for a cancer that has no established screening test. The evidence paper addresses each of these topics. As you read the papers, please think about what algorithmic blood test analysis could mean for patients. If you are involved in health policy, think about what an investment could return when the alternative is spending billions treating cancers that could have been caught early when treatment is relatively painless and inexpensive.</p>
 
   <p>On a personal level I implore you to get your blood work done. And if any of this moves you, please share this information with others who might help us in our efforts to have this approach become THE standard in early detection. And of course, share this information with those you care about to ensure their health and wellbeing. We are open to questions, to ideas, to criticism, and most of all, to partners who want to help make this real.</p>
 
@@ -85,7 +84,7 @@ import TotalImpact from '../components/charts/TotalImpact.tsx';
 
   <p>Their study, published in the <em>Journal of the American Medical Informatics Association</em>, demonstrated an accuracy metric of <strong>0.82</strong> for colorectal cancer, with 0.5 indicating a coin flip and 1.0 perfect prediction. The algorithm was validated in an independent population of <strong>30,000 people</strong> in the United Kingdom. When deployed at Geisinger Health System in Pennsylvania, it flagged <strong>706 patients</strong> from a pool of 25,610 who were overdue for screening. Among the 104 who completed colonoscopy, <strong>8 percent had colorectal cancer</strong>, compared to the 1 percent detection rate in standard screening. That is an <strong>eightfold improvement</strong>. No new blood tests and no new equipment. The algorithm simply read the blood work that those patients had already received.</p>
 
-  <p>Lung cancer followed. Researchers at Kaiser Permanente analyzed <strong>6,505 lung cancer cases</strong> against 189,597 controls and developed an algorithm that achieved an accuracy of <strong>0.86</strong> and identified <strong>40 percent of future lung cancer patients</strong> at a false positive rate of just 5 percent, 9 to 12 months before clinical diagnosis. A gastric cancer algorithm was validated across <strong>193,000 patients</strong>. A liver cancer algorithm was validated in <strong>75,000 patients</strong>. At least nine more cancers, from pancreatic to ovarian to kidney to myeloma, display documented blood chemistry signatures that the same methodology can target.</p>
+  <p>Lung cancer followed. Researchers at Kaiser Permanente analyzed <strong>6,505 lung cancer cases</strong> against 189,597 controls and developed an algorithm that achieved an accuracy of <strong>0.86</strong> and identified <strong>40 percent of future lung cancer patients</strong> at a false positive rate of just 5 percent, 9 to 12 months before clinical diagnosis. A gastric cancer algorithm was validated across <strong>193,000 patients</strong>. A liver cancer algorithm was validated in <strong>75,000 patients</strong>. At least nine more cancers, from pancreatic to ovarian to kidney to myeloma, already have published machine learning models in the peer-reviewed literature, with accuracy scores ranging from 0.80 to 0.97, that are awaiting prospective validation and deployment.</p>
 
   <DevStatus client:visible />
 
@@ -95,13 +94,11 @@ import TotalImpact from '../components/charts/TotalImpact.tsx';
 
   <LivesSaveable client:visible />
 
-  <h2>What Would It Cost?</h2>
+  <h2>The Models Already Exist</h2>
 
-  <p>This is where the economics become extraordinary. The most expensive element in any machine learning project is acquiring clean, labeled training data. In healthcare, that data already exists. Large hospital systems maintain electronic medical records containing years of blood test results alongside diagnostic records documenting who developed cancer, what type, and when. If three or four major institutions (each with millions of patient records) contributed their existing data, the primary cost would be data science teams, computational resources, clinical validation, and regulatory clearance. Each new algorithm, following the methodology already proven in two cancers, would cost approximately <strong>$2 to $5 million</strong> to develop and validate; the complete program for all remaining cancers would cost roughly <strong>$30 to $50 million</strong>.</p>
+  <p>The common assumption is that building these algorithms requires starting from scratch. It does not. Published machine learning models exist for the majority of the 13 target cancers. ColonFlag and LungFlag are deployed. Liver and gastric cancer models have been validated in large populations. The Siemens Healthineers "Deep Profiler" has already demonstrated that a single model analyzing 33 CBC and CMP parameters can simultaneously detect colorectal, liver, and lung cancer. For ovarian cancer, a multicenter AI study across 11,000 patients achieved accuracy of 0.95. For myeloma, models achieve 0.97. For leukemia, models on VA data achieve 0.87 to 0.96 and are among the closest to deployment readiness.</p>
 
-  <p>For perspective, developing a single new cancer drug costs an average of <strong>$2.6 billion</strong> and takes 12 to 15 years. This entire algorithmic detection program could be completed for <strong>less than 2 percent of that cost</strong> in a fraction of the time.</p>
-
-  <CostPerspective client:visible />
+  <p>The bottleneck is not science. The pre-diagnostic blood signatures are documented, the models are published, and the training data already exists in electronic health records. The remaining work is prospective clinical validation, regulatory clearance through the FDA 510(k) pathway for software as a medical device, and integration into laboratory reporting workflows at health systems willing to partner on deployment.</p>
 
   <h2>What Happens When the Algorithm Flags You?</h2>
 
@@ -115,7 +112,7 @@ import TotalImpact from '../components/charts/TotalImpact.tsx';
 
   <h2>The Opportunity</h2>
 
-  <p>The total investment to build every remaining cancer detection algorithm for routine blood work is less than the cost of treating 125 late-stage cancer patients for a single year. The return is an estimated <strong>100,000 to 175,000 lives saved annually</strong>, using blood tests already drawn and analyzed, with data already sitting in electronic medical records.</p>
+  <p>The algorithms to detect cancer from routine blood work are not hypothetical. They are published, peer-reviewed, and in several cases already saving lives in clinical practice. Validating and deploying the remaining models across major health systems could save an estimated <strong>100,000 to 175,000 lives annually</strong>, using blood tests already drawn and analyzed, with data already sitting in electronic medical records.</p>
 
   <p>The blood is already telling us. We just need to start listening.</p>
         </div>
@@ -142,6 +139,8 @@ import TotalImpact from '../components/charts/TotalImpact.tsx';
   <p>Consider chronic kidney disease. Your kidneys can lose half their function before the standard blood test value, creatinine, crosses the threshold that triggers concern. However, the decline is not silent. Creatinine creeps from 0.9 to 1.0 to 1.1 mg/dL over three years while remaining technically normal. Blood urea nitrogen drifts upward. Albumin edges downward. Individually, every number passes inspection. Together, they trace a trajectory toward kidney failure that machine learning detects <strong>two to five years before conventional diagnosis</strong>, with accuracy scores of <strong>0.83 to 0.88</strong>.</p>
 
   <p>Or consider type 2 diabetes: the disease develops over 5 to 10 years. During that time, fasting glucose rises gradually from 88 to 94 to 98 mg/dL, always staying below the 100 mg/dL prediabetes threshold. A1C drifts from 5.2 to 5.5 to 5.8. Triglycerides climb. HDL cholesterol drops. The metabolic panel, the lipid panel, and the A1C are all whispering the same warning, but no single value triggers an alert. Algorithms reading all three panels simultaneously predict diabetes onset <strong>three to five years before diagnosis</strong>, when lifestyle intervention, <strong>7 percent weight loss plus 150 minutes of weekly exercise, reduces progression by 58 percent</strong>. The disease can be prevented entirely, but only if you catch it in time.</p>
+
+  <p>Heart failure kills 68,000 Americans annually and reduces five-year survival to 50 percent once diagnosed. The published evidence for early detection is remarkably strong. A study of 19,080 adults across four major US cohort studies (ARIC, Dallas Heart Study, Jackson Heart Study, and MESA), all free of heart failure at baseline, demonstrated that an oblique random survival forest model achieved C-index <strong>0.88 to 0.89</strong> for predicting who would develop heart failure over the next 10 years. The key predictors were blood values collected at a single visit: NT-proBNP, high-sensitivity troponin, fasting glucose, eGFR, and HDL cholesterol. Every one of these markers is measurable at a routine annual physical. A separate study using a Transformer neural network on 183,894 individuals achieved accuracy of 0.83 at a 3-year prediction window using longitudinal blood test data from electronic health records. The clinical significance is profound: SGLT2 inhibitors reduce incident heart failure by <strong>30 to 40 percent</strong> in high-risk patients, and blood pressure control reduces risk by 30 to 50 percent over a decade, but only when intervention begins before myocardial remodeling is established. Detecting risk at the 5- to 10-year horizon, when these interventions are most effective, is precisely what these algorithms achieve.</p>
 
   <p>Cardiovascular disease follows the same pattern. Machine learning that analyzes lipid trends, inflammatory markers from the complete blood count, and metabolic panel values achieves an accuracy of <strong>0.78 to 0.82</strong> for predicting heart attacks and strokes <strong>5 to 10 years before they occur</strong>, substantially outperforming the Framingham Risk Score, which most physicians rely on today.</p>
 
@@ -175,9 +174,9 @@ import TotalImpact from '../components/charts/TotalImpact.tsx';
 
   <p>Add these numbers to the cancer detection estimates, and the total opportunity comes into focus. Algorithmic analysis of routine blood tests, the same six panels drawn at every annual physical, could prevent <strong>400,000 to 675,000 deaths per year</strong> in the United States. That represents <strong>13 to 22 percent of all annual deaths</strong>. No new tests, blood draws, or patient behavior. Just a smarter way to analyze the data we already collect 200 million times a year.</p>
 
-  <p>The algorithms for cancer are further along. Two are deployed, two more validated, and nine more buildable. The non-cancer algorithms are at an earlier stage, with research demonstrating feasibility across all major conditions. The methodology is identical. The training data sits in the same electronic medical records. The development cost per algorithm remains <strong>$2 to $5 million</strong>.</p>
+  <p>The algorithms for cancer are further along: two are deployed in clinical practice, two more have been validated in large populations, and published models exist for the remaining nine. For non-cancer diseases, the picture is stronger than many realize. Two algorithms are already deployed clinically: Klinrisk for chronic kidney disease received CE-mark from Roche for the navify platform in October 2025 and has been validated on 4.8 million US adults, while TREWS for sepsis is deployed across five Johns Hopkins hospitals with a demonstrated 18.7 percent mortality reduction. Validated models exist for cardiovascular disease, type 2 diabetes, heart failure, and familial hypercholesterolemia. The methodology is identical. The training data sits in the same electronic medical records.</p>
 
-  <p>The blood tests are already being drawn. The diseases are already leaving their fingerprints. The only thing missing is the software that reads them.</p>
+  <p>The blood tests are already being drawn. The diseases are already leaving their fingerprints. The models to read them are published. What remains is the will to deploy them.</p>
 
   <TotalImpact client:visible />
         </div>
@@ -226,9 +225,9 @@ import TotalImpact from '../components/charts/TotalImpact.tsx';
 
   <p><strong>Gastric cancer:</strong> Validated in a 193,000-patient Hong Kong cohort using machine learning trained on CBC, liver function, and renal function values. Achieved <strong>79 to 96 percent sensitivity</strong>. These findings were presented as an abstract at the American Society of Clinical Oncology annual meeting in 2023. <span class="cite-group"><a href="#ref-4" class="cite-link"><sup>4</sup></a></span></p>
 
-  <h4>Algorithm Needed, Biology Documented (9 cancers)</h4>
+  <h4>Published Models Awaiting Prospective Validation (9 cancers)</h4>
 
-  <p>For the remaining nine cancers, no deployed algorithm yet exists. However, the biological mechanisms by which each cancer alters routine blood chemistry are documented in the peer-reviewed literature, and the methodology for building detection algorithms from this data has been proven through the four cancers above. The Siemens Healthineers "Deep Profiler" model has already demonstrated that a single model analyzing 33 CBC and CMP parameters can simultaneously detect colorectal (AUC 0.76), liver (AUC 0.85), and lung cancer (AUC 0.78), confirming that the multi-cancer, multi-panel approach works. <span class="cite-group"><a href="#ref-5" class="cite-link"><sup>5</sup></a></span></p>
+  <p>For the remaining nine cancers, published machine learning models with AUCs of 0.80 to 0.97 exist in the peer-reviewed literature, though none has been deployed clinically. The biological mechanisms by which each cancer alters routine blood chemistry are well documented, and the methodology for building and validating detection algorithms from this data has been proven through the four cancers above. The Siemens Healthineers "Deep Profiler" model has already demonstrated that a single model analyzing 33 CBC and CMP parameters can simultaneously detect colorectal (AUC 0.76), liver (AUC 0.85), and lung cancer (AUC 0.78), confirming that the multi-cancer, multi-panel approach works. <span class="cite-group"><a href="#ref-5" class="cite-link"><sup>5</sup></a></span></p>
 
   <p><strong>Pancreatic cancer:</strong> Liver enzyme (alkaline phosphatase, GGT) and bilirubin elevation from bile duct compression were documented 6 to 18 months before clinical diagnosis. Glucose rises as the tumor damages insulin-producing cells. <span class="cite-group"><a href="#ref-10" class="cite-link"><sup>10</sup></a></span></p>
 
@@ -266,31 +265,15 @@ import TotalImpact from '../components/charts/TotalImpact.tsx';
 
   <p>Because the estimates involve three multiplicative assumptions, each of which carries uncertainty. Algorithm sensitivity varies by cancer type and has been measured precisely only for colorectal and lung cancer. Screening compliance varies across populations and delivery mechanisms. Not all cancers within each category may produce detectable blood signatures early enough for intervention. The ranges reflect this uncertainty honestly; the low end of each range assumes lower algorithm sensitivity and lower compliance. The high end assumes performance comparable to that already demonstrated for colorectal and lung cancer.</p>
 
-  <h2>Part III: What Would It Cost?</h2>
+  <h2>Part III: The State of Algorithm Development</h2>
 
-  <h3>Where does the $2&ndash;5 million per algorithm estimate come from?</h3>
+  <h3>Where do the published models stand?</h3>
 
-  <p>Algorithm development costs are estimated by analogy to the known costs of the two algorithms already built, adjusted for the assumption that electronic medical record data is contributed by partner institutions at no cost. The cost components for each algorithm are as follows.</p>
+  <p>The common assumption is that algorithms for these cancers need to be built from scratch. The published literature tells a different story. For the majority of the 13 target cancers, machine learning models have already been developed, trained, and validated in research settings. Four algorithms have progressed beyond research into clinical deployment or large-scale validation. For the remaining nine, published models with AUCs of 0.80 to 0.97 exist in the peer-reviewed literature. The primary remaining work is prospective clinical validation at partner health systems, regulatory clearance through the FDA 510(k) pathway for software as a medical device, and integration into EHR laboratory reporting workflows.</p>
 
-  <p><strong>Data science team:</strong> A team of three to five machine learning researchers and clinical informaticists working for 12 to 18 months. At fully loaded academic or industry salaries, this represents $600,000 to $1.5 million.</p>
+  <h3>What does the pathway from published model to deployed algorithm look like?</h3>
 
-  <p><strong>Computational resources:</strong> Cloud computing for training gradient-boosted models on datasets of hundreds of thousands to millions of patient records. Modern cloud infrastructure makes this relatively inexpensive: $50,000 to $200,000 per algorithm.</p>
-
-  <p><strong>Clinical validation:</strong> Statistical analysis, clinical interpretation, preparation and submission of peer-reviewed publications, and internal/external validation across independent populations: $200,000 to $500,000 per algorithm.</p>
-
-  <p><strong>Regulatory clearance:</strong> FDA 510(k) pathway for algorithms analyzing existing laboratory tests (the pathway used by ColonFlag and LungFlag). Preparation, submission, and review: $500,000 to $1.5 million per algorithm, depending on the amount of clinical data required.</p>
-
-  <p><strong>Project management and overhead:</strong> $200,000 to $500,000 per algorithm.</p>
-
-  <p>The total per algorithm thus ranges from approximately $1.5 million (for a straightforward extension of existing methodology to a new cancer with abundant training data) to $5 million (for a cancer requiring novel cross-panel approaches or larger validation studies). The industry benchmark supports this range: diagnostic tests in general cost $50 million to $75 million to develop on average, but the vast majority of that cost is consumed by clinical trials for novel biomarkers or devices. Algorithms analyzing existing laboratory tests, using retrospective data from electronic medical records, bypass most of that expense.</p>
-
-  <h3>Why is the electronic medical record data "free"?</h3>
-
-  <p>Large health systems already maintain electronic medical records containing years of laboratory results alongside diagnostic records. The data exists and is stored in databases at institutions like Kaiser Permanente (4+ million members), Geisinger (500,000+ patients), and Maccabi Healthcare Services (2.5 million members). When we say "free," we mean that no new data collection is required. The partner institutions would contribute de-identified datasets under data use agreements, as they did for the original ColonFlag and LungFlag studies. The cost of data extraction, cleaning, and de-identification is included in the per-algorithm estimates above. What is not required is the expensive step of collecting new biological samples or running new laboratory tests, which is the dominant cost in most biomarker discovery programs.</p>
-
-  <h3>Why does a single cancer drug cost $2.6 billion while all thirteen algorithms cost $30&ndash;50 million?</h3>
-
-  <p>Cancer drug development requires synthesizing and testing novel chemical compounds, conducting Phase I, II, and III clinical trials involving thousands of patients over 12 to 15 years, managing manufacturing scale-up, and covering the costs of the many drug candidates that fail. The $2.6 billion figure (from published analyses of pharmaceutical R&D costs) includes both direct costs ($1.4 billion) and the opportunity cost of capital over the development timeline ($1.2 billion). Diagnostic algorithms bypass almost all of this; they analyze existing data, utilize computational methods rather than physical experiments, can be validated retrospectively before prospective testing, and follow a simpler regulatory pathway. The cost difference is fundamental, not simply about cutting corners. <span class="cite-group"><a href="#ref-7" class="cite-link"><sup>7</sup></a></span></p>
+  <p>ColonFlag and LungFlag provide the template. Both began as retrospective studies on electronic medical record data, were externally validated across independent populations, achieved regulatory clearance, and were integrated into clinical workflows at major health systems. The same pathway applies to every algorithm on this list. The training data already exists in electronic medical records at institutions like Kaiser Permanente (4+ million members), Geisinger (500,000+ patients), and Maccabi Healthcare Services (2.5 million members). No new biological samples need to be collected. No new laboratory tests need to be run. The partner institutions would contribute de-identified datasets under data use agreements, as they did for the original ColonFlag and LungFlag studies. Diagnostic companies including Roche and Siemens Healthineers are already engaged in this space, with Roche CE-marking the Klinrisk kidney disease algorithm and Siemens publishing the multi-cancer Deep Profiler model.</p>
 
   <h2>Part IV: Non-Cancer Disease Detection</h2>
 
@@ -306,7 +289,15 @@ import TotalImpact from '../components/charts/TotalImpact.tsx';
 
   <h3>How reliable are the accuracy numbers for non-cancer algorithms?</h3>
 
-  <p>The accuracy metrics cited (AUC of 0.78 to 0.88 depending on the disease) come from published research studies, not from deployed clinical systems. This is an important distinction. The cancer algorithms for colorectal and lung cancer have been validated in prospective, real-world clinical settings across multiple institutions. The non-cancer disease algorithms have been demonstrated in research but not yet deployed at scale. The accuracy numbers are therefore best understood as proof of concept: they establish that the patterns exist and are detectable, but real-world performance will need to be confirmed through the same kind of institutional deployment that validated ColonFlag and LungFlag.</p>
+  <p>Two non-cancer algorithms have moved beyond research into clinical deployment. Klinrisk for chronic kidney disease received CE-mark from Roche for the navify platform in October 2025 and has been validated on 4.8 million US adults across commercial, Medicare, and Medicaid populations (AUC 0.80 to 0.87). TREWS for sepsis is deployed across five Johns Hopkins hospitals with a demonstrated 18.7 percent relative mortality reduction in a prospective study. For the remaining non-cancer conditions, published models achieve AUCs of 0.78 to 0.94 depending on the disease. These numbers come from peer-reviewed research studies, and real-world performance will need to be confirmed through the same kind of institutional deployment that validated ColonFlag, LungFlag, Klinrisk, and TREWS. The pathway from published model to deployed algorithm is now well established.</p>
+
+  <h3>What is the evidence for heart failure prediction from routine blood work?</h3>
+
+  <p>Heart failure is among the strongest cases in the non-cancer detection program, with multi-year incident prediction validated across large populations. The Segar et al. study (<em>Circulation</em>, 2021) enrolled 19,080 adults from four major US cohort studies (ARIC, Dallas Heart Study, Jackson Heart Study, and MESA), all free of heart failure at baseline, and predicted 10-year incident heart failure using an oblique random survival forest model. The model achieved C-index 0.88 (Black adults) and 0.89 (White adults) in internal validation, and 0.82 in external validation across independent cohorts, substantially outperforming established clinical risk scores including ARIC-HF, MESA-HF, and PCP-HF. The top predictors were blood values collected at a single visit: NT-proBNP, high-sensitivity troponin, fasting plasma glucose, eGFR, and HDL cholesterol. Every one of these is measurable at a routine annual physical. <span class="cite-group"><a href="#ref-25" class="cite-link"><sup>25</sup></a></span></p>
+
+  <p>A second major study (<em>PLoS ONE</em>, 2024) trained a Transformer neural network on 183,894 individuals, including 22,236 first-hospitalization-for-heart-failure cases, achieving AUROC 0.83 at a 3-year prediction window using longitudinal EHR data including serial blood tests. This is the largest training cohort for incident heart failure prediction and demonstrates that reading the trajectory of blood values across multiple encounters substantially outperforms single-snapshot models. <span class="cite-group"><a href="#ref-26" class="cite-link"><sup>26</sup></a></span></p>
+
+  <p>The clinical significance of multi-year heart failure prediction is substantial. SGLT2 inhibitors reduce incident heart failure by 30 to 40 percent in patients with metabolic risk factors. Blood pressure control reduces incident heart failure risk by 30 to 50 percent over a decade. Statins reduce incident heart failure by 20 to 30 percent in high-risk populations. All of these interventions are most effective at the 5- to 10-year horizon before heart failure develops, precisely the horizon at which the Segar model achieves C-index 0.88. <span class="cite-group"><a href="#ref-27" class="cite-link"><sup>27</sup></a></span></p>
 
   <h3>What about the rare diseases: hemochromatosis, Wilson disease, Addison's disease?</h3>
 
@@ -330,19 +321,21 @@ import TotalImpact from '../components/charts/TotalImpact.tsx';
 
   <h3>These estimates assume algorithms that don't exist yet. Isn't this speculative?</h3>
 
-  <p>Two of the 13 cancer algorithms are built, validated, and deployed in clinical practice. Two more have been validated in large studies and are ready for deployment. The methodology for building the remaining nine is identical to that used to produce the first four. The training data exist in the same electronic medical records. The biological mechanisms are documented in peer-reviewed literature. Calling the remaining algorithms "speculative" would be like saying in 1970 that a vaccine for measles, mumps, and rubella was speculative because only the measles vaccine had been developed. The methodology was established; the extension was a matter of engineering, not invention.</p>
+  <p>Four cancer algorithms are built, validated, and deployed or validated in clinical practice. Published machine learning models exist for the remaining nine, with AUCs of 0.80 to 0.97 in peer-reviewed studies. Two non-cancer algorithms (Klinrisk for kidney disease, TREWS for sepsis) are deployed clinically with demonstrated patient outcomes. The methodology is proven. The training data exist in the same electronic medical records. The biological mechanisms are documented in peer-reviewed literature. The remaining work is prospective validation and deployment, not invention.</p>
 
-  <h3>What if the algorithms don't perform as well for new cancers?</h3>
+  <h3>What if the algorithms don't perform as well for new cancers as they do for colorectal and lung cancer?</h3>
 
   <p>This is why we report ranges rather than point estimates and describe our projections as conservative. If a new algorithm achieves an AUC of 0.75 instead of 0.82, it still identifies patients at substantially elevated risk who would benefit from targeted screening. The lives-saveable estimates would decrease, but the fundamental value proposition remains: any algorithm that shifts diagnosis from late stage to early stage saves lives. The question is not whether the algorithms will be perfect. The question is whether they will be better than the current approach, which, for most of these cancers, is no screening at all.</p>
 
-  <h3>Who would pay for this?</h3>
+  <h3>Who would pay for validation and deployment?</h3>
 
-  <p>The development program ($30 to $50 million total) could be funded through multiple mechanisms: federal research grants through the National Cancer Institute, philanthropic investment, health system partnerships, or industry partnerships with diagnostic companies (as Roche and Siemens have already demonstrated with the existing cancer algorithms). The per-patient cost of running the algorithms once deployed is near zero: the blood is already being drawn, the data already exist in electronic medical records, and the computational cost of running a trained algorithm on existing data is measured in fractions of a cent per patient. The economic return is overwhelming: preventing even 10,000 late-stage cancer diagnoses per year saves $2 to $5 billion in treatment costs.</p>
+  <p>Prospective validation and deployment can be funded through multiple mechanisms: federal research grants through the National Cancer Institute, philanthropic investment, health system partnerships, or industry partnerships with diagnostic companies. Roche and Siemens Healthineers are already engaged in this space with deployed or published algorithms. The per-patient cost of running the algorithms once deployed is near zero: the blood is already being drawn, the data already exist in electronic medical records, and the computational cost of running a trained algorithm on existing data is measured in fractions of a cent per patient.</p>
 
   <h3>Why haven't hospitals done this already?</h3>
 
-  <p>Three reasons. First, the proof of concept is recent: the first cancer detection algorithm was published in 2016, and the first real-world deployment results appeared from 2017 to 2021. Second, healthcare moves slowly by design, and the regulatory, reimbursement, and workflow integration challenges are real, though solvable. Third, the incentive structure in United States healthcare rewards treatment over prevention. A hospital that prevents cancer makes less money than a hospital that treats it. This is a structural problem that policy intervention can address. The technology is not the bottleneck. The will to deploy it is.</p>
+  <p>The barriers are falling, but they remain real. First, the proof of concept is recent: the first cancer detection algorithm was published in 2016, and deployment results appeared from 2017 to 2021. Second, healthcare moves slowly by design, and the regulatory, reimbursement, and workflow integration challenges are real, though solvable. Third, the incentive structure in United States healthcare rewards treatment over prevention. A hospital that prevents cancer makes less money than a hospital that treats it. This is a structural problem that policy intervention can address.</p>
+
+  <p>The encouraging development is that deployment is now happening. ColonFlag is live in Israel, the United States, and the United Kingdom. Klinrisk for kidney disease received CE-mark from Roche in October 2025. TREWS for sepsis has demonstrated 18.7 percent mortality reduction across five Johns Hopkins hospitals. FAMCAT2 for familial hypercholesterolemia is operational in the NHS Wessex region. Each successful deployment lowers the barrier for the next. The technology is not the bottleneck. The will to deploy it at scale is.</p>
 
   <div class="endnotes">
     <h2>References</h2>
@@ -369,10 +362,6 @@ import TotalImpact from '../components/charts/TotalImpact.tsx';
 
     <div class="endnote" id="ref-6"><p class="endnote-citation">6. Siegel RL, Giaquinto AN, Jemal A. "Cancer Statistics, 2024." <em>CA: A Cancer Journal for Clinicians</em> 74:12-49 (2024). <a href="https://doi.org/10.3322/caac.21820" target="_blank" rel="noopener">https://doi.org/10.3322/caac.21820</a></p>
       <p class="endnote-annotation">Comprehensive annual cancer statistics documenting U.S. cancer mortality by type, stage distribution, and 5-year survival rates. Foundational source for all mortality and stage-shift survival calculations in this document.</p>
-    </div>
-
-    <div class="endnote" id="ref-7"><p class="endnote-citation">7. DiMasi JA, Grabowski HG, Hansen RW. "Innovation in the Pharmaceutical Industry: New Estimates of R&amp;D Costs." <em>Journal of Health Economics</em> 47:20-33 (2016). <a href="https://doi.org/10.1016/j.jhealeco.2016.01.012" target="_blank" rel="noopener">https://doi.org/10.1016/j.jhealeco.2016.01.012</a></p>
-      <p class="endnote-annotation">Cancer drugs average $2.6 billion total development cost.</p>
     </div>
 
     <div class="endnote" id="ref-8"><p class="endnote-citation">8. Hornbrook MC, Goshen R, Choman E, et al. "Early Colorectal Cancer Detected by Machine Learning Model Using Gender, Age, and Complete Blood Count Data." <em>Digestive Diseases and Sciences</em> 62:2719-2727 (2017). <a href="https://pubmed.ncbi.nlm.nih.gov/28836087" target="_blank" rel="noopener">https://pubmed.ncbi.nlm.nih.gov/28836087</a></p>
@@ -442,19 +431,270 @@ import TotalImpact from '../components/charts/TotalImpact.tsx';
     <div class="endnote" id="ref-24"><p class="endnote-citation">24. Lindor KD, Bowlus CL, Boyer J, et al. "Primary Biliary Cholangitis: 2018 Practice Guidance from the American Association for the Study of Liver Diseases." <em>Hepatology</em> 69:394-419 (2019). <a href="https://doi.org/10.1002/hep.30145" target="_blank" rel="noopener">https://doi.org/10.1002/hep.30145</a></p>
       <p class="endnote-annotation">Documents PBC's distinctive liver function signature years before cirrhosis: gradually rising alkaline phosphatase, increasing GGT, elevated cholesterol, and slowly rising bilirubin.</p>
     </div>
+
+    <div class="endnote" id="ref-25"><p class="endnote-citation">25. Segar MW, Jaeger BC, Patel KV, et al. "Development and Validation of Machine Learning-Based Race-Specific Models to Predict 10-Year Risk of Heart Failure: A Multicohort Analysis." <em>Circulation</em> 143:2370-2383 (2021). <a href="https://doi.org/10.1161/CIRCULATIONAHA.120.053134" target="_blank" rel="noopener">https://doi.org/10.1161/CIRCULATIONAHA.120.053134</a></p>
+      <p class="endnote-annotation">Oblique random survival forest on 19,080 participants from ARIC, DHS, JHS, and MESA, all free of heart failure at baseline. C-index 0.88 (Black adults) and 0.89 (White adults) for 10-year incident heart failure prediction. NT-proBNP, hs-troponin, fasting glucose, and eGFR from routine panels are top predictors.</p>
+    </div>
+
+    <div class="endnote" id="ref-26"><p class="endnote-citation">26. Plucinski M, et al. "Early Detection of Heart Failure Using In-Patient Longitudinal Electronic Health Records." <em>PLoS ONE</em> 19(12):e0314145 (2024). <a href="https://doi.org/10.1371/journal.pone.0314145" target="_blank" rel="noopener">https://doi.org/10.1371/journal.pone.0314145</a></p>
+      <p class="endnote-annotation">Transformer neural network on 183,894 individuals (22,236 first-hospitalization-for-heart-failure cases) achieving AUROC 0.83 at 3-year prediction window using longitudinal EHR data including serial blood tests.</p>
+    </div>
+
+    <div class="endnote" id="ref-27"><p class="endnote-citation">27. McDonagh TA, Metra M, Adamo M, et al. "2021 ESC Guidelines for the Diagnosis and Treatment of Acute and Chronic Heart Failure." <em>European Heart Journal</em> 42:3599-3726 (2021). <a href="https://doi.org/10.1093/eurheartj/ehab368" target="_blank" rel="noopener">https://doi.org/10.1093/eurheartj/ehab368</a></p>
+      <p class="endnote-annotation">ESC heart failure guidelines establishing SGLT2 inhibitor benefit of 30 to 40 percent reduction in incident heart failure in high-risk metabolic patients.</p>
+    </div>
   </div>
         </div>
       </section>
 
-      <nav class="collection-cta" aria-label="Continue to repository">
-        <a href="/appendix" class="cta-link">
-          <span class="cta-label">Continue to</span>
-          <span class="cta-title">Research Repository</span>
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
-            <path d="M4 10h12m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </a>
-      </nav>
+      <section id="summary-tables" class="paper-section">
+        <header class="section-header">
+          <h1 class="section-title">Disease Detection Summary</h1>
+        </header>
+        <div class="paper-content">
+
+<p>The tables below summarize the current state of machine learning models that detect disease from routine blood tests (CBC and CMP panels) already collected at annual physicals. The research covers 25 diseases: 13 cancers and 12 non-cancer conditions.</p>
+
+<p>Four algorithms have reached clinical deployment. ColonFlag for colorectal cancer is live in Israel, the US, and the UK. LungFlag for lung cancer has completed large-scale validation at Kaiser Permanente. Klinrisk for chronic kidney disease received CE-mark from Roche for its navify platform in October 2025. TREWS for sepsis is deployed across five Johns Hopkins hospitals with a demonstrated 18.7% mortality reduction.</p>
+
+<h2>Cancer Detection Summary</h2>
+
+<div class="summary-table-wrapper">
+<table class="summary-table">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Colorectal</th>
+      <th>Lung</th>
+      <th>Liver</th>
+      <th>Gastric</th>
+      <th>Pancreatic</th>
+      <th>Ovarian</th>
+      <th>Myeloma</th>
+      <th>Leukemia</th>
+      <th>Lymphoma</th>
+      <th>Kidney</th>
+      <th>Bladder</th>
+      <th>Breast</th>
+      <th>Prostate</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="row-label">5-yr Survival (Localized)</td>
+      <td>91.5%</td>
+      <td>64.7%</td>
+      <td>37.6%</td>
+      <td>76.5%</td>
+      <td>43.6%</td>
+      <td>91.7%</td>
+      <td>62%*</td>
+      <td>73–88%†</td>
+      <td>84–93%‡</td>
+      <td>93.3%</td>
+      <td>70%</td>
+      <td>~100%</td>
+      <td>~100%</td>
+    </tr>
+    <tr>
+      <td class="row-label">5-yr Survival (Distant)</td>
+      <td>16.2%</td>
+      <td>9.7%</td>
+      <td>3.5%</td>
+      <td>6.8%</td>
+      <td>3.2%</td>
+      <td>31.7%</td>
+      <td>systemic</td>
+      <td>systemic</td>
+      <td>66–84%</td>
+      <td>19.1%</td>
+      <td>8.3%</td>
+      <td>31.4%</td>
+      <td>34.1%</td>
+    </tr>
+    <tr>
+      <td class="row-label">Key CBC/CMP Markers</td>
+      <td>Hgb ↓, MCV ↓, RDW ↑, PLT ↑</td>
+      <td>WBC ↑, NLR ↑, PLR ↑, Hgb ↓</td>
+      <td>FIB-4 ↑, AST/ALT, PLT ↓, Albumin ↓</td>
+      <td>Hgb ↓, RDW ↑, NLR ↑, Albumin ↓</td>
+      <td>Glucose ↑, HbA1c ↑, Bilirubin ↑, ALP ↑</td>
+      <td>PLT ↑, NLR ↑, CA-125 velocity ↑</td>
+      <td>Hgb ↓, ESR ↑, Ca²⁺ ↑, Creat ↑</td>
+      <td>WBC ↑, Baso% ↑, Lymph slope ↑</td>
+      <td>ESR ↑, LDH ↑, Lymph ↓</td>
+      <td>Hgb ↓, Creat ↑, CRP ↑, PLT ↑</td>
+      <td>Hgb ↓, CRP ↑, Creat ↑</td>
+      <td>NLR ↑, PLR ↑, Hgb ↓</td>
+      <td>ALP ↑, NLR ↑, Hgb ↓</td>
+    </tr>
+    <tr>
+      <td class="row-label">Detection Window</td>
+      <td>2–4 years</td>
+      <td>9–12 months</td>
+      <td>3+ years</td>
+      <td>Months–years</td>
+      <td>2–3 years</td>
+      <td>18+ months</td>
+      <td>2–3 years</td>
+      <td>Months–5 years</td>
+      <td>5+ years</td>
+      <td>6–8 months</td>
+      <td>6–8 months</td>
+      <td>Months</td>
+      <td>Months</td>
+    </tr>
+    <tr>
+      <td class="row-label">Best AUC</td>
+      <td><strong>0.82</strong></td>
+      <td><strong>0.856</strong></td>
+      <td><strong>0.894</strong></td>
+      <td><strong>0.89–0.91</strong></td>
+      <td><strong>0.80–0.84</strong></td>
+      <td><strong>0.949–0.968</strong></td>
+      <td><strong>0.957–0.968</strong></td>
+      <td><strong>0.87–0.96</strong></td>
+      <td><strong>0.84</strong></td>
+      <td><strong>0.932</strong></td>
+      <td><strong>0.88–0.92</strong></td>
+      <td><strong>0.64</strong></td>
+      <td><strong>0.72</strong></td>
+    </tr>
+    <tr>
+      <td class="row-label">Status</td>
+      <td class="status-deployed">DEPLOYED</td>
+      <td class="status-validated">VALIDATED</td>
+      <td class="status-published">PUBLISHED</td>
+      <td class="status-published">PUBLISHED</td>
+      <td class="status-published">PUBLISHED</td>
+      <td class="status-published">PUBLISHED</td>
+      <td class="status-published">PUBLISHED</td>
+      <td class="status-validated">VALIDATED</td>
+      <td class="status-published">PUBLISHED</td>
+      <td class="status-published">PUBLISHED</td>
+      <td class="status-published">PUBLISHED</td>
+      <td class="status-published">PUBLISHED</td>
+      <td class="status-published">PUBLISHED</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p class="table-footnote">* Myeloma: overall 5-yr survival; not staged localized/distant. † CML ~73%, CLL ~88%. ‡ NHL: 84% localized / 66% distant; HL: 93% / 84%. Sources: SEER 2015–2021.<br/><strong>Status key:</strong> DEPLOYED = live in clinical settings. VALIDATED = large-scale external validation complete. PUBLISHED = peer-reviewed model requiring prospective verification.</p>
+
+<h2>Non-Cancer Disease Detection Summary</h2>
+
+<div class="summary-table-wrapper">
+<table class="summary-table">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Cardiovascular</th>
+      <th>Type 2 Diabetes</th>
+      <th>Chronic Kidney</th>
+      <th>Heart Failure</th>
+      <th>Sepsis</th>
+      <th>Fam. Hyperchol.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="row-label">Key Markers</td>
+      <td>NLR ↑, RDW ↑, LDL ↑, Glucose ↑</td>
+      <td>Glucose ↑, HbA1c ↑, TG ↑, HDL ↓</td>
+      <td>Creat ↑, eGFR ↓, BUN ↑, Albumin ↓</td>
+      <td>BNP ↑, Creat ↑, Uric acid ↑, Hgb ↓</td>
+      <td>WBC ↑/↓, Lactate ↑, PLT ↓, Creat ↑</td>
+      <td>LDL-C ↑, Total chol. ↑, HDL/TG ratio</td>
+    </tr>
+    <tr>
+      <td class="row-label">Detection Window</td>
+      <td>Years</td>
+      <td>3–5 years</td>
+      <td>Years</td>
+      <td>Months–years</td>
+      <td>28+ hours</td>
+      <td>Years</td>
+    </tr>
+    <tr>
+      <td class="row-label">Best AUC</td>
+      <td><strong>0.764–0.865</strong></td>
+      <td><strong>0.80–0.90</strong></td>
+      <td><strong>0.80–0.88</strong></td>
+      <td><strong>0.91–0.948</strong></td>
+      <td><strong>0.83–0.92</strong></td>
+      <td><strong>0.86–0.94</strong></td>
+    </tr>
+    <tr>
+      <td class="row-label">Status</td>
+      <td class="status-validated">VALIDATED</td>
+      <td class="status-validated">VALIDATED</td>
+      <td class="status-deployed">DEPLOYED</td>
+      <td class="status-published">PUBLISHED</td>
+      <td class="status-deployed">DEPLOYED</td>
+      <td class="status-published">PUBLISHED</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="summary-table-wrapper">
+<table class="summary-table">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Hemochromatosis</th>
+      <th>Hypothyroidism</th>
+      <th>NAFLD / Fibrosis</th>
+      <th>Wilson's Disease</th>
+      <th>Addison's Disease</th>
+      <th>Primary Biliary Chol.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="row-label">Key Markers</td>
+      <td>Ferritin ↑, Transferrin sat ↑, ALT ↑</td>
+      <td>TSH ↑, Cholesterol ↑, Hgb ↓, MCV ↑</td>
+      <td>FIB-4 ↑, AST/ALT, PLT ↓, Glucose ↑</td>
+      <td>Ceruloplasmin ↓, ALT/AST ↑, Bilirubin ↑</td>
+      <td>Na⁺ ↓, K⁺ ↑, Glucose instability</td>
+      <td>ALP ↑, Bilirubin ↑, GGT ↑</td>
+    </tr>
+    <tr>
+      <td class="row-label">Detection Window</td>
+      <td>Years</td>
+      <td>Years</td>
+      <td>Years</td>
+      <td>Years</td>
+      <td>Months–years</td>
+      <td>Years</td>
+    </tr>
+    <tr>
+      <td class="row-label">Best AUC</td>
+      <td><strong>0.94</strong></td>
+      <td><strong>0.909</strong></td>
+      <td><strong>0.80–0.91</strong></td>
+      <td><strong>0.78–0.82</strong></td>
+      <td><strong>&gt;0.99 (canine)</strong></td>
+      <td><strong>Surrogates</strong></td>
+    </tr>
+    <tr>
+      <td class="row-label">Status</td>
+      <td class="status-published">PUBLISHED</td>
+      <td class="status-published">PUBLISHED</td>
+      <td class="status-published">PUBLISHED</td>
+      <td class="status-published">PUBLISHED</td>
+      <td class="status-signal">SIGNAL ONLY</td>
+      <td class="status-signal">SIGNAL ONLY</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p class="table-footnote"><strong>Status key:</strong> DEPLOYED = live in clinical settings. VALIDATED = large-scale external validation complete. PUBLISHED = peer-reviewed model requiring prospective verification. SIGNAL ONLY = blood signature documented, no ML model built.</p>
+        </div>
+      </section>
     </div>
   </div>
 </BaseLayout>
@@ -518,47 +758,6 @@ import TotalImpact from '../components/charts/TotalImpact.tsx';
     line-height: var(--leading-normal);
   }
 
-  .collection-cta {
-    padding: var(--space-16) 0 var(--space-24);
-  }
-
-  .cta-link {
-    display: flex;
-    align-items: center;
-    gap: var(--space-4);
-    padding: var(--space-8);
-    border: 1px solid var(--color-gray-200);
-    border-radius: 8px;
-    text-decoration: none;
-    transition: border-color 0.15s, background 0.15s;
-    max-width: var(--content-width);
-  }
-
-  .cta-link:hover {
-    border-color: var(--color-red);
-    background: var(--color-gray-100);
-  }
-
-  .cta-label {
-    font-size: var(--text-xs);
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: var(--color-red);
-    font-weight: 700;
-  }
-
-  .cta-title {
-    font-family: var(--font-display);
-    font-size: var(--text-lg);
-    font-weight: 700;
-    color: var(--color-black);
-    flex: 1;
-  }
-
-  .cta-link svg {
-    color: var(--color-red);
-  }
-
   @media (max-width: 640px) {
     .collection-sidebar {
       display: none;
@@ -582,6 +781,95 @@ import TotalImpact from '../components/charts/TotalImpact.tsx';
   .team-list li {
     font-size: var(--text-sm);
     color: var(--color-gray-500);
+  }
+
+  .summary-table-wrapper {
+    overflow-x: auto;
+    margin: var(--space-8) 0;
+    border: 1px solid var(--color-gray-200);
+    border-radius: 8px;
+  }
+
+  .summary-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: var(--text-xs);
+    line-height: var(--leading-tight);
+    white-space: nowrap;
+  }
+
+  .summary-table thead th {
+    background: var(--color-gray-100);
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: var(--text-xs);
+    text-align: left;
+    padding: var(--space-3) var(--space-3);
+    border-bottom: 2px solid var(--color-gray-200);
+    position: sticky;
+    top: 0;
+  }
+
+  .summary-table tbody td {
+    padding: var(--space-2) var(--space-3);
+    border-bottom: 1px solid var(--color-gray-100);
+    vertical-align: top;
+    max-width: 140px;
+    white-space: normal;
+  }
+
+  .summary-table .row-label {
+    font-weight: 700;
+    color: var(--color-gray-700);
+    white-space: nowrap;
+    background: var(--color-gray-50, #fafafa);
+    position: sticky;
+    left: 0;
+    min-width: 120px;
+  }
+
+  .summary-table tbody tr:hover td {
+    background: var(--color-gray-50, #fafafa);
+  }
+
+  .summary-table tbody tr:hover td.row-label {
+    background: var(--color-gray-100);
+  }
+
+  .status-deployed {
+    color: #16a34a;
+    font-weight: 700;
+    font-size: 10px;
+    letter-spacing: 0.05em;
+  }
+
+  .status-validated {
+    color: #2563eb;
+    font-weight: 700;
+    font-size: 10px;
+    letter-spacing: 0.05em;
+  }
+
+  .status-published {
+    color: #d97706;
+    font-weight: 600;
+    font-size: 10px;
+    letter-spacing: 0.05em;
+  }
+
+  .status-signal {
+    color: var(--color-gray-400);
+    font-weight: 600;
+    font-size: 10px;
+    letter-spacing: 0.05em;
+  }
+
+  .table-footnote {
+    font-size: var(--text-xs);
+    color: var(--color-gray-400);
+    line-height: var(--leading-normal);
+    margin-top: var(--space-2);
+    margin-bottom: var(--space-8);
   }
 </style>
 

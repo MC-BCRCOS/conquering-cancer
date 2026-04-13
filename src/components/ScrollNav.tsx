@@ -5,6 +5,7 @@ const sections = [
   { id: 'paper-01', label: 'What Your Blood Already Knows' },
   { id: 'paper-02', label: 'Beyond Cancer' },
   { id: 'paper-03', label: 'The Evidence Behind the Numbers' },
+  { id: 'summary-tables', label: 'Disease Detection Summary' },
 ];
 
 export default function ScrollNav() {
