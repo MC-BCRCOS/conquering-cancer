@@ -26,7 +26,7 @@ import TotalImpact from '../components/charts/TotalImpact.tsx';
         </header>
         <div class="paper-content">
 
-<p>The attached papers, published by the team at the Ratner Early Detection Initiative (REDI) describe a powerful and proven approach to early cancer detection that we believe will radically reduce cancer deaths.</p>
+  <p>The attached papers, published by the team at the Ratner Early Detection Initiative (REDI) describe a powerful and proven approach to early cancer detection that we believe will radically reduce cancer deaths.</p>
 
   <p>The core idea is that blood tests taken routinely in the course of an annual physical contain dozens of signals hiding in the relationships between values when cancer is developing. When analyzed individually the results may look normal but when machine learning algorithms are applied, cancer can be detected from six to twenty-four months before a doctor is able to diagnose the cancer by currently accepted screening protocols.</p>
 
@@ -56,7 +56,7 @@ import TotalImpact from '../components/charts/TotalImpact.tsx';
         </header>
         <div class="paper-content">
 
-<h2>The Problem We Can Solve</h2>
+  <h2>The Problem We Can Solve</h2>
 
   <p>Every year in the United States, roughly <strong>393,000 people die from 13 cancers</strong>. Not because medicine lacks the ability to cure these diseases, but because medicine finds them too late.</p>
 
@@ -124,7 +124,7 @@ import TotalImpact from '../components/charts/TotalImpact.tsx';
         </header>
         <div class="paper-content">
 
-<h2>The Bigger Picture</h2>
+  <h2>The Bigger Picture</h2>
 
   <p>Cancer is not the only killer hiding in your blood work, and it may not even be the biggest one.</p>
 
@@ -464,159 +464,159 @@ import TotalImpact from '../components/charts/TotalImpact.tsx';
   <thead>
     <tr>
       <th>Cancer</th>
+      <th>Status</th>
+      <th>Best AUC</th>
       <th>5-yr Survival (Local)</th>
       <th>5-yr Survival (Distant)</th>
-      <th>Key CBC/CMP Markers</th>
       <th>Detection Window</th>
+      <th>Key CBC/CMP Markers</th>
       <th>ML Algorithm</th>
-      <th>Best AUC</th>
       <th>Training Dataset</th>
-      <th>Status</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td class="row-label">Colorectal</td>
+      <td class="status-deployed">DEPLOYED</td>
+      <td><strong>0.82</strong></td>
       <td>91.5%</td>
       <td>16.2%</td>
+      <td>2–4 yrs</td>
       <td>Hgb ↓, MCV ↓, RDW ↑, WBC ↑, PLT ↑</td>
-      <td>2–4 years</td>
-      <td>Gradient Boosting + Random Forest (ColonFlag)</td>
-      <td><strong>0.82</strong></td>
+      <td>Gradient Boosting + RF (ColonFlag)</td>
       <td>606,000+ patients</td>
-      <td class="status-deployed">DEPLOYED</td>
     </tr>
     <tr>
       <td class="row-label">Lung</td>
+      <td class="status-validated">VALIDATED</td>
+      <td><strong>0.856</strong></td>
       <td>64.7%</td>
       <td>9.7%</td>
+      <td>9–12 mo</td>
       <td>WBC ↑, NLR ↑, PLR ↑, Hgb ↓, RDW ↑</td>
-      <td>9–12 months</td>
       <td>XGBoost (LungFlag)</td>
-      <td><strong>0.856</strong></td>
       <td>6,505 cases; 189,597 controls</td>
-      <td class="status-validated">VALIDATED</td>
     </tr>
     <tr>
       <td class="row-label">Liver</td>
+      <td class="status-published">PUBLISHED</td>
+      <td><strong>0.894</strong></td>
       <td>37.6%</td>
       <td>3.5%</td>
+      <td>3+ yrs</td>
       <td>FIB-4 ↑, AST/ALT ratio, PLT ↓, Albumin ↓</td>
-      <td>3+ years</td>
       <td>LightGBM</td>
-      <td><strong>0.894</strong></td>
       <td>900,000+ patients</td>
-      <td class="status-published">PUBLISHED</td>
     </tr>
     <tr>
       <td class="row-label">Gastric</td>
+      <td class="status-published">PUBLISHED</td>
+      <td><strong>0.89–0.91</strong></td>
       <td>76.5%</td>
       <td>6.8%</td>
+      <td>Mo–yrs</td>
       <td>Hgb ↓, RDW ↑, NLR ↑, PLR ↑, Albumin ↓</td>
-      <td>Months–years</td>
       <td>XGBoost (XHGC20) / GBDT</td>
-      <td><strong>0.89–0.91</strong></td>
       <td>709–4,400 patients</td>
-      <td class="status-published">PUBLISHED</td>
     </tr>
     <tr>
       <td class="row-label">Pancreatic</td>
+      <td class="status-published">PUBLISHED</td>
+      <td><strong>0.80–0.84</strong></td>
       <td>43.6%</td>
       <td>3.2%</td>
+      <td>2–3 yrs</td>
       <td>Glucose ↑, HbA1c ↑, Bilirubin ↑, ALP ↑</td>
-      <td>2–3 years</td>
       <td>XGBoost</td>
-      <td><strong>0.80–0.84</strong></td>
       <td>3,322–28,137 patients</td>
-      <td class="status-published">PUBLISHED</td>
     </tr>
     <tr>
       <td class="row-label">Ovarian</td>
+      <td class="status-published">PUBLISHED</td>
+      <td><strong>0.949–0.968</strong></td>
       <td>91.7%</td>
       <td>31.7%</td>
+      <td>18+ mo</td>
       <td>PLT ↑, CA-125 velocity ↑, NLR ↑</td>
-      <td>18+ months</td>
       <td>Random Forest + AI Ensemble</td>
-      <td><strong>0.949–0.968</strong></td>
       <td>334–11,000 patients</td>
-      <td class="status-published">PUBLISHED</td>
     </tr>
     <tr>
       <td class="row-label">Kidney</td>
+      <td class="status-published">PUBLISHED</td>
+      <td><strong>0.932</strong></td>
       <td>93.3%</td>
       <td>19.1%</td>
+      <td>6–8 mo</td>
       <td>Hgb ↓, Creat ↑, CRP ↑, ESR ↑, PLT ↑</td>
-      <td>6–8 months</td>
       <td>Random Forest</td>
-      <td><strong>0.932</strong></td>
       <td>743 cases; 500 controls</td>
-      <td class="status-published">PUBLISHED</td>
     </tr>
     <tr>
       <td class="row-label">Myeloma</td>
+      <td class="status-published">PUBLISHED</td>
+      <td><strong>0.957–0.968</strong></td>
       <td>62%*</td>
       <td>systemic</td>
+      <td>2–3 yrs</td>
       <td>Hgb ↓, ESR ↑, Ca²⁺ ↑, Creat ↑, Protein gap ↑</td>
-      <td>2–3 years</td>
       <td>AdaBoost / Random Forest</td>
-      <td><strong>0.957–0.968</strong></td>
       <td>465+ patients</td>
-      <td class="status-published">PUBLISHED</td>
     </tr>
     <tr>
       <td class="row-label">Leukemia</td>
+      <td class="status-validated">VALIDATED</td>
+      <td><strong>0.87–0.96</strong></td>
       <td>73–88%†</td>
       <td>systemic</td>
+      <td>Mo–5 yrs</td>
       <td>WBC ↑, Baso% ↑ (CML), Lymph slope ↑ (CLL)</td>
-      <td>Months–5 years</td>
-      <td>XGBoost (CML) / Random Forest (CLL)</td>
-      <td><strong>0.87–0.96</strong></td>
+      <td>XGBoost (CML) / RF (CLL)</td>
       <td>1,623–1,090,707 patients</td>
-      <td class="status-validated">VALIDATED</td>
     </tr>
     <tr>
       <td class="row-label">Lymphoma</td>
+      <td class="status-published">PUBLISHED</td>
+      <td><strong>0.84</strong></td>
       <td>84–93%‡</td>
       <td>66–84%</td>
+      <td>5+ yrs</td>
       <td>ESR ↑, LDH ↑, Lymph ↓</td>
-      <td>5+ years</td>
       <td>ML Ensemble (CopLab)</td>
-      <td><strong>0.84</strong></td>
       <td>663,184 patients</td>
-      <td class="status-published">PUBLISHED</td>
     </tr>
     <tr>
       <td class="row-label">Bladder</td>
+      <td class="status-published">PUBLISHED</td>
+      <td><strong>0.88–0.92</strong></td>
       <td>70%</td>
       <td>8.3%</td>
+      <td>6–8 mo</td>
       <td>Hgb ↓, CRP ↑, ESR ↑, Creat ↑</td>
-      <td>6–8 months</td>
       <td>LightGBM</td>
-      <td><strong>0.88–0.92</strong></td>
       <td>1,336 patients</td>
-      <td class="status-published">PUBLISHED</td>
     </tr>
     <tr>
       <td class="row-label">Breast</td>
+      <td class="status-published">PUBLISHED</td>
+      <td><strong>0.64</strong></td>
       <td>~100%</td>
       <td>31.4%</td>
+      <td>Months</td>
       <td>NLR ↑, PLR ↑, SII ↑, Hgb ↓, Lymph ↓</td>
-      <td>Months before diagnosis</td>
       <td>Ridge Regression</td>
-      <td><strong>0.64</strong></td>
       <td>396,848 patients</td>
-      <td class="status-published">PUBLISHED</td>
     </tr>
     <tr>
       <td class="row-label">Prostate</td>
+      <td class="status-published">PUBLISHED</td>
+      <td><strong>0.72</strong></td>
       <td>~100%</td>
       <td>34.1%</td>
+      <td>Months</td>
       <td>ALP ↑, NLR ↑, RBC ↑, PLT ↑, Hgb ↓</td>
-      <td>Months before diagnosis</td>
       <td>Gradient Boosting Machine</td>
-      <td><strong>0.72</strong></td>
       <td>737 patients</td>
-      <td class="status-published">PUBLISHED</td>
     </tr>
   </tbody>
 </table>
@@ -631,122 +631,122 @@ import TotalImpact from '../components/charts/TotalImpact.tsx';
   <thead>
     <tr>
       <th>Disease</th>
-      <th>Key CBC/CMP Markers</th>
-      <th>Detection Window</th>
-      <th>ML Algorithm</th>
-      <th>Best AUC</th>
-      <th>Training Dataset</th>
       <th>Status</th>
+      <th>Best AUC</th>
+      <th>Detection Window</th>
+      <th>Key CBC/CMP Markers</th>
+      <th>ML Algorithm</th>
+      <th>Training Dataset</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td class="row-label">Cardiovascular Disease</td>
-      <td>NLR ↑, RDW ↑, LDL trajectory ↑, Glucose drift ↑, eGFR ↓</td>
-      <td>Years</td>
-      <td>Random Survival Forest / Neural Network</td>
-      <td><strong>0.764–0.865</strong></td>
-      <td>6,814–378,256 patients</td>
       <td class="status-validated">VALIDATED</td>
+      <td><strong>0.764–0.865</strong></td>
+      <td>Years</td>
+      <td>NLR ↑, RDW ↑, LDL trajectory ↑, Glucose drift ↑, eGFR ↓</td>
+      <td>Random Survival Forest / Neural Network</td>
+      <td>6,814–378,256 patients</td>
     </tr>
     <tr>
       <td class="row-label">Type 2 Diabetes</td>
-      <td>Fasting glucose trajectory ↑, HbA1c ↑, TG ↑, HDL ↓, eGFR ↓</td>
-      <td>3–5 years</td>
-      <td>XGBoost / LightGBM / Deep Learning</td>
-      <td><strong>0.80–0.90</strong></td>
-      <td>448,277–2,137,343 patients</td>
       <td class="status-validated">VALIDATED</td>
+      <td><strong>0.80–0.90</strong></td>
+      <td>3–5 yrs</td>
+      <td>Glucose trajectory ↑, HbA1c ↑, TG ↑, HDL ↓, eGFR ↓</td>
+      <td>XGBoost / LightGBM / Deep Learning</td>
+      <td>448,277–2,137,343 patients</td>
     </tr>
     <tr>
       <td class="row-label">Chronic Kidney Disease</td>
-      <td>Creat trajectory ↑, eGFR slope ↓, BUN ↑, Albumin ↓, Hgb ↓</td>
-      <td>Years</td>
-      <td>Random Survival Forest (Klinrisk)</td>
-      <td><strong>0.80–0.88</strong></td>
-      <td>77,196–4,800,000 patients</td>
       <td class="status-deployed">DEPLOYED</td>
+      <td><strong>0.80–0.88</strong></td>
+      <td>Years</td>
+      <td>Creat trajectory ↑, eGFR slope ↓, BUN ↑, Albumin ↓, Hgb ↓</td>
+      <td>Random Survival Forest (Klinrisk)</td>
+      <td>77,196–4,800,000 patients</td>
     </tr>
     <tr>
       <td class="row-label">Heart Failure</td>
-      <td>BNP trajectory ↑, Creat ↑, Uric acid ↑, Hgb ↓, Na⁺ ↓</td>
-      <td>Months–years</td>
-      <td>Ensemble Deep Learning / Random Forest</td>
-      <td><strong>0.91–0.948</strong></td>
-      <td>226–52,265 patients</td>
       <td class="status-published">PUBLISHED</td>
+      <td><strong>0.91–0.948</strong></td>
+      <td>Mo–yrs</td>
+      <td>BNP trajectory ↑, Creat ↑, Uric acid ↑, Hgb ↓, Na⁺ ↓</td>
+      <td>Ensemble Deep Learning / Random Forest</td>
+      <td>226–52,265 patients</td>
     </tr>
     <tr>
       <td class="row-label">Sepsis</td>
-      <td>WBC ↑/↓, Lactate ↑, Creat ↑, PLT ↓, Bilirubin ↑</td>
-      <td>28+ hours lead time</td>
-      <td>Gradient Boosting (TREWS / InSight)</td>
-      <td><strong>0.83–0.92</strong></td>
-      <td>63,858–684,443 encounters</td>
       <td class="status-deployed">DEPLOYED</td>
+      <td><strong>0.83–0.92</strong></td>
+      <td>28+ hrs</td>
+      <td>WBC ↑/↓, Lactate ↑, Creat ↑, PLT ↓, Bilirubin ↑</td>
+      <td>Gradient Boosting (TREWS / InSight)</td>
+      <td>63,858–684,443 encounters</td>
     </tr>
     <tr>
-      <td class="row-label">Familial Hypercholesterolemia</td>
-      <td>LDL-C ↑, Total cholesterol ↑, HDL-C/TG ratio, Lipid trajectory</td>
-      <td>Years</td>
-      <td>Random Forest (FIND FH) / Ensemble (FAMCAT2)</td>
-      <td><strong>0.86–0.94</strong></td>
-      <td>26,025–4,027,775 patients</td>
+      <td class="row-label">Familial Hyperchol.</td>
       <td class="status-published">PUBLISHED</td>
+      <td><strong>0.86–0.94</strong></td>
+      <td>Years</td>
+      <td>LDL-C ↑, Total chol. ↑, HDL-C/TG ratio, Lipid trajectory</td>
+      <td>RF (FIND FH) / Ensemble (FAMCAT2)</td>
+      <td>26,025–4,027,775 patients</td>
     </tr>
     <tr>
       <td class="row-label">Hemochromatosis</td>
-      <td>Transferrin sat ↑, Ferritin ↑, ALT ↑, Iron ↑</td>
-      <td>Years</td>
-      <td>XGBoost</td>
-      <td><strong>0.94</strong></td>
-      <td>254 cases; 701 controls</td>
       <td class="status-published">PUBLISHED</td>
+      <td><strong>0.94</strong></td>
+      <td>Years</td>
+      <td>Transferrin sat ↑, Ferritin ↑, ALT ↑, Iron ↑</td>
+      <td>XGBoost</td>
+      <td>254 cases; 701 controls</td>
     </tr>
     <tr>
       <td class="row-label">Hypothyroidism</td>
-      <td>TSH trajectory ↑, Cholesterol ↑, Hgb ↓, MCV ↑</td>
-      <td>Years</td>
-      <td>XGBoost / Random Forest / LightGBM</td>
-      <td><strong>0.909</strong></td>
-      <td>Multi-institutional</td>
       <td class="status-published">PUBLISHED</td>
+      <td><strong>0.909</strong></td>
+      <td>Years</td>
+      <td>TSH trajectory ↑, Cholesterol ↑, Hgb ↓, MCV ↑</td>
+      <td>XGBoost / RF / LightGBM</td>
+      <td>Multi-institutional</td>
     </tr>
     <tr>
       <td class="row-label">NAFLD / Liver Fibrosis</td>
-      <td>FIB-4 ↑, AST/ALT ratio, PLT ↓, Albumin ↓, Glucose ↑</td>
-      <td>Years</td>
-      <td>XGBoost / Random Survival Forest</td>
-      <td><strong>0.80–0.91</strong></td>
-      <td>618–25,599 patients</td>
       <td class="status-published">PUBLISHED</td>
+      <td><strong>0.80–0.91</strong></td>
+      <td>Years</td>
+      <td>FIB-4 ↑, AST/ALT ratio, PLT ↓, Albumin ↓, Glucose ↑</td>
+      <td>XGBoost / Random Survival Forest</td>
+      <td>618–25,599 patients</td>
     </tr>
     <tr>
       <td class="row-label">Wilson's Disease</td>
-      <td>Ceruloplasmin ↓, ALT/AST ↑, Bilirubin ↑, Hgb ↓, PLT ↓</td>
-      <td>Years</td>
-      <td>XGBoost</td>
-      <td><strong>0.78–0.82</strong></td>
-      <td>346–3,559 patients</td>
       <td class="status-published">PUBLISHED</td>
+      <td><strong>0.78–0.82</strong></td>
+      <td>Years</td>
+      <td>Ceruloplasmin ↓, ALT/AST ↑, Bilirubin ↑, Hgb ↓, PLT ↓</td>
+      <td>XGBoost</td>
+      <td>346–3,559 patients</td>
     </tr>
     <tr>
       <td class="row-label">Addison's Disease</td>
-      <td>Na⁺ ↓, K⁺ ↑, TSH ↑, Glucose instability</td>
-      <td>Months–years</td>
-      <td>AdaBoost (canine proof-of-concept only)</td>
-      <td><strong>&gt;0.99 (canine)</strong></td>
-      <td>1,000+ (canine)</td>
       <td class="status-signal">SIGNAL ONLY</td>
+      <td><strong>&gt;0.99 (canine)</strong></td>
+      <td>Mo–yrs</td>
+      <td>Na⁺ ↓, K⁺ ↑, TSH ↑, Glucose instability</td>
+      <td>AdaBoost (canine proof-of-concept)</td>
+      <td>1,000+ (canine)</td>
     </tr>
     <tr>
-      <td class="row-label">Primary Biliary Cholangitis</td>
-      <td>ALP ↑, Bilirubin trajectory ↑, GGT ↑, IgM ↑</td>
-      <td>Years</td>
-      <td>ALP/Bilirubin surrogate models</td>
-      <td><strong>Validated surrogates</strong></td>
-      <td>4,845 patients (meta-analysis)</td>
+      <td class="row-label">Primary Biliary Chol.</td>
       <td class="status-signal">SIGNAL ONLY</td>
+      <td><strong>Surrogates</strong></td>
+      <td>Years</td>
+      <td>ALP ↑, Bilirubin trajectory ↑, GGT ↑, IgM ↑</td>
+      <td>ALP/Bilirubin surrogate models</td>
+      <td>4,845 patients (meta-analysis)</td>
     </tr>
   </tbody>
 </table>
