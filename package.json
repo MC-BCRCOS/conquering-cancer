@@ -16,5 +16,9 @@
     "astro": "^6.1.4",
     "chart.js": "^4.5.1",
     "preact": "^10.29.1"
+  },
+  "devDependencies": {
+    "puppeteer": "^24.40.0",
+    "serve": "^14.2.6"
   }
 }

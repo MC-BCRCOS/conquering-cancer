@@ -1,12 +1,18 @@
 import { useEffect, useState } from 'preact/hooks';
 
 const sections = [
-  { id: 'letter', label: 'Dear Friends and Colleagues,' },
-  { id: 'paper-01', label: 'What Your Blood Already Knows' },
-  { id: 'paper-02', label: 'Beyond Cancer' },
-  { id: 'paper-03', label: 'The Evidence Behind the Numbers' },
-  { id: 'summary-tables', label: 'Disease Detection Summary' },
-  { id: 'models-by-disease', label: 'Models by Disease' },
+  { id: 'ch-01', label: '1. The Death of George Washington' },
+  { id: 'ch-02', label: '2. The Long Road to the Pap Smear' },
+  { id: 'ch-03', label: '3. The Signal in the Blood' },
+  { id: 'ch-04', label: '4. Thirteen Cancers' },
+  { id: 'ch-05', label: '5. ColonFlag and LungFlag' },
+  { id: 'ch-06', label: '6. Beyond Cancer' },
+  { id: 'ch-07', label: '7. From Flag to Finding' },
+  { id: 'ch-08', label: '8. The Consortium Model' },
+  { id: 'ch-09', label: '9. The Economics' },
+  { id: 'ch-10', label: '10. The Equity Imperative' },
+  { id: 'ch-11', label: '11. Conquer Cancer' },
+  { id: 'endnotes', label: 'Endnotes' },
 ];
 
 export default function ScrollNav() {
