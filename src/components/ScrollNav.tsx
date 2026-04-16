@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'preact/hooks';
 
 const sections = [
+  { id: 'intro', label: 'Introduction' },
   { id: 'ch-01', label: '1. The Death of George Washington' },
   { id: 'ch-02', label: '2. The Long Road to the Pap Smear' },
   { id: 'ch-03', label: '3. The Signal in the Blood' },

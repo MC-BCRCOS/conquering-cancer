@@ -21,6 +21,70 @@ import TotalImpact from '../components/charts/TotalImpact.tsx';
 
     <div class="collection-content">
 
+      <section id="intro" class="paper-section">
+        <header class="section-header">
+          <span class="section-number">Introduction</span>
+          <h1 class="section-title">What the Blood Already Knows</h1>
+        </header>
+        <div class="paper-content">
+
+  <h2>The Hidden Library</h2>
+
+  <p>In the United States, millions of routine blood tests are drawn every year. A complete blood count. A basic metabolic panel. A lipid profile. A hemoglobin A1c for someone whose sugars have been a little high. The results are printed out, filed away in an electronic chart, and mostly ignored. The doctor scans the page for anything that explains today&rsquo;s complaint. If nothing jumps out, the results go into the record and the patient goes home.</p>
+
+  <p>This happens day after day, in every hospital and clinic in the country, for a lifetime of visits. By the time a person reaches 70, their electronic medical record contains thousands of numbers. Most of those numbers have never been looked at by a human being. The file is a kind of library. And the library, it turns out, has been keeping notes on us.</p>
+
+  <p>Hidden in those numbers, for decades before any symptom appears, are the early signatures of the diseases that will eventually kill us. Cancer, most of all. But also heart failure. Kidney disease. Diabetes. Stroke. Aortic aneurysm. Liver failure. Alzheimer&rsquo;s. Each one leaves a faint fingerprint in the routine bloodwork, years before a doctor would ordinarily order the test that would confirm it. The fingerprints are too subtle for a human to read. They involve small shifts across a dozen values, tracked over years, combined with information from the medication list, the vital signs, the problem list. No clinician can hold all of that in mind. A computer can.</p>
+
+  <p>This book is about what happens when we finally read the library.</p>
+
+  <h2>Late Detection Is the Default</h2>
+
+  <p>American medicine is built around late detection. We wait for symptoms. We order tests when something hurts, when something breaks, when something bleeds. For cancer, we have added a handful of dedicated screening programs: mammograms for breast, colonoscopies for colon, low-dose CT scans for a narrow slice of lung cancer patients, PSA for prostate. We call them early detection. They are not. By the time a mammogram finds a lump, the tumor has usually been present for five to eight years. By the time a colonoscopy finds a polyp that has turned malignant, the cellular disease has been smoldering for a decade. For most other cancers, we have no screening program at all. We find them when the patient walks in unable to breathe, unable to eat, or unable to pass a stool.</p>
+
+  <p>The price of this policy is enormous, and almost entirely invisible. Roughly <strong>600,000 Americans die of cancer every year</strong>. Another <strong>700,000 die of heart disease</strong>. A further <strong>165,000 die of stroke</strong>. The overwhelming majority of these deaths involve diseases that had been quietly present in the body for years, undetected, while the patient went about their life and visited their doctor and had their blood drawn.</p>
+
+  <p>None of this is anyone&rsquo;s fault, exactly. The doctor does what the training demands. The patient does what the doctor suggests. The lab does what it is asked. The record system stores what it is fed. Each piece works. The system as a whole fails, because no one is reading the data across time. The signal that would warn us is distributed across a dozen values and a dozen visits, each one individually unremarkable. There is no human being in the workflow whose job it is to see the pattern.</p>
+
+  <p>There used to be no machine, either. That is no longer true.</p>
+
+  <h2>What Has Changed</h2>
+
+  <p>Three things have happened in the last fifteen years, quietly enough that most Americans have not noticed, and they have changed what is possible in medicine.</p>
+
+  <p><strong>First</strong>, almost every US hospital and clinic has moved onto an electronic medical record. The records are imperfect, fragmented, and famously annoying to use. But for the first time in the history of medicine, the longitudinal health data of the American population exists as searchable, linkable, machine-readable files. The raw material is there.</p>
+
+  <p><strong>Second</strong>, a class of machine learning algorithms called gradient boosting, and a set of techniques for making their predictions explainable, has turned out to be exceptionally well-suited to structured medical data. These are not the dramatic algorithms of the newspapers: not the ones that write essays or draw pictures. They are duller than that, and more useful. They look at tables of numbers and find patterns in them. Given enough examples, they can learn which combinations of ordinary blood values, measured over time, distinguish the patient who will develop colorectal cancer in four years from the one who will not.</p>
+
+  <p><strong>Third</strong>, a small number of research groups and companies have actually done the work. They have trained and validated and published these algorithms. A company in Israel has built one for colorectal cancer, using only the complete blood count. Another for lung cancer. Another for abdominal aortic aneurysm. Kaiser Permanente has built risk models for heart failure. Geisinger Health System has deployed several of them into live clinical practice. Maccabi Healthcare in Israel has scaled them across a population of two million patients. The peer-reviewed evidence is rigorous. The performance is good. The costs are negligible, because the blood has already been drawn.</p>
+
+  <p>The pattern repeats across disease after disease. The same kind of routine data. The same kind of algorithm. The same kind of lead time. The same kind of result: a list of patients who should be scanned, scoped, or seen, produced for a marginal cost that rounds to zero.</p>
+
+  <p>What the rest of this book does is take that pattern apart, disease by disease, and show you how it works. We begin with cancer, because cancer is where the evidence is deepest, where the stakes are highest for the largest number of people, and where the gap between what is possible and what is practiced is the most painful. But the argument generalizes. By the end of the book, you should understand why the same approach that catches an early colon cancer also catches an early aneurysm, an early case of heart failure, an early diabetes, an early kidney disease. The biology is different. The method is the same.</p>
+
+  <h2>A Working Example</h2>
+
+  <p>This is a book of argument, and you have a right to be skeptical of arguments until they are made concrete. So let me close this introduction with a single case, already in production, that shows you the shape of everything that follows.</p>
+
+  <p>The aorta is the main pipe carrying blood from your heart to the rest of your body. It is about the diameter of a garden hose. When a section of it weakens, it balloons outward into what doctors call an aneurysm. The bulge makes no sound. It shows up on no physical exam. It grows for years. Then one day the wall tears, and the patient bleeds to death internally before the ambulance arrives.</p>
+
+  <p>Aneurysm ruptures kill roughly <strong>25,000 Americans every year</strong>, and another 125,000 people worldwide. Eight out of ten victims do not survive. Half never reach a hospital alive. More than two-thirds had no idea they were at risk. They had visited doctors. They had had blood drawn. The bulge in the aorta, which had been growing for a decade, went unlooked for because nobody thought to look.<sup><a href="#endnote-1" class="cite-link">1</a></sup></p>
+
+  <p>The official response, issued by the US Preventive Services Task Force in 2005, was a one-time ultrasound for men aged 65 to 75 who had ever smoked. Fewer than one in three eligible men gets one. The rule excludes all women, all nonsmokers, and everyone under 65. The Task Force reviewed the question again in 2014 and in 2019, and each time left the rule essentially unchanged. By its own accounting, <strong>forty-three percent</strong> of Americans who die of a ruptured abdominal aneurysm fall outside its criteria.<sup><a href="#endnote-2" class="cite-link">2</a></sup></p>
+
+  <p>But the aorta, long before it fails, has already been telling us it is in trouble. The warning sits in blood samples that have already been drawn. A study that followed <strong>15,800 Americans</strong> for two decades found that six ordinary blood values, every one of them on any hospital menu, could pick out who would later develop an aneurysm. People with four or more of the six markers elevated had roughly <strong>ten times the risk</strong> of those with none. The paper appeared in 2015.</p>
+
+  <p>Someone eventually built the obvious tool. An Israeli company called Medial EarlySign, in partnership with Geisinger Health System in Pennsylvania, trained a computer on exactly this kind of routine data. They called it <strong>AAA-Flag</strong>. In validation it tripled the rate at which aneurysms were caught compared with current screening guidelines. In January of 2023, Geisinger turned it on. Every month since, the health system has run its entire eligible patient population through the algorithm, ranked every patient by risk, and called the top 150 to offer them an ultrasound. The program has paid for itself. It has been working for three years.<sup><a href="#endnote-3" class="cite-link">3</a></sup></p>
+
+  <p>That is the scene I want you to hold in your mind as you read this book. A disease that kills more Americans every year than drunk drivers. A warning signal measurable in a blood test every patient has already had. An algorithm that reads the signal and produces a list of phone calls. One US health system doing it. The rest, so far, are not.</p>
+
+  <p>The gap between what Geisinger is doing and what your hospital is doing is not a scientific gap. The science was settled a decade ago. It is not a technological gap. The algorithm runs on a laptop. It is not a financial gap. The blood tests have already been drawn. The gap is in imagination and will. It exists not just for the aorta but for every disease in this book. Closing it is the work. This book is a guide to how it can be done.</p>
+
+  <p class="section-sign-off"><strong>Bruce Ratner and the REDI Team</strong><br/>April 2026</p>
+
+        </div>
+      </section>
+
       <section id="ch-01" class="paper-section">
         <header class="section-header">
           <span class="section-number">Chapter 1</span>
