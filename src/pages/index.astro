@@ -13,7 +13,7 @@ import Economics from '../components/charts/Economics.tsx';
 import TotalImpact from '../components/charts/TotalImpact.tsx';
 ---
 
-<BaseLayout title="Early Detection" description="Conquering Cancer — How routine blood tests can detect cancer and disease before symptoms appear.">
+<BaseLayout title="Conquering Cancer" description="Conquering Cancer — How routine blood tests can detect cancer and disease before symptoms appear.">
   <div class="collection-layout">
     <aside class="collection-sidebar">
       <ScrollNav client:load />
@@ -2243,3 +2243,13 @@ import TotalImpact from '../components/charts/TotalImpact.tsx';
     }
   }
 </style>
+
+<script>
+  for (const table of document.querySelectorAll('.paper-content table')) {
+    if (table.parentElement?.classList.contains('table-scroll')) continue;
+    const wrap = document.createElement('div');
+    wrap.className = 'table-scroll';
+    table.parentNode?.insertBefore(wrap, table);
+    wrap.appendChild(table);
+  }
+</script>

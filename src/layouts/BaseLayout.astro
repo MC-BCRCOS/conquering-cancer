@@ -10,6 +10,8 @@ const { title, description = 'Conquering Cancer — REDI White Paper Series' } =
 const currentPath = Astro.url.pathname;
 const isHome = currentPath === '/' || currentPath === '';
 const isTeam = currentPath.startsWith('/team');
+const siteName = 'Conquering Cancer';
+const pageTitle = title === siteName ? siteName : `${title} | ${siteName}`;
 ---
 
 <!doctype html>
@@ -18,7 +20,7 @@ const isTeam = currentPath.startsWith('/team');
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
-    <title>{title} | Conquering Cancer</title>
+    <title>{pageTitle}</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   </head>
   <body>
@@ -29,7 +31,7 @@ const isTeam = currentPath.startsWith('/team');
             <img src={rediLogo.src} alt="REDI" width="80" height="38" />
           </a>
           <ul class="nav-links">
-            <li><a href="/" class:list={[{ 'nav-active': isHome }]}>Early Detection</a></li>
+            <li><a href="/" class:list={[{ 'nav-active': isHome }]}>Conquering Cancer</a></li>
             <li><a href="/team" class:list={[{ 'nav-active': isTeam }]}>REDI Team</a></li>
           </ul>
           <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">

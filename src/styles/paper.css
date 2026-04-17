@@ -82,12 +82,19 @@
   font-size: var(--text-sm);
 }
 
+.paper-content .table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  max-width: 100%;
+  margin-block: var(--space-8);
+}
+
+.paper-content .table-scroll table {
+  margin-block: 0;
+}
+
 @media (max-width: 768px) {
-  .paper-content table {
-    display: block;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    max-width: 100%;
+  .paper-content .table-scroll table {
     font-size: var(--text-xs);
   }
 }
@@ -120,6 +127,7 @@
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 2px;
+  overflow-wrap: anywhere;
 }
 
 .paper-content a:hover {
