@@ -89,6 +89,12 @@ body {
   background-color: var(--color-white);
 }
 
+@media (max-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+  }
+}
+
 img, svg {
   display: block;
   max-width: 100%;
