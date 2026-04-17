@@ -97,11 +97,14 @@ export default function ScrollNav() {
 
   const scrollTo = (id: string) => {
     skipRestoreRef.current = true;
+    const body = document.body;
+    body.style.position = '';
+    body.style.top = '';
+    body.style.width = '';
+    body.style.overflow = '';
+    const el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
     setOpen(false);
-    requestAnimationFrame(() => {
-      const el = document.getElementById(id);
-      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    });
   };
 
   const activeSection = sections.find((s) => s.id === active) ?? sections[0];
